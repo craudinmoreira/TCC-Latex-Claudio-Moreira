@@ -1,6 +1,6 @@
-PWD c:\Users\claud\OneDrive\Documentos\TCC\template_eca_ufsc_abnt
+PWD c:\github_projects\TCC-Latex-Claudio-Moreira
 INPUT C:\Users\claud\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\claud\OneDrive\Documentos\TCC\template_eca_ufsc_abnt\main.tex
+INPUT c:\github_projects\TCC-Latex-Claudio-Moreira\main.tex
 OUTPUT main.log
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\abntex2\abntex2.cls
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\abntex2\abntex2.cls
@@ -514,13 +514,6 @@ OUTPUT capitulos\cap_2.aux
 INPUT .\capitulos\cap_2.tex
 INPUT .\capitulos\cap_2.tex
 INPUT capitulos\cap_2.tex
-INPUT .\figuras\what-is-supply-chain-management-graphic.png
-INPUT .\figuras\what-is-supply-chain-management-graphic.png
-INPUT .\figuras\what-is-supply-chain-management-graphic.png
-INPUT .\figuras\what-is-supply-chain-management-graphic.png
-INPUT .\figuras\what-is-supply-chain-management-graphic.png
-INPUT .\figuras\what-is-supply-chain-management-graphic.png
-INPUT .\figuras\what-is-supply-chain-management-graphic.png
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
@@ -532,8 +525,8 @@ INPUT .\figuras\imagem.pdf
 INPUT .\figuras\imagem.pdf
 INPUT .\figuras\imagem.pdf
 INPUT .\figuras\imagem.pdf
-INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
+INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT .\capitulos\cap_3.tex
 INPUT .\capitulos\cap_3.tex
 OUTPUT capitulos\cap_3.aux

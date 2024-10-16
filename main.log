@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  4 JUL 2024 23:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  15 OCT 2024 23:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/claud/OneDrive/Documentos/TCC/template_eca_ufsc_abnt/main.tex
-(c:/Users/claud/OneDrive/Documentos/TCC/template_eca_ufsc_abnt/main.tex
+**c:/github_projects/TCC-Latex-Claudio-Moreira/main.tex
+(c:/github_projects/TCC-Latex-Claudio-Moreira/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/latex/abntex2\abntex2.cls
@@ -1490,60 +1490,54 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \openout2 = `capitulos/cap_2.aux'.
 
  (capitulos/cap_2.tex
-<figuras/what-is-supply-chain-management-graphic.png, id=200, 1686.3pt x 799.98875pt>
-File: figuras/what-is-supply-chain-management-graphic.png Graphic file (type png)
-<use figuras/what-is-supply-chain-management-graphic.png>
-Package pdftex.def Info: figuras/what-is-supply-chain-management-graphic.png  used on input line 25.
-(pdftex.def)             Requested size: 337.25403pt x 159.99492pt.
- [17
-
-
-
-
-] [18 <./figuras/what-is-supply-chain-management-graphic.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 53.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 16.
  (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [19{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-<figuras/imagem.pdf, id=221, 248.73004pt x 186.69357pt>
+) [17
+
+
+
+
+{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+<figuras/imagem.pdf, id=201, 248.73004pt x 186.69357pt>
 File: figuras/imagem.pdf Graphic file (type pdf)
 <use figuras/imagem.pdf>
-Package pdftex.def Info: figuras/imagem.pdf  used on input line 79.
+Package pdftex.def Info: figuras/imagem.pdf  used on input line 27.
 (pdftex.def)             Requested size: 248.72943pt x 186.69312pt.
- [20] [21{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc} <./figuras/imagem.pdf>] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+ [18 <./figuras/imagem.pdf>] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
 []|\T1/lmr/bx/n/10 (+10) Produto In-
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 148--148
+Underfull \hbox (badness 4441) in paragraph at lines 96--96
 \T1/lmr/bx/n/10 (+10) PIB (bi-lhões
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
 []|\T1/lmr/bx/n/10 (+10) Número de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
 []|\T1/lmr/bx/n/10 (+10) Número de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
 \T1/lmr/bx/n/10 (+10) uni-da-des
  []
 
 
-Overfull \hbox (3.33853pt too wide) in paragraph at lines 146--155
+Overfull \hbox (3.33853pt too wide) in paragraph at lines 94--103
 [][] 
  []
 
-) [23]
+) [20{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
 \openout2 = `capitulos/cap_3.aux'.
 
- (capitulos/cap_3.tex) [24
+ (capitulos/cap_3.tex) [21
 
 
 
@@ -1551,18 +1545,18 @@ Overfull \hbox (3.33853pt too wide) in paragraph at lines 146--155
 ]
 \openout2 = `capitulos/cap_4.aux'.
 
- (capitulos/cap_4.tex) [25
+ (capitulos/cap_4.tex) [22
 
 
 
 
-] (pos_textual/apendice_a.tex [26
+] (pos_textual/apendice_a.tex [23
 
 
 
-]) (pos_textual/anexo_a.tex [27
+]) (pos_textual/anexo_a.tex [24
 
-]) [28
+]) [25
 
 ]
 \tf@lof=\write6
@@ -1587,17 +1581,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37552 strings out of 474424
- 685499 string characters out of 5741740
- 1941496 words of memory out of 5000000
- 59119 multiletter control sequences out of 15000+600000
- 607671 words of font info for 121 fonts, out of 8000000 for 9000
+ 37521 strings out of 474424
+ 684201 string characters out of 5741740
+ 1944496 words of memory out of 5000000
+ 59096 multiletter control sequences out of 15000+600000
+ 607542 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,17n,121p,2549b,4454s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 124i,17n,121p,2532b,4454s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (29 pages, 562181 bytes).
+Output written on main.pdf (26 pages, 468115 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 111 named destinations out of 1000 (max. 500000)
- 27436 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 27415 words of extra memory for PDF output out of 29859 (max. 10000000)
 
