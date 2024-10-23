@@ -10,14 +10,18 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{15}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Recomendações de uso}{15}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objetivos}{16}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{16}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Objetivos Específicos}{16}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.1}Objetivos}{15}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Objetivo Geral}{15}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Objetivos Específicos}{15}{subsection.1.1.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{17}{chapter.2}%
-\contentsline {section}{\numberline {2.1}As mudanças climáticas e as catástrofes natuais}{17}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Cenário de enchentes no sul do Brasil}{17}{section.2.2}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}As mudanças climáticas e as catástrofes naturais}{16}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Cenário de enchentes no sul do Brasil}{16}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Dinâmica do Rio Guaíba}{16}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Aprendizado de máquina}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Categorias de aprendizado de máquina}{17}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Função de perda}{18}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Modelo Ridge}{18}{section.2.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Seção}}{19}{chapter.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }

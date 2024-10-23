@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  15 OCT 2024 23:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  22 OCT 2024 23:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1418,7 +1418,9 @@ Package pdftex.def Info: pre_textual/ficha_catalografica.pdf , page1 used on inp
 ] (main.lot) [11
 
 ]
-Using TeX to sort glossary entries---this may take a while
+
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={acronym}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 119.
+
 [12
 
 
@@ -1470,34 +1472,23 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ])
 \openout2 = `capitulos/cap_1.aux'.
 
- (capitulos/cap_1.tex
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 32.
- (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 39.
- [15
+ (capitulos/cap_1.tex) [15
 
 
 
-]) [16]
+]
 \openout2 = `capitulos/cap_2.aux'.
 
  (capitulos/cap_2.tex
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 16.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 18.
  (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) [17
+) [16
 
 
 
 
-{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [18]
+{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [17]) [18{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
 \openout2 = `capitulos/cap_3.aux'.
 
  (capitulos/cap_3.tex) [19
@@ -1544,17 +1535,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37384 strings out of 474424
- 681728 string characters out of 5741740
- 1938496 words of memory out of 5000000
- 59010 multiletter control sequences out of 15000+600000
- 603535 words of font info for 108 fonts, out of 8000000 for 9000
+ 37350 strings out of 474424
+ 681563 string characters out of 5741740
+ 1941496 words of memory out of 5000000
+ 58982 multiletter control sequences out of 15000+600000
+ 596268 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,17n,121p,2532b,4454s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (24 pages, 286527 bytes).
+<C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on main.pdf (24 pages, 277063 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
+ 384 PDF objects out of 1000 (max. 8388607)
  79 named destinations out of 1000 (max. 500000)
- 25322 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 20746 words of extra memory for PDF output out of 24883 (max. 10000000)
 

@@ -3,14 +3,64 @@
 % ----------------------------------------------------------
 Explicar brevemente o que será tratado como fundamentação teórica para o entendimento do contexto em que o modelo de aprendizagem de máquina será aplicado.
 
-\section{As mudanças climáticas e as catástrofes natuais}
+\section{As mudanças climáticas e as catástrofes naturais}
 
-As grandes cidades brasileiras enfrentam desafios cada vez mais frequentes e crescentes devido às mudanças climáticas, que agravam problemas como enchentes, inundações e deslizamentos. Projeções indicam que, até 2030, a mancha urbana de São Paulo pode aumentar em até 38\%, ampliando o risco para mais de 20\% das áreas de expansão urbana, que se tornarão suscetíveis a acidentes naturais (Nobre et al., 2011). O estudo também destaca que o aumento na frequência de eventos de chuvas intensas pode dobrar o número de dias com precipitação acima de 10 milímetros, agravando a vulnerabilidade da população, especialmente nas áreas periféricas e de menor infraestrutura.
+As grandes cidades brasileiras enfrentam desafios mais frequentes relacionados às mudanças climáticas, que agravam problemas como enchentes, inundações e deslizamentos. Projeções indicam que, até 2030, a mancha urbana de São Paulo pode aumentar em até 38\%, ampliando o risco para mais de 20\% das áreas de expansão urbana, que se tornarão suscetíveis a acidentes naturais (Nobre et al., 2011). O estudo também destaca que o aumento na frequência de eventos de chuvas intensas pode dobrar o número de dias com precipitação acima de 10 milímetros, agravando a vulnerabilidade da população, especialmente nas áreas periféricas e de menor infraestrutura.
 
-\section{Cenário de enchentes no sul do Brasil}
+\subsection{Cenário de enchentes no sul do Brasil}
 
-Com base no histórico das enchentes no Rio Grande do Sul, observa-se que os desastres relacionados ao excesso de chuvas não são um fenômeno recente. Desde 1941, o estado lida com eventos catastróficos, como a enchente que devastou Porto Alegre naquele ano, considerada uma das mais graves da história da cidade. Ao longo das décadas, esses episódios continuaram a ocorrer, expondo a vulnerabilidade da região diante de chuvas intensas e repentinas. A combinação de fatores naturais, como a geografia da região e os ciclos climáticos, aliado as ações humanas mais nocivas ao meio ambiente, contribui para a repetição e intensificação dessas tragédias (VEJA, 2024). 
+Com base no histórico das enchentes no Rio Grande do Sul, observa-se que os desastres relacionados ao excesso de chuvas não são um fenômeno recente. Desde 1941, o estado lida com eventos catastróficos, como a enchente que devastou Porto Alegre naquele ano, considerada uma das mais graves da história da cidade. Ao longo das décadas, esses episódios continuaram a ocorrer, expondo a vulnerabilidade da região diante de chuvas intensas e repentinas. A combinação de fatores naturais, como a geografia da região e os ciclos climáticos, aliado as ações humanas nocivas ao meio ambiente, contribui para a repetição e intensificação dessas tragédias \cite{veja2024}.
 
-Em Santa Catarina, estado adjacente ao Rio Grande do Sul, as enchentes também são fenômenos recorrentes que, ao longo dos anos, têm causado impactos sociais, econômicos e ambientais. Um dos eventos mais recentes foi registrado em maio de 2024, quando o estado enfrentou um dos dias mais chuvosos da história, levando ao transbordamento de rios, deslizamentos de terra e bloqueios em diversas rodovias. De acordo com reportagens da época, a quantidade excessiva de chuva foi um dos principais fatores que contribuíram para a gravidade da enchente, com destaque para a queda de barreiras e o isolamento de algumas regiões do estado (G1, 2024).
+Em Santa Catarina, estado adjacente ao Rio Grande do Sul, as enchentes também são fenômenos recorrentes que, ao longo dos anos, têm causado impactos sociais, econômicos e ambientais. Um dos eventos mais recentes foi registrado em maio de 2024, quando o estado registrou vários dias com altos indíces pluviométricos, levando ao transbordamento de rios, deslizamentos de terra e bloqueios em diversas rodovias \cite{g12024}.
 
-O Rio Guaíba, principal manancial de abastecimento de água para a capital do Rio Grande do Sul e região, é alvo de estudo sobre diversos temas, incluindo sua hidrodinâmica e nível ao longo do ano. No Artigo conduzido pelos pesquisadores Andrade \textit{et al}., a variabilidade nas descargas líquidas do Rio Guaíba revelou flutuações significativas nos volumes de descarga, variando de 407 m³/s a 14.270 m³/s, o que indica uma grande influência das condições climáticas sazonais e da vazão dos rios tributários, como o Jacuí, Taquarí, Caí e Sinos. Essas variações extremas foram observadas durante o período de 2014 a 2017 e reforçam a importância de monitorar continuamente o regime de águas do Guaíba para prevenir enchentes e outros desastres associados (Andrade et al., 2017).
+\subsection{Dinâmica do Rio Guaíba}
+
+O Rio Guaíba, principal manancial de abastecimento de água para a capital do Rio Grande do Sul e região, é alvo de estudo sobre diversos temas, incluindo sua hidrodinâmica e nível ao longo do ano. No Artigo conduzido pelos pesquisadores \cite{andrade2017}, a variabilidade nas descargas líquidas do Rio Guaíba revelou flutuações significativas nos volumes de descarga, variando de 407 m³/s a 14.270 m³/s, o que indica uma grande influência das condições climáticas sazonais e da vazão dos rios tributários, como o Jacuí, Taquarí, Caí e Sinos. Essas variações extremas foram observadas durante o período de 2014 a 2017 e reforçam a importância de monitorar continuamente o regime de águas do Guaíba para prevenir enchentes e outros desastres associados \cite{andrade2017}.
+
+\section{Aprendizado de máquina}
+
+Desde que os computadores foram inventados, criou-se o questionamento da possibilidade de fazê-los pensar de modo semelhante ao ser humano. Por meio desse avanço, diversas áreas sofreriam grandes transformações, uma vez que a capacidade da máquina aprender e aprimorar o seu conhecimento sobre determinado assunto traria melhorias e uma maior performance na atividade desejada \cite{carbonell1983}.
+
+Embora os computadores ainda não alcancem o mesmo nível de aprendizado geral do ser humano, no últimos anos, o aprendizado de máquina se tornou realidade, com aplicações em diversos setores relacionados ou não a tecnologia, agregando valor e conhecimento por meio de dados e informações antes tratados apenas por profissionais da área.
+
+Esse conceito envolve a criação de sistemas que são capazes de aprender a partir de dados, identificando padrões e realizando previsões sem a necessidade de programação explícita. De acordo com \cite{carbonell1983}, o principal objetivo do aprendizado de máquina é construir algoritmos que permitam que os computadores adquiram conhecimento e melhorem sua performance de forma autônoma, baseando-se em experiências passadas.
+
+\subsection{Categorias de aprendizado de máquina}
+
+Com pesquisas e algoritmos sendo desenvolvidos para novas aplicações e/ou aprimoramento de implementações existentes, tornou-se necessário criar categorias de aprendizado de máquina, a fim de classificar a sua função e estipular em quais cenários o seu uso é adequado.
+
+Os quatro principais tipos de machine learning são: supervisionado, não supervisionado, semi-supervisionado e reforço \cite{saravanan2018}. 
+
+\begin{itemize}
+    \item Supervisionado: é o mais comum e envolve a utilização de dados rotulados, no qual o modelo é treinado com entradas e saídas conhecidas para fazer previsões sobre novos dados;
+    \item Não supervisionado: lida com dados não rotulados, onde o sistema busca encontrar padrões ou agrupamentos nos dados;
+    \item Semi supervisionado: combina elementos de ambos os métodos, utilizando uma pequena quantidade de dados rotulados e uma grande quantidade de dados não rotulados, sendo útil em cenários onde a rotulação de dados é cara ou complexa;
+    \item Aprendizado por reforço: se baseia em um sistema de recompensas e punições, onde um agente interage com o ambiente e aprende a otimizar suas ações para alcançar um objetivo a partir de feedbacks recebidos.
+\end{itemize}
+
+\section{Função de perda}
+
+A função de custo, também conhecida como função de perda, é usada para quantificar o erro entre as previsões do modelo e os valores reais dos dados. No campo de estudo da matemática, a função de custo é uma medida da discrepância que o algoritmo de aprendizado tenta minimizar através do ajuste os parâmetros do modelo.
+
+\section{Modelo Ridge}
+
+O modelo Ridge, implementado na biblioteca \textit{scikit-learn} do Python, é uma variação da regressão linear que incorpora um termo de regularização L2 à função de custo, o que ajuda a controlar a complexidade do modelo e prevenir o sobreajuste (\textit{overfitting}). Com essa caracterísica, o método é indicado em casos onde os dados apresentam colinearidade ou onde há muitas variáveis independentes \cite{Jolly2018}.
+
+A regressão linear padrão visa minimizar a soma dos erros quadráticos (Erro Quadrático Médio ou MSE) entre as previsões e os valores reais. No entanto, em casos onde o dataset apresenta muitos recursos ou quando os dados apresentam correlações entre as variáveis, o modelo tende a se ajustar demais aos dados de treinamento (\textit{overfitting}). A fim de contornar tal problema, o modelo Ridge adiciona um termo de penalidade à função de custo, que regula o tamanho dos coeficientes do modelo. Esse comportamento é observado na função de custo do modelo, com a adição de um hiperparâmetro  $\lambda$ em relação ao modelo de regressão linear padrão.
+
+\begin{equation}
+    J(\theta) = \frac{1}{m}\sum_{i=1}^{m}\left(h_{\theta}(x^{(i)})- y^{(i)}\right)^2 + \lambda\sum_{j=1}^{n}\theta^{2}_{j}
+\end{equation}
+
+onde:
+
+\begin{itemize}
+    \item $\lambda$ é o hiperparâmetro que controla a intensidade da regularização;
+    \item $\theta_{j}$ são os coeficientes (ou pesos) do modelo;
+    \item Quanto maior o valor de $\lambda$, maior será a penalização para grandes coeficientes, resultando em um modelo mais simples.
+\end{itemize}
+
+Sendo assim, a inclusão do termo somado a equação de regressão linear padrão reduz a magnitude dos coeficientes, ajudando a controlar o \textit{overfitting}. Em essência, o modelo Ridge evita que o modelo aprenda padrões específicos do conjunto de treinamento que não se generalizam bem para dados novos.
+
+
+
