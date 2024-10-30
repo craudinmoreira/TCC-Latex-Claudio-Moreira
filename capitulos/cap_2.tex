@@ -42,11 +42,41 @@ Os quatro principais tipos de machine learning são: supervisionado, não superv
 
 A função de custo, também conhecida como função de perda, é usada para quantificar o erro entre as previsões do modelo e os valores reais dos dados. No campo de estudo da matemática, a função de custo é uma medida da discrepância que o algoritmo de aprendizado tenta minimizar através do ajuste os parâmetros do modelo.
 
+\section{Regressão Linear}
+
+A regressão linear é uma técnica de análise de dados que permite estimar valores desconhecidos com base em variáveis conhecidas relacionadas. Esse modelo representa a relação entre uma variável dependente, que se deseja prever, e uma ou mais variáveis independentes através de uma equação linear. Um exemplo prático consiste em prever despesas futuras com base em dados de renda, estabelecendo uma proporção linear entre essas variáveis \cite{aws2024}.
+
+A aplicação da regressão linear é relevante devido à sua simplicidade e capacidade de fornecer previsões baseadas em uma fórmula matemática interpretável. Além disso, o método é base para implementações de algoritmos na área de ciência de dados, como aprendizado de máquina, otimizando o processamento de dados complexos e viabilizando a criação de modelos de previsão.\cite{aws2024}.
+
+O modelo de treinamento utilizando regressão linear consiste em  encontrar os valores apropriados para os coeficientes, determinando assim a dinâmica da função a ser estimada \cite{soczi2024}. Isso é feito usando o método dos mínimos quadrados, onde procura-se os valores que minimizam a Soma Residual dos Quadrados (RSS):
+
+\begin{equation}
+    RSS = \sum_{i=1}^{n} \left(y_i - \beta_0 - \sum_{j=1}^{p}\beta_jx_{ij}\right)
+\end{equation}
+
+onde:
+
+\begin{itemize}
+    \item $y_i$ é uma variável aleatória e representa o valor da variável resposta (variável dependente) na i-ésima observação
+    \item $x_{ij}$ representa o valor da variável explicativa (variável independente, variável regressora) na i-ésima observação. Nota-se que podem existir múltiplas variáveis independentes para uma variável independente; 
+    \item $\beta_{0}$ e $\beta_{j}$ são os parâmetros do modelo que serão estimados, e que definem a reta de regressão
+\end{itemize}
+
+Desse modo, a partir de um problema onde uma ou mais entradas geram amostras que resultam em uma saída, torna-se possível estimar uma função que melhor representa seu comportamento, minimzando ao máximo o valor da soma residual dos quadrados entre os pontos amostrais e a curva do modelo. 
+
+\begin{figure}[htb]
+	\caption{\label{fig:minimos_quadrados}Exemplo do método dos quadrados ordinários.}
+	\begin{center}
+		\includegraphics[scale=0.6]{figuras/min_sqr.png}
+	\end{center}
+	\fonte{\cite{dataat2024}}
+\end{figure}
+
 \section{Modelo Ridge}
 
 O modelo Ridge, implementado na biblioteca \textit{scikit-learn} do Python, é uma variação da regressão linear que incorpora um termo de regularização L2 à função de custo, o que ajuda a controlar a complexidade do modelo e prevenir o sobreajuste (\textit{overfitting}). Com essa caracterísica, o método é indicado em casos onde os dados apresentam colinearidade ou onde há muitas variáveis independentes \cite{Jolly2018}.
 
-A regressão linear padrão visa minimizar a soma dos erros quadráticos (Erro Quadrático Médio ou MSE) entre as previsões e os valores reais. No entanto, em casos onde o dataset apresenta muitos recursos ou quando os dados apresentam correlações entre as variáveis, o modelo tende a se ajustar demais aos dados de treinamento (\textit{overfitting}). A fim de contornar tal problema, o modelo Ridge adiciona um termo de penalidade à função de custo, que regula o tamanho dos coeficientes do modelo. Esse comportamento é observado na função de custo do modelo, com a adição de um hiperparâmetro  $\lambda$ em relação ao modelo de regressão linear padrão.
+A regressão linear padrão visa minimizar a soma dos erros quadráticos (Erro Quadrático Médio ou MSE) entre as previsões e os valores reais. No entanto, em casos onde o dataset apresenta muitos recursos ou quando os dados apresentam correlações entre as variáveis, o modelo tende a se ajustar demais aos dados de treinamento (\textit{overfitting}). A fim de contornar tal problema, o modelo Ridge adiciona um termo de penalidade à função de custo, que regula o tamanho dos coeficientes do modelo. Esse comportamento é observado na função de custo do modelo, com a adição de um hiperparâmetro $\lambda$ em relação ao modelo de regressão linear padrão.
 
 \begin{equation}
     J(\theta) = \frac{1}{m}\sum_{i=1}^{m}\left(h_{\theta}(x^{(i)})- y^{(i)}\right)^2 + \lambda\sum_{j=1}^{n}\theta^{2}_{j}

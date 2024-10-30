@@ -76,6 +76,42 @@
       \field{title}{Hidrodinâmica do Rio Guaíba: Resultados Preliminares}
       \field{year}{2017}
     \endentry
+    \entry{dataat2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=94918c1c7f165b10c16ba85b54546921}{%
+           family={At},
+           familyi={A\bibinitperiod},
+           given={Data},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{fullhash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{fullhashraw}{94918c1c7f165b10c16ba85b54546921}
+      \strng{bibnamehash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{authorbibnamehash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{authornamehash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{authorfullhash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{authorfullhashraw}{94918c1c7f165b10c16ba85b54546921}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introdução ao Machine Learning: Regressão}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dataat.github.io/introducao-ao-machine-learning/regress%C3%A3o.html
+      \endverb
+      \verb{url}
+      \verb https://dataat.github.io/introducao-ao-machine-learning/regress%C3%A3o.html
+      \endverb
+    \endentry
     \entry{carbonell1983}{book}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=30ea103c14476461152f8ac59df347f3}{%
@@ -225,6 +261,78 @@
       \field{booktitle}{Proceedings of the Second International Conference on Intelligent Computing and Control Systems (ICICCS 2018)}
       \field{title}{A State of Art Techniques on Machine Learning: A Perspective of Supervised Learning Approaches in Data Classification}
       \field{year}{2018}
+    \endentry
+    \entry{aws2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4d7e5f784bb5801c23c91ba37ed2649d}{%
+           family={Services},
+           familyi={S\bibinitperiod},
+           given={Amazon\bibnamedelima Web},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{fullhash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{fullhashraw}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{bibnamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authorbibnamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authornamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authorfullhash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authorfullhashraw}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{O que é regressão linear?}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/pt/what-is/linear-regression/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/pt/what-is/linear-regression/
+      \endverb
+    \endentry
+    \entry{soczi2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c6aeb8e89130e21dc498b4388137bb8}{%
+           family={Soczi},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{fullhash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{fullhashraw}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{bibnamehash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{authorbibnamehash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{authornamehash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{authorfullhash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{authorfullhashraw}{4c6aeb8e89130e21dc498b4388137bb8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ridge Regression Step-by-Step: Introduction with Example}
+      \field{urlday}{18}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@msoczi/ridge-regression-step-by-step-introduction-with-example-0d22dddb7d54
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@msoczi/ridge-regression-step-by-step-introduction-with-example-0d22dddb7d54
+      \endverb
     \endentry
     \entry{veja2024}{online}{}{}
       \name{author}{1}{}{%
