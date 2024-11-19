@@ -21,15 +21,15 @@ O Rio Guaíba, principal manancial de abastecimento de água para a capital do R
 
 Desde que os computadores foram inventados, criou-se o questionamento da possibilidade de fazê-los pensar de modo semelhante ao ser humano. Por meio desse avanço, diversas áreas sofreriam grandes transformações, uma vez que a capacidade da máquina aprender e aprimorar o seu conhecimento sobre determinado assunto traria melhorias e uma maior performance na atividade desejada \cite{carbonell1983}.
 
-Embora os computadores ainda não alcancem o mesmo nível de aprendizado geral do ser humano, no últimos anos, o aprendizado de máquina se tornou realidade, com aplicações em diversos setores relacionados ou não a tecnologia, agregando valor e conhecimento por meio de dados e informações antes tratados apenas por profissionais da área.
+Embora os computadores ainda não alcancem o mesmo nível de aprendizado geral do ser humano, nos últimos anos, o aprendizado de máquina (do inglês, \textit{machine learning}, ou ML) se tornou realidade, com aplicações em diversos setores relacionados ou não a tecnologia, agregando valor e conhecimento por meio de dados e informações antes tratados apenas por profissionais da área.
 
-Esse conceito envolve a criação de sistemas que são capazes de aprender a partir de dados, identificando padrões e realizando previsões sem a necessidade de programação explícita. De acordo com \cite{carbonell1983}, o principal objetivo do aprendizado de máquina é construir algoritmos que permitam que os computadores adquiram conhecimento e melhorem sua performance de forma autônoma, baseando-se em experiências passadas.
+Esse conceito envolve a criação de sistemas que são capazes de aprender a partir de dados, identificando padrões e realizando previsões sem a necessidade de programação explícita. De acordo com \cite{carbonell1983}, o principal objetivo do ML é construir algoritmos que permitam que os computadores adquiram conhecimento e melhorem sua performance de forma autônoma, baseando-se em experiências passadas.
 
 \subsection{Categorias de aprendizado de máquina}
 
-Com pesquisas e algoritmos sendo desenvolvidos para novas aplicações e/ou aprimoramento de implementações existentes, tornou-se necessário criar categorias de aprendizado de máquina, a fim de classificar a sua função e estipular em quais cenários o seu uso é adequado.
+Com pesquisas e algoritmos sendo desenvolvidos para novas aplicações e/ou aprimoramento de implementações existentes, tornou-se necessário criar categorias de ML, a fim de classificar a sua função e estipular em quais cenários o seu uso é adequado.
 
-Os quatro principais tipos de machine learning são: supervisionado, não supervisionado, semi-supervisionado e reforço \cite{saravanan2018}. 
+Os quatro principais tipos de ML são: supervisionado, não supervisionado, semi-supervisionado e reforço \cite{saravanan2018}. 
 
 \begin{itemize}
     \item Supervisionado: é o mais comum e envolve a utilização de dados rotulados, no qual o modelo é treinado com entradas e saídas conhecidas para fazer previsões sobre novos dados;
@@ -41,6 +41,41 @@ Os quatro principais tipos de machine learning são: supervisionado, não superv
 \section{Função de perda}
 
 A função de custo, também conhecida como função de perda, é usada para quantificar o erro entre as previsões do modelo e os valores reais dos dados. No campo de estudo da matemática, a função de custo é uma medida da discrepância que o algoritmo de aprendizado tenta minimizar através do ajuste os parâmetros do modelo.
+
+\section{Regressão}
+
+A partir da necessidade de realizar previsões, visando compreender e estimar a dinâmica dos fenômenos estudados, a regressão se apresenta como uma ferramenta que busca modelar relações entre variáveis dependentes e independentes através de métodos estatísticos \cite{soto2013}.
+
+Em uma equação linear, uma variável independente, comumente representada pela letra $x$, caracteriza uma grandeza que está sendo manipulada durante um experimento. Dado esse comportamento, a variável $x$ não sofre influência de outras variáveis. A variável independente, normalmente representada pela letra $y$, caracteriza valores que estão diretamente associados à variável independente. Assim, de forma direta ou indireta, $x$ excerce influência sobre $y$.
+
+Na figura \ref{fig:regressao_exemplo}, a fim de exemplificar um caso de regressão, é apresentada a relação entre a expectativa de vida baseada e um índice de felicidade calculado em diversos países obtidos a partir de um levantamento feito por \cite{helliwell2020}. Neste estudo, a variável independente é representada pelo índice de felicidade, enquanto a expectativa de vida representa a variável independente. Desse modo, uma análise visual do gráfico permite inferir uma tendência de expectativa de vida maior em países com alto índice de felicidade. 
+
+\begin{figure}[H]
+	\caption{\label{fig:regressao_exemplo}Relação entre o índice de felicidade e expectativa de vida.}
+	\begin{center}
+		\includegraphics[scale=0.5]{figuras/happiness_world.png}
+	\end{center}
+	\fonte{\cite{helliwell2020}}
+\end{figure}
+
+Embora uma inferência preliminar possa mostrar uma correlação entre as váriavéis da equação, a criação de um modelo de previsão necessita de métodos que comprovem a correlação pressuposta. Para determinar as relações entre as variáveis dependentes e independentes de um sistema, coeficientes de correlação são calculados, gerando valores que medem e comprovam estatisticamente o grau de correspondência dos fatores estudados. Uma das métricas de correlação mais utilizadas é o coeficiente de Pearson, que mede a associação linear entre duas variáveis \cite{kirch2008}. 
+
+Esse coeficiente de correlação pode ser definido pela Equação \ref{eq:correlacao_person}, onde $n$ é o total de amostras, $\bar{x}$ e $\bar{y}$ são as médias aritméticas de ambas as variáveis. Os valores do coeficiente de Pearson variam entre -1 e 1, de tal forma que quanto mais próximos desses extremos, melhor correlacionado estão as variáveis.
+
+\begin{equation}
+    r_{xy} = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^n (x_i - \bar{x})^2 \sum_{i=1}^n (y_i - \bar{y})^2}}
+    \label{eq:correlacao_person}
+\end{equation}
+
+A Figura \ref{fig:correlacoes} mostra alguns exemplos com gráficos de dispersão de variáveis com diferentes correlações.
+
+\begin{figure}[H]
+	\caption{\label{fig:correlacoes}Diferentes correlações entre variáveis.}
+	\begin{center}
+		\includegraphics[scale=0.4]{figuras/correlations.png}
+	\end{center}
+	\fonte{\cite{helliwell2020}}
+\end{figure}
 
 \section{Regressão Linear}
 
