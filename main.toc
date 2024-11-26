@@ -20,10 +20,9 @@
 \contentsline {subsection}{\numberline {2.1.2}Dinâmica do Rio Guaíba}{16}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}Aprendizado de máquina}{17}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Categorias de aprendizado de máquina}{17}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Função de perda}{18}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Regressão}{18}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Regressão Linear}{20}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Modelo Ridge}{21}{section.2.6}%
+\contentsline {section}{\numberline {2.3}Regressão}{18}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Regressão Linear}{19}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Modelo Ridge}{21}{section.2.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Seção}}{23}{chapter.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }

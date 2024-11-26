@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.3)  18 NOV 2024 23:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.3)  25 NOV 2024 22:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1491,24 +1491,24 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}] [17]
-<figuras/happiness_world.png, id=200, 889.8846pt x 483.4863pt>
+<figuras/happiness_world.png, id=198, 889.8846pt x 483.4863pt>
 File: figuras/happiness_world.png Graphic file (type png)
 <use figuras/happiness_world.png>
-Package pdftex.def Info: figuras/happiness_world.png  used on input line 56.
-(pdftex.def)             Requested size: 444.94121pt x 241.74255pt.
- [18{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}]
-<figuras/correlations.png, id=218, 970.1043pt x 169.1118pt>
+Package pdftex.def Info: figuras/happiness_world.png  used on input line 52.
+(pdftex.def)             Requested size: 355.94754pt x 193.39108pt.
+ [18{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc} <./figuras/happiness_world.png>]
+<figuras/correlations.png, id=217, 970.1043pt x 169.1118pt>
 File: figuras/correlations.png Graphic file (type png)
 <use figuras/correlations.png>
-Package pdftex.def Info: figuras/correlations.png  used on input line 75.
+Package pdftex.def Info: figuras/correlations.png  used on input line 71.
 (pdftex.def)             Requested size: 388.03484pt x 67.64351pt.
- [19{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./figuras/happiness_world.png>] [20 <./figuras/correlations.png>]
-<figuras/min_sqr.png, id=249, 587.796pt x 413.3844pt>
+ [19{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./figuras/correlations.png>]
+<figuras/min_sqr.png, id=243, 587.796pt x 413.3844pt>
 File: figuras/min_sqr.png Graphic file (type png)
 <use figuras/min_sqr.png>
-Package pdftex.def Info: figuras/min_sqr.png  used on input line 105.
+Package pdftex.def Info: figuras/min_sqr.png  used on input line 119.
 (pdftex.def)             Requested size: 352.68031pt x 248.03255pt.
- [21 <./figuras/min_sqr.png>]) [22]
+ [20] [21 <./figuras/min_sqr.png>]) [22]
 \openout2 = `capitulos/cap_3.aux'.
 
  (./capitulos/cap_3.tex) [23
@@ -1555,18 +1555,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37431 strings out of 474222
- 674829 string characters out of 5748733
- 1942975 words of memory out of 5000000
- 58952 multiletter control sequences out of 15000+600000
- 596585 words of font info for 104 fonts, out of 8000000 for 9000
+ 37442 strings out of 474222
+ 675093 string characters out of 5748733
+ 1939975 words of memory out of 5000000
+ 58959 multiletter control sequences out of 15000+600000
+ 596714 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,17n,121p,2469b,4454s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (29 pages, 983636 bytes).
+Output written on main.pdf (29 pages, 985416 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
- 97 named destinations out of 1000 (max. 500000)
- 20777 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 477 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 20769 words of extra memory for PDF output out of 24883 (max. 10000000)
 

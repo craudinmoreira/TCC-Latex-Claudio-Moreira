@@ -326,6 +326,75 @@
       \field{title}{A State of Art Techniques on Machine Learning: A Perspective of Supervised Learning Approaches in Data Classification}
       \field{year}{2018}
     \endentry
+    \entry{sassi2012}{report}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=0dc9975bb847539ce47796bf354821cf}{%
+           family={Sassi},
+           familyi={S\bibinitperiod},
+           given={Cecília\bibnamedelima P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36324003caae09e1f13995e3c85b234e}{%
+           family={Perez},
+           familyi={P\bibinitperiod},
+           given={Felipe\bibnamedelima G.},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01668b78cf13e75c6cc92e7032427f39}{%
+           family={Myazato},
+           familyi={M\bibinitperiod},
+           given={Letícia},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8cc29bcdbe6532d6586c26de6a784e71}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=695dcd9e688f1469365d48c675ba8fd7}{%
+           family={Ferreira-Silva},
+           familyi={F\bibinithyphendelim S\bibinitperiod},
+           given={Paulo\bibnamedelima H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=853474e80645777a21b60bf81c620c06}{%
+           family={Louzada},
+           familyi={L\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {ICMC – USP}%
+      }
+      \list{location}{1}{%
+        {São Carlos, SP, Brasil}%
+      }
+      \strng{namehash}{f7903452d84e11c0d55165a3fa677f61}
+      \strng{fullhash}{5d9570584252ab53a0dd36ba818e8739}
+      \strng{bibnamehash}{5d9570584252ab53a0dd36ba818e8739}
+      \strng{authorbibnamehash}{5d9570584252ab53a0dd36ba818e8739}
+      \strng{authornamehash}{f7903452d84e11c0d55165a3fa677f61}
+      \strng{authorfullhash}{5d9570584252ab53a0dd36ba818e8739}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Relatórios Técnicos}
+      \field{number}{377}
+      \field{title}{Modelos de Regressão Linear Múltipla Utilizando os Softwares R e STATISTICA: Uma Aplicação a Dados de Conservação de Frutas}
+      \field{type}{techreport}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb http://www.icmc.usp.br
+      \endverb
+      \verb{url}
+      \verb http://www.icmc.usp.br
+      \endverb
+    \endentry
     \entry{aws2024}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4d7e5f784bb5801c23c91ba37ed2649d}{%

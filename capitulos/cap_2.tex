@@ -38,10 +38,6 @@ Os quatro principais tipos de ML são: supervisionado, não supervisionado, semi
     \item Aprendizado por reforço: se baseia em um sistema de recompensas e punições, onde um agente interage com o ambiente e aprende a otimizar suas ações para alcançar um objetivo a partir de feedbacks recebidos.
 \end{itemize}
 
-\section{Função de perda}
-
-A função de custo, também conhecida como função de perda, é usada para quantificar o erro entre as previsões do modelo e os valores reais dos dados. No campo de estudo da matemática, a função de custo é uma medida da discrepância que o algoritmo de aprendizado tenta minimizar através do ajuste os parâmetros do modelo.
-
 \section{Regressão}
 
 A partir da necessidade de realizar previsões, visando compreender e estimar a dinâmica dos fenômenos estudados, a regressão se apresenta como uma ferramenta que busca modelar relações entre variáveis dependentes e independentes através de métodos estatísticos \cite{soto2013}.
@@ -53,12 +49,12 @@ Na figura \ref{fig:regressao_exemplo}, a fim de exemplificar um caso de regress�
 \begin{figure}[H]
 	\caption{\label{fig:regressao_exemplo}Relação entre o índice de felicidade e expectativa de vida.}
 	\begin{center}
-		\includegraphics[scale=0.5]{figuras/happiness_world.png}
+		\includegraphics[scale=0.4]{figuras/happiness_world.png}
 	\end{center}
 	\fonte{\cite{helliwell2020}}
 \end{figure}
 
-Embora uma inferência preliminar possa mostrar uma correlação entre as váriavéis da equação, a criação de um modelo de previsão necessita de métodos que comprovem a correlação pressuposta. Para determinar as relações entre as variáveis dependentes e independentes de um sistema, coeficientes de correlação são calculados, gerando valores que medem e comprovam estatisticamente o grau de correspondência dos fatores estudados. Uma das métricas de correlação mais utilizadas é o coeficiente de Pearson, que mede a associação linear entre duas variáveis \cite{kirch2008}. 
+Embora uma inferência inicial permita constatar uma correlação entre as váriavéis da equação, a criação de um modelo de previsão necessita de métodos que comprovem a correlação pressuposta. Para determinar as relações entre as variáveis dependentes e independentes de um sistema, coeficientes de correlação são calculados, gerando valores que medem e comprovam estatisticamente o grau de correspondência dos fatores estudados. Uma das métricas de correlação mais utilizadas é o coeficiente de Pearson, que mede a associação linear entre duas variáveis \cite{kirch2008}. 
 
 Esse coeficiente de correlação pode ser definido pela Equação \ref{eq:correlacao_person}, onde $n$ é o total de amostras, $\bar{x}$ e $\bar{y}$ são as médias aritméticas de ambas as variáveis. Os valores do coeficiente de Pearson variam entre -1 e 1, de tal forma que quanto mais próximos desses extremos, melhor correlacionado estão as variáveis.
 
@@ -77,11 +73,29 @@ A Figura \ref{fig:correlacoes} mostra alguns exemplos com gráficos de dispersã
 	\fonte{\cite{helliwell2020}}
 \end{figure}
 
+Com a aplicação do método de correlação, torna-se possível estimar valores não existentes na amostra ou conjunto de dados, dando forma a uma abordagem preliminar de previsão de dados. Todavia, em casos onde a correlação entre as variáveis é baixa, a previsão de valores passa a ser menos precisa e acurada, sendo necessário outras abordagens mais robustas para realizar as previsões. Em ML, os modelos de regressão podem ser criados a partir de diversos métodos, com ajustes de parâmetros simples ou complexos que auxiliam no ajuste do modelo e seu desempenho na situação aplicada.
+
 \section{Regressão Linear}
 
-A regressão linear é uma técnica de análise de dados que permite estimar valores desconhecidos com base em variáveis conhecidas relacionadas. Esse modelo representa a relação entre uma variável dependente, que se deseja prever, e uma ou mais variáveis independentes através de uma equação linear. Um exemplo prático consiste em prever despesas futuras com base em dados de renda, estabelecendo uma proporção linear entre essas variáveis \cite{aws2024}.
+A regressão linear é uma técnica de análise de dados que permite estimar valores desconhecidos com base em variáveis conhecidas relacionadas. Esse modelo representa a relação entre uma variável dependente, que se deseja prever, e uma ou mais variáveis independentes através de uma equação linear \cite{aws2024}.
 
-A aplicação da regressão linear é relevante devido à sua simplicidade e capacidade de fornecer previsões baseadas em uma fórmula matemática interpretável. Além disso, o método é base para implementações de algoritmos na área de ciência de dados, como aprendizado de máquina, otimizando o processamento de dados complexos e viabilizando a criação de modelos de previsão.\cite{aws2024}.
+A aplicação da técnica é relevante devido à sua simplicidade e capacidade de fornecer previsões baseadas em uma fórmula matemática interpretável. Além disso, o método é base para implementações de algoritmos na área de ciência de dados, como aprendizado de máquina, otimizando o processamento de dados complexos e viabilizando a criação de modelos de previsão.\cite{aws2024}.
+
+O método de regressão linear é dividido em dois grupos, sendo eles: regressão linear simples (RLS) e regressão linear múltipla (RLM). A RLS tem como objetivo estabelecer uma relação entre duas variáveis através de uma função, cuja definição é dada por:
+
+\begin{equation}
+	y_i = \alpha + \beta x_i 
+\end{equation}
+
+Onde $y_i$ é a variável alvo, enquanto $\alpha$ e $\beta$ são coeficientes calculados pela regressão, que representam o intercepto no eixo Y e a inclinação da reta, respectivamente.
+
+A RLM, embora seja semelhante à RLS, possui múltiplas variáveis preditoras, sendo definida por:
+
+\begin{equation}
+	y_i = \alpha + \beta x_{i1} + \beta x_{i2} + ... + \beta x_{in}
+\end{equation}
+
+Onde $y_i$ é a variável alvo, $\alpha$ permanece sendo o coeficiente de intercepto do eixo Y enquanto $\beta_1$ a $\beta_n$ representam os coeficientes associados à n-ésima variável \cite{sassi2012}.
 
 O modelo de treinamento utilizando regressão linear consiste em  encontrar os valores apropriados para os coeficientes, determinando assim a dinâmica da função a ser estimada \cite{soczi2024}. Isso é feito usando o método dos mínimos quadrados, onde procura-se os valores que minimizam a Soma Residual dos Quadrados (RSS):
 
