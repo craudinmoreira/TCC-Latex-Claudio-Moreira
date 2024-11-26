@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{andrade2017}{inproceedings}{}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{andrade2017}{inproceedings}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=517d218d24832f8d3b2af0f9957ef330}{%
            family={Andrade},
@@ -60,10 +60,12 @@
       }
       \strng{namehash}{a7c9898320be01b41d2db37c912b1cae}
       \strng{fullhash}{1ad42139710d3b96d590008dde047a5a}
+      \strng{fullhashraw}{1ad42139710d3b96d590008dde047a5a}
       \strng{bibnamehash}{1ad42139710d3b96d590008dde047a5a}
       \strng{authorbibnamehash}{1ad42139710d3b96d590008dde047a5a}
       \strng{authornamehash}{a7c9898320be01b41d2db37c912b1cae}
       \strng{authorfullhash}{1ad42139710d3b96d590008dde047a5a}
+      \strng{authorfullhashraw}{1ad42139710d3b96d590008dde047a5a}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -74,7 +76,7 @@
       \field{title}{Hidrodinâmica do Rio Guaíba: Resultados Preliminares}
       \field{year}{2017}
     \endentry
-    \entry{dataat2024}{online}{}
+    \entry{dataat2024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=94918c1c7f165b10c16ba85b54546921}{%
            family={At},
@@ -85,10 +87,12 @@
       }
       \strng{namehash}{94918c1c7f165b10c16ba85b54546921}
       \strng{fullhash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{fullhashraw}{94918c1c7f165b10c16ba85b54546921}
       \strng{bibnamehash}{94918c1c7f165b10c16ba85b54546921}
       \strng{authorbibnamehash}{94918c1c7f165b10c16ba85b54546921}
       \strng{authornamehash}{94918c1c7f165b10c16ba85b54546921}
       \strng{authorfullhash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{authorfullhashraw}{94918c1c7f165b10c16ba85b54546921}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -108,7 +112,7 @@
       \verb https://dataat.github.io/introducao-ao-machine-learning/regress%C3%A3o.html
       \endverb
     \endentry
-    \entry{carbonell1983}{book}{}
+    \entry{carbonell1983}{book}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=30ea103c14476461152f8ac59df347f3}{%
            family={Carbonell},
@@ -137,10 +141,12 @@
       }
       \strng{namehash}{10dfb6958f8f5b4d3e67bd291c75d128}
       \strng{fullhash}{10dfb6958f8f5b4d3e67bd291c75d128}
+      \strng{fullhashraw}{10dfb6958f8f5b4d3e67bd291c75d128}
       \strng{bibnamehash}{10dfb6958f8f5b4d3e67bd291c75d128}
       \strng{authorbibnamehash}{10dfb6958f8f5b4d3e67bd291c75d128}
       \strng{authornamehash}{10dfb6958f8f5b4d3e67bd291c75d128}
       \strng{authorfullhash}{10dfb6958f8f5b4d3e67bd291c75d128}
+      \strng{authorfullhashraw}{10dfb6958f8f5b4d3e67bd291c75d128}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -152,7 +158,7 @@
       \field{pages}{619}
       \range{pages}{1}
     \endentry
-    \entry{g12024}{online}{}
+    \entry{g12024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c0497521d35d66866e3af408094864c3}{%
            family={G1},
@@ -160,10 +166,12 @@
       }
       \strng{namehash}{c0497521d35d66866e3af408094864c3}
       \strng{fullhash}{c0497521d35d66866e3af408094864c3}
+      \strng{fullhashraw}{c0497521d35d66866e3af408094864c3}
       \strng{bibnamehash}{c0497521d35d66866e3af408094864c3}
       \strng{authorbibnamehash}{c0497521d35d66866e3af408094864c3}
       \strng{authornamehash}{c0497521d35d66866e3af408094864c3}
       \strng{authorfullhash}{c0497521d35d66866e3af408094864c3}
+      \strng{authorfullhashraw}{c0497521d35d66866e3af408094864c3}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -183,7 +191,7 @@
       \verb https://g1.globo.com/sc/santa-catarina/noticia/2024/05/19/sc-enchente-quedas-barreira-dia-mais-chuvoso.ghtml
       \endverb
     \endentry
-    \entry{helliwell2020}{inproceedings}{}
+    \entry{helliwell2020}{inproceedings}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=95655cfb39fd5b56fb4054732b661f08}{%
            family={Helliwell},
@@ -212,10 +220,12 @@
       }
       \strng{namehash}{ea16bb7b9417906f0fdea0f0382a40a5}
       \strng{fullhash}{1cad4f8556d455e1b3956373fad73946}
+      \strng{fullhashraw}{1cad4f8556d455e1b3956373fad73946}
       \strng{bibnamehash}{1cad4f8556d455e1b3956373fad73946}
       \strng{authorbibnamehash}{1cad4f8556d455e1b3956373fad73946}
       \strng{authornamehash}{ea16bb7b9417906f0fdea0f0382a40a5}
       \strng{authorfullhash}{1cad4f8556d455e1b3956373fad73946}
+      \strng{authorfullhashraw}{1cad4f8556d455e1b3956373fad73946}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
@@ -226,7 +236,7 @@
       \field{title}{Social Environments for World Happiness}
       \field{year}{2020}
     \endentry
-    \entry{Jolly2018}{book}{}
+    \entry{Jolly2018}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a426112369cbb409855a632fd2f8f1d4}{%
            family={Jolly},
@@ -243,10 +253,12 @@
       }
       \strng{namehash}{a426112369cbb409855a632fd2f8f1d4}
       \strng{fullhash}{a426112369cbb409855a632fd2f8f1d4}
+      \strng{fullhashraw}{a426112369cbb409855a632fd2f8f1d4}
       \strng{bibnamehash}{a426112369cbb409855a632fd2f8f1d4}
       \strng{authorbibnamehash}{a426112369cbb409855a632fd2f8f1d4}
       \strng{authornamehash}{a426112369cbb409855a632fd2f8f1d4}
       \strng{authorfullhash}{a426112369cbb409855a632fd2f8f1d4}
+      \strng{authorfullhashraw}{a426112369cbb409855a632fd2f8f1d4}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{extradatescope}{labelyear}
@@ -256,7 +268,7 @@
       \field{title}{Machine Learning with scikit-learn Quick Start Guide: Classification, Regression, and Clustering Techniques in Python}
       \field{year}{2018}
     \endentry
-    \entry{kirch2008}{incollection}{}
+    \entry{kirch2008}{incollection}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=20cc1db200372cc43722b25bd0232cfa}{%
            family={Kirch},
@@ -273,10 +285,12 @@
       }
       \strng{namehash}{20cc1db200372cc43722b25bd0232cfa}
       \strng{fullhash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{fullhashraw}{20cc1db200372cc43722b25bd0232cfa}
       \strng{bibnamehash}{20cc1db200372cc43722b25bd0232cfa}
       \strng{authorbibnamehash}{20cc1db200372cc43722b25bd0232cfa}
       \strng{authornamehash}{20cc1db200372cc43722b25bd0232cfa}
       \strng{authorfullhash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{authorfullhashraw}{20cc1db200372cc43722b25bd0232cfa}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -289,7 +303,7 @@
       \field{pages}{1090\bibrangedash 1091}
       \range{pages}{2}
     \endentry
-    \entry{saravanan2018}{inproceedings}{}
+    \entry{saravanan2018}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ae886fa050dd3c6099a5bb3e2ae28e60}{%
            family={Saravanan},
@@ -312,10 +326,12 @@
       }
       \strng{namehash}{fbb5bec0663bc74ee3d00b6aa9afc604}
       \strng{fullhash}{fbb5bec0663bc74ee3d00b6aa9afc604}
+      \strng{fullhashraw}{fbb5bec0663bc74ee3d00b6aa9afc604}
       \strng{bibnamehash}{fbb5bec0663bc74ee3d00b6aa9afc604}
       \strng{authorbibnamehash}{fbb5bec0663bc74ee3d00b6aa9afc604}
       \strng{authornamehash}{fbb5bec0663bc74ee3d00b6aa9afc604}
       \strng{authorfullhash}{fbb5bec0663bc74ee3d00b6aa9afc604}
+      \strng{authorfullhashraw}{fbb5bec0663bc74ee3d00b6aa9afc604}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -326,7 +342,7 @@
       \field{title}{A State of Art Techniques on Machine Learning: A Perspective of Supervised Learning Approaches in Data Classification}
       \field{year}{2018}
     \endentry
-    \entry{sassi2012}{report}{}
+    \entry{sassi2012}{report}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=0dc9975bb847539ce47796bf354821cf}{%
            family={Sassi},
@@ -373,10 +389,12 @@
       }
       \strng{namehash}{f7903452d84e11c0d55165a3fa677f61}
       \strng{fullhash}{5d9570584252ab53a0dd36ba818e8739}
+      \strng{fullhashraw}{5d9570584252ab53a0dd36ba818e8739}
       \strng{bibnamehash}{5d9570584252ab53a0dd36ba818e8739}
       \strng{authorbibnamehash}{5d9570584252ab53a0dd36ba818e8739}
       \strng{authornamehash}{f7903452d84e11c0d55165a3fa677f61}
       \strng{authorfullhash}{5d9570584252ab53a0dd36ba818e8739}
+      \strng{authorfullhashraw}{5d9570584252ab53a0dd36ba818e8739}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -395,7 +413,7 @@
       \verb http://www.icmc.usp.br
       \endverb
     \endentry
-    \entry{aws2024}{online}{}
+    \entry{aws2024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4d7e5f784bb5801c23c91ba37ed2649d}{%
            family={Services},
@@ -406,10 +424,12 @@
       }
       \strng{namehash}{4d7e5f784bb5801c23c91ba37ed2649d}
       \strng{fullhash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{fullhashraw}{4d7e5f784bb5801c23c91ba37ed2649d}
       \strng{bibnamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
       \strng{authorbibnamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
       \strng{authornamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
       \strng{authorfullhash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authorfullhashraw}{4d7e5f784bb5801c23c91ba37ed2649d}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -429,7 +449,7 @@
       \verb https://aws.amazon.com/pt/what-is/linear-regression/
       \endverb
     \endentry
-    \entry{soczi2024}{online}{}
+    \entry{soczi2024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4c6aeb8e89130e21dc498b4388137bb8}{%
            family={Soczi},
@@ -440,10 +460,12 @@
       }
       \strng{namehash}{4c6aeb8e89130e21dc498b4388137bb8}
       \strng{fullhash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{fullhashraw}{4c6aeb8e89130e21dc498b4388137bb8}
       \strng{bibnamehash}{4c6aeb8e89130e21dc498b4388137bb8}
       \strng{authorbibnamehash}{4c6aeb8e89130e21dc498b4388137bb8}
       \strng{authornamehash}{4c6aeb8e89130e21dc498b4388137bb8}
       \strng{authorfullhash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{authorfullhashraw}{4c6aeb8e89130e21dc498b4388137bb8}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -463,7 +485,7 @@
       \verb https://medium.com/@msoczi/ridge-regression-step-by-step-introduction-with-example-0d22dddb7d54
       \endverb
     \endentry
-    \entry{soto2013}{incollection}{}
+    \entry{soto2013}{incollection}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4023f266ce132b1924c19687448b285c}{%
            family={Soto},
@@ -487,13 +509,16 @@
       }
       \strng{namehash}{4023f266ce132b1924c19687448b285c}
       \strng{fullhash}{4023f266ce132b1924c19687448b285c}
+      \strng{fullhashraw}{4023f266ce132b1924c19687448b285c}
       \strng{bibnamehash}{4023f266ce132b1924c19687448b285c}
       \strng{authorbibnamehash}{4023f266ce132b1924c19687448b285c}
       \strng{authornamehash}{4023f266ce132b1924c19687448b285c}
       \strng{authorfullhash}{4023f266ce132b1924c19687448b285c}
+      \strng{authorfullhashraw}{4023f266ce132b1924c19687448b285c}
       \strng{editorbibnamehash}{f9a43d462fc2c827cea3769ed712f3f0}
       \strng{editornamehash}{f9a43d462fc2c827cea3769ed712f3f0}
       \strng{editorfullhash}{f9a43d462fc2c827cea3769ed712f3f0}
+      \strng{editorfullhashraw}{f9a43d462fc2c827cea3769ed712f3f0}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -506,7 +531,7 @@
       \field{pages}{2538\bibrangedash 2538}
       \range{pages}{1}
     \endentry
-    \entry{veja2024}{online}{}
+    \entry{veja2024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=bc81342358fefad2824d91a3cd546296}{%
            family={VEJA},
@@ -514,10 +539,12 @@
       }
       \strng{namehash}{bc81342358fefad2824d91a3cd546296}
       \strng{fullhash}{bc81342358fefad2824d91a3cd546296}
+      \strng{fullhashraw}{bc81342358fefad2824d91a3cd546296}
       \strng{bibnamehash}{bc81342358fefad2824d91a3cd546296}
       \strng{authorbibnamehash}{bc81342358fefad2824d91a3cd546296}
       \strng{authornamehash}{bc81342358fefad2824d91a3cd546296}
       \strng{authorfullhash}{bc81342358fefad2824d91a3cd546296}
+      \strng{authorfullhashraw}{bc81342358fefad2824d91a3cd546296}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{extradatescope}{labelyear}

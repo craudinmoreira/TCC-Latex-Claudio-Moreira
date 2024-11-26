@@ -22,7 +22,8 @@
 \contentsline {subsection}{\numberline {2.2.1}Categorias de aprendizado de máquina}{17}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}Regressão}{18}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Regressão Linear}{19}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Modelo Ridge}{21}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Método dos quadrados ordinários}{20}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Modelo Ridge}{21}{section.2.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Seção}}{23}{chapter.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
