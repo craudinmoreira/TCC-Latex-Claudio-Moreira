@@ -303,6 +303,54 @@
       \field{pages}{1090\bibrangedash 1091}
       \range{pages}{2}
     \endentry
+    \entry{montgomery2012}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7d4a838891cb5c31eb1e3e089777efa0}{%
+           family={Montgomery},
+           familyi={M\bibinitperiod},
+           given={Douglas\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb9dadeef0e27beee51d152faff8ca96}{%
+           family={Peck},
+           familyi={P\bibinitperiod},
+           given={Elizabeth\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=788c3b54381fbc8ef27cdf46201acf93}{%
+           family={Vining},
+           familyi={V\bibinitperiod},
+           given={G.\bibnamedelimi Geoffrey},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{fullhash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{fullhashraw}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{bibnamehash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{authorbibnamehash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{authornamehash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{authorfullhash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{authorfullhashraw}{99eadd8af988e76081d9186d2fd2c617}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5}
+      \field{isbn}{978-0-470-54281-1}
+      \field{title}{Introduction to Linear Regression Analysis}
+      \field{year}{2012}
+      \field{pages}{672}
+      \range{pages}{1}
+    \endentry
     \entry{saravanan2018}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ae886fa050dd3c6099a5bb3e2ae28e60}{%

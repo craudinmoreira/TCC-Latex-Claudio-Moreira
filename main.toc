@@ -23,22 +23,22 @@
 \contentsline {section}{\numberline {2.3}Regressão}{18}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Regressão Linear}{19}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Método dos quadrados ordinários}{20}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Modelo Ridge}{21}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Modelo Ridge}{22}{section.2.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Seção}}{23}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Seção}}{24}{chapter.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Conclusão}}{24}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Conclusão}}{25}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFERÊNCIAS}{25}{section*.22}%
+\contentsline {chapter}{REFERÊNCIAS}{26}{section*.24}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}{Descrição}}{27}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}{Descrição}}{28}{appendix.A}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}{Descrição}}{28}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}{Descrição}}{29}{appendix.anexochapback.1}%

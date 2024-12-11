@@ -19,193 +19,598 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
-    \entry{abntex2classe}{manual}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=3ebd20695bd75494918b0830766ddb8a}{%
-           family={Araujo},
+    \entry{andrade2017}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=517d218d24832f8d3b2af0f9957ef330}{%
+           family={Andrade},
            familyi={A\bibinitperiod},
-           given={Lauro\bibnamedelima César},
-           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Mauro\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=263278f0987e101402c1278896066c18}{%
+           family={Scottá},
+           familyi={S\bibinitperiod},
+           given={Fernando\bibnamedelima C.},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc8f050e1dda0c9df9ceb69d99bd2bd4}{%
+           family={Jr.},
+           familyi={J\bibinitperiod},
+           given={Elírio\bibnamedelimb E.\bibnamedelimi Toldo},
+           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55448d2d822ac8c563615835ae3738df}{%
+           family={Weschenfelder},
+           familyi={W\bibinitperiod},
+           given={Jair},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb64ac7fd2a2b3b1f093dd91f325da77}{%
+           family={Nunes},
+           familyi={N\bibinitperiod},
+           given={José\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
            givenun=0}}%
       }
-      \list{organization}{1}{%
-        {Equipe abnTeX2}%
+      \list{location}{1}{%
+        {Porto Alegre}%
       }
-      \strng{namehash}{3ebd20695bd75494918b0830766ddb8a}
-      \strng{fullhash}{3ebd20695bd75494918b0830766ddb8a}
-      \strng{fullhashraw}{3ebd20695bd75494918b0830766ddb8a}
-      \strng{bibnamehash}{3ebd20695bd75494918b0830766ddb8a}
-      \strng{authorbibnamehash}{3ebd20695bd75494918b0830766ddb8a}
-      \strng{authornamehash}{3ebd20695bd75494918b0830766ddb8a}
-      \strng{authorfullhash}{3ebd20695bd75494918b0830766ddb8a}
-      \strng{authorfullhashraw}{3ebd20695bd75494918b0830766ddb8a}
+      \list{publisher}{1}{%
+        {Associação Brasileira de Recursos Hídricos}%
+      }
+      \strng{namehash}{a7c9898320be01b41d2db37c912b1cae}
+      \strng{fullhash}{1ad42139710d3b96d590008dde047a5a}
+      \strng{fullhashraw}{1ad42139710d3b96d590008dde047a5a}
+      \strng{bibnamehash}{1ad42139710d3b96d590008dde047a5a}
+      \strng{authorbibnamehash}{1ad42139710d3b96d590008dde047a5a}
+      \strng{authornamehash}{a7c9898320be01b41d2db37c912b1cae}
+      \strng{authorfullhash}{1ad42139710d3b96d590008dde047a5a}
+      \strng{authorfullhashraw}{1ad42139710d3b96d590008dde047a5a}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{subtitle}{Modelo canônico de trabalhos acadêmicos brasileiros compatível com as normas ABNT NBR 14724:2011, ABNT NBR 6024:2012 e outras}
-      \field{title}{A classe abntex2}
-      \field{urlday}{16}
-      \field{urlmonth}{8}
-      \field{urlyear}{2019}
-      \field{year}{2015}
+      \field{booktitle}{XXII Simpósio Brasileiro de Recursos Hídricos}
+      \field{title}{Hidrodinâmica do Rio Guaíba: Resultados Preliminares}
+      \field{year}{2017}
+    \endentry
+    \entry{dataat2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=94918c1c7f165b10c16ba85b54546921}{%
+           family={At},
+           familyi={A\bibinitperiod},
+           given={Data},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{fullhash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{fullhashraw}{94918c1c7f165b10c16ba85b54546921}
+      \strng{bibnamehash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{authorbibnamehash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{authornamehash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{authorfullhash}{94918c1c7f165b10c16ba85b54546921}
+      \strng{authorfullhashraw}{94918c1c7f165b10c16ba85b54546921}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introdução ao Machine Learning: Regressão}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2024}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb http://www.abntex.net.br/
+      \verb https://dataat.github.io/introducao-ao-machine-learning/regress%C3%A3o.html
       \endverb
       \verb{url}
-      \verb http://www.abntex.net.br/
+      \verb https://dataat.github.io/introducao-ao-machine-learning/regress%C3%A3o.html
       \endverb
     \endentry
-    \entry{NBR14724:2011}{manual}{}{}
-      \name{shortauthor}{1}{}{%
-        {{un=0,uniquepart=base,hash=38a912c39deb03f17ea4697c1f80c809}{%
-           family={{Associação Brasileira de Normas Técnicas}},
-           familyi={A\bibinitperiod}}}%
+    \entry{carbonell1983}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=30ea103c14476461152f8ac59df347f3}{%
+           family={Carbonell},
+           familyi={C\bibinitperiod},
+           given={Jaime\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f6c61f3278ed43d773695fb44b48081}{%
+           family={Michalski},
+           familyi={M\bibinitperiod},
+           given={Ryszard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d331eeb7f00e650950ccadcb9c47efec}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={Tom\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
-        {Rio de Janeiro}%
+        {Berlin}%
       }
-      \list{organization}{1}{%
-        {Associação Brasileira de Normas Técnicas}%
+      \list{publisher}{1}{%
+        {Springer}%
       }
-      \strng{namehash}{38a912c39deb03f17ea4697c1f80c809}
-      \strng{bibnamehash}{38a912c39deb03f17ea4697c1f80c809}
-      \strng{shortauthorbibnamehash}{38a912c39deb03f17ea4697c1f80c809}
-      \strng{shortauthornamehash}{38a912c39deb03f17ea4697c1f80c809}
-      \strng{shortauthorfullhash}{38a912c39deb03f17ea4697c1f80c809}
-      \strng{shortauthorfullhashraw}{38a912c39deb03f17ea4697c1f80c809}
-      \field{extraname}{1}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \strng{namehash}{10dfb6958f8f5b4d3e67bd291c75d128}
+      \strng{fullhash}{10dfb6958f8f5b4d3e67bd291c75d128}
+      \strng{fullhashraw}{10dfb6958f8f5b4d3e67bd291c75d128}
+      \strng{bibnamehash}{10dfb6958f8f5b4d3e67bd291c75d128}
+      \strng{authorbibnamehash}{10dfb6958f8f5b4d3e67bd291c75d128}
+      \strng{authornamehash}{10dfb6958f8f5b4d3e67bd291c75d128}
+      \strng{authorfullhash}{10dfb6958f8f5b4d3e67bd291c75d128}
+      \strng{authorfullhashraw}{10dfb6958f8f5b4d3e67bd291c75d128}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \field{labelnamesource}{shortauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{subtitle}{informação e documentação: trabalhos acadêmicos: apresentação}
-      \field{title}{{NBR} 14724}
-      \field{year}{2011}
+      \field{title}{Machine Learning: An Artificial Intelligence Approach}
+      \field{year}{1983}
+      \field{pages}{619}
+      \range{pages}{1}
     \endentry
-    \entry{NBR6024:2012}{manual}{}{}
-      \name{shortauthor}{1}{}{%
-        {{un=0,uniquepart=base,hash=38a912c39deb03f17ea4697c1f80c809}{%
-           family={{Associação Brasileira de Normas Técnicas}},
-           familyi={A\bibinitperiod}}}%
+    \entry{g12024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c0497521d35d66866e3af408094864c3}{%
+           family={G1},
+           familyi={G\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {Rio de Janeiro}%
-      }
-      \list{organization}{1}{%
-        {Associação Brasileira de Normas Técnicas}%
-      }
-      \strng{namehash}{38a912c39deb03f17ea4697c1f80c809}
-      \strng{bibnamehash}{38a912c39deb03f17ea4697c1f80c809}
-      \strng{shortauthorbibnamehash}{38a912c39deb03f17ea4697c1f80c809}
-      \strng{shortauthornamehash}{38a912c39deb03f17ea4697c1f80c809}
-      \strng{shortauthorfullhash}{38a912c39deb03f17ea4697c1f80c809}
-      \strng{shortauthorfullhashraw}{38a912c39deb03f17ea4697c1f80c809}
-      \field{extraname}{2}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \strng{namehash}{c0497521d35d66866e3af408094864c3}
+      \strng{fullhash}{c0497521d35d66866e3af408094864c3}
+      \strng{fullhashraw}{c0497521d35d66866e3af408094864c3}
+      \strng{bibnamehash}{c0497521d35d66866e3af408094864c3}
+      \strng{authorbibnamehash}{c0497521d35d66866e3af408094864c3}
+      \strng{authornamehash}{c0497521d35d66866e3af408094864c3}
+      \strng{authorfullhash}{c0497521d35d66866e3af408094864c3}
+      \strng{authorfullhashraw}{c0497521d35d66866e3af408094864c3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \field{labelnamesource}{shortauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{subtitle}{informação e documentação: numeração progressiva das seções de um documento escrito: apresentação}
-      \field{title}{{NBR} 6024}
+      \field{title}{Santa Catarina registra enchente, queda de barreira e dia mais chuvoso de 2024}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://g1.globo.com/sc/santa-catarina/noticia/2024/05/19/sc-enchente-quedas-barreira-dia-mais-chuvoso.ghtml
+      \endverb
+      \verb{url}
+      \verb https://g1.globo.com/sc/santa-catarina/noticia/2024/05/19/sc-enchente-quedas-barreira-dia-mais-chuvoso.ghtml
+      \endverb
+    \endentry
+    \entry{helliwell2020}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=95655cfb39fd5b56fb4054732b661f08}{%
+           family={Helliwell},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5770966e1990b711f77606f7c96ba2e2}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Haifang},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=322023c9768a1822b55d801bd7a986e1}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shun},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75c58fc9e41d7a00132df0cd4699963c}{%
+           family={Norton},
+           familyi={N\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ea16bb7b9417906f0fdea0f0382a40a5}
+      \strng{fullhash}{1cad4f8556d455e1b3956373fad73946}
+      \strng{fullhashraw}{1cad4f8556d455e1b3956373fad73946}
+      \strng{bibnamehash}{1cad4f8556d455e1b3956373fad73946}
+      \strng{authorbibnamehash}{1cad4f8556d455e1b3956373fad73946}
+      \strng{authornamehash}{ea16bb7b9417906f0fdea0f0382a40a5}
+      \strng{authorfullhash}{1cad4f8556d455e1b3956373fad73946}
+      \strng{authorfullhashraw}{1cad4f8556d455e1b3956373fad73946}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{World Happiness Report 2020}
+      \field{title}{Social Environments for World Happiness}
+      \field{year}{2020}
+    \endentry
+    \entry{Jolly2018}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a426112369cbb409855a632fd2f8f1d4}{%
+           family={Jolly},
+           familyi={J\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Birmingham, UK}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{a426112369cbb409855a632fd2f8f1d4}
+      \strng{fullhash}{a426112369cbb409855a632fd2f8f1d4}
+      \strng{fullhashraw}{a426112369cbb409855a632fd2f8f1d4}
+      \strng{bibnamehash}{a426112369cbb409855a632fd2f8f1d4}
+      \strng{authorbibnamehash}{a426112369cbb409855a632fd2f8f1d4}
+      \strng{authornamehash}{a426112369cbb409855a632fd2f8f1d4}
+      \strng{authorfullhash}{a426112369cbb409855a632fd2f8f1d4}
+      \strng{authorfullhashraw}{a426112369cbb409855a632fd2f8f1d4}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Machine Learning with scikit-learn Quick Start Guide: Classification, Regression, and Clustering Techniques in Python}
+      \field{year}{2018}
+    \endentry
+    \entry{kirch2008}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=20cc1db200372cc43722b25bd0232cfa}{%
+           family={Kirch},
+           familyi={K\bibinitperiod},
+           given={Wilhelm},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \list{publisher}{1}{%
+        {Springer Netherlands}%
+      }
+      \strng{namehash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{fullhash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{fullhashraw}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{bibnamehash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{authorbibnamehash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{authornamehash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{authorfullhash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{authorfullhashraw}{20cc1db200372cc43722b25bd0232cfa}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Encyclopedia of Public Health}
+      \field{title}{Pearson’s Correlation Coefficient}
+      \field{year}{2008}
+      \field{pages}{1090\bibrangedash 1091}
+      \range{pages}{2}
+    \endentry
+    \entry{montgomery2012}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7d4a838891cb5c31eb1e3e089777efa0}{%
+           family={Montgomery},
+           familyi={M\bibinitperiod},
+           given={Douglas\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb9dadeef0e27beee51d152faff8ca96}{%
+           family={Peck},
+           familyi={P\bibinitperiod},
+           given={Elizabeth\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=788c3b54381fbc8ef27cdf46201acf93}{%
+           family={Vining},
+           familyi={V\bibinitperiod},
+           given={G.\bibnamedelimi Geoffrey},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{fullhash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{fullhashraw}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{bibnamehash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{authorbibnamehash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{authornamehash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{authorfullhash}{99eadd8af988e76081d9186d2fd2c617}
+      \strng{authorfullhashraw}{99eadd8af988e76081d9186d2fd2c617}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5}
+      \field{isbn}{978-0-470-54281-1}
+      \field{title}{Introduction to Linear Regression Analysis}
       \field{year}{2012}
-    \endentry
-    \entry{ibge2016}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=638eed94c97a4776d2d0e13ee4adbf12}{%
-           family={{Instituto Brasileiro de Geografia e Estatística}},
-           familyi={I\bibinitperiod}}}%
-      }
-      \name{shortauthor}{1}{}{%
-        {{un=0,uniquepart=base,hash=638eed94c97a4776d2d0e13ee4adbf12}{%
-           family={{Instituto Brasileiro de Geografia e Estatística}},
-           familyi={I\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Rio de Janeiro}%
-      }
-      \list{organization}{1}{%
-        {Instituto Brasileiro de Geografia e Estatística}%
-      }
-      \list{publisher}{1}{%
-        {Centro de Documentação e Disseminação de Informações}%
-      }
-      \strng{namehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{fullhash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{fullhashraw}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{bibnamehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{authorbibnamehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{authornamehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{authorfullhash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{authorfullhashraw}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{shortauthorbibnamehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{shortauthornamehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{shortauthorfullhash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{shortauthorfullhashraw}{638eed94c97a4776d2d0e13ee4adbf12}
-      \field{extraname}{1}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{shortauthor}
-      \field{labeltitlesource}{title}
-      \field{edition}{2}
-      \field{title}{Arranjos populacionais e concentrações urbanas no Brasil}
-      \field{year}{2016}
-      \field{pages}{167}
+      \field{pages}{672}
       \range{pages}{1}
     \endentry
-    \entry{ibge1993}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=638eed94c97a4776d2d0e13ee4adbf12}{%
-           family={{Instituto Brasileiro de Geografia e Estatística}},
-           familyi={I\bibinitperiod}}}%
-      }
-      \name{shortauthor}{1}{}{%
-        {{un=0,uniquepart=base,hash=638eed94c97a4776d2d0e13ee4adbf12}{%
-           family={{Instituto Brasileiro de Geografia e Estatística}},
-           familyi={I\bibinitperiod}}}%
+    \entry{saravanan2018}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ae886fa050dd3c6099a5bb3e2ae28e60}{%
+           family={Saravanan},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eda2aa1071652c392ad02d422a4be065}{%
+           family={Sujatha},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
-        {Rio de Janeiro}%
-      }
-      \list{organization}{1}{%
-        {Fundação Instituto Brasileiro de Geografia e Estatística}%
+        {Puducherry}%
       }
       \list{publisher}{1}{%
-        {Centro de Documentação e Disseminação de Informações}%
+        {IEEE}%
       }
-      \strng{namehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{fullhash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{fullhashraw}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{bibnamehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{authorbibnamehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{authornamehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{authorfullhash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{authorfullhashraw}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{shortauthorbibnamehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{shortauthornamehash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{shortauthorfullhash}{638eed94c97a4776d2d0e13ee4adbf12}
-      \strng{shortauthorfullhashraw}{638eed94c97a4776d2d0e13ee4adbf12}
-      \field{extraname}{2}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \strng{namehash}{fbb5bec0663bc74ee3d00b6aa9afc604}
+      \strng{fullhash}{fbb5bec0663bc74ee3d00b6aa9afc604}
+      \strng{fullhashraw}{fbb5bec0663bc74ee3d00b6aa9afc604}
+      \strng{bibnamehash}{fbb5bec0663bc74ee3d00b6aa9afc604}
+      \strng{authorbibnamehash}{fbb5bec0663bc74ee3d00b6aa9afc604}
+      \strng{authornamehash}{fbb5bec0663bc74ee3d00b6aa9afc604}
+      \strng{authorfullhash}{fbb5bec0663bc74ee3d00b6aa9afc604}
+      \strng{authorfullhashraw}{fbb5bec0663bc74ee3d00b6aa9afc604}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \field{labelnamesource}{shortauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{3}
-      \field{title}{Normas de apresentação tabular}
-      \field{year}{1993}
-      \field{pages}{62}
+      \field{booktitle}{Proceedings of the Second International Conference on Intelligent Computing and Control Systems (ICICCS 2018)}
+      \field{title}{A State of Art Techniques on Machine Learning: A Perspective of Supervised Learning Approaches in Data Classification}
+      \field{year}{2018}
+    \endentry
+    \entry{sassi2012}{report}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=0dc9975bb847539ce47796bf354821cf}{%
+           family={Sassi},
+           familyi={S\bibinitperiod},
+           given={Cecília\bibnamedelima P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36324003caae09e1f13995e3c85b234e}{%
+           family={Perez},
+           familyi={P\bibinitperiod},
+           given={Felipe\bibnamedelima G.},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01668b78cf13e75c6cc92e7032427f39}{%
+           family={Myazato},
+           familyi={M\bibinitperiod},
+           given={Letícia},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8cc29bcdbe6532d6586c26de6a784e71}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=695dcd9e688f1469365d48c675ba8fd7}{%
+           family={Ferreira-Silva},
+           familyi={F\bibinithyphendelim S\bibinitperiod},
+           given={Paulo\bibnamedelima H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=853474e80645777a21b60bf81c620c06}{%
+           family={Louzada},
+           familyi={L\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {ICMC – USP}%
+      }
+      \list{location}{1}{%
+        {São Carlos, SP, Brasil}%
+      }
+      \strng{namehash}{f7903452d84e11c0d55165a3fa677f61}
+      \strng{fullhash}{5d9570584252ab53a0dd36ba818e8739}
+      \strng{fullhashraw}{5d9570584252ab53a0dd36ba818e8739}
+      \strng{bibnamehash}{5d9570584252ab53a0dd36ba818e8739}
+      \strng{authorbibnamehash}{5d9570584252ab53a0dd36ba818e8739}
+      \strng{authornamehash}{f7903452d84e11c0d55165a3fa677f61}
+      \strng{authorfullhash}{5d9570584252ab53a0dd36ba818e8739}
+      \strng{authorfullhashraw}{5d9570584252ab53a0dd36ba818e8739}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Relatórios Técnicos}
+      \field{number}{377}
+      \field{title}{Modelos de Regressão Linear Múltipla Utilizando os Softwares R e STATISTICA: Uma Aplicação a Dados de Conservação de Frutas}
+      \field{type}{techreport}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb http://www.icmc.usp.br
+      \endverb
+      \verb{url}
+      \verb http://www.icmc.usp.br
+      \endverb
+    \endentry
+    \entry{aws2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4d7e5f784bb5801c23c91ba37ed2649d}{%
+           family={Services},
+           familyi={S\bibinitperiod},
+           given={Amazon\bibnamedelima Web},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{fullhash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{fullhashraw}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{bibnamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authorbibnamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authornamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authorfullhash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authorfullhashraw}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{O que é regressão linear?}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/pt/what-is/linear-regression/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/pt/what-is/linear-regression/
+      \endverb
+    \endentry
+    \entry{soczi2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c6aeb8e89130e21dc498b4388137bb8}{%
+           family={Soczi},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{fullhash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{fullhashraw}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{bibnamehash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{authorbibnamehash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{authornamehash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{authorfullhash}{4c6aeb8e89130e21dc498b4388137bb8}
+      \strng{authorfullhashraw}{4c6aeb8e89130e21dc498b4388137bb8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ridge Regression Step-by-Step: Introduction with Example}
+      \field{urlday}{18}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@msoczi/ridge-regression-step-by-step-introduction-with-example-0d22dddb7d54
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@msoczi/ridge-regression-step-by-step-introduction-with-example-0d22dddb7d54
+      \endverb
+    \endentry
+    \entry{soto2013}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4023f266ce132b1924c19687448b285c}{%
+           family={Soto},
+           familyi={S\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=f9a43d462fc2c827cea3769ed712f3f0}{%
+           family={Volkmar},
+           familyi={V\bibinitperiod},
+           given={Fred\bibnamedelima R.},
+           giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{4023f266ce132b1924c19687448b285c}
+      \strng{fullhash}{4023f266ce132b1924c19687448b285c}
+      \strng{fullhashraw}{4023f266ce132b1924c19687448b285c}
+      \strng{bibnamehash}{4023f266ce132b1924c19687448b285c}
+      \strng{authorbibnamehash}{4023f266ce132b1924c19687448b285c}
+      \strng{authornamehash}{4023f266ce132b1924c19687448b285c}
+      \strng{authorfullhash}{4023f266ce132b1924c19687448b285c}
+      \strng{authorfullhashraw}{4023f266ce132b1924c19687448b285c}
+      \strng{editorbibnamehash}{f9a43d462fc2c827cea3769ed712f3f0}
+      \strng{editornamehash}{f9a43d462fc2c827cea3769ed712f3f0}
+      \strng{editorfullhash}{f9a43d462fc2c827cea3769ed712f3f0}
+      \strng{editorfullhashraw}{f9a43d462fc2c827cea3769ed712f3f0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Encyclopedia of Autism Spectrum Disorders}
+      \field{title}{Regression Analysis}
+      \field{year}{2013}
+      \field{pages}{2538\bibrangedash 2538}
       \range{pages}{1}
+    \endentry
+    \entry{veja2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bc81342358fefad2824d91a3cd546296}{%
+           family={VEJA},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc81342358fefad2824d91a3cd546296}
+      \strng{fullhash}{bc81342358fefad2824d91a3cd546296}
+      \strng{fullhashraw}{bc81342358fefad2824d91a3cd546296}
+      \strng{bibnamehash}{bc81342358fefad2824d91a3cd546296}
+      \strng{authorbibnamehash}{bc81342358fefad2824d91a3cd546296}
+      \strng{authornamehash}{bc81342358fefad2824d91a3cd546296}
+      \strng{authorfullhash}{bc81342358fefad2824d91a3cd546296}
+      \strng{authorfullhashraw}{bc81342358fefad2824d91a3cd546296}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{De 1941 a 2024: por que as enchentes são um desafio constante no Rio Grande do Sul}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://veja.abril.com.br/ciencia/de-1941-a-2024-porque-as-enchentes-sao-desafio-constante-no-rs
+      \endverb
+      \verb{url}
+      \verb https://veja.abril.com.br/ciencia/de-1941-a-2024-porque-as-enchentes-sao-desafio-constante-no-rs
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

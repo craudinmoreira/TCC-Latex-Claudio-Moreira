@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  26 NOV 2024 20:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  10 DEC 2024 23:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1497,27 +1497,32 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 {C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [17]
-<figuras/happiness_world.png, id=198, 889.8846pt x 483.4863pt>
+<figuras/happiness_world.png, id=203, 889.8846pt x 483.4863pt>
 File: figuras/happiness_world.png Graphic file (type png)
 <use figuras/happiness_world.png>
 Package pdftex.def Info: figuras/happiness_world.png  used on input line 52.
 (pdftex.def)             Requested size: 355.94754pt x 193.39108pt.
  [18{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc} <./figuras/happiness_world.png>]
-<figuras/correlations.png, id=217, 970.1043pt x 169.1118pt>
+<figuras/correlations.png, id=222, 970.1043pt x 169.1118pt>
 File: figuras/correlations.png Graphic file (type png)
 <use figuras/correlations.png>
 Package pdftex.def Info: figuras/correlations.png  used on input line 71.
 (pdftex.def)             Requested size: 388.03484pt x 67.64351pt.
- [19{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./figuras/correlations.png>]
-<figuras/min_sqr.png, id=243, 587.796pt x 413.3844pt>
+ [19{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./figuras/correlations.png>] [20]
+<figuras/min_sqr.png, id=258, 587.796pt x 413.3844pt>
 File: figuras/min_sqr.png Graphic file (type png)
 <use figuras/min_sqr.png>
-Package pdftex.def Info: figuras/min_sqr.png  used on input line 121.
+Package pdftex.def Info: figuras/min_sqr.png  used on input line 142.
 (pdftex.def)             Requested size: 352.68031pt x 248.03255pt.
- [20] [21 <./figuras/min_sqr.png>]) [22]
+<figuras/ols-steps.png, id=264, 1151.502pt x 563.4651pt>
+File: figuras/ols-steps.png Graphic file (type png)
+<use figuras/ols-steps.png>
+Package pdftex.def Info: figuras/ols-steps.png  used on input line 152.
+(pdftex.def)             Requested size: 403.03174pt x 197.21574pt.
+ [21 <./figuras/min_sqr.png>] [22 <./figuras/ols-steps.png>]) [23]
 \openout2 = `capitulos/cap_3.aux'.
 
- (capitulos/cap_3.tex) [23
+ (capitulos/cap_3.tex) [24
 
 
 
@@ -1525,18 +1530,18 @@ Package pdftex.def Info: figuras/min_sqr.png  used on input line 121.
 ]
 \openout2 = `capitulos/cap_4.aux'.
 
- (capitulos/cap_4.tex) [24
+ (capitulos/cap_4.tex) [25
 
 
 
 
-] [25
+] [26
 
 
 
-] (pos_textual/apendice_a.tex [26]) (pos_textual/anexo_a.tex [27
+] (pos_textual/apendice_a.tex [27]) (pos_textual/anexo_a.tex [28
 
-]) [28
+]) [29
 
 ]
 \tf@lof=\write6
@@ -1561,17 +1566,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37514 strings out of 474424
- 684999 string characters out of 5741740
- 1942496 words of memory out of 5000000
- 59113 multiletter control sequences out of 15000+600000
- 596714 words of font info for 105 fonts, out of 8000000 for 9000
+ 37539 strings out of 474424
+ 685623 string characters out of 5741740
+ 1943496 words of memory out of 5000000
+ 59132 multiletter control sequences out of 15000+600000
+ 596805 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,17n,121p,2474b,4454s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (29 pages, 1035695 bytes).
+Output written on main.pdf (30 pages, 1371360 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 20777 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 495 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 20782 words of extra memory for PDF output out of 24883 (max. 10000000)
 

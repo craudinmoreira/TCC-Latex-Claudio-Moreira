@@ -42,9 +42,9 @@ Os quatro principais tipos de ML são: supervisionado, não supervisionado, semi
 
 A partir da necessidade de realizar previsões, visando compreender e estimar a dinâmica dos fenômenos estudados, a regressão se apresenta como uma ferramenta que busca modelar relações entre variáveis dependentes e independentes através de métodos estatísticos \cite{soto2013}.
 
-Em uma equação linear, uma variável independente, comumente representada pela letra $x$, caracteriza uma grandeza que está sendo manipulada durante um experimento. Dado esse comportamento, a variável $x$ não sofre influência de outras variáveis. A variável independente, normalmente representada pela letra $y$, caracteriza valores que estão diretamente associados à variável independente. Assim, de forma direta ou indireta, $x$ excerce influência sobre $y$.
+Em uma equação linear, uma variável independente, comumente representada pela letra $x$, caracteriza uma grandeza que está sendo manipulada durante um experimento. Dado esse comportamento, a variável $x$ não sofre influência de outras variáveis. A variável dependente, comumente representada pela letra $y$, caracteriza valores que estão diretamente associados à variável independente. Assim, de forma direta ou indireta, $x$ excerce influência sobre $y$.
 
-Na figura \ref{fig:regressao_exemplo}, a fim de exemplificar um caso de regressão, é apresentada a relação entre a expectativa de vida baseada e um índice de felicidade calculado em diversos países obtidos a partir de um levantamento feito por \cite{helliwell2020}. Neste estudo, a variável independente é representada pelo índice de felicidade, enquanto a expectativa de vida representa a variável independente. Desse modo, uma análise visual do gráfico permite inferir uma tendência de expectativa de vida maior em países com alto índice de felicidade. 
+Na Figura \ref{fig:regressao_exemplo}, a fim de exemplificar um caso de regressão, é apresentada a relação entre a expectativa de vida baseada e um índice de felicidade calculado em diversos países obtidos a partir de um levantamento feito por \cite{helliwell2020}. Neste estudo, a variável independente é representada pelo índice de felicidade, enquanto a expectativa de vida representa a variável independente. Desse modo, uma análise visual do gráfico permite inferir uma tendência de expectativa de vida maior em países com alto índice de felicidade. 
 
 \begin{figure}[H]
 	\caption{\label{fig:regressao_exemplo}Relação entre o índice de felicidade e expectativa de vida.}
@@ -73,13 +73,13 @@ A Figura \ref{fig:correlacoes} mostra alguns exemplos com gráficos de dispersã
 	\fonte{\cite{helliwell2020}}
 \end{figure}
 
-Com a aplicação do método de correlação, torna-se possível estimar valores não existentes na amostra ou conjunto de dados, dando forma a uma abordagem preliminar de previsão de dados. Todavia, em casos onde a correlação entre as variáveis é baixa, a previsão de valores passa a ser menos precisa e acurada, sendo necessário outras abordagens mais robustas para realizar as previsões. Em ML, os modelos de regressão podem ser criados a partir de diversos métodos, com ajustes de parâmetros simples ou complexos que auxiliam no ajuste do modelo e seu desempenho na situação aplicada.
+Sendo assim, com o cálculo do coeficiente indicando uma alta correlação entre os dados estudados, os métodos de regressão utilizam esta premissa entre as variáveis para estimar valores não existentes no conjunto de dados. Contudo, o coeficiente de correlação também pode mostrar variáveis que não interferem na dinâmica uma da outra no conjunto de informações analisadas, tornando necessário o uso de algoritmos robustos, que dispensam esse o fator de correlação para realizar as previsões desejadas. 
 
 \section{Regressão Linear}
 
-A regressão linear é uma técnica de análise de dados que permite estimar valores desconhecidos com base em variáveis conhecidas relacionadas. Esse modelo representa a relação entre uma variável dependente, que se deseja prever, e uma ou mais variáveis independentes através de uma equação linear \cite{aws2024}.
+A técnica de regressão linear é amplamente utilizada em praticamente todos os campos de estudo, como engenharia, ciências físicas e químicas, economia, gestão, ciências biológicas e da vida, e ciências sociais. Em casos onde se deseja estabelcer uma relação entre uma variável preditora ou regressora (normalmente representada por $x$) e uma variável resposta (representada por $y$), a descrição dessa relação por meio de uma equação linear configura a implementação da técnica para a modelagem do problema estudado \cite{montgomery2012}.  
 
-A aplicação da técnica é relevante devido à sua simplicidade e capacidade de fornecer previsões baseadas em uma fórmula matemática interpretável. Além disso, o método é base para implementações de algoritmos na área de ciência de dados, como aprendizado de máquina, otimizando o processamento de dados complexos e viabilizando a criação de modelos de previsão.\cite{aws2024}.
+A aplicação da técnica é relevante devido à sua simplicidade e capacidade de fornecer previsões baseadas em uma fórmula matemática interpretável. Além disso, o método é base para implementações de algoritmos na área de ciência de dados, como aprendizado de máquina, otimizando o processamento de dados complexos e viabilizando a criação de modelos de previsão \cite{aws2024}.
 
 O método de regressão linear é dividido em dois grupos, sendo eles: regressão linear simples (RLS) e regressão linear múltipla (RLM). A RLS tem como objetivo estabelecer uma relação entre duas variáveis através de uma função, cuja definição é dada por:
 
@@ -113,7 +113,28 @@ onde:
     \item $\beta_{0}$ e $\beta_{j}$ são os parâmetros do modelo que serão estimados, e que definem a reta de regressão
 \end{itemize}
 
-Desse modo, a partir de um problema onde uma ou mais entradas geram amostras que resultam em uma saída, torna-se possível estimar uma função que melhor representa seu comportamento, minimzando ao máximo o valor da soma residual dos quadrados entre os pontos amostrais e a curva do modelo. 
+Desse modo, a partir de um problema onde uma ou mais entradas geram amostras que resultam em uma saída, torna-se possível estimar uma função que melhor representa seu comportamento, minimizando ao máximo o valor da soma residual dos quadrados entre os pontos amostrais e a curva do modelo. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Variável Independente} & \textbf{Variável Dependente} \\
+\hline
+0,38 & 6,98 \\
+0,41 & 4,05 \\
+0,44 & 5,52 \\
+0,59 & 6,93 \\
+0,98 & 6,57 \\
+1,04 & 6,41 \\
+1,22 & 8,27 \\
+1,53 & 6,93 \\
+1,74 & 8,89 \\
+1,84 & 9,31 \\
+\hline
+\end{tabular}
+\caption{Tabela de Valores Ordenados: Variável Independente vs. Variável Dependente}
+\end{table}
 
 \begin{figure}[htb]
 	\caption{\label{fig:minimos_quadrados}Exemplo do método dos quadrados ordinários.}
@@ -122,6 +143,18 @@ Desse modo, a partir de um problema onde uma ou mais entradas geram amostras que
 	\end{center}
 	\fonte{\cite{dataat2024}}
 \end{figure}
+
+No exemplo da Figura \ref{fig:minimos_quadrados}, para chegar aos coeficientes que determinam a melhor regressão linear para os pontos amostrados no gráfico, $\alpha$ e $\beta$ foram ajustados utilizando derivadas parciais, de tal tal forma que o erro quadrático médio entre entre a função e cada um dos pontos fossem a menor possível.
+
+\begin{figure}[htb]
+	\caption{\label{fig:ajuste_regressao_linear}Ajuste da regressão linear por método dos quadrados ordinários.}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/ols-steps.png}
+	\end{center}
+	\fonte{\cite{dataat2024}}
+\end{figure}
+
+Assim, a cada ponto selecionado da amostra, é calculada a derivada parcial da função estimada, determinando novos coeficiente que melhor descrevem a reta entre as amostras. Dado que não é possível estimar uma reta que passe sobre todos os pontos amostrados, os resíduos representados pelas linhas tracejadas na Figura \ref{fig:ajuste_regressao_linear} são definidos de tal modo que o somatório dos seus quadrados seja o menor possível.
 
 \section{Modelo Ridge}
 
