@@ -77,29 +77,93 @@ Sendo assim, com o cálculo do coeficiente indicando uma alta correlação entre
 
 \section{Regressão Linear}
 
-A técnica de regressão linear é amplamente utilizada em praticamente todos os campos de estudo, como engenharia, ciências físicas e químicas, economia, gestão, ciências biológicas e da vida, e ciências sociais. Em casos onde se deseja estabelcer uma relação entre uma variável preditora ou regressora (normalmente representada por $x$) e uma variável resposta (representada por $y$), a descrição dessa relação por meio de uma equação linear configura a implementação da técnica para a modelagem do problema estudado \cite{montgomery2012}.  
+A técnica de regressão linear é amplamente utilizada nos campos de estudo da engenharia, ciências físicas e químicas, economia, gestão, ciências biológicas e da vida, e ciências sociais. Em casos onde se deseja estabelcer uma relação entre uma variável preditora ou regressora (normalmente representada por $x$) e uma variável resposta (representada por $y$), a descrição dessa relação por meio de uma equação linear configura a implementação da técnica para a modelagem do problema estudado \cite{montgomery2012}.  
 
-A aplicação da técnica é relevante devido à sua simplicidade e capacidade de fornecer previsões baseadas em uma fórmula matemática interpretável. Além disso, o método é base para implementações de algoritmos na área de ciência de dados, como aprendizado de máquina, otimizando o processamento de dados complexos e viabilizando a criação de modelos de previsão \cite{aws2024}.
+A aplicação da técnica é relevante devido à sua simplicidade e capacidade de fornecer previsões baseadas em uma fórmula matemática interpretável. Além disso, o método é base para implementações de algoritmos na área de ciência de dados como aprendizado de máquina, otimizando o processamento de dados complexos e viabilizando a criação de modelos de previsão \cite{aws2024}.
 
-O método de regressão linear é dividido em dois grupos, sendo eles: regressão linear simples (RLS) e regressão linear múltipla (RLM). A RLS tem como objetivo estabelecer uma relação entre duas variáveis através de uma função, cuja definição é dada por:
+O método de regressão linear é dividido em dois grupos, sendo eles: regressão linear simples (RLS) e regressão linear múltipla (RLM) \cite{montgomery2012}. A RLS tem como objetivo estabelecer uma relação entre duas variáveis através de uma função, cuja definição é dada por:
 
 \begin{equation}
-	y_i = \alpha + \beta x_i 
+	y = \beta_0 + \beta_1 x + \varepsilon
+	\label{eq:regressao_linear_simples}
 \end{equation}
 
-Onde $y_i$ é a variável alvo, enquanto $\alpha$ e $\beta$ são coeficientes calculados pela regressão, que representam o intercepto no eixo Y e a inclinação da reta, respectivamente.
+Onde $y$ é a variável alvo, $x$ a variável regressora, enquanto $\beta_0$ e $\beta_1$ são coeficientes calculados pela regressão, que representam o intercepto no eixo Y e a inclinação da reta, respectivamente.
 
 A RLM, embora seja semelhante à RLS, possui múltiplas variáveis preditoras, sendo definida por:
 
 \begin{equation}
-	y_i = \alpha + \beta x_{i1} + \beta x_{i2} + ... + \beta x_{in}
+	y = \beta_0 + \beta_1 x_{1} + \beta_2 x_{2} + ... + \beta_k x_{k} + \varepsilon
+	\label{eq:regressao_linear_multipla}
 \end{equation}
 
-Onde $y_i$ é a variável alvo, $\alpha$ permanece sendo o coeficiente de intercepto do eixo Y enquanto $\beta_1$ a $\beta_n$ representam os coeficientes associados à n-ésima variável \cite{sassi2012}.
+Onde $y$ é a variável alvo, $x_{1}$ a $x_{k}$ as variáveis regressoras, e $\beta_0$ permanece sendo o coeficiente de intercepto do eixo Y enquanto $\beta_1$ a $\beta_n$ representam os coeficientes associados à n-ésima variável \cite{sassi2012}.
+
+Em \ref{eq:regressao_linear_simples} e \ref{eq:regressao_linear_multipla}, nota-se a presença do erro estatístico representado por $\varepsilon$, que é a diferença entre o valor observado e o valor previsto pela equação de regressão. Esse erro é considerado aleatório e contabiliza a falha do modelo ao tentar se aproximar do comportamento denotado pelos dados amostrados \cite{montgomery2012}.
+
+Partindo para um cenário ideal, a fim de se ter uma melhor compreensão do modelo de regressão linear, assume-se que seja possível fixar o valor da variável regressora $x$ ao observar um valor $y$ correspondente. Partindo dessa premissa, todos os valores do lado direito da equação \ref{eq:regressao_linear_simples} são conhecidos, exceto o erro $\varepsilon$, que passa a determinar as propriedades de $y$. Realizando outra suposição, onde a média e a variância de $\varepsilon$ são iguais a zero e $\sigma^2$, respectivamente \cite{montgomery2012}, a resposta média para qualquer valor da variável regressora é dada por:
+
+\begin{equation}
+	E(y \mid x) = \mu_{y \mid x} = E(\beta_0 + \beta_1x + \varepsilon) = \beta_0 + \beta_1x
+\end{equation}
+
+e a variância é dada por:
+
+\begin{equation}
+	Var (y \mid x) = \sigma_{y \mid x}^2 = Var(\beta_0 + \beta_1x + \varepsilon) = \sigma^2
+\end{equation}
+
+Desse modo, o modelo de regressão verdadeiro $\mu_{y \mid x} = \beta_0 + \beta_1x$ representa uma linha de valores médios, ou seja, a altura da linha de regressão em qualquer valor de x corresponde ao valor esperado de y para aquele x.
+
+Para exemplificar a suposição acima, tem-se um modelo de regressão ilustrado pela Figura \ref{fig:observacoes_regressao_linear}, onde $\mu_{y \mid x} = 3,5 + 2x$, com variância $\sigma^2 = 2$. Nota-se que uma distribuição normal é utulizada para descrever a variação aleatória do erro $\varepsilon$. Estabelecido que $y$ é a soma de uma constante $\beta_0 + \beta_1x$ (a média) e uma variável aleatória normalmente distribuída, é possível inferir que $y$ também segue uma distribuição normal. No mesmo exemplo, se $x = 10$ casos, $y$ terá distribuição normal com média $\mu_{y \mid x} = 3,5 + 2(10) = 23,5$ e variância $\sigma^2 = 2$. Quanto menor a variância, mais próximos os pontos estarão da linha de regressão, enquanto uma variância maior resultará em pontos mais dispersos em relação à linha de regressão \cite{montgomery2012}.
+
+A maioria dos fênomenos nos quais se deseja obter a função que descreve o seu comportamento resulta em uma aproximação funcional através das variáveis de interesse. Essas relações funcionais frequentemente baseiam-se em teorias físicas, químicas ou de engenharia e ciências, ou seja, no conhecimento do mecanismo subjacente. Na Figura \ref{fig:regressao_linear_aprox_relacao_complexa}, é mostrada uma relação entre as variáveis $x$ e $y$ relativamente complexa, mas que pode ser aproximada de por uma equação de regressão linear, com um erro relativamente baixo.
+
+\begin{figure}[H]
+	\centering
+	\caption{Interpretação de uma regressão linear}
+	\begin{subfigure}{0.4\textwidth}
+	  \includegraphics[width=\linewidth]{figuras/how_observations_are_generated_in_linear_regression.png}
+	  \caption{Como as observações são geradas na regressão linear}
+	  \label{fig:observacoes_regressao_linear}
+	\end{subfigure}
+	\hspace{0.5cm}
+	\begin{subfigure}{0.4\textwidth} 
+		\includegraphics[width=\linewidth]{figuras/linear_regression_approximation_of_a_complex_relationship.png}
+		\caption{Regressão linear como aproximação de uma relação complexa}
+		\label{fig:regressao_linear_aprox_relacao_complexa}
+	\end{subfigure}
+	\label{fig:comportamento_regressao_linear}
+	\fonte{\cite{montgomery2012}}
+\end{figure}
+
+Contudo, em alguns casos, quando a dinâmica do modelo a ser estimada passa a ter um grau de complexidade maior, como é o caso da Figura \ref{fig:aproximacao_linear_complexa}, utlizar uma RLS pode implicar em erros que extrapolam a tolerância exigida no estudo. Nesses cenários, utilizar uma função de regressão linear em intervalos específicos, ou seja, uma RLM, se torna uma alternativa plausível, tendo em vista que, para intervalos menores onde a dinâmica do fênômeno é mais linear, a regressão apresenta um erro menor, como mostra a Figura \ref{fig:intervalo_aplicacao_rls}.
+
+\begin{figure}[H]
+	\centering
+	\caption{Situações de inadequação da RLS}
+	\begin{subfigure}{0.4\textwidth}
+	  \includegraphics[width=\linewidth]{figuras/piecewise_linear_approximation.png}
+	  \caption{Aproximação Linear complexa}
+	  \label{fig:aproximacao_linear_complexa}
+	\end{subfigure}
+	\hspace{0.5cm}
+	\begin{subfigure}{0.4\textwidth} 
+		\includegraphics[width=\linewidth]{figuras/danger_extrapolation_regression.png}
+		\caption{Intervalo de aplicação da RLS}
+		\label{fig:intervalo_aplicacao_rls}
+	\end{subfigure}
+	\label{fig:comportamento_regressao_linear}
+	\fonte{\cite{montgomery2012}}
+\end{figure}
+
+Partindo desses conceitos, para implementação de modelos de regressão linear e múltipla, o método dos Mínimos Quadrados Ordinários se apresenta como uma abordagem para estimar a melhor regressão dos pontos observados, encontrando uma reta com o menor erro entre as amostras e os valores da função estudada.
 
 \section{Método dos quadrados ordinários}
 
-O modelo de treinamento utilizando regressão linear consiste em  encontrar os valores apropriados para os coeficientes, determinando assim a dinâmica da função a ser estimada \cite{soczi2024}. Isso é feito usando o método dos mínimos quadrados, onde procura-se os valores que minimizam a Soma Residual dos Quadrados (RSS):
+O método dos Mínimos Quadrados Orinários (MQO) atua como uma ferramenta estatística, visando estimar a relação entre uma variável dependente e uma ou mais variáveis independentes \cite{Alkama2020}, permitindo encontrar os coeficientes desejados para o funcionamento do modelo.
+
+Isso é feito usando o método dos mínimos quadrados, onde procura-se os valores que minimizam a Soma Residual dos Quadrados (RSS):
 
 \begin{equation}
     RSS = \sum_{i=1}^{n} \left(y_i - \beta_0 - \sum_{j=1}^{p}\beta_jx_{ij}\right)
@@ -136,6 +200,8 @@ Desse modo, a partir de um problema onde uma ou mais entradas geram amostras que
 \caption{Tabela de Valores Ordenados: Variável Independente vs. Variável Dependente}
 \end{table}
 
+A Tabela 1 apresenta um exemplo de dados amostrais, onde a variável independente é representada pela primeira coluna e a variável dependente pela segunda coluna. A partir desses dados, é possível aplicar o método dos mínimos quadrados para encontrar os coeficientes que melhor se ajustam à reta de regressão linear.
+
 \begin{figure}[htb]
 	\caption{\label{fig:minimos_quadrados}Exemplo do método dos quadrados ordinários.}
 	\begin{center}
@@ -158,23 +224,29 @@ Assim, a cada ponto selecionado da amostra, é calculada a derivada parcial da f
 
 \section{Modelo Ridge}
 
-O modelo Ridge, implementado na biblioteca \textit{scikit-learn} do Python, é uma variação da regressão linear que incorpora um termo de regularização L2 à função de custo, o que ajuda a controlar a complexidade do modelo e prevenir o sobreajuste (\textit{overfitting}). Com essa caracterísica, o método é indicado em casos onde os dados apresentam colinearidade ou onde há muitas variáveis independentes \cite{Jolly2018}.
-
-A regressão linear padrão visa minimizar a soma dos erros quadráticos (Erro Quadrático Médio ou MSE) entre as previsões e os valores reais. No entanto, em casos onde o dataset apresenta muitos recursos ou quando os dados apresentam correlações entre as variáveis, o modelo tende a se ajustar demais aos dados de treinamento (\textit{overfitting}). A fim de contornar tal problema, o modelo Ridge adiciona um termo de penalidade à função de custo, que regula o tamanho dos coeficientes do modelo. Esse comportamento é observado na função de custo do modelo, com a adição de um hiperparâmetro $\lambda$ em relação ao modelo de regressão linear padrão.
+O modelo Ridge, implementado na biblioteca \textit{scikit-learn} do Python, é uma variação da regressão linear de MQO que incorpora um termo de regularização L2 à função de custo, o que ajuda a controlar a complexidade do modelo e prevenir o sobreajuste (\textit{overfitting}), ou seja, o treinamento de um modelo que não é capaz de realizar previsões em outros cenários, exceto aquele que lhe foi passado no treinamento \cite{ScikitLearnRidge2025}. Com essa caracterísica, o método é indicado em casos onde os dados apresentam colinearidade ou onde há muitas variáveis independentes \cite{Jolly2018}.
 
 \begin{equation}
-    J(\theta) = \frac{1}{m}\sum_{i=1}^{m}\left(h_{\theta}(x^{(i)})- y^{(i)}\right)^2 + \lambda\sum_{j=1}^{n}\theta^{2}_{j}
+	J(\beta) = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \alpha \sum_{j=1}^{p} \beta_j^2
 \end{equation}
 
-onde:
+No primeiro termo, oberva-se o somatório dos erros quadráticos, semlhante ao método MQO. No segundo termo, é aplicada a penalização L2, que é a soma dos quadrados dos coeficientes do modelo, multiplicada por um hiperparâmetro $\alpha$ que controla a intensidade da regularização. O valor de $\alpha$ deve ser ajustado para encontrar o equilíbrio entre o ajuste do modelo e a complexidade do mesmo \cite{ScikitLearnRidge2025}.
 
-\begin{itemize}
-    \item $\lambda$ é o hiperparâmetro que controla a intensidade da regularização;
-    \item $\theta_{j}$ são os coeficientes (ou pesos) do modelo;
-    \item Quanto maior o valor de $\lambda$, maior será a penalização para grandes coeficientes, resultando em um modelo mais simples.
-\end{itemize}
+% A regressão linear padrão visa minimizar a soma dos erros quadráticos (Erro Quadrático Médio ou MSE) entre as previsões e os valores reais. No entanto, em casos onde o dataset apresenta muitos recursos ou quando os dados apresentam correlações entre as variáveis, o modelo tende a se ajustar demais aos dados de treinamento (\textit{overfitting}). A fim de contornar tal problema, o modelo Ridge adiciona um termo de penalidade à função de custo, que regula o tamanho dos coeficientes do modelo. Esse comportamento é observado na função de custo do modelo, com a adição de um hiperparâmetro $\lambda$ em relação ao modelo de regressão linear padrão.
 
-Sendo assim, a inclusão do termo somado a equação de regressão linear padrão reduz a magnitude dos coeficientes, ajudando a controlar o \textit{overfitting}. Em essência, o modelo Ridge evita que o modelo aprenda padrões específicos do conjunto de treinamento que não se generalizam bem para dados novos.
+% \begin{equation}
+%     J(\theta) = \frac{1}{m}\sum_{i=1}^{m}\left(h_{\theta}(x^{(i)})- y^{(i)}\right)^2 + \lambda\sum_{j=1}^{n}\theta^{2}_{j}
+% \end{equation}
+
+% onde:
+
+% \begin{itemize}
+%     \item $\lambda$ é o hiperparâmetro que controla a intensidade da regularização;
+%     \item $\theta_{j}$ são os coeficientes (ou pesos) do modelo;
+%     \item Quanto maior o valor de $\lambda$, maior será a penalização para grandes coeficientes, resultando em um modelo mais simples.
+% \end{itemize}
+
+% Sendo assim, a inclusão do termo somado a equação de regressão linear padrão reduz a magnitude dos coeficientes, ajudando a controlar o \textit{overfitting}. Em essência, o modelo Ridge evita que o modelo aprenda padrões específicos do conjunto de treinamento que não se generalizam bem para dados novos.
 
 
 
