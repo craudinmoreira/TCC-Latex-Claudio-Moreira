@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {2.3}Regressão}{18}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Regressão Linear}{19}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Método dos quadrados ordinários}{22}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Modelo Ridge}{24}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Modelo Ridge}{25}{section.2.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Seção}}{26}{chapter.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }

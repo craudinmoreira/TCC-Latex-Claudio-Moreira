@@ -163,10 +163,16 @@ Partindo desses conceitos, para implementação de modelos de regressão linear 
 
 O método dos Mínimos Quadrados Orinários (MQO) atua como uma ferramenta estatística, visando estimar a relação entre uma variável dependente e uma ou mais variáveis independentes \cite{Alkama2020}, permitindo encontrar os coeficientes desejados para o funcionamento do modelo.
 
-Isso é feito usando o método dos mínimos quadrados, onde procura-se os valores que minimizam a Soma Residual dos Quadrados (RSS):
+Para obter uma regressão que se aproxima da dinâmica analisada, o método visa minimizar a Soma Residual dos Quadrados (RSS), denotado por:
 
 \begin{equation}
-    RSS = \sum_{i=1}^{n} \left(y_i - \beta_0 - \sum_{j=1}^{p}\beta_jx_{ij}\right)
+	RSS = \sum_{i=1}^{n} \left(y_i - \beta_0 - \beta_1x_{i}\right)^2
+\end{equation}
+
+para os casos de RLS, ou seja, quando há apenas uma variável independente. Para o caso de RLM, a equação é dada por:
+
+\begin{equation}
+    RSS = \sum_{i=1}^{n} \left(y_i - \beta_0 - \sum_{j=1}^{p}\beta_jx_{ij}\right)^2
 \end{equation}
 
 onde:
@@ -176,6 +182,20 @@ onde:
     \item $x_{ij}$ representa o valor da variável explicativa (variável independente, variável regressora) na i-ésima observação. Nota-se que podem existir múltiplas variáveis independentes para uma variável independente; 
     \item $\beta_{0}$ e $\beta_{j}$ são os parâmetros do modelo que serão estimados, e que definem a reta de regressão
 \end{itemize}
+
+Para minimizar a SSR em um caso de RLS, por exemplo, são calculadas as derivadas parciais de $\beta_0$ e $\beta_1$, igualando ambas a zero.
+
+\begin{equation}
+	\frac{\partial SSR}{\partial \beta_0} = -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i) = 0
+\end{equation}
+
+simplificando:
+
+\begin{align*}
+	\sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i) = 0 \\
+	\sum_{i=1}^n y_i - n \beta_0 - \beta_1 \sum_{i=1}^n x_i = 0
+\end{align*}
+
 
 Desse modo, a partir de um problema onde uma ou mais entradas geram amostras que resultam em uma saída, torna-se possível estimar uma função que melhor representa seu comportamento, minimizando ao máximo o valor da soma residual dos quadrados entre os pontos amostrais e a curva do modelo. 
 
