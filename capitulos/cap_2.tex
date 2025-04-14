@@ -185,16 +185,72 @@ onde:
 
 Para minimizar a SSR em um caso de RLS, por exemplo, são calculadas as derivadas parciais de $\beta_0$ e $\beta_1$, igualando ambas a zero.
 
+Derivada em relação à $\beta_0$:
+
 \begin{equation}
 	\frac{\partial SSR}{\partial \beta_0} = -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i) = 0
 \end{equation}
 
 simplificando:
 
-\begin{align*}
+\begin{gather*}
 	\sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i) = 0 \\
 	\sum_{i=1}^n y_i - n \beta_0 - \beta_1 \sum_{i=1}^n x_i = 0
-\end{align*}
+\end{gather*}
+
+divindindo por $n$:
+
+\begin{gather*}
+	\frac{\sum_{i=1}^n y_i}{n} - \beta_0 - \beta_1 \frac{\sum_{i=1}^n x_i}{n} = 0 \\
+	\bar{y} - \beta_0 - \beta_1 \bar{x} = 0
+\end{gather*}
+
+onde $\bar{y}$ e $\bar{x}$ são as médias amostrais de $y$ e $x$, respectivamente. Assim, a equação pode ser reescrita como:
+
+\begin{equation}
+	\beta_0 = \bar{y} - \beta_1 \bar{x}
+	\label{eq:beta0}
+\end{equation}
+
+Derivada em relação à $\beta_1$:
+
+\begin{equation}
+	\frac{\partial SSR}{\partial \beta_1} = -2 \sum_{i=1}^n x_i (y_i - \beta_0 - \beta_1 x_i) = 0
+\end{equation}
+
+substituindo $\beta_0$ na equação:
+
+
+\begin{gather*}
+	\sum_{i=1}^n x_i (y_i - (\bar{y} - \beta_1 \bar{x}) - \beta_1 x_i) = 0 \\
+	\sum_{i=1}^n x_i (y_i - \bar{y} + \beta_1 \bar{x} - \beta_1 x_i) = 0 \\
+	\sum_{i=1}^n x_i (y_i - \bar{y}) + \sum_{i=1}^n x_i (\beta_1 \bar{x} - \beta_1 x_i) = 0 \\
+	\sum_{i=1}^n x_i (y_i - \bar{y}) - \beta_1 \sum_{i=1}^n x_i (x_i - \bar{x}) = 0
+\end{gather*}
+
+sabendo que:
+
+\begin{gather*}
+	\sum_{i=1}^n x_i (x_i - \bar{x}) = \sum_{i=1}^n (x_i - \bar{x})^2
+\end{gather*}
+
+e
+
+\begin{gather*}
+	\sum_{i=1}^n x_i (y_i - \bar{y}) = \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})	
+\end{gather*}
+
+portanto:
+
+\begin{gather*}
+	\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}) = \beta_1 \sum_{i=1}^n (x_i - \bar{x})^2
+\end{gather*}
+
+\begin{equation}
+	\beta_1 = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2}
+\end{equation}
+
+
 
 
 Desse modo, a partir de um problema onde uma ou mais entradas geram amostras que resultam em uma saída, torna-se possível estimar uma função que melhor representa seu comportamento, minimizando ao máximo o valor da soma residual dos quadrados entre os pontos amostrais e a curva do modelo. 
@@ -217,42 +273,146 @@ Desse modo, a partir de um problema onde uma ou mais entradas geram amostras que
 1,84 & 9,31 \\
 \hline
 \end{tabular}
+\label{tab:valores_exemplo_mqo}
 \caption{Tabela de Valores Ordenados: Variável Independente vs. Variável Dependente}
 \end{table}
 
-A Tabela 1 apresenta um exemplo de dados amostrais, onde a variável independente é representada pela primeira coluna e a variável dependente pela segunda coluna. A partir desses dados, é possível aplicar o método dos mínimos quadrados para encontrar os coeficientes que melhor se ajustam à reta de regressão linear.
+A Tabela \ref{tab:valores_exemplo_mqo} apresenta um exemplo de dados amostrais, onde a variável independente é representada pela primeira coluna e a variável dependente pela segunda coluna. A partir desses dados, é possível aplicar o método dos mínimos quadrados para encontrar os coeficientes que melhor se ajustam à reta de regressão linear.
 
-\begin{figure}[htb]
-	\caption{\label{fig:minimos_quadrados}Exemplo do método dos quadrados ordinários.}
+Ao aplicar o método para resolver um problema como é o caso da Tabela \ref{tab:valores_exemplo_mqo}, todos os pontos amostrados são utilizados para encontrar a reta que melhor se ajusta aos dados. Contudo, visando mostrar como a dinâmica de regressão utilizando MQO funciona, nos passos seguintes, as amostras são consideradas de forma cumulativa, alterando a cada iteração os valores de $\beta_0$ e $\beta_1$, até que a reta de regressão linear se ajuste aos dados amostrais.
+
+Passo 1: Apenas o ponto (0.44, 5.52)
+
+Com um único ponto, a reta passa exatamente por sobre o mesmo, porém o método MQO exige pelo menos dois pontos para definir uma inclinação. Assim, assume-se uma reta vertical ao usar o ponto como base inicial.
+
+\begin{gather*}
+	\beta_0 = 5.52, \quad \beta_1 = 0
+\end{gather*}
+
+
+\begin{figure}[H]
+	\caption{\label{fig:mqo_1}Passo 1 da regressão linear pelo método MQO.}
 	\begin{center}
-		\includegraphics[scale=0.6]{figuras/min_sqr.png}
+		\includegraphics[scale=0.5]{figuras/RL_step_1.png}
 	\end{center}
-	\fonte{\cite{dataat2024}}
+	\fonte{Autor.}
 \end{figure}
 
-No exemplo da Figura \ref{fig:minimos_quadrados}, para chegar aos coeficientes que determinam a melhor regressão linear para os pontos amostrados no gráfico, $\alpha$ e $\beta$ foram ajustados utilizando derivadas parciais, de tal tal forma que o erro quadrático médio entre entre a função e cada um dos pontos fossem a menor possível.
+Passo 2: Adiciona-se (1.74, 8.89)
+\\
+n=2
 
-\begin{figure}[htb]
-	\caption{\label{fig:ajuste_regressao_linear}Ajuste da regressão linear por método dos quadrados ordinários.}
+\begin{gather*}
+	\bar{x} = \frac{0.44 + 1.74}{2} = 1.09, \quad \bar{y} = \frac{5.52 + 8.89}{2} = 7.205 \\
+	\sum (x_i - \bar{x})(y_i - \bar{y}) = (0.44 - 1.09)(5.52 - 7.205) + (1.74 - 1.09)(8.89 - 7.205) = \\ 
+	(-0.65)(-1.685) + (0.65)(1.685) = 1.09525 + 1.09525 = 2.1905 \\
+	\sum (x_i - \bar{x})^2 = (0.44 - 1.09)^2 + (1.74 - 1.09)^2 = 0.4225 + 0.4225 = 0.845 \\
+	\beta_0 = \frac{2.1905}{0.845} \approx 2.5923\\
+	\beta_1 = 7.205 - 2.5923 \cdot 1.09 \approx 7.205 - 2.8255 = 4.3795\\ \\
+	\hat{y} = 4.3795 + 2.5923x
+\end{gather*}
+
+\begin{figure}[H]
+	\caption{\label{fig:mqo_2}Passo 2 da regressão linear pelo método MQO.}
 	\begin{center}
-		\includegraphics[scale=0.35]{figuras/ols-steps.png}
+		\includegraphics[scale=0.5]{figuras/RL_step_2.png}
 	\end{center}
-	\fonte{\cite{dataat2024}}
+	\fonte{Autor.}
 \end{figure}
 
-Assim, a cada ponto selecionado da amostra, é calculada a derivada parcial da função estimada, determinando novos coeficiente que melhor descrevem a reta entre as amostras. Dado que não é possível estimar uma reta que passe sobre todos os pontos amostrados, os resíduos representados pelas linhas tracejadas na Figura \ref{fig:ajuste_regressao_linear} são definidos de tal modo que o somatório dos seus quadrados seja o menor possível.
+Passo 3: Adiciona (0.41, 4.05)
+\\ n = 3
 
-\section{Modelo Ridge}
+\begin{gather*}
+	\bar{x} = \frac{0.44 + 1.74 + 0.41}{3} = 0.8633, \quad \bar{y} = \frac{5.52 + 8.89 + 4.05}{3} = 6.1533 \\
+	\sum (x_i - \bar{x})(y_i - \bar{y}) = \\ 
+	(0.44 - 0.8633)(5.52 - 6.1533) + \\
+	(1.74 - 0.8633)(8.89 - 6.1533) + \\
+	(0.41 - 0.8633)(4.05 - 6.1533) \approx  \\
+	0.268 + 2.399 + 0.953 = 3.62 \\ \\
+	\sum (x_i - \bar{x})^2 = (0.44 - 0.8633)^2 + (1.74 - 0.8633)^2 + (0.41 - 0.8633)^2 \\
+	\approx 0.179 + 0.769 + 0.205 = 1.153 \\
+	\beta_0 = \frac{3.62}{1.153} \approx 3.1402 \\
+	\beta_1 = 6.1533 - 3.1402 \cdot 0.8633 \approx 6.1533 - 2.711 = 3.4423 \\ \\
+	\hat{y} = 3.4423 + 3.1402x
+\end{gather*}
 
-O modelo Ridge, implementado na biblioteca \textit{scikit-learn} do Python, é uma variação da regressão linear de MQO que incorpora um termo de regularização L2 à função de custo, o que ajuda a controlar a complexidade do modelo e prevenir o sobreajuste (\textit{overfitting}), ou seja, o treinamento de um modelo que não é capaz de realizar previsões em outros cenários, exceto aquele que lhe foi passado no treinamento \cite{ScikitLearnRidge2025}. Com essa caracterísica, o método é indicado em casos onde os dados apresentam colinearidade ou onde há muitas variáveis independentes \cite{Jolly2018}.
+\begin{figure}[H]
+	\caption{\label{fig:mqo_2}Passo 3 da regressão linear pelo método MQO.}
+	\begin{center}
+		\includegraphics[scale=0.5]{figuras/RL_step_3.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
 
-\begin{equation}
-	J(\beta) = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \alpha \sum_{j=1}^{p} \beta_j^2
-\end{equation}
+Para os demais passos, o mesmo cálculo é realizado, onde a média amostral e os coeficientes são recalculados a cada iteração, conforme os pontos são adicionados.
 
-No primeiro termo, oberva-se o somatório dos erros quadráticos, semlhante ao método MQO. No segundo termo, é aplicada a penalização L2, que é a soma dos quadrados dos coeficientes do modelo, multiplicada por um hiperparâmetro $\alpha$ que controla a intensidade da regularização. O valor de $\alpha$ deve ser ajustado para encontrar o equilíbrio entre o ajuste do modelo e a complexidade do mesmo \cite{ScikitLearnRidge2025}.
+\begin{figure}[H]
+	\centering
+	\caption{Iterações da aplicação do método MQO}
+	\begin{subfigure}{0.4\textwidth}
+	  \includegraphics[width=\linewidth]{figuras/RL_step_4.png}
+	  \caption{$n = 4$ | $y = 3,426 + 3,175x$}
+	  \label{fig:mqo_4}
+	\end{subfigure}
+	\hspace{0.5cm}
+	\begin{subfigure}{0.4\textwidth} 
+		\includegraphics[width=\linewidth]{figuras/RL_step_5.png}
+		\caption{$n = 5$ | $y = 3,435 + 3,173x$}
+		\label{fig:intervalo_aplicacao_rls}
+	\end{subfigure}
+	\label{fig:mqo_5}
+	\begin{subfigure}{0.4\textwidth} 
+		\includegraphics[width=\linewidth]{figuras/RL_step_6.png}
+		\caption{$n = 6$ | $y = 3,531 + 3,232x$}
+		\label{fig:intervalo_aplicacao_rls}
+	\end{subfigure}
+	\label{fig:mqo_6}
+	\begin{subfigure}{0.4\textwidth} 
+		\includegraphics[width=\linewidth]{figuras/RL_step_7.png}
+		\caption{$n = 7$ | $y = 3,630 + 2,957x$}
+		\label{fig:intervalo_aplicacao_rls}
+	\end{subfigure}
+	\label{fig:mqo_7}
+	\begin{subfigure}{0.4\textwidth} 
+		\includegraphics[width=\linewidth]{figuras/RL_step_8.png}
+		\caption{$n = 8$ | $y = 3,575 + 2,973x$}
+		\label{fig:intervalo_aplicacao_rls}
+	\end{subfigure}
+	\label{fig:mqo_8}
+	\begin{subfigure}{0.4\textwidth} 
+		\includegraphics[width=\linewidth]{figuras/RL_step_9.png}
+		\caption{$n = 9$ | $y = 4,122 + 2,633x$}
+		\label{fig:intervalo_aplicacao_rls}
+	\end{subfigure}
+	\label{fig:mqo_9}
+	\fonte{Autor.}
+\end{figure}
 
-% A regressão linear padrão visa minimizar a soma dos erros quadráticos (Erro Quadrático Médio ou MSE) entre as previsões e os valores reais. No entanto, em casos onde o dataset apresenta muitos recursos ou quando os dados apresentam correlações entre as variáveis, o modelo tende a se ajustar demais aos dados de treinamento (\textit{overfitting}). A fim de contornar tal problema, o modelo Ridge adiciona um termo de penalidade à função de custo, que regula o tamanho dos coeficientes do modelo. Esse comportamento é observado na função de custo do modelo, com a adição de um hiperparâmetro $\lambda$ em relação ao modelo de regressão linear padrão.
+Assim, a cada ponto selecionado da amostra, é calculada a derivada parcial da função estimada, determinando novos coeficiente que melhor descrevem a reta entre as amostras. Dado que não é possível estimar uma reta que passe sobre todos os pontos amostrados, os resíduos representados pelas linhas tracejadas na Figura \ref{fig:mqo_10} são definidos de tal modo que o somatório dos seus quadrados seja o menor possível.
+
+
+\begin{figure}[H]
+	\caption{\label{fig:mqo_10}Passo 10 da regressão linear pelo método MQO.}
+	\begin{center}
+		\includegraphics[scale=0.6]{figuras/RL_step_10.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+%
+
+% \section{Modelo Ridge}
+
+% O modelo Ridge, implementado na biblioteca \textit{scikit-learn} do Python, é uma variação da regressão linear de MQO que incorpora um termo de regularização L2 à função de custo, o que ajuda a controlar a complexidade do modelo e prevenir o sobreajuste (\textit{overfitting}), ou seja, o treinamento de um modelo que não é capaz de realizar previsões em outros cenários, exceto aquele que lhe foi passado no treinamento \cite{ScikitLearnRidge2025}. Com essa caracterísica, o método é indicado em casos onde os dados apresentam colinearidade ou onde há muitas variáveis independentes \cite{Jolly2018}.
+
+% \begin{equation}
+% 	J(\beta) = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \alpha \sum_{j=1}^{p} \beta_j^2
+% \end{equation}
+
+% No primeiro termo, oberva-se o somatório dos erros quadráticos, semlhante ao método MQO. No segundo termo, é aplicada a penalização L2, que é a soma dos quadrados dos coeficientes do modelo, multiplicada por um hiperparâmetro $\alpha$ que controla a intensidade da regularização. O valor de $\alpha$ deve ser ajustado para encontrar o equilíbrio entre o ajuste do modelo e a complexidade do mesmo \cite{ScikitLearnRidge2025}.
+
+%  A regressão linear padrão visa minimizar a soma dos erros quadráticos (Erro Quadrático Médio ou MSE) entre as previsões e os valores reais. No entanto, em casos onde o dataset apresenta muitos recursos ou quando os dados apresentam correlações entre as variáveis, o modelo tende a se ajustar demais aos dados de treinamento (\textit{overfitting}). A fim de contornar tal problema, o modelo Ridge adiciona um termo de penalidade à função de custo, que regula o tamanho dos coeficientes do modelo. Esse comportamento é observado na função de custo do modelo, com a adição de um hiperparâmetro $\lambda$ em relação ao modelo de regressão linear padrão.
 
 % \begin{equation}
 %     J(\theta) = \frac{1}{m}\sum_{i=1}^{m}\left(h_{\theta}(x^{(i)})- y^{(i)}\right)^2 + \lambda\sum_{j=1}^{n}\theta^{2}_{j}

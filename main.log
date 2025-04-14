@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.31)  8 APR 2025 22:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.31)  13 APR 2025 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1183,6 +1183,39 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 LaTeX Warning: Label `fig:comportamento_regressao_linear' multiply defined.
 
+
+LaTeX Warning: Label `fig:mqo_2' multiply defined.
+
+
+LaTeX Warning: Label `fig:intervalo_aplicacao_rls' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:intervalo_aplicacao_rls' multiply defined.
+
+
+LaTeX Warning: Label `fig:intervalo_aplicacao_rls' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:intervalo_aplicacao_rls' multiply defined.
+
+
+LaTeX Warning: Label `fig:intervalo_aplicacao_rls' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:intervalo_aplicacao_rls' multiply defined.
+
+
+LaTeX Warning: Label `fig:intervalo_aplicacao_rls' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:intervalo_aplicacao_rls' multiply defined.
+
+
+LaTeX Warning: Label `fig:intervalo_aplicacao_rls' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:intervalo_aplicacao_rls' multiply defined.
+
 ) (capitulos/cap_3.aux) (capitulos/cap_4.aux))
 \openout1 = `main.aux'.
 
@@ -1508,53 +1541,117 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 {C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [17]
-<figuras/happiness_world.png, id=207, 889.8846pt x 483.4863pt>
+<figuras/happiness_world.png, id=211, 889.8846pt x 483.4863pt>
 File: figuras/happiness_world.png Graphic file (type png)
 <use figuras/happiness_world.png>
 Package pdftex.def Info: figuras/happiness_world.png  used on input line 52.
 (pdftex.def)             Requested size: 355.94754pt x 193.39108pt.
  [18{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc} <./figuras/happiness_world.png>]
-<figuras/correlations.png, id=226, 970.1043pt x 169.1118pt>
+<figuras/correlations.png, id=230, 970.1043pt x 169.1118pt>
 File: figuras/correlations.png Graphic file (type png)
 <use figuras/correlations.png>
 Package pdftex.def Info: figuras/correlations.png  used on input line 71.
 (pdftex.def)             Requested size: 388.03484pt x 67.64351pt.
  [19{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./figuras/correlations.png>] [20]
-<figuras/how_observations_are_generated_in_linear_regression.png, id=274, 561.59813pt x 545.78906pt>
+<figuras/how_observations_are_generated_in_linear_regression.png, id=278, 561.59813pt x 545.78906pt>
 File: figuras/how_observations_are_generated_in_linear_regression.png Graphic file (type png)
 <use figuras/how_observations_are_generated_in_linear_regression.png>
 Package pdftex.def Info: figuras/how_observations_are_generated_in_linear_regression.png  used on input line 126.
 (pdftex.def)             Requested size: 181.99722pt x 176.87132pt.
-<figuras/linear_regression_approximation_of_a_complex_relationship.png, id=275, 532.99126pt x 429.10312pt>
+<figuras/linear_regression_approximation_of_a_complex_relationship.png, id=279, 532.99126pt x 429.10312pt>
 File: figuras/linear_regression_approximation_of_a_complex_relationship.png Graphic file (type png)
 <use figuras/linear_regression_approximation_of_a_complex_relationship.png>
 Package pdftex.def Info: figuras/linear_regression_approximation_of_a_complex_relationship.png  used on input line 132.
 (pdftex.def)             Requested size: 181.99722pt x 146.5217pt.
-<figuras/piecewise_linear_approximation.png, id=282, 342.5297pt x 256.70906pt>
+<figuras/piecewise_linear_approximation.png, id=286, 342.5297pt x 256.70906pt>
 File: figuras/piecewise_linear_approximation.png Graphic file (type png)
 <use figuras/piecewise_linear_approximation.png>
 Package pdftex.def Info: figuras/piecewise_linear_approximation.png  used on input line 146.
 (pdftex.def)             Requested size: 181.99722pt x 136.39984pt.
-<figuras/danger_extrapolation_regression.png, id=283, 345.54094pt x 270.25969pt>
+<figuras/danger_extrapolation_regression.png, id=287, 345.54094pt x 270.25969pt>
 File: figuras/danger_extrapolation_regression.png Graphic file (type png)
 <use figuras/danger_extrapolation_regression.png>
 Package pdftex.def Info: figuras/danger_extrapolation_regression.png  used on input line 152.
 (pdftex.def)             Requested size: 181.99722pt x 142.34619pt.
- [21 <./figuras/how_observations_are_generated_in_linear_regression.png> <./figuras/linear_regression_approximation_of_a_complex_relationship.png>] [22 <./figuras/piecewise_linear_approximation.png> <./figuras/danger_extrapolation_regression.png>]
-<figuras/min_sqr.png, id=305, 587.796pt x 413.3844pt>
-File: figuras/min_sqr.png Graphic file (type png)
-<use figuras/min_sqr.png>
-Package pdftex.def Info: figuras/min_sqr.png  used on input line 228.
-(pdftex.def)             Requested size: 352.68031pt x 248.03255pt.
-<figuras/ols-steps.png, id=311, 1151.502pt x 563.4651pt>
-File: figuras/ols-steps.png Graphic file (type png)
-<use figuras/ols-steps.png>
-Package pdftex.def Info: figuras/ols-steps.png  used on input line 238.
-(pdftex.def)             Requested size: 403.03174pt x 197.21574pt.
- [23] [24 <./figuras/min_sqr.png> <./figuras/ols-steps.png>]) [25]
+ [21 <./figuras/how_observations_are_generated_in_linear_regression.png> <./figuras/linear_regression_approximation_of_a_complex_relationship.png>] [22 <./figuras/piecewise_linear_approximation.png> <./figuras/danger_extrapolation_regression.png>] [23]
+
+Package caption Warning: \label without proper reference on input line 276.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:valores_exemplo_mqo' on page 24 undefined on input line 280.
+
+
+Package caption Warning: \label without proper reference on input line 276.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:valores_exemplo_mqo' on page 24 undefined on input line 282.
+
+[24]
+<figuras/RL_step_1.png, id=324, 496.4949pt x 396.0396pt>
+File: figuras/RL_step_1.png Graphic file (type png)
+<use figuras/RL_step_1.png>
+Package pdftex.def Info: figuras/RL_step_1.png  used on input line 296.
+(pdftex.def)             Requested size: 248.24684pt x 198.0193pt.
+<figuras/RL_step_2.png, id=325, 496.4949pt x 396.0396pt>
+File: figuras/RL_step_2.png Graphic file (type png)
+<use figuras/RL_step_2.png>
+Package pdftex.def Info: figuras/RL_step_2.png  used on input line 318.
+(pdftex.def)             Requested size: 248.24684pt x 198.0193pt.
+ [25 <./figuras/RL_step_1.png>]
+<figuras/RL_step_3.png, id=331, 496.4949pt x 396.0396pt>
+File: figuras/RL_step_3.png Graphic file (type png)
+<use figuras/RL_step_3.png>
+Package pdftex.def Info: figuras/RL_step_3.png  used on input line 343.
+(pdftex.def)             Requested size: 248.24684pt x 198.0193pt.
+ [26 <./figuras/RL_step_2.png>]
+<figuras/RL_step_4.png, id=337, 496.4949pt x 396.0396pt>
+File: figuras/RL_step_4.png Graphic file (type png)
+<use figuras/RL_step_4.png>
+Package pdftex.def Info: figuras/RL_step_4.png  used on input line 354.
+(pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 355.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 355.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 355.
+<figuras/RL_step_5.png, id=338, 496.4949pt x 396.0396pt>
+File: figuras/RL_step_5.png Graphic file (type png)
+<use figuras/RL_step_5.png>
+Package pdftex.def Info: figuras/RL_step_5.png  used on input line 360.
+(pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
+<figuras/RL_step_6.png, id=339, 496.4949pt x 396.0396pt>
+File: figuras/RL_step_6.png Graphic file (type png)
+<use figuras/RL_step_6.png>
+Package pdftex.def Info: figuras/RL_step_6.png  used on input line 366.
+(pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
+<figuras/RL_step_7.png, id=340, 496.4949pt x 396.0396pt>
+File: figuras/RL_step_7.png Graphic file (type png)
+<use figuras/RL_step_7.png>
+Package pdftex.def Info: figuras/RL_step_7.png  used on input line 372.
+(pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
+<figuras/RL_step_8.png, id=341, 496.4949pt x 396.0396pt>
+File: figuras/RL_step_8.png Graphic file (type png)
+<use figuras/RL_step_8.png>
+Package pdftex.def Info: figuras/RL_step_8.png  used on input line 378.
+(pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
+<figuras/RL_step_9.png, id=342, 496.4949pt x 396.0396pt>
+File: figuras/RL_step_9.png Graphic file (type png)
+<use figuras/RL_step_9.png>
+Package pdftex.def Info: figuras/RL_step_9.png  used on input line 384.
+(pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
+ [27 <./figuras/RL_step_3.png>]
+<figuras/RL_step_10.png, id=349, 496.4949pt x 396.0396pt>
+File: figuras/RL_step_10.png Graphic file (type png)
+<use figuras/RL_step_10.png>
+Package pdftex.def Info: figuras/RL_step_10.png  used on input line 398.
+(pdftex.def)             Requested size: 297.89923pt x 237.62558pt.
+ [28 <./figuras/RL_step_4.png> <./figuras/RL_step_5.png> <./figuras/RL_step_6.png> <./figuras/RL_step_7.png> <./figuras/RL_step_8.png> <./figuras/RL_step_9.png>]) [29 <./figuras/RL_step_10.png>]
 \openout2 = `capitulos/cap_3.aux'.
 
- (capitulos/cap_3.tex) [26
+ (capitulos/cap_3.tex) [30
 
 
 
@@ -1562,18 +1659,18 @@ Package pdftex.def Info: figuras/ols-steps.png  used on input line 238.
 ]
 \openout2 = `capitulos/cap_4.aux'.
 
- (capitulos/cap_4.tex) [27
+ (capitulos/cap_4.tex) [31
 
 
 
 
-] [28
+] [32
 
 
 
-] (pos_textual/apendice_a.tex [29]) (pos_textual/anexo_a.tex [30
+] (pos_textual/apendice_a.tex [33]) (pos_textual/anexo_a.tex [34
 
-]) [31
+]) [35
 
 ]
 \tf@lof=\write6
@@ -1595,6 +1692,9 @@ L3 programming layer <2020/03/25>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1602,17 +1702,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37716 strings out of 474424
- 690947 string characters out of 5741739
- 1942496 words of memory out of 5000000
- 59294 multiletter control sequences out of 15000+600000
- 599881 words of font info for 109 fonts, out of 8000000 for 9000
+ 37825 strings out of 474424
+ 692995 string characters out of 5741739
+ 1943496 words of memory out of 5000000
+ 59380 multiletter control sequences out of 15000+600000
+ 612387 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,17n,121p,2490b,4454s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (32 pages, 1497360 bytes).
+Output written on main.pdf (36 pages, 1400305 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 22850 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 118 named destinations out of 1000 (max. 500000)
+ 29026 words of extra memory for PDF output out of 29859 (max. 10000000)
 

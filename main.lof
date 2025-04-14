@@ -4,5 +4,8 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Diferentes correlações entre variáveis.}}{19}{figure.caption.18}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Interpretação de uma regressão linear}}{21}{figure.caption.19}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Situações de inadequação da RLS}}{22}{figure.caption.20}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Exemplo do método dos quadrados ordinários.}}{24}{figure.caption.22}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Ajuste da regressão linear por método dos quadrados ordinários.}}{24}{figure.caption.23}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Passo 1 da regressão linear pelo método MQO.}}{25}{figure.caption.22}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Passo 2 da regressão linear pelo método MQO.}}{26}{figure.caption.23}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Passo 3 da regressão linear pelo método MQO.}}{27}{figure.caption.24}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Iterações da aplicação do método MQO}}{28}{figure.caption.25}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Passo 10 da regressão linear pelo método MQO.}}{29}{figure.caption.26}%
