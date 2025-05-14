@@ -19,6 +19,42 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{pecan_data_prep_2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fa5862606e671a01af3e0943c8c7c950}{%
+           family={AI},
+           familyi={A\bibinitperiod},
+           given={Pecan},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{fullhash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{fullhashraw}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{bibnamehash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{authorbibnamehash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{authornamehash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{authorfullhash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{authorfullhashraw}{fa5862606e671a01af3e0943c8c7c950}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data Preparation for Machine Learning: The Ultimate Guide to Doing It Right}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pecan.ai/blog/data-preparation-for-machine-learning/
+      \endverb
+      \verb{url}
+      \verb https://www.pecan.ai/blog/data-preparation-for-machine-learning/
+      \endverb
+    \endentry
     \entry{Alkama2020}{thesis}{}{}
       \true{moreauthor}
       \true{morelabelname}

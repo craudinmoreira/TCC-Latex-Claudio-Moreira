@@ -115,7 +115,7 @@ e a variância é dada por:
 
 Desse modo, o modelo de regressão verdadeiro $\mu_{y \mid x} = \beta_0 + \beta_1x$ representa uma linha de valores médios, ou seja, a altura da linha de regressão em qualquer valor de x corresponde ao valor esperado de y para aquele x.
 
-Para exemplificar a suposição acima, tem-se um modelo de regressão ilustrado pela Figura \ref{fig:observacoes_regressao_linear}, onde $\mu_{y \mid x} = 3,5 + 2x$, com variância $\sigma^2 = 2$. Nota-se que uma distribuição normal é utulizada para descrever a variação aleatória do erro $\varepsilon$. Estabelecido que $y$ é a soma de uma constante $\beta_0 + \beta_1x$ (a média) e uma variável aleatória normalmente distribuída, é possível inferir que $y$ também segue uma distribuição normal. No mesmo exemplo, se $x = 10$ casos, $y$ terá distribuição normal com média $\mu_{y \mid x} = 3,5 + 2(10) = 23,5$ e variância $\sigma^2 = 2$. Quanto menor a variância, mais próximos os pontos estarão da linha de regressão, enquanto uma variância maior resultará em pontos mais dispersos em relação à linha de regressão \cite{montgomery2012}.
+Para exemplificar a suposição acima, tem-se um modelo de regressão ilustrado pela Figura \ref{fig:observacoes_regressao_linear}, onde $\mu_{y \mid x} = 3,5 + 2x$, com variância $\sigma^2 = 2$. Nota-se que uma distribuição normal é utilizada para descrever a variação aleatória do erro $\varepsilon$. Estabelecido que $y$ é a soma de uma constante $\beta_0 + \beta_1x$ (a média) e uma variável aleatória normalmente distribuída, é possível inferir que $y$ também segue uma distribuição normal. No mesmo exemplo, se $x = 10$ amostras, $y$ terá distribuição normal com média $\mu_{y \mid x} = 3,5 + 2(10) = 23,5$ e variância $\sigma^2 = 2$. Quanto menor a variância, mais próximos os pontos estarão da linha de regressão, enquanto uma variância maior resultará em pontos mais dispersos em relação à linha de regressão \cite{montgomery2012}.
 
 A maioria dos fênomenos nos quais se deseja obter a função que descreve o seu comportamento resulta em uma aproximação funcional através das variáveis de interesse. Essas relações funcionais frequentemente baseiam-se em teorias físicas, químicas ou de engenharia e ciências, ou seja, no conhecimento do mecanismo subjacente. Na Figura \ref{fig:regressao_linear_aprox_relacao_complexa}, é mostrada uma relação entre as variáveis $x$ e $y$ relativamente complexa, mas que pode ser aproximada de por uma equação de regressão linear, com um erro relativamente baixo.
 
@@ -273,17 +273,17 @@ Desse modo, a partir de um problema onde uma ou mais entradas geram amostras que
 1,84 & 9,31 \\
 \hline
 \end{tabular}
-\label{tab:valores_exemplo_mqo}
 \caption{Tabela de Valores Ordenados: Variável Independente vs. Variável Dependente}
+\label{tab:valores_exemplo_mqo}
 \end{table}
 
 A Tabela \ref{tab:valores_exemplo_mqo} apresenta um exemplo de dados amostrais, onde a variável independente é representada pela primeira coluna e a variável dependente pela segunda coluna. A partir desses dados, é possível aplicar o método dos mínimos quadrados para encontrar os coeficientes que melhor se ajustam à reta de regressão linear.
 
-Ao aplicar o método para resolver um problema como é o caso da Tabela \ref{tab:valores_exemplo_mqo}, todos os pontos amostrados são utilizados para encontrar a reta que melhor se ajusta aos dados. Contudo, visando mostrar como a dinâmica de regressão utilizando MQO funciona, nos passos seguintes, as amostras são consideradas de forma cumulativa, alterando a cada iteração os valores de $\beta_0$ e $\beta_1$, até que a reta de regressão linear se ajuste aos dados amostrais.
+Ao aplicar o método para resolver um problema, como é o caso da Tabela \ref{tab:valores_exemplo_mqo}, todos os pontos amostrados são utilizados para encontrar a reta que melhor se ajusta aos dados. Contudo, visando mostrar como a dinâmica de regressão utilizando MQO funciona, nos passos seguintes, as amostras são consideradas de forma cumulativa, alterando a cada iteração os valores de $\beta_0$ e $\beta_1$, até que a reta de regressão linear se ajuste aos dados amostrais.
 
 Passo 1: Apenas o ponto (0.44, 5.52)
 
-Com um único ponto, a reta passa exatamente por sobre o mesmo, porém o método MQO exige pelo menos dois pontos para definir uma inclinação. Assim, assume-se uma reta vertical ao usar o ponto como base inicial.
+Com um único ponto, a reta passa exatamente por sobre o mesmo, porém o método MQO exige pelo menos dois pontos para definir uma inclinação. Assim, assume-se uma reta horizontal ao usar o ponto como base inicial.
 
 \begin{gather*}
 	\beta_0 = 5.52, \quad \beta_1 = 0
@@ -410,7 +410,7 @@ Assim, a cada ponto selecionado da amostra, é calculada a derivada parcial da f
 % 	J(\beta) = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \alpha \sum_{j=1}^{p} \beta_j^2
 % \end{equation}
 
-% No primeiro termo, oberva-se o somatório dos erros quadráticos, semlhante ao método MQO. No segundo termo, é aplicada a penalização L2, que é a soma dos quadrados dos coeficientes do modelo, multiplicada por um hiperparâmetro $\alpha$ que controla a intensidade da regularização. O valor de $\alpha$ deve ser ajustado para encontrar o equilíbrio entre o ajuste do modelo e a complexidade do mesmo \cite{ScikitLearnRidge2025}.
+% No primeiro termo, observa-se o somatório dos erros quadráticos, semelhante ao método MQO. No segundo termo, é aplicada a penalização L2, que é a soma dos quadrados dos coeficientes do modelo, multiplicada por um hiperparâmetro $\alpha$ que controla a intensidade da regularização. O valor de $\alpha$ deve ser ajustado para encontrar o equilíbrio entre o ajuste do modelo e a complexidade do mesmo \cite{ScikitLearnRidge2025}.
 
 %  A regressão linear padrão visa minimizar a soma dos erros quadráticos (Erro Quadrático Médio ou MSE) entre as previsões e os valores reais. No entanto, em casos onde o dataset apresenta muitos recursos ou quando os dados apresentam correlações entre as variáveis, o modelo tende a se ajustar demais aos dados de treinamento (\textit{overfitting}). A fim de contornar tal problema, o modelo Ridge adiciona um termo de penalidade à função de custo, que regula o tamanho dos coeficientes do modelo. Esse comportamento é observado na função de custo do modelo, com a adição de um hiperparâmetro $\lambda$ em relação ao modelo de regressão linear padrão.
 
@@ -421,7 +421,7 @@ Assim, a cada ponto selecionado da amostra, é calculada a derivada parcial da f
 % onde:
 
 % \begin{itemize}
-%     \item $\lambda$ é o hiperparâmetro que controla a intensidade da regularização;
+%     \item $\lambda$ é o hiper-parâmetro que controla a intensidade da regularização;
 %     \item $\theta_{j}$ são os coeficientes (ou pesos) do modelo;
 %     \item Quanto maior o valor de $\lambda$, maior será a penalização para grandes coeficientes, resultando em um modelo mais simples.
 % \end{itemize}
