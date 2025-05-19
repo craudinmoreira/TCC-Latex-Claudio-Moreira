@@ -105,11 +105,29 @@ Após a substituição dos valores ausentes por zero, o gráfico da mesma coluna
 	\fonte{Autor.}
 \end{figure}
 
-Após este tratamento, a coluna \textit{TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C)} passa a apresentar uma distribuição mais uniforme, sem os picos de dados ausentes, com valores condizentes com a escala esperada da unidade medida, neste caso, a temperatura em graus Celsius.
+Aplicado o tratamento, a coluna \textit{TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C)} passa a apresentar uma distribuição mais uniforme, sem os picos de dados ausentes, com valores condizentes com a escala esperada da unidade medida, neste caso, a temperatura em graus Celsius.
 
-Em casos onde
+Em casos onde os dados apresentam \textit{outliers} (dados que se distanciam significativamente do restante da coluna analisada), foi aplicado o método IQR (Interquartile Range) para identificar e remover esses valores. A partir da diferença entre o terceiro quartil (Q3) e o primeiro quartil (Q1) de um conjunto de dados, multiplicado por um fator de tolerância, o método determina limites superiores e inferiores para o conjunto de dados analisado, removendo ou substituindo os valores que estão fora dessa faixa, para manter a consistência das informações.
 
-Na base de dados dos níveis dos rios, embora a dinâmica que representa o comportamento do nível do rio não seja linear, o uso do conceito de aproximação linear permite preencher os dados ausentes por meio da interpolação entre os valores que cercam as células sem informação naquele período. Essa abordagem é válida, uma vez que a variação do nível do rio entre dois pontos de amostragem próximos tende a ser linear, já que o nível do rio não apresenta oscilações bruscas em curtos períodos de tempo.
+Por exemplo, na coluna \textit{UMIDADE REL. MAX. NA HORA ANT. (AUT) (\%)}, as Figuras \ref{fig:dados_outlier_sem_tratamento} e \ref{fig:dados_outlier_com_tratamento} mostram a diferença entre os dados após a aplicação do método IQR, com um fator de tolerância de 1.2 entre os interquartis Q1 e Q3.
+
+\begin{figure}[H]
+	\caption{\label{fig:dados_outlier_sem_tratamento}Gráfico de Umidade Relativa Máxima  na Hora Anterior (\%) sem tratamento.}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:dados_outlier_com_tratamento}Gráfico de Umidade Relativa Máxima  na Hora Anterior (\%) com tratamento.}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+Na base de dados dos níveis dos rios, embora a dinâmica que representa os respectivos comportamentos não seja linear, o uso do conceito de aproximação linear permite preencher os dados ausentes por meio da interpolação entre os valores que cercam as células sem informação em determinado período. Essa abordagem é válida, uma vez que a variação do nível do rio entre dois pontos de amostragem próximos tende a ser linear, já que o nível do rio não apresenta oscilações bruscas em curtos períodos de tempo.
 
 Para realizar a interpolação, utilizou-se a função \textit{interpolate} com o argumento \textit{method = linear} da biblioteca \textit{Pandas}, que preenche os valores ausentes com base nos dados adjacentes.
 
