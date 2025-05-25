@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.31)  18 MAY 2025 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.31)  24 MAY 2025 12:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1541,57 +1541,57 @@ Package glossaries Warning: Empty glossary for \printnoidxglossary[type={simbolo
 
 
 ] [17]
-<figuras/happiness_world.png, id=238, 889.8846pt x 483.4863pt>
+<figuras/happiness_world.png, id=244, 889.8846pt x 483.4863pt>
 File: figuras/happiness_world.png Graphic file (type png)
 <use figuras/happiness_world.png>
 Package pdftex.def Info: figuras/happiness_world.png  used on input line 52.
 (pdftex.def)             Requested size: 355.94754pt x 193.39108pt.
  [18{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc} <./figuras/happiness_world.png>]
-<figuras/correlations.png, id=257, 970.1043pt x 169.1118pt>
+<figuras/correlations.png, id=263, 970.1043pt x 169.1118pt>
 File: figuras/correlations.png Graphic file (type png)
 <use figuras/correlations.png>
 Package pdftex.def Info: figuras/correlations.png  used on input line 71.
 (pdftex.def)             Requested size: 388.03484pt x 67.64351pt.
  [19{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./figuras/correlations.png>] [20]
-<figuras/how_observations_are_generated_in_linear_regression.png, id=305, 561.59813pt x 545.78906pt>
+<figuras/how_observations_are_generated_in_linear_regression.png, id=311, 561.59813pt x 545.78906pt>
 File: figuras/how_observations_are_generated_in_linear_regression.png Graphic file (type png)
 <use figuras/how_observations_are_generated_in_linear_regression.png>
 Package pdftex.def Info: figuras/how_observations_are_generated_in_linear_regression.png  used on input line 126.
 (pdftex.def)             Requested size: 181.99722pt x 176.87132pt.
-<figuras/linear_regression_approximation_of_a_complex_relationship.png, id=306, 532.99126pt x 429.10312pt>
+<figuras/linear_regression_approximation_of_a_complex_relationship.png, id=312, 532.99126pt x 429.10312pt>
 File: figuras/linear_regression_approximation_of_a_complex_relationship.png Graphic file (type png)
 <use figuras/linear_regression_approximation_of_a_complex_relationship.png>
 Package pdftex.def Info: figuras/linear_regression_approximation_of_a_complex_relationship.png  used on input line 132.
 (pdftex.def)             Requested size: 181.99722pt x 146.5217pt.
-<figuras/piecewise_linear_approximation.png, id=313, 342.5297pt x 256.70906pt>
+<figuras/piecewise_linear_approximation.png, id=319, 342.5297pt x 256.70906pt>
 File: figuras/piecewise_linear_approximation.png Graphic file (type png)
 <use figuras/piecewise_linear_approximation.png>
 Package pdftex.def Info: figuras/piecewise_linear_approximation.png  used on input line 146.
 (pdftex.def)             Requested size: 181.99722pt x 136.39984pt.
-<figuras/danger_extrapolation_regression.png, id=314, 345.54094pt x 270.25969pt>
+<figuras/danger_extrapolation_regression.png, id=320, 345.54094pt x 270.25969pt>
 File: figuras/danger_extrapolation_regression.png Graphic file (type png)
 <use figuras/danger_extrapolation_regression.png>
 Package pdftex.def Info: figuras/danger_extrapolation_regression.png  used on input line 152.
 (pdftex.def)             Requested size: 181.99722pt x 142.34619pt.
  [21 <./figuras/how_observations_are_generated_in_linear_regression.png> <./figuras/linear_regression_approximation_of_a_complex_relationship.png>] [22 <./figuras/piecewise_linear_approximation.png> <./figuras/danger_extrapolation_regression.png>] [23] [24]
-<figuras/RL_step_1.png, id=351, 496.4949pt x 396.0396pt>
+<figuras/RL_step_1.png, id=357, 496.4949pt x 396.0396pt>
 File: figuras/RL_step_1.png Graphic file (type png)
 <use figuras/RL_step_1.png>
 Package pdftex.def Info: figuras/RL_step_1.png  used on input line 296.
 (pdftex.def)             Requested size: 248.24684pt x 198.0193pt.
-<figuras/RL_step_2.png, id=352, 496.4949pt x 396.0396pt>
+<figuras/RL_step_2.png, id=358, 496.4949pt x 396.0396pt>
 File: figuras/RL_step_2.png Graphic file (type png)
 <use figuras/RL_step_2.png>
 Package pdftex.def Info: figuras/RL_step_2.png  used on input line 318.
 (pdftex.def)             Requested size: 248.24684pt x 198.0193pt.
  [25 <./figuras/RL_step_1.png>]
-<figuras/RL_step_3.png, id=358, 496.4949pt x 396.0396pt>
+<figuras/RL_step_3.png, id=364, 496.4949pt x 396.0396pt>
 File: figuras/RL_step_3.png Graphic file (type png)
 <use figuras/RL_step_3.png>
 Package pdftex.def Info: figuras/RL_step_3.png  used on input line 343.
 (pdftex.def)             Requested size: 248.24684pt x 198.0193pt.
  [26 <./figuras/RL_step_2.png>]
-<figuras/RL_step_4.png, id=364, 496.4949pt x 396.0396pt>
+<figuras/RL_step_4.png, id=370, 496.4949pt x 396.0396pt>
 File: figuras/RL_step_4.png Graphic file (type png)
 <use figuras/RL_step_4.png>
 Package pdftex.def Info: figuras/RL_step_4.png  used on input line 354.
@@ -1602,33 +1602,33 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 355.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 355.
-<figuras/RL_step_5.png, id=365, 496.4949pt x 396.0396pt>
+<figuras/RL_step_5.png, id=371, 496.4949pt x 396.0396pt>
 File: figuras/RL_step_5.png Graphic file (type png)
 <use figuras/RL_step_5.png>
 Package pdftex.def Info: figuras/RL_step_5.png  used on input line 360.
 (pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
-<figuras/RL_step_6.png, id=366, 496.4949pt x 396.0396pt>
+<figuras/RL_step_6.png, id=372, 496.4949pt x 396.0396pt>
 File: figuras/RL_step_6.png Graphic file (type png)
 <use figuras/RL_step_6.png>
 Package pdftex.def Info: figuras/RL_step_6.png  used on input line 366.
 (pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
-<figuras/RL_step_7.png, id=367, 496.4949pt x 396.0396pt>
+<figuras/RL_step_7.png, id=373, 496.4949pt x 396.0396pt>
 File: figuras/RL_step_7.png Graphic file (type png)
 <use figuras/RL_step_7.png>
 Package pdftex.def Info: figuras/RL_step_7.png  used on input line 372.
 (pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
-<figuras/RL_step_8.png, id=368, 496.4949pt x 396.0396pt>
+<figuras/RL_step_8.png, id=374, 496.4949pt x 396.0396pt>
 File: figuras/RL_step_8.png Graphic file (type png)
 <use figuras/RL_step_8.png>
 Package pdftex.def Info: figuras/RL_step_8.png  used on input line 378.
 (pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
-<figuras/RL_step_9.png, id=369, 496.4949pt x 396.0396pt>
+<figuras/RL_step_9.png, id=375, 496.4949pt x 396.0396pt>
 File: figuras/RL_step_9.png Graphic file (type png)
 <use figuras/RL_step_9.png>
 Package pdftex.def Info: figuras/RL_step_9.png  used on input line 384.
 (pdftex.def)             Requested size: 181.99722pt x 145.17265pt.
  [27 <./figuras/RL_step_3.png>]
-<figuras/RL_step_10.png, id=376, 496.4949pt x 396.0396pt>
+<figuras/RL_step_10.png, id=382, 496.4949pt x 396.0396pt>
 File: figuras/RL_step_10.png Graphic file (type png)
 <use figuras/RL_step_10.png>
 Package pdftex.def Info: figuras/RL_step_10.png  used on input line 398.
@@ -1637,7 +1637,7 @@ Package pdftex.def Info: figuras/RL_step_10.png  used on input line 398.
 \openout2 = `capitulos/cap_3.aux'.
 
  (capitulos/cap_3.tex
-<figuras/steps_data_preparing.png, id=393, 700.11563pt x 295.85532pt>
+<figuras/steps_data_preparing.png, id=399, 700.11563pt x 295.85532pt>
 File: figuras/steps_data_preparing.png Graphic file (type png)
 <use figuras/steps_data_preparing.png>
 Package pdftex.def Info: figuras/steps_data_preparing.png  used on input line 10.
@@ -1650,59 +1650,59 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
  <./figuras/steps_data_preparing.png>]
-<figuras/base_inmet.png, id=414, 1464.97313pt x 362.85562pt>
+<figuras/base_inmet.png, id=420, 1464.97313pt x 362.85562pt>
 File: figuras/base_inmet.png Graphic file (type png)
 <use figuras/base_inmet.png>
 Package pdftex.def Info: figuras/base_inmet.png  used on input line 26.
 (pdftex.def)             Requested size: 366.24239pt x 90.71368pt.
-<figuras/base_sema.png, id=416, 328.22626pt x 288.3272pt>
+<figuras/base_sema.png, id=422, 328.22626pt x 288.3272pt>
 File: figuras/base_sema.png Graphic file (type png)
 <use figuras/base_sema.png>
 Package pdftex.def Info: figuras/base_sema.png  used on input line 69.
 (pdftex.def)             Requested size: 164.11272pt x 144.16324pt.
  [31 <./figuras/base_inmet.png>]
-<figuras/step_data_cleaning.png, id=423, 770.88pt x 311.66437pt>
+<figuras/step_data_cleaning.png, id=429, 770.88pt x 311.66437pt>
 File: figuras/step_data_cleaning.png Graphic file (type png)
 <use figuras/step_data_cleaning.png>
 Package pdftex.def Info: figuras/step_data_cleaning.png  used on input line 81.
 (pdftex.def)             Requested size: 308.34654pt x 124.66353pt.
  [32 <./figuras/base_sema.png> <./figuras/step_data_cleaning.png>]
-<figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png, id=436, 1181.6145pt x 506.6127pt>
+<figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png, id=442, 1181.6145pt x 506.6127pt>
 File: figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png Graphic file (type png)
 <use figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png>
 Package pdftex.def Info: figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png  used on input line 93.
 (pdftex.def)             Requested size: 413.57127pt x 177.3171pt.
-<figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png, id=438, 1154.1519pt x 506.6127pt>
+<figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png, id=444, 1154.1519pt x 506.6127pt>
 File: figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png Graphic file (type png)
 <use figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png>
 Package pdftex.def Info: figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png  used on input line 103.
 (pdftex.def)             Requested size: 403.95921pt x 177.3171pt.
  [33 <./figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png> <./figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png>]
-<figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png, id=448, 1160.6562pt x 506.6127pt>
+<figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png, id=454, 1160.6562pt x 506.6127pt>
 File: figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png Graphic file (type png)
 <use figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png>
 Package pdftex.def Info: figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png  used on input line 117.
 (pdftex.def)             Requested size: 406.23576pt x 177.3171pt.
-<figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png, id=449, 1154.1519pt x 506.6127pt>
+<figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png, id=455, 1154.1519pt x 506.6127pt>
 File: figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png Graphic file (type png)
 <use figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png>
 Package pdftex.def Info: figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png  used on input line 125.
 (pdftex.def)             Requested size: 403.95921pt x 177.3171pt.
- [34 <./figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png>]) [35 <./figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png>]
+ [34 <./figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png>] [35 <./figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png>]) [36]
 \openout2 = `capitulos/cap_4.aux'.
 
- (capitulos/cap_4.tex) [36
+ (capitulos/cap_4.tex) [37
 
 
 
 
-] [37
+] [38
 
 
 
-] (pos_textual/apendice_a.tex [38]) (pos_textual/anexo_a.tex [39
+] (pos_textual/apendice_a.tex [39]) (pos_textual/anexo_a.tex [40
 
-]) [40
+]) [41
 
 ]
 \tf@lof=\write6
@@ -1731,17 +1731,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37961 strings out of 474424
- 697350 string characters out of 5741739
+ 37971 strings out of 474424
+ 697491 string characters out of 5741739
  1943496 words of memory out of 5000000
- 59473 multiletter control sequences out of 15000+600000
- 620520 words of font info for 145 fonts, out of 8000000 for 9000
+ 59477 multiletter control sequences out of 15000+600000
+ 620649 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,17n,121p,2490b,4454s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (41 pages, 1805429 bytes).
+Output written on main.pdf (42 pages, 1812731 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
- 138 named destinations out of 1000 (max. 500000)
- 35234 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 699 PDF objects out of 1000 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
+ 35250 words of extra memory for PDF output out of 35830 (max. 10000000)
 

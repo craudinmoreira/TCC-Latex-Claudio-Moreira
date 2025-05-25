@@ -132,3 +132,48 @@ Na base de dados dos níveis dos rios, embora a dinâmica que representa os resp
 Para realizar a interpolação, utilizou-se a função \textit{interpolate} com o argumento \textit{method = linear} da biblioteca \textit{Pandas}, que preenche os valores ausentes com base nos dados adjacentes.
 
 Ainda, observou-se nas bases dos níveis dos rios a ocorrência de valores ausentes no início ou no final do período de amostragem, inviabilizando a interpolação. Para esses casos, o preenchimento foi feito a partir da repetição do primeiro ou do último valor disponível, respectivamente. É importante ressaltar que tal limpeza só pode ser feita se o preenchimento ocorra em um intervalo de tempo curto, visando não afetar a análise feita pelo modelo de previsão.
+
+\section{Redução dos dados}
+
+A etapa de redução dos dados visa eliminar informações redundantes ou irrelevantes, mantendo apenas os dados que contribuem para a análise e treinamento do modelo de previsão. Considerando que serão utilizados dados de monitoramento do nível de 4 rios para a previsão do nível do rio Guaíba, os dados meteorológicos coletados precisam ser filtrados de modo a garantir tanto que as informações sejam relevantes para a previsão, quanto que os dados de monitoramento dos rios estejam alinhados com os dados meteorológicos, evitando assim a inclusão de dados desnecessários no treinamento. 
+
+Voltando para a Tabela \ref{tab:colunas_dados_meteorologicos}, nota-se a presença de 17 colunas, das quais:
+
+\begin{itemize}
+	\item 6 colunas referem-se a dados de temperatura;
+	\item 3 colunas referem-se a dados de pressão atmosférica;
+	\item 3 colunas referem-se a dados do comportamento do vento;
+	\item 3 colunas referem-se a dados de umidade relativa do ar;
+	\item 1 coluna refere-se a dados de radiação solar.
+	\item 1 coluna refere-se a dados de precipitação.
+\end{itemize}
+
+Desse modo, para o primeiro passo de redução da base, foram mantidas apenas uma coluna de cada tipo de dado, filtrando 6 colunas no total, conforme a Tabela \ref{tab:colunas_dados_meteorologicos_reduzidas}. 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|p{10cm}|c|}
+	\hline
+	\textbf{Coluna} & \textbf{Unidade de medida} \\
+	\hline
+	Temperatura do Ar - Bulboeco & (°C) \\
+	Pressão Atmosférica ao Nível da Estação & (mB) \\
+	Vento - Velocidade Horária & (m/s) \\
+	Umidade Relativa do Ar & (\%) \\
+	Radiação Global & (kJ/m²) \\
+	Precipitação Total & (mm) \\
+	\hline
+	\end{tabular}
+	\caption{Tabela de dados meteorológicos reduzidos - 1ª Filtragem}
+	\label{tab:colunas_dados_meteorologicos_reduzidas}
+\end{table}
+
+Para a escolha das colunas a serem mantidas, foram levados em consideração os seguintes critérios:
+\begin{itemize}
+	\item As colunas \textit{Temperatura do Ar - Bulboeco}, \textit{Pressão Atmosférica ao Nível da Estação} e \textit{Umidade Relativa do Ar} foram escolhidas por serem medidas diretas dos respectivos fenômenos atmosféricos, enquanto as demais colunas referem-se a medidas derivadas ou não diretamente observáveis, que não são tão relevantes para a previsão do nível do rio.
+	\item A coluna \textit{Precipitação Total} foi mantida por ser um dos principais fatores que influenciam o nível do rio.
+	\item 
+\end{itemize}
+
+\section{Transformação dos dados}
+

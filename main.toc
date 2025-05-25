@@ -28,19 +28,21 @@
 \contentsline {section}{\numberline {3.1}Coleta de dados}{30}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Pré processamento dos dados}{30}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Limpeza dos dados}{32}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Redução dos dados}{35}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Transformação dos dados}{36}{section.3.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Conclusão}}{36}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Conclusão}}{37}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFERÊNCIAS}{37}{section*.38}%
+\contentsline {chapter}{REFERÊNCIAS}{38}{section*.39}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}{Descrição}}{39}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}{Descrição}}{40}{appendix.A}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}{Descrição}}{40}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}{Descrição}}{41}{appendix.anexochapback.1}%
