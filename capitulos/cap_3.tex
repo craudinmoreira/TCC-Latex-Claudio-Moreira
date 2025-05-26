@@ -172,8 +172,17 @@ Para a escolha das colunas a serem mantidas, foram levados em consideração os 
 \begin{itemize}
 	\item As colunas \textit{Temperatura do Ar - Bulboeco}, \textit{Pressão Atmosférica ao Nível da Estação} e \textit{Umidade Relativa do Ar} foram escolhidas por serem medidas diretas dos respectivos fenômenos atmosféricos, enquanto as demais colunas referem-se a medidas derivadas ou não diretamente observáveis, que não são tão relevantes para a previsão do nível do rio.
 	\item A coluna \textit{Precipitação Total} foi mantida por ser um dos principais fatores que influenciam o nível do rio.
-	\item 
+	\item As colunas \textit{Radiação Global} e \textit{Umidade Relativa do Ar} foram mantidas por serem fatores importantes para a evaporação da água, que também influenciam, mesmo que de forma indireta, no nível do rio.
 \end{itemize}
 
+Após essa redução inicial, os gráficos e seus dados de cada coluna foram analisados, a fim de verificar se as informações eram consistentes e poderiam contribuir para o treinamento do modelo. Para isso, foram utilizados gráficos de dispersão e histogramas, como os mostrados na Figura \ref{fig:histograma_dados_meteorologicos}.
+
+ADICIONAR AQUI O HISTOGRAMA DOS DADOS METEOROLÓGICOS E A DECISÃO DE QUAIS COLUNAS FORAM MANTIDAS E QUAIS FORAM DESCARTADAS.
+
+Definidas as colunas a serem mantidas, o próximo passo consistiu em alinhar os dados meteorológicos com os dados de monitoramento dos rios, garantindo que as informações estivessem na mesma frequência de amostragem. Para isso, foram utilizados os dados de monitoramento do nível do rio Guaíba, que possuem a maior frequência de amostragem entre os rios analisados, com intervalo de 15 minutos, enquanto os dados meteorológicos possuem frequência de 1 hora (60 minutos). Assim, a frequência de amostragem das informações do nível dos rios foi reduzida para 1 hora, aplicando um filtro simples que mantém apnas as linhas cujo \textit{timestamp} tem minuto igual a 0.
+
+
 \section{Transformação dos dados}
+
+
 
