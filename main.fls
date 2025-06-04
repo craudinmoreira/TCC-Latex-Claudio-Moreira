@@ -1,6 +1,6 @@
-PWD c:\Users\claud\OneDrive\Documentos\TCC-Latex-Claudio-Moreira
+PWD c:\github_projects\TCC-Latex-Claudio-Moreira
 INPUT C:\Users\claud\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\claud\OneDrive\Documentos\TCC-Latex-Claudio-Moreira\main.tex
+INPUT c:\github_projects\TCC-Latex-Claudio-Moreira\main.tex
 OUTPUT main.log
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\abntex2\abntex2.cls
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\abntex2\abntex2.cls

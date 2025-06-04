@@ -181,8 +181,33 @@ ADICIONAR AQUI O HISTOGRAMA DOS DADOS METEOROLÓGICOS E A DECISÃO DE QUAIS COLU
 
 Definidas as colunas a serem mantidas, o próximo passo consistiu em alinhar os dados meteorológicos com os dados de monitoramento dos rios, garantindo que as informações estivessem na mesma frequência de amostragem. Para isso, foram utilizados os dados de monitoramento do nível do rio Guaíba, que possuem a maior frequência de amostragem entre os rios analisados, com intervalo de 15 minutos, enquanto os dados meteorológicos possuem frequência de 1 hora (60 minutos). Assim, a frequência de amostragem das informações do nível dos rios foi reduzida para 1 hora, aplicando um filtro simples que mantém apnas as linhas cujo \textit{timestamp} tem minuto igual a 0.
 
+Por fim, alinhados os dados meteorológicos com os dados de monitoramento dos rios, o \textit{dataframe} resultante passou um nivelamento superior e inferior quanto a data inicial e final, de modo que o período de amostragem de todas as informações fosse o mesmo, garantindo que todas as colunas tivessem o mesmo número de linhas preenchidas. Embora na etapa de limpeza dos dados tenha sido aplicado o preenchimento de valores ausentes, verificou-se que as estações de monitoramento dos rios não possuem medições que se iniciam ou finalizam na mesma data. Dessa forma, a fim de analisar qual o período de início de fim das informações obtidas, a tabela \ref{tab:periodo_amostragem} apresenta o período de amostragem de cada uma das fontes de dados.
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|c|c|c|c|}
+	\hline
+	\textbf{Rio} & \textbf{Data Mínima} & \textbf{Hora Mínima} & \textbf{Data Máxima} & \textbf{Hora Máxima} \\
+	\hline
+	Rio dos Sinos & 2013-12-13 & 05:00:00 & 2024-06-30 & 09:00:00 \\
+	Rio Caí       & 2015-09-14 & 13:00:00 & 2024-05-06 & 14:00:00 \\
+	Rio Gravataí  & 2017-11-07 & 12:00:00 & 2024-07-01 & 00:00:00 \\
+	Rio Jacuí     & 2014-10-08 & 20:00:00 & 2024-04-27 & 01:00:00 \\
+	Rio Guaíba    & 2014-07-29 & 14:00:00 & 2024-05-06 & 14:00:00 \\
+	\hline
+	\end{tabular}
+	\caption{Datas mínima e máxima disponíveis para cada rio analisado}
+	\label{tab:periodo_amostragem}
+\end{table}
+
+Quanto a base de dados meteorológicos, o site do INMET disponibiliza dados desde o início dos anos 2000 e mantém a base atualizada até os dias atuais, não sendo, portanto, um limitador para a definição do período do dataframe final. Assim, o período de amostragem final pode ser definido a partir de 07 de novembro de 2017, que é a data mínima do rio Gravataí, até 06 de maio de 2024, que é a data máxima do rio Caí, com um dataframe de 56366 linhas.
 
 \section{Transformação dos dados}
+
+A transformação dos dados é uma etapa crucial para garantir que as informações estejam no formato adequado para o treinamento do modelo de previsão. Nesta fase, os dados são convertidos em um formato numérico, adequado para algoritmos de aprendizado de máquina, e normalizados para garantir que todas as variáveis tenham a mesma escala.
+
+Com os dados meteorológicos e de monitoramento dos rios alinhados, a normalização dos dados é aplicada visando principalmente equilibrar os dados dos níveis dos rios com os dados meteorológicos, tendo em vista que as escalas entre essas informações apresentam uma discrepância maior.
+
+Ademais, outro fator que deve ser considerado é se as colunas do \textit{dataframe} são compostas de dados categóricos ou numéricos. Por se tratar de medições aferidas por sensores meteorológicos e/ou geográficos, todas as colunas da base de dados estudada são numéricas.
 
 
 
