@@ -76,6 +76,7 @@ A Figura \ref{fig:correlacoes} mostra alguns exemplos com gráficos de dispersã
 Sendo assim, com o cálculo do coeficiente indicando uma alta correlação entre os dados estudados, os métodos de regressão utilizam esta premissa entre as variáveis para estimar valores não existentes no conjunto de dados. Contudo, o coeficiente de correlação também pode mostrar variáveis que não interferem na dinâmica uma da outra no conjunto de informações analisadas, tornando necessário o uso de algoritmos robustos, que dispensam esse o fator de correlação para realizar as previsões desejadas. 
 
 \section{Regressão Linear}
+\label{sec:regressao-linear}
 
 A técnica de regressão linear é amplamente utilizada nos campos de estudo da engenharia, ciências físicas e químicas, economia, gestão, ciências biológicas e da vida, e ciências sociais. Em casos onde se deseja estabelcer uma relação entre uma variável preditora ou regressora (normalmente representada por $x$) e uma variável resposta (representada por $y$), a descrição dessa relação por meio de uma equação linear configura a implementação da técnica para a modelagem do problema estudado \cite{montgomery2012}.  
 
@@ -400,9 +401,27 @@ Assim, a cada ponto selecionado da amostra, é calculada a derivada parcial da f
 	\fonte{Autor.}
 \end{figure}
 
-%
 
-% \section{Modelo Ridge}
+\section{Modelo Ridge}
+
+A Regressão Ridge é uma técnica de regularização estatística amplamente utilizada em modelos de regressão linear para abordar problemas de sobreajuste (overfitting) e multicolinearidade entre variáveis preditoras \cite{McDonald:2009:RR}. Essa técnica, também conhecida como regularização L2, é particularmente eficaz em cenários onde o número de variáveis preditoras é grande ou quando essas variáveis apresentam alta correlação, o que pode levar a estimativas de coeficientes instáveis e de baixa generalização.
+
+Conforme visto em \ref{sec:regressao-linear}, na regressão linear tradicional, o objetivo é minimizar a soma dos quadrados dos resíduos (Residual Sum of Squares, RSS), que mede a diferença entre os valores observados e os valores previstos pelo modelo. A função de perda é dada por:
+
+\begin{equation}
+	RSS = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+\end{equation}
+
+onde $y_i$ são os valores observados, $\hat{y}_i$ são os valores previstos, e $n$ é o número de observações. No entanto, em cenários com multicolinearidade (alta correlação entre variáveis preditoras) ou um grande número de preditores, o modelo pode se ajustar excessivamente aos dados de treinamento, resultando em alta variância e baixa performance em dados não vistos. A Regressão Ridge resolve esse problema ao adicionar um termo de penalidade à função de perda, proporcional à soma dos quadrados dos coeficientes de regressão. 
+
+A função objetivo da Regressão Ridge é:
+
+\begin{equation}
+	RSS_{L2} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} \beta_j^2
+\end{equation}
+
+No contexto da biblioteca \textit{Scikit-learn} em Python, a classe Ridge implementa a regressão ridge. O parâmetro alpha define a força da regularização: valores maiores de $\lambda$ resultam em coeficientes mais próximos de zero, enquanto valores menores permitem que o modelo se aproxime da regressão linear ordinária. A escolha adequada de 
+$\lambda$ é crucial para evitar tanto o overfitting  (quando o modelo se ajusta demais aos dados de treinamento) quanto o underfitting (quando o modelo é muito simples para capturar os padrões dos dados). \cite{ScikitLearnRidge2025}.
 
 % O modelo Ridge, implementado na biblioteca \textit{scikit-learn} do Python, é uma variação da regressão linear de MQO que incorpora um termo de regularização L2 à função de custo, o que ajuda a controlar a complexidade do modelo e prevenir o sobreajuste (\textit{overfitting}), ou seja, o treinamento de um modelo que não é capaz de realizar previsões em outros cenários, exceto aquele que lhe foi passado no treinamento \cite{ScikitLearnRidge2025}. Com essa caracterísica, o método é indicado em casos onde os dados apresentam colinearidade ou onde há muitas variáveis independentes \cite{Jolly2018}.
 

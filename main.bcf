@@ -2502,10 +2502,12 @@
     <bcf:citekey order="24" intorder="1">montgomery2012</bcf:citekey>
     <bcf:citekey order="25" intorder="1">montgomery2012</bcf:citekey>
     <bcf:citekey order="26" intorder="1">Alkama2020</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">pecan_data_prep_2023</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">pecan_data_prep_2023</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">McDonald:2009:RR</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">ScikitLearnRidge2025</bcf:citekey>
     <bcf:citekey order="29" intorder="1">pecan_data_prep_2023</bcf:citekey>
     <bcf:citekey order="30" intorder="1">pecan_data_prep_2023</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">pecan_data_prep_2023</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">pecan_data_prep_2023</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

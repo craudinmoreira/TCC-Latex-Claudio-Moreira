@@ -305,6 +305,38 @@
       \field{pages}{1090\bibrangedash 1091}
       \range{pages}{2}
     \endentry
+    \entry{McDonald:2009:RR}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=263ecf409479f8cf29c087d9d6ddab46}{%
+           family={McDonald},
+           familyi={M\bibinitperiod},
+           given={Gary\bibnamedelima C.},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{fullhash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{fullhashraw}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{bibnamehash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{authorbibnamehash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{authornamehash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{authorfullhash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{authorfullhashraw}{263ecf409479f8cf29c087d9d6ddab46}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1939-0068}
+      \field{journaltitle}{WIREs Computational Statistics}
+      \field{number}{1}
+      \field{title}{Ridge regression}
+      \field{volume}{1}
+      \field{year}{2009}
+      \field{pages}{93\bibrangedash 100}
+      \range{pages}{8}
+    \endentry
     \entry{montgomery2012}{book}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7d4a838891cb5c31eb1e3e089777efa0}{%
@@ -461,6 +493,36 @@
       \endverb
       \verb{url}
       \verb http://www.icmc.usp.br
+      \endverb
+    \endentry
+    \entry{ScikitLearnRidge2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2ad72e574157d613a63fe8732cf468a8}{%
+           family={{scikit-learn developers}},
+           familyi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{fullhash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{fullhashraw}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{bibnamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorbibnamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authornamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorfullhash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorfullhashraw}{2ad72e574157d613a63fe8732cf468a8}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Acesso em: 05/04/2025}
+      \field{title}{Linear Models: Ridge Regression}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression
       \endverb
     \endentry
     \entry{aws2024}{online}{}{}

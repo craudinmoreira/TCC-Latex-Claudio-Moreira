@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber main"] 1748993120.21267 "main.bcf" "main.bbl" "main" 1749031030.15473 0
-  "main.bcf" 1749031029 116447 3b4a4c0f99481cd0ab629b58b669ca88 "pdflatex"
-  "pos_textual/referencias.bib" 1747615773 6050 e90cd426503949fe642fdfe60b321942 ""
+["biber main"] 1749522103.7027 "main.bcf" "main.bbl" "main" 1749523679.74125 0
+  "main.bcf" 1749523679 116595 40eff7db423777c26aac4a7db5e9909d "pdflatex"
+  "pos_textual/referencias.bib" 1749522101 6382 577c872999c9204fd3424e90adc8b4f6 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["makeindex main.idx"] 1748999701.16788 "main.idx" "main.ind" "main" 1749031030.15418 0
-  "main.idx" 1749031024 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex main.idx"] 1749521979.86483 "main.idx" "main.ind" "main" 1749523679.7408 0
+  "main.idx" 1749523673 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
   (rewritten before read)
-["pdflatex"] 1749031022.16339 "c:/github_projects/TCC-Latex-Claudio-Moreira/main.tex" "main.pdf" "main" 1749031030.15561 0
+["pdflatex"] 1749523671.96837 "c:/github_projects/TCC-Latex-Claudio-Moreira/main.tex" "main.pdf" "main" 1749523679.74201 0
   "C:/Users/claud/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1732140528 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/claud/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1712422397 24236005 1c31bfe8688c0f0943dae187bd3d3b25 ""
   "C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -229,13 +229,13 @@
   "C:/Users/claud/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/claud/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "c:/github_projects/TCC-Latex-Claudio-Moreira/main.tex" 1747615773 11347 be2ae0a0e9ae9fa12bf9eadd5dd901d2 ""
-  "capitulos/cap_1.aux" 1749031025 6000 fa0146e182b81fca30ad10f4bb874401 "pdflatex"
+  "capitulos/cap_1.aux" 1749523675 6000 5c3d69bba576ed72c202454137cc0805 "pdflatex"
   "capitulos/cap_1.tex" 1729649008 371 32b99670cdfc862d0cbed121a0f59478 ""
-  "capitulos/cap_2.aux" 1749031028 12593 f2f12b483cce7ef0bc015d203d17b564 "pdflatex"
-  "capitulos/cap_2.tex" 1747615773 28935 46cfb1b579076653565d563eaa33bb0b ""
-  "capitulos/cap_3.aux" 1749031029 9553 e856e649c5617664ea4fe29d97bdb72b "pdflatex"
+  "capitulos/cap_2.aux" 1749523677 12784 1d39599f58216a4d0fc970d114791337 "pdflatex"
+  "capitulos/cap_2.tex" 1749523671 31186 1c018fda2459d66ca01291a154f3d2df ""
+  "capitulos/cap_3.aux" 1749523678 9553 da1d6f09b0008167b2523ee2e524eec5 "pdflatex"
   "capitulos/cap_3.tex" 1749031021 17144 edbe06f6d992c458fdf4e5d1b516a98d ""
-  "capitulos/cap_4.aux" 1749031029 5630 8f7fab64df2c2119c2e565224fbaaf2f "pdflatex"
+  "capitulos/cap_4.aux" 1749523678 5630 66f974d86febf30af9e32bab003b94b5 "pdflatex"
   "capitulos/cap_4.tex" 1728846976 340 5ad2975fb52fc49a90bde4c521837cfe ""
   "configs/eca_ufsc_bnu.sty" 1747615773 13697 eaa6d9aa8634f2cb31bc817677b82982 ""
   "configs/vertical_sigla_fundo_claro.pdf" 1728846976 51600 8f2bae488cfbff344ff5653db8dd9532 ""
@@ -263,15 +263,15 @@
   "figuras/piecewise_linear_approximation.png" 1747615773 22517 0cf2a9040e60c067369d69df8bfdd81f ""
   "figuras/step_data_cleaning.png" 1747615773 59363 094e293edfcd919322319dbbc81d7f34 ""
   "figuras/steps_data_preparing.png" 1747615773 83827 3b0cda8dbfdd9fb54982b67bb6673998 ""
-  "main.aux" 1749031029 16399 7b59d0b70cdaea27038bd6450df54695 "pdflatex"
-  "main.bbl" 1748993123 24538 30b631b5b7831dfde5be6d2fc8479e5e "biber main"
-  "main.ind" 1748999701 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.lof" 1749031029 2235 bc3d1a61b55091de536f1a7d3463d9d1 "pdflatex"
-  "main.loq" 1749031029 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.lot" 1749031029 629 743026645d5bd6d260185c89c2978b02 "pdflatex"
-  "main.run.xml" 1749031029 2523 7b6223e3edd4df164b5b7c64d8f51fe0 "pdflatex"
+  "main.aux" 1749523679 17015 913fe5c959b3b1cb933152220d7db994 "pdflatex"
+  "main.bbl" 1749522106 27295 b40dfda04fa7eab087f2f79485da3b40 "biber main"
+  "main.ind" 1749521980 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
+  "main.lof" 1749523679 2235 5421b15f14d621295c1cfe2c174d16e7 "pdflatex"
+  "main.loq" 1749523679 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.lot" 1749523679 629 feb67ade89d0a350b4a5421a8a1208b9 "pdflatex"
+  "main.run.xml" 1749523679 2523 7b6223e3edd4df164b5b7c64d8f51fe0 "pdflatex"
   "main.tex" 1747615773 11347 be2ae0a0e9ae9fa12bf9eadd5dd901d2 ""
-  "main.toc" 1749031029 3774 e8be03fb4e361c5c982b3db5157ad777 "pdflatex"
+  "main.toc" 1749523679 3847 c6a1735fc1762c48ebd78afb9cb4d381 "pdflatex"
   "pos_textual/anexo_a.tex" 1728846976 504 a9ff955dda17041afcff8e119487b840 ""
   "pos_textual/apendice_a.tex" 1728846976 478 f4787d60344add47c6e68a62a037abe3 ""
   "pre_textual/ficha_catalografica.pdf" 1728846976 7340 4060e335d28108b9c4a9687d208220af ""
