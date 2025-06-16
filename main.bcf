@@ -2508,6 +2508,7 @@
     <bcf:citekey order="30" intorder="1">pecan_data_prep_2023</bcf:citekey>
     <bcf:citekey order="31" intorder="1">pecan_data_prep_2023</bcf:citekey>
     <bcf:citekey order="32" intorder="1">pecan_data_prep_2023</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">scikit_learn_standardscaler</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

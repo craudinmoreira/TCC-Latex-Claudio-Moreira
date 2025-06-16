@@ -192,6 +192,42 @@
       \field{pages}{619}
       \range{pages}{1}
     \endentry
+    \entry{scikit_learn_standardscaler}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8880822642687df3e50f74258165974}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           prefix={scikit-learn},
+           prefixi={s\bibinithyphendelim l\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{f8880822642687df3e50f74258165974}
+      \strng{fullhash}{f8880822642687df3e50f74258165974}
+      \strng{fullhashraw}{f8880822642687df3e50f74258165974}
+      \strng{bibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorbibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authornamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhashraw}{f8880822642687df3e50f74258165974}
+      \field{extraname}{1}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Online documentation}
+      \field{note}{Accessed: 2025-06-16}
+      \field{title}{sklearn.preprocessing.StandardScaler}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
+      \endverb
+    \endentry
     \entry{g12024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c0497521d35d66866e3af408094864c3}{%
@@ -509,8 +545,10 @@
       \strng{authornamehash}{2ad72e574157d613a63fe8732cf468a8}
       \strng{authorfullhash}{2ad72e574157d613a63fe8732cf468a8}
       \strng{authorfullhashraw}{2ad72e574157d613a63fe8732cf468a8}
+      \field{extraname}{2}
       \field{sortinit}{s}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}

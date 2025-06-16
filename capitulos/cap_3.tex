@@ -72,6 +72,7 @@ Já para os dados dos níveis dos rios, também foi necessário remover o cabeç
 \end{figure}
 
 \section{Limpeza dos dados}
+\label{sec:limpeza_dos_dados}
 
 Após a coleta dos dados, o próximo passo é a limpeza dessas informações, cujo procedimento consiste em remover dados duplicados, corrigir erros de formatação e lidar com valores ausentes. Existem diferentes abordagens para tratar valores inconsistentes no dados coletados. Uma abordagem comum, principalmente em casos onde não há uma linearidade ou tendência clara é o preenchimento com zero, como mostra a Figura \ref{fig:passo_dados_limpeza}, ou com a média dos dados na coluna a ser limpa.
 
@@ -203,11 +204,29 @@ Quanto a base de dados meteorológicos, o site do INMET disponibiliza dados desd
 
 \section{Transformação dos dados}
 
-A transformação dos dados é uma etapa crucial para garantir que as informações estejam no formato adequado para o treinamento do modelo de previsão. Nesta fase, os dados são convertidos em um formato numérico, adequado para algoritmos de aprendizado de máquina, e normalizados para garantir que todas as variáveis tenham a mesma escala.
+A transformação dos dados é uma etapa fundamental para garantir que as informações estejam no formato correto para o treinamento do modelo de previsão. Nesta fase, os dados são convertidos em um formato numérico, adequado para algoritmos de aprendizado de máquina, e normalizados para assegurar que todas as variáveis tenham a mesma escala.
 
-Com os dados meteorológicos e de monitoramento dos rios alinhados, a normalização dos dados é aplicada visando principalmente equilibrar os dados dos níveis dos rios com os dados meteorológicos, tendo em vista que as escalas entre essas informações apresentam uma discrepância maior.
+Com os dados meteorológicos e de monitoramento dos rios alinhados, a normalização dos dados é aplicada visando principalmente equilibrar os dados dos níveis dos rios com os dados meteorológicos, tendo em vista que as escalas entre essas informações apresentam uma discrepância maior, pela diferença de unidade de medida entre elas.
 
-Ademais, outro fator que deve ser considerado é se as colunas do \textit{dataframe} são compostas de dados categóricos ou numéricos. Por se tratar de medições aferidas por sensores meteorológicos e/ou geográficos, todas as colunas da base de dados estudada são numéricas.
+Ademais, outro fator que deve ser considerado é se as colunas do \textit{dataframe} são compostas de dados categóricos (geralmente representados através de textos) ou numéricos. Por se tratar de medições aferidas por sensores meteorológicos e/ou geográficos, todas as colunas da base de dados estudada são numéricas.
+
+A partir dessa premissa, a normalização dos dados foi feita utilizando o método \textit{StandardScaler} da biblioteca \textit{Scikit-learn}, que transforma os dados de uma coluna para um valor cuja média seja zero e desvio padrão igual a um. A pontuação padrão de uma amostra x é dada por:
+
+\begin{equation}
+z = \frac{x - \mu}{\sigma}
+\end{equation}
+
+onde \( \mu \) é a média da amostra e \( \sigma \) é o desvio padrão. Muitos elementos usados em funções objetivas de um algoritmo de aprendizagem (como o kernel RBF do Support Vector e as máquinas ou os regularizadores L1 e L2 dos modelos lineares) assumem que todos os recursos estão centrados em torno uma média igual a zero e variação de mesma ordem \cite{scikit_learn_standardscaler}. Desse modo, caso uma amostra apresente uma variância de magnitude maior do que outros, ele pode dominar a função objetivo e fazer o estimador incapaz de aprender com outros recursos corretamente como esperado.
+
+Além disso, o método aplicado também é sensível a outliers, que afetam a média e o desvio padrão calculados para a definição dos valores normalizados. Por esse motivo, na seção \ref{sec:limpeza_dos_dados}, a aplicação do método IQR para remoção dos \textit{outliers}, além de limpar os dados durante aquela etapa de preparação, garantiu que os dados estivessem mais homogêneos e não fossem distorcidos por valores extremos na normalização desta etapa.
+
+Para exemplificar a normalização dos dados, 
+
+Com os dados normalizados, o \textit{dataframe} está pronto para ser dividido em conjuntos de treinamento e teste, chegando ao estágio final de preparação, e seguindo para o treinamento do modelo de previsão. 
+
+\section{Divisão dos dados em conjuntos de treinamento e teste}
+
+
 
 
 
