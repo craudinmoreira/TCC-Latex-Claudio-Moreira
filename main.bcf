@@ -2506,9 +2506,12 @@
     <bcf:citekey order="28" intorder="1">ScikitLearnRidge2025</bcf:citekey>
     <bcf:citekey order="29" intorder="1">pecan_data_prep_2023</bcf:citekey>
     <bcf:citekey order="30" intorder="1">pecan_data_prep_2023</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">pecan_data_prep_2023</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">cousineau2010outliers</bcf:citekey>
     <bcf:citekey order="32" intorder="1">pecan_data_prep_2023</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">scikit_learn_standardscaler</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">pecan_data_prep_2023</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">scikit_learn_standardscaler</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">supri2023asian</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Hastie01102020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -1,15 +1,26 @@
 % ----------------------------------------------------------
 \chapter{Introdução}
 % ----------------------------------------------------------
+O presente trabalho de conclusão de curso tem como foco o desenvolvimento de um modelo preditivo para a previsão do nível do Rio Guaíba, localizado no estado do Rio Grande do Sul. Utilizando dados meteorológicos como variáveis de entrada, junto a dados coletados dos níveis dos rios que constituem a bacia do Guaíba, foram aplicadas técnicas de aprendizado de máquina para criar um modelo eficiente e capaz de prever variações no nível do rio, essencial para mitigar desastres naturais como enchentes, que assolaram a região de forma grave em 2024 e assola em diversos outros anos.
+
+O modelo adotado neste trabalho é baseado na técnica de regressão Ridge, que combina a simplicidade da regressão linear com uma regularização eficaz, visando melhorar a generalização do modelo e prevenir o sobreajuste (overfitting). A escolha de variáveis meteorológicas, como temperatura, umidade, precipitação e velocidade do vento, como preditores, se dá pela sua forte correlação com os fenômenos hidrológicos, impactando diretamente o nível dos rios da bacia do Guaíba.
+
+A relevância desse estudo foca na exploração de técnicas de aprendizado de máquina, buscando contribuir para a atuação preditiva a catástrofes e melhoria do planejamento urbano, além de permitir alertas mais eficazes sobre enchentes, potencializando a capacidade de resposta das autoridades e a segurança da população.
 
 \section{Objetivos}
 
-Nas seções abaixo estão descritos o objetivo geral e os objetivos específicos deste TCC.
+Posto o contexto da realização do trabalho, é possível definir os objetivos que guiarão o desenvolvimento do modelo preditivo, com a estipulação de objetivos e métricas de interesse para a avaliação do modelo.
 
 \subsection{Objetivo Geral}
 
-Descrição...
+Desenvolver um modelo de previsão do nível do Rio Guaíba utilizando dados meteorológicos por meio de técnicas de aprendizado de máquina, especificamente a regressão Ridge.
 
 \subsection{Objetivos Específicos}
 
-Descrição...
+\begin{itemize}
+    \item Coletar e tratar dados meteorológicos e de níveis de rios relevantes para o modelo.
+    \item Aplicar técnicas de pré-processamento de dados, incluindo limpeza e redução de dimensionalidade, para garantir a qualidade das informações.
+    \item Implementar e treinar um modelo de regressão Ridge para prever o nível do Rio Guaíba com base nos dados meteorológicos.
+    \item Avaliar o desempenho do modelo utilizando métricas de erro como MSE, RMSE, MAE e R².
+    \item Analisar os resultados obtidos e propor ajustes para otimizar a previsão.
+\end{itemize}

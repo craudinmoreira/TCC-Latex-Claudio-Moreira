@@ -14,16 +14,16 @@ Antes de iniciar o treinamento, exitem alguns procedimentos iniciais que garante
 
 \section{Coleta de dados}
 
-Considerando a premissa do trabalho, em que a previsão do nível do rio será dada a partir de dados meteorológicos da cidade de Porto Alegre, junto aos dados de monitoramento do nível dos rios que constituem a bacia do Guaíba, duas fonte de dados foram utilizadas. Para os dados meteorológicos, o portal do \textit{INMET}\footnote{\url{https://portal.inmet.gov.br/}} (Instituto Nacional de Meteorologia) foi utilizado, onde foram coletadas as informações de temperatura, umidade relativa do ar, precipitação e velocidade do vento. Já os dados de monitoramento dos rios foram coletados no site da \textit{SEMA-RS}\footnote{\url{https://www.saladesituacao.rs.gov.br/dados}} (Sala de situação), onde foram coletados os dados de nível do rio Guaíba,Caí, Jacuí, Sinos e Gravataí. Os dados meteorológicos foram coletados em formato \textit{CSV}, com arquivos separados em anos de monitoramento com frequência horária, enquanto os dados dos níveis dos rios foram coletados no formato \textit{.xlsx}, com histórico completo de amostragem das informações em frequência de 15 minutos, utilizando a biblioteca \textit{Pandas} do Python.
+Considerando a premissa do trabalho, em que a previsão do nível do rio será dada a partir de dados meteorológicos da cidade de Porto Alegre, junto aos dados de monitoramento do nível dos rios que constituem a bacia do Guaíba, duas fontes de dados foram utilizadas. Para os dados meteorológicos, o portal do \textit{INMET}\footnote{\url{https://portal.inmet.gov.br/}} (Instituto Nacional de Meteorologia) foi utilizado, onde foram coletadas as informações de temperatura, umidade relativa do ar, precipitação e velocidade do vento. Já os dados de monitoramento dos rios foram coletados na página do \textit{SEMA-RS}\footnote{\url{https://www.saladesituacao.rs.gov.br/dados}} da internet (Sala de situação), onde foram coletados os dados de nível do rio Guaíba,Caí, Jacuí, Sinos e Gravataí. Os dados meteorológicos foram coletados em formato \textit{Comma Separated Values} \textit{(CSV)}, com arquivos separados por ano de monitoramento, com frequência horária. Os dados dos níveis dos rios foram coletados no formato \textit{.xlsx}, com histórico completo de amostragem das informações em frequência de 15 minutos, utilizando a biblioteca \textit{Pandas} do Python.
 
 \section{Pré processamento dos dados}
 
-Antes de seguir para o próximo passo mostrado na Figura \ref{fig:passos_preparacao}, os dados coletados necessitam de um pré-processamento específico para cada uma das fontes utilizadas. Para os dados meteorológicos, devido às informações estarem separadas por ano de monitoramento, foi necessário concatenar os arquivos de cada ano em um único arquivo, utilizando a função \textit{concat} da biblioteca \textit{Pandas}, removendo o cabeçalho de informações geográficas da estação, ilustrado na Figura \ref{fig:base_inmet} Além disso, foi necessário combinar as duas primeiras colunas e converter o formato de data e hora para o padrão \textit{datetime}, utilizando a função \textit{to\_datetime} da mesma biblioteca. 
+Antes de seguir para a etapa de limpeza dos dados mostrado na Figura \ref{fig:passos_preparacao}, os dados coletados necessitam de um pré-processamento específico para cada uma das fontes utilizadas. Para os dados meteorológicos, devido às informações estarem separadas por ano de monitoramento, foi necessário concatenar os arquivos de cada ano em um único arquivo, utilizando a função \textit{concat} da biblioteca \textit{Pandas}, removendo o cabeçalho de informações geográficas da estação, ilustrado nas linhas 1 a 8 Figura \ref{fig:base_inmet}. Além disso, foi necessário combinar as duas primeiras colunas e converter o formato de data e hora para o padrão \textit{datetime}, utilizando a função \textit{to\_datetime} da mesma biblioteca. 
 
 \begin{figure}[H]
 	\caption{\label{fig:base_inmet}Dados meteorológicos.}
 	\begin{center}
-		\includegraphics[scale=0.25]{figuras/base_inmet.png}
+		\includegraphics[scale=0.5]{figuras/base_inmet.png}
 	\end{center}
 	\fonte{Autor.}
 \end{figure}
@@ -42,15 +42,15 @@ Analisando as colunas e os seus respectivos tipos de dados, tem-se a seguinte ta
 	Pressão Atmosférica Mín. na Hora Anterior (mB) & float64 \\
 	Radiação Global (kJ/m²) & float64 \\
 	Temperatura do Ar - Bulbo Seco (°C) & float64 \\
-	Temperatura do Ponto de Orvalho (°C) & object \\
-	Temperatura Máxima na Hora Anterior (°C) & object \\
-	Temperatura Mínima na Hora Anterior (°C) & object \\
+	Temperatura do Ponto de Orvalho (°C) & float64 \\
+	Temperatura Máxima na Hora Anterior (°C) & float64 \\
+	Temperatura Mínima na Hora Anterior (°C) & float64 \\
 	Temperatura Orvalho Máx. na Hora Anterior (°C) & float64 \\
 	Temperatura Orvalho Mín. na Hora Anterior (°C) & float64 \\
 	Umidade Relativa Máx. na Hora Anterior (\%) & float64 \\
-	Umidade Relativa Mín. na Hora Anterior (\%) & object \\
-	Umidade Relativa do Ar (\%) & object \\
-	Vento - Direção Horária (° (gr)) & object \\
+	Umidade Relativa Mín. na Hora Anterior (\%) & float64 \\
+	Umidade Relativa do Ar (\%) & float64 \\
+	Vento - Direção Horária (° (gr)) & float64 \\
 	Vento - Rajada Máxima (m/s) & float64 \\
 	Vento - Velocidade Horária (m/s) & float64 \\
 	\hline
@@ -59,12 +59,10 @@ Analisando as colunas e os seus respectivos tipos de dados, tem-se a seguinte ta
 	\label{tab:colunas_dados_meteorologicos}
 \end{table}
 
-A partir dela, nota-se que algumas colunas estão com o tipo de dado \textit{object}, o que indica que os dados não estão no formato correto. Para resolver isso, foi necessário converter as colunas de temperatura e umidade relativa do ar para o tipo \textit{float64}.
-
-Já para os dados dos níveis dos rios, também foi necessário remover o cabeçalho com dados geográficos da estação de monitoramento, como mostra a Figura \ref{fig:base_sema}, junto da conversão do formato de data e hora para o padrão \textit{datetime} da primeira coluna.
+Para os dados dos níveis dos rios, também foi necessário remover o cabeçalho com dados geográficos da estação de monitoramento, como mostra a Figura \ref{fig:base_sema}, junto da conversão do formato de data e hora para o padrão \textit{datetime} da primeira coluna.
 
 \begin{figure}[H]
-	\caption{\label{fig:base_sema}Dados meteorológicos.}
+	\caption{\label{fig:base_sema}Dados do nível do rio.}
 	\begin{center}
 		\includegraphics[scale=0.5]{figuras/base_sema.png}
 	\end{center}
@@ -74,7 +72,7 @@ Já para os dados dos níveis dos rios, também foi necessário remover o cabeç
 \section{Limpeza dos dados}
 \label{sec:limpeza_dos_dados}
 
-Após a coleta dos dados, o próximo passo é a limpeza dessas informações, cujo procedimento consiste em remover dados duplicados, corrigir erros de formatação e lidar com valores ausentes. Existem diferentes abordagens para tratar valores inconsistentes no dados coletados. Uma abordagem comum, principalmente em casos onde não há uma linearidade ou tendência clara é o preenchimento com zero, como mostra a Figura \ref{fig:passo_dados_limpeza}, ou com a média dos dados na coluna a ser limpa.
+Após a coleta dos dados, o próximo passo é a limpeza dessas informações, cujo procedimento consiste em remover dados duplicados, corrigir erros de formatação e lidar com valores ausentes. Existem diferentes abordagens para tratar valores inconsistentes no dados coletados. Uma abordagem comum, principalmente em casos onde não há uma linearidade ou tendência clara é o preenchimento com zero \cite{cousineau2010outliers}, como mostra a Figura \ref{fig:passo_dados_limpeza}, ou com a média dos dados na coluna a ser limpa.
 
 \begin{figure}[H]
 	\caption{\label{fig:passo_dados_limpeza}Limpeza dos dados coletados.}
@@ -86,12 +84,12 @@ Após a coleta dos dados, o próximo passo é a limpeza dessas informações, cu
 
 Nessa etapa, na base de dados meteorológicos, optou-se por preencher os dados ausentes, representados por ''-'', e os dados com valor igual a ''-9999'' por zero, já que dados meteorológicos tendem a ser mais voláteis e não apresentam uma tendência clara. Desse modo, a abordagem de aproximação linear é descartada, a fim de não comprometer a análise do modelo de previsão.  
 
-Tomando como exemplo a coluna \textit{TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C)}, listada na Tabela \ref{tab:colunas_dados_meteorologicos}, na Figura \ref{fig:dados_clima_poa_nao_tratados}, observa-se os valores ausentes representados por ''-'' e ''-9999''.
+Tomando como exemplo a coluna \textit{TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C)}, na Figura \ref{fig:dados_clima_poa_nao_tratados}, observa-se os valores ausentes representados por ''-'' e ''-9999'', evidenciados na Figura pelos pontos distantes do restante dos dados.
 
 \begin{figure}[H]
 	\caption{\label{fig:dados_clima_poa_nao_tratados}Gráfico de Temperatura do orvalho Máx. na Hora Anterior (°C) não tratado.}
 	\begin{center}
-		\includegraphics[scale=0.35]{figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png}
+		\includegraphics[scale=0.35]{figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png}
 	\end{center}
 	\fonte{Autor.}
 \end{figure}
@@ -149,7 +147,7 @@ Voltando para a Tabela \ref{tab:colunas_dados_meteorologicos}, nota-se a presen�
 	\item 1 coluna refere-se a dados de precipitação.
 \end{itemize}
 
-Desse modo, para o primeiro passo de redução da base, foram mantidas apenas uma coluna de cada tipo de dado, filtrando 6 colunas no total, conforme a Tabela \ref{tab:colunas_dados_meteorologicos_reduzidas}. 
+Desse modo, para o primeiro passo de redução da base, foram mantidas apenas uma coluna de cade tipo de medição meteorológica, filtrando 6 colunas no total, conforme a Tabela \ref{tab:colunas_dados_meteorologicos_reduzidas}. 
 
 \begin{table}[H]
 	\centering
@@ -157,7 +155,7 @@ Desse modo, para o primeiro passo de redução da base, foram mantidas apenas um
 	\hline
 	\textbf{Coluna} & \textbf{Unidade de medida} \\
 	\hline
-	Temperatura do Ar - Bulboeco & (°C) \\
+	Temperatura do Ar - Bulbo seco & (°C) \\
 	Pressão Atmosférica ao Nível da Estação & (mB) \\
 	Vento - Velocidade Horária & (m/s) \\
 	Umidade Relativa do Ar & (\%) \\
@@ -171,14 +169,114 @@ Desse modo, para o primeiro passo de redução da base, foram mantidas apenas um
 
 Para a escolha das colunas a serem mantidas, foram levados em consideração os seguintes critérios:
 \begin{itemize}
-	\item As colunas \textit{Temperatura do Ar - Bulboeco}, \textit{Pressão Atmosférica ao Nível da Estação} e \textit{Umidade Relativa do Ar} foram escolhidas por serem medidas diretas dos respectivos fenômenos atmosféricos, enquanto as demais colunas referem-se a medidas derivadas ou não diretamente observáveis, que não são tão relevantes para a previsão do nível do rio.
+	\item As colunas \textit{Temperatura do Ar - Bulbo seco}, \textit{Pressão Atmosférica ao Nível da Estação} e \textit{Umidade Relativa do Ar} foram escolhidas por serem medidas diretas dos respectivos fenômenos atmosféricos, enquanto as demais colunas referem-se a medidas derivadas ou não diretamente observáveis, que não são tão relevantes para a previsão do nível do rio. Além disso, observou-se que para essas unidades de medida derivadas, o comportamento dos dados eram semalhantes, descartanto a necessidade de manter mais de uma coluna para cada tipo de medição, como mostra a Figura \ref{fig:comparacao_temp} em relação às medidas de temperatura.
+	\begin{figure}[H]
+	\caption{\label{fig:comparacao_temp}Comparativo de gráficos de temperatura em diferentes tipos de medição}
+	\begin{center}
+		\begin{subfigure}{0.35\textwidth}
+			\includegraphics[width=\linewidth]{figuras/comparacao_temp_1.png}
+		\end{subfigure}
+		\begin{subfigure}{0.35\textwidth}
+			\includegraphics[width=\linewidth]{figuras/comparacao_temp_2.png}
+		\end{subfigure}
+		
+		\begin{subfigure}{0.35\textwidth}
+			\includegraphics[width=\linewidth]{figuras/comparacao_temp_3.png}
+		\end{subfigure}
+		\begin{subfigure}{0.35\textwidth}
+			\includegraphics[width=\linewidth]{figuras/comparacao_temp_4.png}
+		\end{subfigure}
+		
+		\begin{subfigure}{0.35\textwidth}
+			\includegraphics[width=\linewidth]{figuras/comparacao_temp_5.png}
+		\end{subfigure}
+		\begin{subfigure}{0.35\textwidth}
+			\includegraphics[width=\linewidth]{figuras/comparacao_temp_6.png}
+		\end{subfigure}
+	\end{center}
+	\fonte{Autor.}
+	\end{figure}
 	\item A coluna \textit{Precipitação Total} foi mantida por ser um dos principais fatores que influenciam o nível do rio.
 	\item As colunas \textit{Radiação Global} e \textit{Umidade Relativa do Ar} foram mantidas por serem fatores importantes para a evaporação da água, que também influenciam, mesmo que de forma indireta, no nível do rio.
 \end{itemize}
 
-Após essa redução inicial, os gráficos e seus dados de cada coluna foram analisados, a fim de verificar se as informações eram consistentes e poderiam contribuir para o treinamento do modelo. Para isso, foram utilizados gráficos de dispersão e histogramas, como os mostrados na Figura \ref{fig:histograma_dados_meteorologicos}.
+Após essa redução inicial, os gráficos e seus dados de cada coluna foram analisados, a fim de verificar se as informações eram consistentes e poderiam contribuir para o treinamento do modelo. Nas Figuras \ref{fig:temperatura_do_ar_bulbo_seco}, \ref{fig:pressao_atmosferica_ao_nivel_da_estacao}, \ref{fig:vento_velocidade_horaria}, \ref{fig:umidade_relativa_do_ar}, \ref{fig:radiacao_global} e \ref{fig:precipitacao_total}, são apresentados os gráficos de cada uma das colunas mantidas.
 
-ADICIONAR AQUI O HISTOGRAMA DOS DADOS METEOROLÓGICOS E A DECISÃO DE QUAIS COLUNAS FORAM MANTIDAS E QUAIS FORAM DESCARTADAS.
+\begin{figure}[H]
+	\caption{\label{fig:temperatura_do_ar_bulbo_seco}Gráfico de Temperatura do Ar - Bulbo Seco}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/temperatura_do_ar_bulbo_seco.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:pressao_atmosferica_ao_nivel_da_estacao}Gráfico de Pressão Atmosférica ao Nível da Estação.}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/pressao_atmosferica_ao_nivel_da_estacao.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:vento_velocidade_horaria}Gráfico de Vento - Velocidade Horária.}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/vento_velocidade_horaria.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:umidade_relativa_do_ar}Gráfico de Umidade Relativa do Ar}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/umidade_relativa_do_ar.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:radiacao_global}Gráfico de Radiação Global}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/radiacao_global.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:precipitacao_total}Gráfico de Precipitação Total}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/precipitacao_total_horario.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+As Figuras \ref{fig:temperatura_do_ar_bulbo_seco}, \ref{fig:pressao_atmosferica_ao_nivel_da_estacao} e \ref{fig:radiacao_global} ilustram um padrão sazonal nos dados, com aumentos e diminuições periódicas dos valores ao longo do ano, indicando uma correlação entre as variáveis meteorológicas e as estações do ano. Desse modo, torna-se justificável a manutenção dessas colunas, uma vez que o modelo de previsão pode se beneficiar dessa sazonalidade para melhorar a acurácia das previsões, considerando que o nível do rio também apresenta a mesma dinâmica, ilustrado nas Figura \ref{fig:comparacao_temp_nivel_rio}, \ref{fig:comparacao_pressao_nivel_rio} e \ref{fig:comparacao_radiacao_nivel_rio}.
+
+\begin{figure}[H]
+	\caption{\label{fig:comparacao_temp_nivel_rio}Gráfico comparativo de temperatura e nível quanto a sazonalidade}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/comparacao_temp_nivel_rio.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:comparacao_pressao_nivel_rio}Gráfico comparativo de pressão atmosférica e nível quanto a sazonalidade}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/comparacao_pressao_nivel_rio.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico comparativo de radiação global e nível quanto a sazonalidade}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/comparacao_radiacao_nivel_rio.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+Em relação às colunas \textit{Vento - Velocidade Horária}, \textit{Umidade Relativa do Ar} e \textit{Precipitação Total}, embora estas não apresentem um padrão sazonal tão evidente quanto as plotadas acima, estas medidas estão diretamente ligadas aos fenômenos de previsão do tempo, noticiadas em jornais e revistas, e portanto, possuem influência direta no nível dos rios ondes estes dados são monitorados. Sendo assim, as colunas também foram consideradas para o treinamento do modelo.
 
 Definidas as colunas a serem mantidas, o próximo passo consistiu em alinhar os dados meteorológicos com os dados de monitoramento dos rios, garantindo que as informações estivessem na mesma frequência de amostragem. Para isso, foram utilizados os dados de monitoramento do nível do rio Guaíba, que possuem a maior frequência de amostragem entre os rios analisados, com intervalo de 15 minutos, enquanto os dados meteorológicos possuem frequência de 1 hora (60 minutos). Assim, a frequência de amostragem das informações do nível dos rios foi reduzida para 1 hora, aplicando um filtro simples que mantém apnas as linhas cujo \textit{timestamp} tem minuto igual a 0.
 
@@ -226,7 +324,136 @@ Com os dados normalizados, o \textit{dataframe} está pronto para ser dividido e
 
 \section{Divisão dos dados em conjuntos de treinamento e teste}
 
-Existem diferentes abordagens para dividir os dados em conjuntos de treinamento e teste, sendo a mais comum a divisão aleatória, onde os dados são separados em duas partes, geralmente com 70\% a 80\% dos dados para treinamento e o restante para teste. Essa abordagem é simples e eficaz, mas pode não ser a melhor opção em todos os casos.
+No processo de implementação de um modelo de previsão, a divisão da base de dados em conjuntos de treino e teste constitui a última etapa antes da aplicação do algoritmo, com o objetivo de avaliar a capacidade de generalização do modelo. De maneira geral, a base de dados é dividida em duas partes: uma maior, utilizada para o treinamento do modelo, e uma menor, destinada a testar seu desempenho em dados não observados durante o treinamento. Após a etapa de treinamento com o primeiro conjunto, é possível realizar previsões e compará-las com o segundo conjunto, cujos dados são conhecidos apenas pelo pesquisador. Essa comparação permite a avaliação da performance do modelo por meio do levantamento de métricas de desempenho.
+
+Existem diferentes abordagens para dividir os dados em conjuntos de treinamento e teste, a fim de assegurar um bom desempenho do modelo de previsão. Por exemplo, em um estudo direcionado para a previsão do preço de ações, três proporções de divisão entre dados de treinamento e dados de teste foram aplicados, sendo estes:
+
+\begin{itemize}
+	\item 80\% dos dados para treinamento e 20\% para teste;
+	\item 70\% dos dados para treinamento e 30\% para teste;
+	\item 60\% dos dados para treinamento e 40\% para teste.
+\end{itemize}
+
+Através das métricas de desempenho RMSE (\textit{Root Mean Squared Error} ou raiz do erro quadrático médio), MSE (\textit{Mean Squared Error}, ou erro quadrático medio), MAPE (\textit{Mean Absolute Percentage Error}, ou erro percentual absoluto medio) e MAE (\textit{Mean Absolute Error}, ou erro absoluto médio), os resultados das três proporções foram comparadas, de modo que a diferença percentual média entre o preço de validação e o preço previsto para o próximo dia útil foi menor para a proporção 80:20, com uma diferença média de 1,3\% entre o preço original e o preço previsto, enquanto a proporção 70:30 apresentou uma diferença média de 1,9\% e a proporção 60:40, 1,8\% \cite{supri2023asian}.
+
+Embora a proporção 80:20 tenha apresentado o melhor desempenho neste estudo, não há uma regra geral que defina a melhor divisão entre os conjuntos de treinamento e teste, pois essa escolha pode variar de acordo com o tipo de dado, o modelo utilizado e outros fatores específicos de cada conjunto de informações. No presente trabalho, foi inicialmente adotada a proporção 80:20, com 80\% dos dados para treinamento e 20\% para teste, seguindo a abordagem utilizada no estudo mencionado, que obteve os melhores resultados. Para comparar o desempenho do modelo com outras proporções, também foram testadas as divisões 70:30 e 60:40, a fim de verificar se as métricas de desempenho apresentavam o mesmo comportamento observado no estudo de previsão de preços de ações.
+
+\section{Aplicação do modelo de previsão}
+
+Realizada toda a preparação dos dados, com a divisão em conjuntos de treino e teste e e a padronização das variáveis independentes para garantir que todas tenham a mesma escala, o modelo Ridge é instanciado no script em Python, com a possibilidade de ajuste de alguns parâmetros para fazer o treinamento e as previsões.
+
+O principal parâmetro ajustável é o \texttt{alpha}, que controla a intensidade da penalização: valores maiores de \texttt{alpha} aumentam a regularização, reduzindo a magnitude dos coeficientes, podendo levar a underfitting; valores menores aproximam o modelo da regressão linear padrão, com risco de overfitting. Outros parâmetros incluem \texttt{fit\_intercept}, que determina se o modelo deve incluir um intercepto, e \texttt{solver}, que define o método de otimização (como \texttt{auto}, \texttt{svd} ou \texttt{cholesky}), influenciando a eficiência computacional. Além disso, o parâmetro \texttt{random\_state} pode ser configurado para garantir reprodutibilidade em solvers que utilizam aleatoriedade.
+
+A implementação prática envolve importar a classe Ridge, configurar os hiperparâmetros, treinar o modelo com o método \texttt{fit} e realizar previsões com o método \texttt{predict}. Para avaliar o desempenho do modelo, esta etapa é feita com métricas como o erro quadrático médio (MSE), raíz do erro quadrático médio (RMSE), erro absoluto médio (MAE) e/ou o coeficiente de determinação (R²).
+
+Em \cite{Hastie01102020}, o autor aborda sobre o termo de regularização L2 que penaliza os coeficientes do modelo, explorando o impacto do parâmetro \texttt{alpha} em vários contextos. Em sua tese, é destacado que valores de \texttt{alpha} são geralmente selecionados por validação cruzada, com intervalos típicos variando de 0.01 a 1000, dependendo da escala dos dados e do grau de multicolinearidade. O artigo também menciona que, em aplicações práticas, valores como 0.1, 1 e 10 são frequentemente testados como pontos de partida.
+
+Partindo desse pressuposto, foram testados valores de \texttt{alpha} de 0.001, 0.01, 0.1, 1, 10 e 100, com o objetivo de avaliar o desempenho do modelo em diferentes níveis de regularização. A seguir, são apresentadas as tabelas com os resultados obtidos para cada valor de \texttt{alpha}, considerando as três proporções de divisão dos dados em conjuntos de treinamento e teste: 80:20, 70:30 e 60:40, junto às Figuras X, Y e Z, que ilustram o desempenho do modelo para cada split de treinamento e previsão.
+
+\begin{figure}[H]
+	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do rio Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 60:40}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/modelo_previsao_60_40.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do rio Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 70:30}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/modelo_previsao_70_30.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do rio Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 80:20}
+	\begin{center}
+		\includegraphics[scale=0.35]{figuras/modelo_previsao_80_20.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Alpha} & \multicolumn{4}{|c|}{\textbf{0.001}} \\
+\hline
+\textbf{Split} & \textbf{MSE} & \textbf{RMSE} & \textbf{MAE} & \textbf{R2} \\
+\hline
+\textbf{80:20} & 456.72 & 21.27 & 16.81 & 0.89 \\
+\textbf{70:30} & 372.44 & 19.30 & 15.00 & 0.88 \\
+\textbf{60:40} & 379.64 & 19.48 & 15.14 & 0.87 \\
+\hline
+\end{tabular}
+\caption{Tabela de avaliação de desempenho do modelo com alpha 0.01}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Alpha} & \multicolumn{4}{|c|}{\textbf{0.001}} \\
+\hline
+\textbf{Split} & \textbf{MSE} & \textbf{RMSE} & \textbf{MAE} & \textbf{R2} \\
+\hline
+\textbf{80:20} & 456.72 & 21.27 & 16.81 & 0.89 \\
+\textbf{70:30} & 372.44 & 19.30 & 15.00 & 0.88 \\
+\textbf{60:40} & 379.64 & 19.48 & 15.14 & 0.87 \\
+\hline
+\end{tabular}
+\caption{Tabela de avaliação de desempenho do modelo com alpha 0.1}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Alpha} & \multicolumn{4}{|c|}{\textbf{0.001}} \\
+\hline
+\textbf{Split} & \textbf{MSE} & \textbf{RMSE} & \textbf{MAE} & \textbf{R2} \\
+\hline
+\textbf{80:20} & 456.72 & 21.27 & 16.81 & 0.89 \\
+\textbf{70:30} & 372.44 & 19.30 & 15.00 & 0.88 \\
+\textbf{60:40} & 379.65 & 19.48 & 15.14 & 0.87 \\
+\hline
+\end{tabular}
+\caption{Tabela de avaliação de desempenho do modelo com alpha 1}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Alpha} & \multicolumn{4}{|c|}{\textbf{0.001}} \\
+\hline
+\textbf{Split} & \textbf{MSE} & \textbf{RMSE} & \textbf{MAE} & \textbf{R2} \\
+\hline
+\textbf{80:20} & 456.72 & 21.27 & 16.81 & 0.89 \\
+\textbf{70:30} & 372.44 & 19.30 & 15.00 & 0.88 \\
+\textbf{60:40} & 379.64 & 19.48 & 15.14 & 0.87 \\
+\hline
+\end{tabular}
+\caption{Tabela de avaliação de desempenho do modelo com alpha 10}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Alpha} & \multicolumn{4}{|c|}{\textbf{0.001}} \\
+\hline
+\textbf{Split} & \textbf{MSE} & \textbf{RMSE} & \textbf{MAE} & \textbf{R2} \\
+\hline
+\textbf{80:20} & 456.73 & 21.27 & 16.81 & 0.89 \\
+\textbf{70:30} & 372.45 & 19.30 & 15.00 & 0.88 \\
+\textbf{60:40} & 379.65 & 19.48 & 15.14 & 0.87 \\
+\hline
+\end{tabular}
+\caption{Tabela de avaliação de desempenho do modelo com alpha 100}
+\end{table}
 
 
+\section{Análise dos resultados}
 

@@ -89,6 +89,35 @@
       \field{type}{phdthesis}
       \field{year}{2020}
     \endentry
+    \entry{Hastie01102020}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9dc160c468daff46497f87c32ac12f8e}{%
+           family={and},
+           familyi={a\bibinitperiod},
+           given={Trevor\bibnamedelima Hastie},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{fullhash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{fullhashraw}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{bibnamehash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{authorbibnamehash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{authornamehash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{authorfullhash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{authorfullhashraw}{9dc160c468daff46497f87c32ac12f8e}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technometrics}
+      \field{number}{4}
+      \field{title}{Ridge Regularization: An Essential Concept in Data Science}
+      \field{volume}{62}
+      \field{pages}{426\bibrangedash 433}
+      \range{pages}{8}
+    \endentry
     \entry{andrade2017}{inproceedings}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=517d218d24832f8d3b2af0f9957ef330}{%
@@ -191,6 +220,46 @@
       \field{year}{1983}
       \field{pages}{619}
       \range{pages}{1}
+    \endentry
+    \entry{cousineau2010outliers}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=62f1531a2487dce70ddb65e81763135b}{%
+           family={Cousineau},
+           familyi={C\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=216289ea1b70657cfec4bb8d2945d424}{%
+           family={Chartier},
+           familyi={C\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad de San Buenaventura}%
+      }
+      \strng{namehash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{fullhash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{fullhashraw}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{bibnamehash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{authorbibnamehash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{authornamehash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{authorfullhash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{authorfullhashraw}{4ed823a83b05c0766b524bb81205cf95}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Psychological Research}
+      \field{number}{1}
+      \field{title}{Outliers detection and treatment: a review}
+      \field{volume}{3}
+      \field{year}{2010}
+      \field{pages}{59\bibrangedash 68}
+      \range{pages}{10}
     \endentry
     \entry{scikit_learn_standardscaler}{misc}{}{}
       \name{author}{1}{}{%
@@ -644,6 +713,55 @@
       \field{year}{2013}
       \field{pages}{2538\bibrangedash 2538}
       \range{pages}{1}
+    \endentry
+    \entry{supri2023asian}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9071b1e9961e3b2ee9977e982ac6cea6}{%
+           family={Supri},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71eacd57d8771ce212e28c0992eb4216}{%
+           family={Rudianto},
+           familyi={R\bibinitperiod},
+           given={Abdurohim},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d493e65e6be93fc5b8ff486f75dfce40}{%
+           family={Mawadah},
+           familyi={M\bibinitperiod},
+           given={Badriatul},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e6f08c9a05edc8a2c1ffe6561f8fec2}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={Helmi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{da83c85ec2f6db4adf631b442cafc10b}
+      \strng{fullhash}{d38d40a1d270d0350f9f513bac0945f8}
+      \strng{fullhashraw}{d38d40a1d270d0350f9f513bac0945f8}
+      \strng{bibnamehash}{d38d40a1d270d0350f9f513bac0945f8}
+      \strng{authorbibnamehash}{d38d40a1d270d0350f9f513bac0945f8}
+      \strng{authornamehash}{da83c85ec2f6db4adf631b442cafc10b}
+      \strng{authorfullhash}{d38d40a1d270d0350f9f513bac0945f8}
+      \strng{authorfullhashraw}{d38d40a1d270d0350f9f513bac0945f8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JEMSI (Jurnal Ekonomi, Manajemen, Dan Akuntansi)}
+      \field{number}{4}
+      \field{title}{Asian Stock Index Price Prediction Analysis Using Comparison of Split Data Training and Data Testing}
+      \field{volume}{9}
+      \field{year}{2023}
+      \field{pages}{1403\bibrangedash 1408}
+      \range{pages}{6}
     \endentry
     \entry{veja2024}{online}{}{}
       \name{author}{1}{}{%

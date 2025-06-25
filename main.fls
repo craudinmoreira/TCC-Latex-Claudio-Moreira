@@ -1,6 +1,6 @@
-PWD c:\Users\claud\OneDrive\Documentos\TCC-Latex-Claudio-Moreira
+PWD c:\github_projects\TCC-Latex-Claudio-Moreira
 INPUT C:\Users\claud\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\claud\OneDrive\Documentos\TCC-Latex-Claudio-Moreira\main.tex
+INPUT c:\github_projects\TCC-Latex-Claudio-Moreira\main.tex
 OUTPUT main.log
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\abntex2\abntex2.cls
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\abntex2\abntex2.cls
@@ -487,10 +487,11 @@ INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr12.tfm
+INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
-INPUT .\main.loq
-INPUT .\main.loq
-INPUT main.loq
 INPUT .\main.lot
 INPUT .\main.lot
 INPUT main.lot
@@ -504,6 +505,7 @@ INPUT .\capitulos\cap_1.tex
 INPUT .\capitulos\cap_1.tex
 INPUT capitulos\cap_1.tex
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmb10.tfm
+INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT .\capitulos\cap_2.tex
 INPUT .\capitulos\cap_2.tex
 OUTPUT capitulos\cap_2.aux
@@ -511,7 +513,6 @@ INPUT .\capitulos\cap_2.tex
 INPUT .\capitulos\cap_2.tex
 INPUT capitulos\cap_2.tex
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
-INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT .\figuras\happiness_world.png
 INPUT .\figuras\happiness_world.png
 INPUT .\figuras\happiness_world.png
@@ -685,13 +686,13 @@ INPUT .\figuras\step_data_cleaning.png
 INPUT .\figuras\step_data_cleaning.png
 INPUT .\figuras\step_data_cleaning.png
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmri12.tfm
-INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png
-INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png
-INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png
-INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png
-INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png
-INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png
-INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO.png
+INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png
+INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png
+INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png
+INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png
+INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png
+INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png
+INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png
 INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png
 INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png
 INPUT .\figuras\TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png
@@ -713,6 +714,132 @@ INPUT .\figuras\UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png
 INPUT .\figuras\UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png
 INPUT .\figuras\UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png
 INPUT .\figuras\UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png
+INPUT .\figuras\comparacao_temp_1.png
+INPUT .\figuras\comparacao_temp_1.png
+INPUT .\figuras\comparacao_temp_1.png
+INPUT .\figuras\comparacao_temp_1.png
+INPUT .\figuras\comparacao_temp_1.png
+INPUT .\figuras\comparacao_temp_1.png
+INPUT .\figuras\comparacao_temp_1.png
+INPUT .\figuras\comparacao_temp_2.png
+INPUT .\figuras\comparacao_temp_2.png
+INPUT .\figuras\comparacao_temp_2.png
+INPUT .\figuras\comparacao_temp_2.png
+INPUT .\figuras\comparacao_temp_2.png
+INPUT .\figuras\comparacao_temp_2.png
+INPUT .\figuras\comparacao_temp_2.png
+INPUT .\figuras\comparacao_temp_3.png
+INPUT .\figuras\comparacao_temp_3.png
+INPUT .\figuras\comparacao_temp_3.png
+INPUT .\figuras\comparacao_temp_3.png
+INPUT .\figuras\comparacao_temp_3.png
+INPUT .\figuras\comparacao_temp_3.png
+INPUT .\figuras\comparacao_temp_3.png
+INPUT .\figuras\comparacao_temp_4.png
+INPUT .\figuras\comparacao_temp_4.png
+INPUT .\figuras\comparacao_temp_4.png
+INPUT .\figuras\comparacao_temp_4.png
+INPUT .\figuras\comparacao_temp_4.png
+INPUT .\figuras\comparacao_temp_4.png
+INPUT .\figuras\comparacao_temp_4.png
+INPUT .\figuras\comparacao_temp_5.png
+INPUT .\figuras\comparacao_temp_5.png
+INPUT .\figuras\comparacao_temp_5.png
+INPUT .\figuras\comparacao_temp_5.png
+INPUT .\figuras\comparacao_temp_5.png
+INPUT .\figuras\comparacao_temp_5.png
+INPUT .\figuras\comparacao_temp_5.png
+INPUT .\figuras\comparacao_temp_6.png
+INPUT .\figuras\comparacao_temp_6.png
+INPUT .\figuras\comparacao_temp_6.png
+INPUT .\figuras\comparacao_temp_6.png
+INPUT .\figuras\comparacao_temp_6.png
+INPUT .\figuras\comparacao_temp_6.png
+INPUT .\figuras\comparacao_temp_6.png
+INPUT .\figuras\temperatura_do_ar_bulbo_seco.png
+INPUT .\figuras\temperatura_do_ar_bulbo_seco.png
+INPUT .\figuras\temperatura_do_ar_bulbo_seco.png
+INPUT .\figuras\temperatura_do_ar_bulbo_seco.png
+INPUT .\figuras\temperatura_do_ar_bulbo_seco.png
+INPUT .\figuras\temperatura_do_ar_bulbo_seco.png
+INPUT .\figuras\temperatura_do_ar_bulbo_seco.png
+INPUT .\figuras\pressao_atmosferica_ao_nivel_da_estacao.png
+INPUT .\figuras\pressao_atmosferica_ao_nivel_da_estacao.png
+INPUT .\figuras\pressao_atmosferica_ao_nivel_da_estacao.png
+INPUT .\figuras\pressao_atmosferica_ao_nivel_da_estacao.png
+INPUT .\figuras\pressao_atmosferica_ao_nivel_da_estacao.png
+INPUT .\figuras\pressao_atmosferica_ao_nivel_da_estacao.png
+INPUT .\figuras\pressao_atmosferica_ao_nivel_da_estacao.png
+INPUT .\figuras\vento_velocidade_horaria.png
+INPUT .\figuras\vento_velocidade_horaria.png
+INPUT .\figuras\vento_velocidade_horaria.png
+INPUT .\figuras\vento_velocidade_horaria.png
+INPUT .\figuras\vento_velocidade_horaria.png
+INPUT .\figuras\vento_velocidade_horaria.png
+INPUT .\figuras\vento_velocidade_horaria.png
+INPUT .\figuras\umidade_relativa_do_ar.png
+INPUT .\figuras\umidade_relativa_do_ar.png
+INPUT .\figuras\umidade_relativa_do_ar.png
+INPUT .\figuras\umidade_relativa_do_ar.png
+INPUT .\figuras\umidade_relativa_do_ar.png
+INPUT .\figuras\umidade_relativa_do_ar.png
+INPUT .\figuras\umidade_relativa_do_ar.png
+INPUT .\figuras\radiacao_global.png
+INPUT .\figuras\radiacao_global.png
+INPUT .\figuras\radiacao_global.png
+INPUT .\figuras\radiacao_global.png
+INPUT .\figuras\radiacao_global.png
+INPUT .\figuras\radiacao_global.png
+INPUT .\figuras\radiacao_global.png
+INPUT .\figuras\precipitacao_total_horario.png
+INPUT .\figuras\precipitacao_total_horario.png
+INPUT .\figuras\precipitacao_total_horario.png
+INPUT .\figuras\precipitacao_total_horario.png
+INPUT .\figuras\precipitacao_total_horario.png
+INPUT .\figuras\precipitacao_total_horario.png
+INPUT .\figuras\precipitacao_total_horario.png
+INPUT .\figuras\comparacao_temp_nivel_rio.png
+INPUT .\figuras\comparacao_temp_nivel_rio.png
+INPUT .\figuras\comparacao_temp_nivel_rio.png
+INPUT .\figuras\comparacao_temp_nivel_rio.png
+INPUT .\figuras\comparacao_temp_nivel_rio.png
+INPUT .\figuras\comparacao_temp_nivel_rio.png
+INPUT .\figuras\comparacao_temp_nivel_rio.png
+INPUT .\figuras\comparacao_pressao_nivel_rio.png
+INPUT .\figuras\comparacao_pressao_nivel_rio.png
+INPUT .\figuras\comparacao_pressao_nivel_rio.png
+INPUT .\figuras\comparacao_pressao_nivel_rio.png
+INPUT .\figuras\comparacao_pressao_nivel_rio.png
+INPUT .\figuras\comparacao_pressao_nivel_rio.png
+INPUT .\figuras\comparacao_pressao_nivel_rio.png
+INPUT .\figuras\comparacao_radiacao_nivel_rio.png
+INPUT .\figuras\comparacao_radiacao_nivel_rio.png
+INPUT .\figuras\comparacao_radiacao_nivel_rio.png
+INPUT .\figuras\comparacao_radiacao_nivel_rio.png
+INPUT .\figuras\comparacao_radiacao_nivel_rio.png
+INPUT .\figuras\comparacao_radiacao_nivel_rio.png
+INPUT .\figuras\comparacao_radiacao_nivel_rio.png
+INPUT .\figuras\modelo_previsao_60_40.png
+INPUT .\figuras\modelo_previsao_60_40.png
+INPUT .\figuras\modelo_previsao_60_40.png
+INPUT .\figuras\modelo_previsao_60_40.png
+INPUT .\figuras\modelo_previsao_60_40.png
+INPUT .\figuras\modelo_previsao_60_40.png
+INPUT .\figuras\modelo_previsao_60_40.png
+INPUT .\figuras\modelo_previsao_70_30.png
+INPUT .\figuras\modelo_previsao_70_30.png
+INPUT .\figuras\modelo_previsao_70_30.png
+INPUT .\figuras\modelo_previsao_70_30.png
+INPUT .\figuras\modelo_previsao_70_30.png
+INPUT .\figuras\modelo_previsao_70_30.png
+INPUT .\figuras\modelo_previsao_70_30.png
+INPUT .\figuras\modelo_previsao_80_20.png
+INPUT .\figuras\modelo_previsao_80_20.png
+INPUT .\figuras\modelo_previsao_80_20.png
+INPUT .\figuras\modelo_previsao_80_20.png
+INPUT .\figuras\modelo_previsao_80_20.png
+INPUT .\figuras\modelo_previsao_80_20.png
+INPUT .\figuras\modelo_previsao_80_20.png
 INPUT .\capitulos\cap_4.tex
 INPUT .\capitulos\cap_4.tex
 OUTPUT capitulos\cap_4.aux
@@ -730,7 +857,6 @@ INPUT .\pos_textual\anexo_a.tex
 INPUT .\pos_textual\anexo_a.tex
 INPUT pos_textual\anexo_a.tex
 OUTPUT main.lof
-OUTPUT main.loq
 OUTPUT main.lot
 OUTPUT main.toc
 INPUT main.aux
@@ -768,3 +894,5 @@ INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
+INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
+INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
