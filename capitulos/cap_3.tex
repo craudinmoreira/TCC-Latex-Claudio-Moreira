@@ -14,7 +14,7 @@ Antes de iniciar o treinamento, exitem alguns procedimentos iniciais que garante
 
 \section{Coleta de dados}
 
-Considerando a premissa do trabalho, em que a previsão do nível do rio será dada a partir de dados meteorológicos da cidade de Porto Alegre, junto aos dados de monitoramento do nível dos rios que constituem a bacia do Guaíba, duas fontes de dados foram utilizadas. Para os dados meteorológicos, o portal do \textit{INMET}\footnote{\url{https://portal.inmet.gov.br/}} (Instituto Nacional de Meteorologia) foi utilizado, onde foram coletadas as informações de temperatura, umidade relativa do ar, precipitação e velocidade do vento. Já os dados de monitoramento dos rios foram coletados na página do \textit{SEMA-RS}\footnote{\url{https://www.saladesituacao.rs.gov.br/dados}} da internet (Sala de situação), onde foram coletados os dados de nível do rio Guaíba,Caí, Jacuí, Sinos e Gravataí. Os dados meteorológicos foram coletados em formato \textit{Comma Separated Values} \textit{(CSV)}, com arquivos separados por ano de monitoramento, com frequência horária. Os dados dos níveis dos rios foram coletados no formato \textit{.xlsx}, com histórico completo de amostragem das informações em frequência de 15 minutos, utilizando a biblioteca \textit{Pandas} do Python.
+Considerando a premissa do trabalho, em que a previsão do nível do rio será dada a partir de dados meteorológicos da cidade de Porto Alegre, junto aos dados de monitoramento do nível dos rios que constituem a bacia do Guaíba, duas fontes de dados foram utilizadas. Para os dados meteorológicos, o portal do \glsxtrfull{INMET}\footnote{\url{https://portal.inmet.gov.br/}} foi utilizado, onde foram coletadas as informações de temperatura, umidade relativa do ar, precipitação e velocidade do vento. Já os dados de monitoramento dos rios foram coletados na página do \glsxtrfull{SEMA-RS}\footnote{\url{https://www.saladesituacao.rs.gov.br/dados}} da internet (Sala de situação), onde foram coletados os dados de nível do rio Guaíba,Caí, Jacuí, Sinos e Gravataí. Os dados meteorológicos foram coletados em formato \glsxtrfull{CSV}, com arquivos separados por ano de monitoramento, com frequência horária. Os dados dos níveis dos rios foram coletados no formato \textit{.xlsx}, com histórico completo de amostragem das informações em frequência de 15 minutos, utilizando a biblioteca \textit{Pandas} do Python.
 
 \section{Pré processamento dos dados}
 
@@ -106,9 +106,9 @@ Após a substituição dos valores ausentes por zero, o gráfico da mesma coluna
 
 Aplicado o tratamento, a coluna \textit{TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C)} passa a apresentar uma distribuição mais uniforme, sem os picos de dados ausentes, com valores condizentes com a escala esperada da unidade medida, neste caso, a temperatura em graus Celsius.
 
-Em casos onde os dados apresentam \textit{outliers} (dados que se distanciam significativamente do restante da coluna analisada), foi aplicado o método IQR (Interquartile Range) para identificar e remover esses valores. A partir da diferença entre o terceiro quartil (Q3) e o primeiro quartil (Q1) de um conjunto de dados, multiplicado por um fator de tolerância, o método determina limites superiores e inferiores para o conjunto de dados analisado, removendo ou substituindo os valores que estão fora dessa faixa, para manter a consistência das informações.
+Em casos onde os dados apresentam \textit{outliers} (dados que se distanciam significativamente do restante da coluna analisada), foi aplicado o método \glsxtrfull{IQR} para identificar e remover esses valores. A partir da diferença entre o terceiro quartil (Q3) e o primeiro quartil (Q1) de um conjunto de dados, multiplicado por um fator de tolerância, o método determina limites superiores e inferiores para o conjunto de dados analisado, removendo ou substituindo os valores que estão fora dessa faixa, para manter a consistência das informações.
 
-Por exemplo, na coluna \textit{UMIDADE REL. MAX. NA HORA ANT. (AUT) (\%)}, as Figuras \ref{fig:dados_outlier_sem_tratamento} e \ref{fig:dados_outlier_com_tratamento} mostram a diferença entre os dados após a aplicação do método IQR, com um fator de tolerância de 1.2 entre os interquartis Q1 e Q3.
+Por exemplo, na coluna \textit{UMIDADE REL. MAX. NA HORA ANT. (AUT) (\%)}, as Figuras \ref{fig:dados_outlier_sem_tratamento} e \ref{fig:dados_outlier_com_tratamento} mostram a diferença entre os dados após a aplicação do método \gls{IQR}, com um fator de tolerância de 1.2 entre os interquartis Q1 e Q3.
 
 \begin{figure}[H]
 	\caption{\label{fig:dados_outlier_sem_tratamento}Gráfico de Umidade Relativa Máxima  na Hora Anterior (\%) sem tratamento.}
@@ -334,7 +334,7 @@ Existem diferentes abordagens para dividir os dados em conjuntos de treinamento 
 	\item 60\% dos dados para treinamento e 40\% para teste.
 \end{itemize}
 
-Através das métricas de desempenho RMSE (\textit{Root Mean Squared Error} ou raiz do erro quadrático médio), MSE (\textit{Mean Squared Error}, ou erro quadrático medio), MAPE (\textit{Mean Absolute Percentage Error}, ou erro percentual absoluto medio) e MAE (\textit{Mean Absolute Error}, ou erro absoluto médio), os resultados das três proporções foram comparadas, de modo que a diferença percentual média entre o preço de validação e o preço previsto para o próximo dia útil foi menor para a proporção 80:20, com uma diferença média de 1,3\% entre o preço original e o preço previsto, enquanto a proporção 70:30 apresentou uma diferença média de 1,9\% e a proporção 60:40, 1,8\% \cite{supri2023asian}.
+Através das métricas de desempenho \glsxtrfull{RMSE}, \glsxtrfull{MSE}, \glsxtrfull{R2} e \glsxtrfull{MAE}, os resultados das três proporções foram comparadas, de modo que a diferença percentual média entre o preço de validação e o preço previsto para o próximo dia útil foi menor para a proporção 80:20, com uma diferença média de 1,3\% entre o preço original e o preço previsto, enquanto a proporção 70:30 apresentou uma diferença média de 1,9\% e a proporção 60:40, 1,8\% \cite{supri2023asian}.
 
 Embora a proporção 80:20 tenha apresentado o melhor desempenho neste estudo, não há uma regra geral que defina a melhor divisão entre os conjuntos de treinamento e teste, pois essa escolha pode variar de acordo com o tipo de dado, o modelo utilizado e outros fatores específicos de cada conjunto de informações. No presente trabalho, foi inicialmente adotada a proporção 80:20, com 80\% dos dados para treinamento e 20\% para teste, seguindo a abordagem utilizada no estudo mencionado, que obteve os melhores resultados. Para comparar o desempenho do modelo com outras proporções, também foram testadas as divisões 70:30 e 60:40, a fim de verificar se as métricas de desempenho apresentavam o mesmo comportamento observado no estudo de previsão de preços de ações.
 
@@ -457,3 +457,21 @@ Partindo desse pressuposto, foram testados valores de \texttt{alpha} de 0.001, 0
 
 \section{Análise dos resultados}
 
+Uma das formas de avaliar o desempenho de um modelo de aprendizado de máquina é através da análise das métricas de desempenho, que indicam a capacidade do modelo de generalizar e prever corretamente os dados. As métricas de avaliação utilizadas neste trabalho incluem o erro quadrático médio (MSE), a raiz do erro quadrático médio (RMSE), o erro absoluto médio (MAE) e o coeficiente de determinação (R²), onde cada uma delas possui uma interpretação específica:
+
+\begin{itemize}
+	\item Erro Quadrático Médio (MSE): Mede a média dos quadrados dos erros, penalizando erros maiores. É útil para entender a magnitude do erro, porém não é intuitiva em termos da escala dos dados, neste caso medido em centímetros.
+	\item Raiz do Erro Quadrático Médio (RMSE): É a raiz quadrada do MSE, expressa na mesma unidade dos dados, facilitando a interpretação.
+	\item Erro Absoluto Médio (MAE): Mede a média dos erros absolutos, sendo menos sensível a outliers do que o MSE.
+	\item R² (Coeficiente de Determinação): Indica a proporção da variância dos dados explicada pelo modelo. Varia de 0 a 1, onde 1 significa ajuste perfeito.
+\end{itemize}
+
+Com isso, as tabelas apresentadas mostram que o MSE e o RMSE diminuem conforme o \textit{split} de treinamento diminui e o \textit{split} de teste aumenta. Tal comportamento indica que, à medida que mais dados são utilizados para treinamento, o modelo passa a ter um sobreajuste (\textit{overfitting}), perdendo a capacidade de generalizar e, em vez disso, se adequando estritamente ao conjunto de dados de treinamento.
+
+Quanto ao R², o valor obtido possui uma baixa variação entre os ensaios com diferentes valores de \texttt{alpha} e \textit{split}, ficando entre 0.87 e 0.89. Isso indica que 87\% a 89\% da variância dos dados da variável dependente é explicada pelo modelo. Em outras palavras, o modelo captura a maior parte dos padrões nos dados, deixando apenas 13\% a 11\% da variância como não explicada (devido a ruído, variáveis omitidas ou outros fatores).
+
+Um coeficiente de determinação próximo a 1 sugere que o modelo é robusto e confiável para o conjunto de dados analisado. Boa parte dessa robustez se dá pelo tratamento e limpeza dos dados, somada à a correlação entre as variáveis preditoras e a variável dependente.
+
+Em relação ao parâmetro \texttt{alpha}, os resultados mostram que o modelo apresenta um desempenho semelhante para os valores de 0.001, 0.01, 0.1 e 1, com pequenas variações nas métricas de desempenho. Existem alguns fatores que levam a esse comportamento, como a baixa sensibilidade à regularização nos dados, intervalo de \texttt{alpha} insuficiente para notar diferenças significativas ou baixa multicolinearidade entre as variáveis preditoras. Alguns outros fatores como escala dos dados ou tamanho e qualidade do conjunto foi descartado, uma vez que ao longo do trabalho, evidenciam-se os procedimentos realizados para evitar este tipo de falha no modelo.
+
+Sendo assim, uma forma de testar se o modelo possui uma sensibilidade maior à regularização seria aumentar o intervalo de valores de \texttt{alpha} e/ou expor o modelo a mais dados de teste. Caso a variação de \texttt{alpha} permaneça com resultados semelhantes, isto pode indicar que o modelo já atingiu seu ponto de saturação, atingindo um desempenho ótimo para baixos termos de regularização.

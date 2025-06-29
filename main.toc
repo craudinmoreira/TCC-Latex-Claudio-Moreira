@@ -25,7 +25,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Preparação dos dados para o treinamento}}{31}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Coleta de dados}{31}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Pré processamento dos dados}{31}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Pré processamento dos dados}{32}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Limpeza dos dados}{34}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Redução dos dados}{38}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Transformação dos dados}{45}{section.3.5}%
@@ -33,18 +33,18 @@
 \contentsline {section}{\numberline {3.7}Aplicação do modelo de previsão}{47}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Análise dos resultados}{50}{section.3.8}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Conclusão}}{51}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Conclusão}}{52}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFERÊNCIAS}{52}{section*.55}%
+\contentsline {chapter}{REFERÊNCIAS}{54}{section*.55}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}{Descrição}}{54}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}{Descrição}}{56}{appendix.A}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}{Descrição}}{55}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}{Descrição}}{57}{appendix.anexochapback.1}%
