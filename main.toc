@@ -7,44 +7,44 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{14}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Objetivos}{14}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Objetivo Geral}{14}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Objetivos Específicos}{14}{subsection.1.1.2}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{15}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Objetivos}{15}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Objetivo Geral}{15}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Objetivos Específicos}{15}{subsection.1.1.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{16}{chapter.2}%
-\contentsline {section}{\numberline {2.1}As mudanças climáticas e as catástrofes naturais}{16}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Cenário de enchentes no sul do Brasil}{16}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Dinâmica do Rio Guaíba}{16}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Aprendizado de máquina}{17}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Categorias de aprendizado de máquina}{17}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Regressão}{18}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Regressão Linear}{19}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Método dos quadrados ordinários}{22}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Modelo Ridge}{29}{section.2.6}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{17}{chapter.2}%
+\contentsline {section}{\numberline {2.1}As mudanças climáticas e as catástrofes naturais}{17}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Cenário de enchentes no sul do Brasil}{17}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Dinâmica do Lago Guaíba}{17}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Aprendizado de máquina}{19}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Categorias de aprendizado de máquina}{20}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Regressão}{20}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Regressão Linear}{22}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Método dos quadrados ordinários}{25}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Modelo Ridge}{32}{section.2.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Preparação dos dados para o treinamento}}{31}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Coleta de dados}{31}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Pré processamento dos dados}{32}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Limpeza dos dados}{34}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Redução dos dados}{38}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Transformação dos dados}{45}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Divisão dos dados em conjuntos de treinamento e teste}{46}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Aplicação do modelo de previsão}{47}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Análise dos resultados}{50}{section.3.8}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Preparação dos dados para o treinamento}}{34}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Coleta de dados}{34}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Pré processamento dos dados}{35}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Limpeza dos dados}{37}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Redução dos dados}{41}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Transformação dos dados}{48}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Divisão dos dados em conjuntos de treinamento e teste}{49}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Aplicação do modelo de previsão}{50}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Análise dos resultados}{53}{section.3.8}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Conclusão}}{52}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Conclusão}}{55}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFERÊNCIAS}{54}{section*.55}%
+\contentsline {chapter}{REFERÊNCIAS}{57}{section*.57}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}{Descrição}}{56}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}{Descrição}}{60}{appendix.A}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}{Descrição}}{57}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}{Descrição}}{61}{appendix.anexochapback.1}%

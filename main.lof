@@ -1,32 +1,34 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Relação entre o índice de felicidade e expectativa de vida.}}{18}{figure.caption.14}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Diferentes correlações entre variáveis.}}{19}{figure.caption.15}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Interpretação de uma regressão linear}}{21}{figure.caption.16}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Situações de inadequação da RLS}}{22}{figure.caption.17}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Passo 1 da regressão linear pelo método MQO.}}{25}{figure.caption.19}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Passo 2 da regressão linear pelo método MQO.}}{26}{figure.caption.20}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Passo 3 da regressão linear pelo método MQO.}}{27}{figure.caption.21}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Iterações da aplicação do método MQO}}{28}{figure.caption.22}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Passo 10 da regressão linear pelo método MQO.}}{29}{figure.caption.23}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Passos para preparação dos dados.}}{31}{figure.caption.24}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Dados meteorológicos.}}{32}{figure.caption.25}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Dados do nível do rio.}}{34}{figure.caption.27}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Limpeza dos dados coletados.}}{35}{figure.caption.28}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Gráfico de Temperatura do orvalho Máx. na Hora Anterior (°C) não tratado.}}{35}{figure.caption.29}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Gráfico de Temperatura do orvalho Máx. na Hora Anterior (°C) tratado.}}{36}{figure.caption.30}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Gráfico de Umidade Relativa Máxima na Hora Anterior (\%) sem tratamento.}}{37}{figure.caption.31}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Gráfico de Umidade Relativa Máxima na Hora Anterior (\%) com tratamento.}}{37}{figure.caption.32}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Comparativo de gráficos de temperatura em diferentes tipos de medição}}{39}{figure.caption.34}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Gráfico de Temperatura do Ar - Bulbo Seco}}{40}{figure.caption.35}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Gráfico de Pressão Atmosférica ao Nível da Estação.}}{40}{figure.caption.36}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Gráfico de Vento - Velocidade Horária.}}{41}{figure.caption.37}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Gráfico de Umidade Relativa do Ar}}{41}{figure.caption.38}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Gráfico de Radiação Global}}{42}{figure.caption.39}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Gráfico de Precipitação Total}}{42}{figure.caption.40}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Gráfico comparativo de temperatura e nível quanto a sazonalidade}}{43}{figure.caption.41}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Gráfico comparativo de pressão atmosférica e nível quanto a sazonalidade}}{43}{figure.caption.42}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Gráfico comparativo de radiação global e nível quanto a sazonalidade}}{44}{figure.caption.43}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Gráfico modelo de previsão de nível do rio Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 60:40}}{48}{figure.caption.45}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Gráfico modelo de previsão de nível do rio Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 70:30}}{48}{figure.caption.46}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Gráfico modelo de previsão de nível do rio Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 80:20}}{49}{figure.caption.47}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Rios que desemborcam e influenciam no nível do Lago Guaíba.}}{18}{figure.caption.14}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Rio Jacuí e seu desemboque no Lago Guaíba.}}{19}{figure.caption.15}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Relação entre o índice de felicidade e expectativa de vida.}}{21}{figure.caption.16}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Diferentes correlações entre variáveis.}}{22}{figure.caption.17}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Interpretação de uma regressão linear}}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Situações de inadequação da RLS}}{24}{figure.caption.19}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Passo 1 da regressão linear pelo método MQO.}}{28}{figure.caption.21}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Passo 2 da regressão linear pelo método MQO.}}{29}{figure.caption.22}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Passo 3 da regressão linear pelo método MQO.}}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Iterações da aplicação do método MQO}}{31}{figure.caption.24}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Passo 10 da regressão linear pelo método MQO.}}{32}{figure.caption.25}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Passos para preparação dos dados.}}{34}{figure.caption.26}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Dados meteorológicos.}}{35}{figure.caption.27}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Dados do nível do rio.}}{37}{figure.caption.29}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Limpeza dos dados coletados.}}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Gráfico de Temperatura do orvalho Máx. na Hora Anterior (°C) não tratado.}}{38}{figure.caption.31}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Gráfico de Temperatura do orvalho Máx. na Hora Anterior (°C) tratado.}}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Gráfico de Umidade Relativa Máxima na Hora Anterior (\%) sem tratamento.}}{40}{figure.caption.33}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Gráfico de Umidade Relativa Máxima na Hora Anterior (\%) com tratamento.}}{40}{figure.caption.34}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Comparativo de gráficos de temperatura em diferentes tipos de medição}}{42}{figure.caption.36}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Gráfico de Temperatura do Ar - Bulbo Seco}}{43}{figure.caption.37}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Gráfico de Pressão Atmosférica ao Nível da Estação.}}{43}{figure.caption.38}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Gráfico de Vento - Velocidade Horária.}}{44}{figure.caption.39}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Gráfico de Umidade Relativa do Ar}}{44}{figure.caption.40}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Gráfico de Radiação Global}}{45}{figure.caption.41}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Gráfico de Precipitação Total}}{45}{figure.caption.42}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Gráfico comparativo de temperatura e nível quanto a sazonalidade}}{46}{figure.caption.43}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Gráfico comparativo de pressão atmosférica e nível quanto a sazonalidade}}{46}{figure.caption.44}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Gráfico comparativo de radiação global e nível quanto a sazonalidade}}{47}{figure.caption.45}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Gráfico modelo de previsão de nível do Lago Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 60:40}}{51}{figure.caption.47}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Gráfico modelo de previsão de nível do Lago Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 70:30}}{51}{figure.caption.48}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Gráfico modelo de previsão de nível do Lago Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 80:20}}{52}{figure.caption.49}%

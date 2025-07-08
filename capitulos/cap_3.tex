@@ -14,7 +14,7 @@ Antes de iniciar o treinamento, exitem alguns procedimentos iniciais que garante
 
 \section{Coleta de dados}
 
-Considerando a premissa do trabalho, em que a previsão do nível do rio será dada a partir de dados meteorológicos da cidade de Porto Alegre, junto aos dados de monitoramento do nível dos rios que constituem a bacia do Guaíba, duas fontes de dados foram utilizadas. Para os dados meteorológicos, o portal do \glsxtrfull{INMET}\footnote{\url{https://portal.inmet.gov.br/}} foi utilizado, onde foram coletadas as informações de temperatura, umidade relativa do ar, precipitação e velocidade do vento. Já os dados de monitoramento dos rios foram coletados na página do \glsxtrfull{SEMA-RS}\footnote{\url{https://www.saladesituacao.rs.gov.br/dados}} da internet (Sala de situação), onde foram coletados os dados de nível do rio Guaíba,Caí, Jacuí, Sinos e Gravataí. Os dados meteorológicos foram coletados em formato \glsxtrfull{CSV}, com arquivos separados por ano de monitoramento, com frequência horária. Os dados dos níveis dos rios foram coletados no formato \textit{.xlsx}, com histórico completo de amostragem das informações em frequência de 15 minutos, utilizando a biblioteca \textit{Pandas} do Python.
+Considerando a premissa do trabalho, em que a previsão do nível do rio será dada a partir de dados meteorológicos da cidade de Porto Alegre, junto aos dados de monitoramento do nível dos rios que constituem a bacia do Guaíba, duas fontes de dados foram utilizadas. Para os dados meteorológicos, o portal do \glsxtrfull{INMET}\footnote{\url{https://portal.inmet.gov.br/}} foi utilizado, onde foram coletadas as informações de temperatura, umidade relativa do ar, precipitação e velocidade do vento. Já os dados de monitoramento dos rios foram coletados na página do \glsxtrfull{SEMA-RS}\footnote{\url{https://www.saladesituacao.rs.gov.br/dados}} da internet (Sala de situação), onde foram coletados os dados de nível do Lago Guaíba,Caí, Jacuí, Sinos e Gravataí. Os dados meteorológicos foram coletados em formato \glsxtrfull{CSV}, com arquivos separados por ano de monitoramento, com frequência horária. Os dados dos níveis dos rios foram coletados no formato \textit{.xlsx}, com histórico completo de amostragem das informações em frequência de 15 minutos, utilizando a biblioteca \textit{Pandas} do Python.
 
 \section{Pré processamento dos dados}
 
@@ -134,7 +134,7 @@ Ainda, observou-se nas bases dos níveis dos rios a ocorrência de valores ausen
 
 \section{Redução dos dados}
 
-A etapa de redução dos dados visa eliminar informações redundantes ou irrelevantes, mantendo apenas os dados que contribuem para a análise e treinamento do modelo de previsão. Considerando que serão utilizados dados de monitoramento do nível de 4 rios para a previsão do nível do rio Guaíba, os dados meteorológicos coletados precisam ser filtrados de modo a garantir tanto que as informações sejam relevantes para a previsão, quanto que os dados de monitoramento dos rios estejam alinhados com os dados meteorológicos, evitando assim a inclusão de dados desnecessários no treinamento. 
+A etapa de redução dos dados visa eliminar informações redundantes ou irrelevantes, mantendo apenas os dados que contribuem para a análise e treinamento do modelo de previsão. Considerando que serão utilizados dados de monitoramento do nível de 4 rios para a previsão do nível do Lago Guaíba, os dados meteorológicos coletados precisam ser filtrados de modo a garantir tanto que as informações sejam relevantes para a previsão, quanto que os dados de monitoramento dos rios estejam alinhados com os dados meteorológicos, evitando assim a inclusão de dados desnecessários no treinamento. 
 
 Voltando para a Tabela \ref{tab:colunas_dados_meteorologicos}, nota-se a presença de 17 colunas, das quais:
 
@@ -278,7 +278,7 @@ As Figuras \ref{fig:temperatura_do_ar_bulbo_seco}, \ref{fig:pressao_atmosferica_
 
 Em relação às colunas \textit{Vento - Velocidade Horária}, \textit{Umidade Relativa do Ar} e \textit{Precipitação Total}, embora estas não apresentem um padrão sazonal tão evidente quanto as plotadas acima, estas medidas estão diretamente ligadas aos fenômenos de previsão do tempo, noticiadas em jornais e revistas, e portanto, possuem influência direta no nível dos rios ondes estes dados são monitorados. Sendo assim, as colunas também foram consideradas para o treinamento do modelo.
 
-Definidas as colunas a serem mantidas, o próximo passo consistiu em alinhar os dados meteorológicos com os dados de monitoramento dos rios, garantindo que as informações estivessem na mesma frequência de amostragem. Para isso, foram utilizados os dados de monitoramento do nível do rio Guaíba, que possuem a maior frequência de amostragem entre os rios analisados, com intervalo de 15 minutos, enquanto os dados meteorológicos possuem frequência de 1 hora (60 minutos). Assim, a frequência de amostragem das informações do nível dos rios foi reduzida para 1 hora, aplicando um filtro simples que mantém apnas as linhas cujo \textit{timestamp} tem minuto igual a 0.
+Definidas as colunas a serem mantidas, o próximo passo consistiu em alinhar os dados meteorológicos com os dados de monitoramento dos rios, garantindo que as informações estivessem na mesma frequência de amostragem. Para isso, foram utilizados os dados de monitoramento do nível do Lago Guaíba, que possuem a maior frequência de amostragem entre os rios analisados, com intervalo de 15 minutos, enquanto os dados meteorológicos possuem frequência de 1 hora (60 minutos). Assim, a frequência de amostragem das informações do nível dos rios foi reduzida para 1 hora, aplicando um filtro simples que mantém apnas as linhas cujo \textit{timestamp} tem minuto igual a 0.
 
 Por fim, alinhados os dados meteorológicos com os dados de monitoramento dos rios, o \textit{dataframe} resultante passou um nivelamento superior e inferior quanto a data inicial e final, de modo que o período de amostragem de todas as informações fosse o mesmo, garantindo que todas as colunas tivessem o mesmo número de linhas preenchidas. Embora na etapa de limpeza dos dados tenha sido aplicado o preenchimento de valores ausentes, verificou-se que as estações de monitoramento dos rios não possuem medições que se iniciam ou finalizam na mesma data. Dessa forma, a fim de analisar qual o período de início de fim das informações obtidas, a tabela \ref{tab:periodo_amostragem} apresenta o período de amostragem de cada uma das fontes de dados.
 \begin{table}[H]
@@ -291,7 +291,7 @@ Por fim, alinhados os dados meteorológicos com os dados de monitoramento dos ri
 	Rio Caí       & 2015-09-14 & 13:00:00 & 2024-05-06 & 14:00:00 \\
 	Rio Gravataí  & 2017-11-07 & 12:00:00 & 2024-07-01 & 00:00:00 \\
 	Rio Jacuí     & 2014-10-08 & 20:00:00 & 2024-04-27 & 01:00:00 \\
-	Rio Guaíba    & 2014-07-29 & 14:00:00 & 2024-05-06 & 14:00:00 \\
+	Lago Guaíba    & 2014-07-29 & 14:00:00 & 2024-05-06 & 14:00:00 \\
 	\hline
 	\end{tabular}
 	\caption{Datas mínima e máxima disponíveis para cada rio analisado}
@@ -351,7 +351,7 @@ Em \cite{Hastie01102020}, o autor aborda sobre o termo de regularização L2 que
 Partindo desse pressuposto, foram testados valores de \texttt{alpha} de 0.001, 0.01, 0.1, 1, 10 e 100, com o objetivo de avaliar o desempenho do modelo em diferentes níveis de regularização. A seguir, são apresentadas as tabelas com os resultados obtidos para cada valor de \texttt{alpha}, considerando as três proporções de divisão dos dados em conjuntos de treinamento e teste: 80:20, 70:30 e 60:40, junto às Figuras X, Y e Z, que ilustram o desempenho do modelo para cada split de treinamento e previsão.
 
 \begin{figure}[H]
-	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do rio Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 60:40}
+	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do Lago Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 60:40}
 	\begin{center}
 		\includegraphics[scale=0.35]{figuras/modelo_previsao_60_40.png}
 	\end{center}
@@ -359,7 +359,7 @@ Partindo desse pressuposto, foram testados valores de \texttt{alpha} de 0.001, 0
 \end{figure}
 
 \begin{figure}[H]
-	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do rio Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 70:30}
+	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do Lago Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 70:30}
 	\begin{center}
 		\includegraphics[scale=0.35]{figuras/modelo_previsao_70_30.png}
 	\end{center}
@@ -367,7 +367,7 @@ Partindo desse pressuposto, foram testados valores de \texttt{alpha} de 0.001, 0
 \end{figure}
 
 \begin{figure}[H]
-	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do rio Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 80:20}
+	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do Lago Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 80:20}
 	\begin{center}
 		\includegraphics[scale=0.35]{figuras/modelo_previsao_80_20.png}
 	\end{center}

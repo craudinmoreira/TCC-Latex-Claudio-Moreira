@@ -118,14 +118,63 @@
       \field{pages}{426\bibrangedash 433}
       \range{pages}{8}
     \endentry
+    \entry{andrade2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=1f24139c5afff17d23d9ee97e3214b4e}{%
+           family={Andrade},
+           familyi={A\bibinitperiod},
+           given={Leonardo\bibnamedelimb Capeleto\bibnamedelima de},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=2aaaeee938109c8d801f9bf15ffc88ba}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={Lucía\bibnamedelima Ribeiro},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0cd39737069cfc947c2bfff74514484}{%
+           family={Andreazza},
+           familyi={A\bibinitperiod},
+           given={Robson},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f78b847bf3f6aef72a5db46460a95538}{%
+           family={Camargo},
+           familyi={C\bibinitperiod},
+           given={Flávio\bibnamedelimb Anastácio\bibnamedelimb de\bibnamedelima Oliveira},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{230b4c60545308432d2e53115cb2bbb7}
+      \strng{fullhash}{68e31b37683bfd8746f101f3272ec1ae}
+      \strng{fullhashraw}{68e31b37683bfd8746f101f3272ec1ae}
+      \strng{bibnamehash}{68e31b37683bfd8746f101f3272ec1ae}
+      \strng{authorbibnamehash}{68e31b37683bfd8746f101f3272ec1ae}
+      \strng{authornamehash}{230b4c60545308432d2e53115cb2bbb7}
+      \strng{authorfullhash}{68e31b37683bfd8746f101f3272ec1ae}
+      \strng{authorfullhashraw}{68e31b37683bfd8746f101f3272ec1ae}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Engenharia Sanitária e Ambiental}
+      \field{number}{2}
+      \field{title}{Lago Guaíba: uma análise histórico-cultural da poluição hídrica em Porto Alegre, RS, Brasil}
+      \field{volume}{24}
+      \field{year}{2019}
+      \field{pages}{229\bibrangedash 237}
+      \range{pages}{9}
+    \endentry
     \entry{andrade2017}{inproceedings}{}{}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=517d218d24832f8d3b2af0f9957ef330}{%
+        {{un=1,uniquepart=given,hash=517d218d24832f8d3b2af0f9957ef330}{%
            family={Andrade},
            familyi={A\bibinitperiod},
            given={Mauro\bibnamedelima M.},
            giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=263278f0987e101402c1278896066c18}{%
            family={Scottá},
            familyi={S\bibinitperiod},
@@ -172,7 +221,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{XXII Simpósio Brasileiro de Recursos Hídricos}
-      \field{title}{Hidrodinâmica do Rio Guaíba: Resultados Preliminares}
+      \field{title}{Hidrodinâmica do Lago Guaíba: Resultados Preliminares}
       \field{year}{2017}
     \endentry
     \entry{carbonell1983}{book}{}{}
@@ -297,6 +346,42 @@
       \verb https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
       \endverb
     \endentry
+    \entry{g1_2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c0497521d35d66866e3af408094864c3}{%
+           family={{G1}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0497521d35d66866e3af408094864c3}
+      \strng{fullhash}{c0497521d35d66866e3af408094864c3}
+      \strng{fullhashraw}{c0497521d35d66866e3af408094864c3}
+      \strng{bibnamehash}{c0497521d35d66866e3af408094864c3}
+      \strng{authorbibnamehash}{c0497521d35d66866e3af408094864c3}
+      \strng{authornamehash}{c0497521d35d66866e3af408094864c3}
+      \strng{authorfullhash}{c0497521d35d66866e3af408094864c3}
+      \strng{authorfullhashraw}{c0497521d35d66866e3af408094864c3}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Acima dos 5 metros, Guaíba volta a avançar sobre ruas no dia mais frio do ano em Porto Alegre}
+      \field{urlday}{7}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/14/acima-dos-5-metros-guaiba-volta-a-avancar-sobre-ruas-no-dia-mais-frio-do-ano-em-porto-alegre.ghtml
+      \endverb
+      \verb{url}
+      \verb https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/14/acima-dos-5-metros-guaiba-volta-a-avancar-sobre-ruas-no-dia-mais-frio-do-ano-em-porto-alegre.ghtml
+      \endverb
+    \endentry
     \entry{g12024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c0497521d35d66866e3af408094864c3}{%
@@ -311,8 +396,10 @@
       \strng{authornamehash}{c0497521d35d66866e3af408094864c3}
       \strng{authorfullhash}{c0497521d35d66866e3af408094864c3}
       \strng{authorfullhashraw}{c0497521d35d66866e3af408094864c3}
+      \field{extraname}{2}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -489,6 +576,40 @@
       \field{year}{2012}
       \field{pages}{672}
       \range{pages}{1}
+    \endentry
+    \entry{portoimagem_2009}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fb93942226dfb6aeca4cd6efb6d890e2}{%
+           family={{Porto Imagem}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{fullhash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{fullhashraw}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{bibnamehash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{authorbibnamehash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{authornamehash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{authorfullhash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{authorfullhashraw}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{O Guaíba é um lago, sim!}
+      \field{urlday}{7}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://portoimagem.wordpress.com/2009/04/23/o-guaiba-e-um-lago-sim/
+      \endverb
+      \verb{url}
+      \verb https://portoimagem.wordpress.com/2009/04/23/o-guaiba-e-um-lago-sim/
+      \endverb
     \endentry
     \entry{saravanan2018}{inproceedings}{}{}
       \name{author}{2}{}{%

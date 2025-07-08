@@ -13,9 +13,29 @@ Com base no histórico das enchentes no Rio Grande do Sul, observa-se que os des
 
 Em Santa Catarina, estado adjacente ao Rio Grande do Sul, as enchentes também são fenômenos recorrentes que, ao longo dos anos, têm causado impactos sociais, econômicos e ambientais. Um dos eventos mais recentes foi registrado em maio de 2024, quando o estado registrou vários dias com altos indíces pluviométricos, levando ao transbordamento de rios, deslizamentos de terra e bloqueios em diversas rodovias \cite{g12024}.
 
-\subsection{Dinâmica do Rio Guaíba}
+\subsection{Dinâmica do Lago Guaíba}
 
-O Rio Guaíba, principal manancial de abastecimento de água para a capital do Rio Grande do Sul e região, é alvo de estudo sobre diversos temas, incluindo sua hidrodinâmica e nível ao longo do ano. No Artigo conduzido pelos pesquisadores \cite{andrade2017}, a variabilidade nas descargas líquidas do Rio Guaíba revelou flutuações significativas nos volumes de descarga, variando de 407 m³/s a 14.270 m³/s, o que indica uma grande influência das condições climáticas sazonais e da vazão dos rios tributários, como o Jacuí, Taquarí, Caí e Sinos. Essas variações extremas foram observadas durante o período de 2014 a 2017 e reforçam a importância de monitorar continuamente o regime de águas do Guaíba para prevenir enchentes e outros desastres associados \cite{andrade2017}.
+O Lago Guaíba, principal manancial de abastecimento de água para a capital do Rio Grande do Sul e região, é alvo de estudo sobre diversos temas, incluindo sua hidrodinâmica e nível ao longo do ano. O Lago Guaíba apresenta flutuações significativas no volume de descarga, variando de 407 m³/s a 14.270 m³/s \cite{andrade2017}. Grande parte desta variação sofre influência dos rios que desemborcam no lago, como Rio Jacuí, que contribui com cerca de 84,6\% da água que aflui ao lago, além dos rios Sinos, Caí e Gravataí que contribuem com 7,5\%, 5,2\% e 2,7\%, respectivamente \cite{andrade2019}. 
+
+Outro fator relevante em relação ao risco de enchentes do lago está no tempo de retenção das águas que chegam dos rios. Ao investigar os níveis de poluição do lago, devido a capital carecer de um tratamento de água 100\% efetivo, notou-se que grande parte da água do Guaíba fica retida por longos períodos, gerando baixa circulação e menor diluição de poluentes \cite{andrade2019}. Além do agravante da qualidade da água, esse comportamento faz com que o fluxo dos rios que chegam ao lago, em caso de um aumento atípico do volume, desencadeie enchentes que demoram para escoar, prejudicando ainda mais a população das cidades banhadas pelo lago. 
+
+Na Figura \ref{fig:bacia_guaiba}, é mostrado alguns rios que fazem parte da bacia hidrográfica do Guaíba, e que influenciam diretamente no seu nível. À esquerda, percebe-se que um rio não é identificado, sendo este o Rio Jacuí, que contribui majoritariamente com o fluxo de água que aflui ao lago. Na Figura \ref{fig:bacia_guaiba_2}, fica evidente o motivo de seu maior impacto, dado sua extensão e largura maior que os demais rios. 
+
+\begin{figure}[H]
+	\caption{\label{fig:bacia_guaiba}Rios que desemborcam e influenciam no nível do Lago Guaíba.}
+	\begin{center}
+		\includegraphics[scale=0.4]{figuras/lago_guaiba.jpg}
+	\end{center}
+	\fonte{\cite{g1_2024}.}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{fig:bacia_guaiba_2}Rio Jacuí e seu desemboque no Lago Guaíba.}
+	\begin{center}
+		\includegraphics[scale=0.8]{figuras/lago_guaiba_2.jpg}
+	\end{center}
+	\fonte{\cite{portoimagem_2009}.}
+\end{figure}
 
 \section{Aprendizado de máquina}
 
@@ -27,24 +47,22 @@ Esse conceito envolve a criação de sistemas que são capazes de aprender a par
 
 \subsection{Categorias de aprendizado de máquina}
 
-Com pesquisas e algoritmos sendo desenvolvidos para novas aplicações e/ou aprimoramento de implementações existentes, tornou-se necessário criar categorias de \gls{ML}, a fim de classificar a sua função e estipular em quais cenários o seu uso é adequado.
-
-Os quatro principais tipos de \gls{ML} são: supervisionado, não supervisionado, semi-supervisionado e reforço \cite{saravanan2018}. 
+Os quatro principais tipos de \gls{ML} são: supervisionado, não supervisionado, semi-supervisionado e reforço \cite{saravanan2018}. Estes tipos de \gls{ML} são descritos a seguir:
 
 \begin{itemize}
-    \item Supervisionado: é o mais comum e envolve a utilização de dados rotulados, no qual o modelo é treinado com entradas e saídas conhecidas para fazer previsões sobre novos dados;
+    \item Supervisionado: envolve a utilização de dados rotulados, no qual o modelo é treinado com entradas e saídas conhecidas para fazer previsões sobre novos dados;
     \item Não supervisionado: lida com dados não rotulados, onde o sistema busca encontrar padrões ou agrupamentos nos dados;
-    \item Semi supervisionado: combina elementos de ambos os métodos, utilizando uma pequena quantidade de dados rotulados e uma grande quantidade de dados não rotulados, sendo útil em cenários onde a rotulação de dados é cara ou complexa;
-    \item Aprendizado por reforço: se baseia em um sistema de recompensas e punições, onde um agente interage com o ambiente e aprende a otimizar suas ações para alcançar um objetivo a partir de feedbacks recebidos.
+    \item Semissupervisionado: combina elementos de ambos os métodos, utilizando uma pequena quantidade de dados rotulados e uma grande quantidade de dados não rotulados, sendo útil em cenários onde a rotulação de dados é cara ou complexa;
+    \item Aprendizado por reforço: se baseia em um sistema de recompensas e punições, onde o sistema interage com o ambiente e aprende a otimizar suas ações para alcançar um objetivo a partir de \textit{feedbacks} recebidos.
 \end{itemize}
 
 \section{Regressão}
 
 A partir da necessidade de realizar previsões, visando compreender e estimar a dinâmica dos fenômenos estudados, a regressão se apresenta como uma ferramenta que busca modelar relações entre variáveis dependentes e independentes através de métodos estatísticos \cite{soto2013}.
 
-Em uma equação linear, uma variável independente, comumente representada pela letra $x$, caracteriza uma grandeza que está sendo manipulada durante um experimento. Dado esse comportamento, a variável $x$ não sofre influência de outras variáveis. A variável dependente, comumente representada pela letra $y$, caracteriza valores que estão diretamente associados à variável independente. Assim, de forma direta ou indireta, $x$ excerce influência sobre $y$.
+Em uma equação linear, uma variável independente, comumente representada pela letra $x$, caracteriza uma grandeza que está sendo manipulada durante um experimento. Dado esse comportamento, a variável $x$ não sofre influência de outras variáveis. A variável dependente, comumente representada pela letra $y$, caracteriza valores que estão diretamente associados à variável independente. Assim, de forma direta ou indireta, $x$ exerce influência sobre $y$.
 
-Na Figura \ref{fig:regressao_exemplo}, a fim de exemplificar um caso de regressão, é apresentada a relação entre a expectativa de vida baseada e um índice de felicidade calculado em diversos países obtidos a partir de um levantamento feito por \cite{helliwell2020}. Neste estudo, a variável independente é representada pelo índice de felicidade, enquanto a expectativa de vida representa a variável independente. Desse modo, uma análise visual do gráfico permite inferir uma tendência de expectativa de vida maior em países com alto índice de felicidade. 
+A Figura \ref{fig:regressao_exemplo} ilustra um exemplo de regressão, mostrando a relação entre o índice de felicidade e a expectativa de vida em diversos países, conforme dados de \cite{helliwell2020}. Nesse contexto, o índice de felicidade é considerado a variável independente, enquanto a expectativa de vida é a variável dependente. Observando o gráfico, é possível perceber uma tendência de que países com maior índice de felicidade apresentam também uma expectativa de vida mais elevada. Assim, a regressão busca ajustar uma reta que, de forma aproximada, modela essa relação entre as variáveis, permitindo estimar valores de expectativa de vida a partir de valores do índice de felicidade. Tal reta pode ser representada pela equação linear mencionada anteriormente, e, caso disponível, a equação gerada pelos dados pode ser informada para descrever matematicamente a tendência observada na figura.
 
 \begin{figure}[H]
 	\caption{\label{fig:regressao_exemplo}Relação entre o índice de felicidade e expectativa de vida.}

@@ -19,6 +19,105 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{pecan_data_prep_2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fa5862606e671a01af3e0943c8c7c950}{%
+           family={AI},
+           familyi={A\bibinitperiod},
+           given={Pecan},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{fullhash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{fullhashraw}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{bibnamehash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{authorbibnamehash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{authornamehash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{authorfullhash}{fa5862606e671a01af3e0943c8c7c950}
+      \strng{authorfullhashraw}{fa5862606e671a01af3e0943c8c7c950}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data Preparation for Machine Learning: The Ultimate Guide to Doing It Right}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pecan.ai/blog/data-preparation-for-machine-learning/
+      \endverb
+      \verb{url}
+      \verb https://www.pecan.ai/blog/data-preparation-for-machine-learning/
+      \endverb
+    \endentry
+    \entry{Alkama2020}{thesis}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=316c1a9b2dc3c108ec56eab7cb810cef}{%
+           family={Alkama},
+           familyi={A\bibinitperiod},
+           given={Djamel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidade Estadual Paulista (UNESP)}%
+      }
+      \strng{namehash}{ba00393e71baf72994b529b2a9d659f1}
+      \strng{fullhash}{ba00393e71baf72994b529b2a9d659f1}
+      \strng{fullhashraw}{ba00393e71baf72994b529b2a9d659f1}
+      \strng{bibnamehash}{ba00393e71baf72994b529b2a9d659f1}
+      \strng{authorbibnamehash}{ba00393e71baf72994b529b2a9d659f1}
+      \strng{authornamehash}{ba00393e71baf72994b529b2a9d659f1}
+      \strng{authorfullhash}{ba00393e71baf72994b529b2a9d659f1}
+      \strng{authorfullhashraw}{ba00393e71baf72994b529b2a9d659f1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{note}{Acesso em: 05/04/2025}
+      \field{title}{A cultura participativa no YouTube: relação entre ídolos-fãs em canais brasileiros}
+      \field{type}{phdthesis}
+      \field{year}{2020}
+    \endentry
+    \entry{Hastie01102020}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9dc160c468daff46497f87c32ac12f8e}{%
+           family={and},
+           familyi={a\bibinitperiod},
+           given={Trevor\bibnamedelima Hastie},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{fullhash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{fullhashraw}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{bibnamehash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{authorbibnamehash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{authornamehash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{authorfullhash}{9dc160c468daff46497f87c32ac12f8e}
+      \strng{authorfullhashraw}{9dc160c468daff46497f87c32ac12f8e}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technometrics}
+      \field{number}{4}
+      \field{title}{Ridge Regularization: An Essential Concept in Data Science}
+      \field{volume}{62}
+      \field{pages}{426\bibrangedash 433}
+      \range{pages}{8}
+    \endentry
     \entry{andrade2017}{inproceedings}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=517d218d24832f8d3b2af0f9957ef330}{%
@@ -73,44 +172,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{XXII Simpósio Brasileiro de Recursos Hídricos}
-      \field{title}{Hidrodinâmica do Rio Guaíba: Resultados Preliminares}
+      \field{title}{Hidrodinâmica do Lago Guaíba: Resultados Preliminares}
       \field{year}{2017}
-    \endentry
-    \entry{dataat2024}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=94918c1c7f165b10c16ba85b54546921}{%
-           family={At},
-           familyi={A\bibinitperiod},
-           given={Data},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{94918c1c7f165b10c16ba85b54546921}
-      \strng{fullhash}{94918c1c7f165b10c16ba85b54546921}
-      \strng{fullhashraw}{94918c1c7f165b10c16ba85b54546921}
-      \strng{bibnamehash}{94918c1c7f165b10c16ba85b54546921}
-      \strng{authorbibnamehash}{94918c1c7f165b10c16ba85b54546921}
-      \strng{authornamehash}{94918c1c7f165b10c16ba85b54546921}
-      \strng{authorfullhash}{94918c1c7f165b10c16ba85b54546921}
-      \strng{authorfullhashraw}{94918c1c7f165b10c16ba85b54546921}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Introdução ao Machine Learning: Regressão}
-      \field{urlday}{15}
-      \field{urlmonth}{10}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dataat.github.io/introducao-ao-machine-learning/regress%C3%A3o.html
-      \endverb
-      \verb{url}
-      \verb https://dataat.github.io/introducao-ao-machine-learning/regress%C3%A3o.html
-      \endverb
     \endentry
     \entry{carbonell1983}{book}{}{}
       \name{author}{3}{}{%
@@ -157,6 +220,82 @@
       \field{year}{1983}
       \field{pages}{619}
       \range{pages}{1}
+    \endentry
+    \entry{cousineau2010outliers}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=62f1531a2487dce70ddb65e81763135b}{%
+           family={Cousineau},
+           familyi={C\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=216289ea1b70657cfec4bb8d2945d424}{%
+           family={Chartier},
+           familyi={C\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad de San Buenaventura}%
+      }
+      \strng{namehash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{fullhash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{fullhashraw}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{bibnamehash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{authorbibnamehash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{authornamehash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{authorfullhash}{4ed823a83b05c0766b524bb81205cf95}
+      \strng{authorfullhashraw}{4ed823a83b05c0766b524bb81205cf95}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Psychological Research}
+      \field{number}{1}
+      \field{title}{Outliers detection and treatment: a review}
+      \field{volume}{3}
+      \field{year}{2010}
+      \field{pages}{59\bibrangedash 68}
+      \range{pages}{10}
+    \endentry
+    \entry{scikit_learn_standardscaler}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8880822642687df3e50f74258165974}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           prefix={scikit-learn},
+           prefixi={s\bibinithyphendelim l\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{f8880822642687df3e50f74258165974}
+      \strng{fullhash}{f8880822642687df3e50f74258165974}
+      \strng{fullhashraw}{f8880822642687df3e50f74258165974}
+      \strng{bibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorbibnamehash}{f8880822642687df3e50f74258165974}
+      \strng{authornamehash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhash}{f8880822642687df3e50f74258165974}
+      \strng{authorfullhashraw}{f8880822642687df3e50f74258165974}
+      \field{extraname}{1}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Online documentation}
+      \field{note}{Accessed: 2025-06-16}
+      \field{title}{sklearn.preprocessing.StandardScaler}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
+      \endverb
     \endentry
     \entry{g12024}{online}{}{}
       \name{author}{1}{}{%
@@ -236,38 +375,6 @@
       \field{title}{Social Environments for World Happiness}
       \field{year}{2020}
     \endentry
-    \entry{Jolly2018}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a426112369cbb409855a632fd2f8f1d4}{%
-           family={Jolly},
-           familyi={J\bibinitperiod},
-           given={Kevin},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Birmingham, UK}%
-      }
-      \list{publisher}{1}{%
-        {Packt Publishing}%
-      }
-      \strng{namehash}{a426112369cbb409855a632fd2f8f1d4}
-      \strng{fullhash}{a426112369cbb409855a632fd2f8f1d4}
-      \strng{fullhashraw}{a426112369cbb409855a632fd2f8f1d4}
-      \strng{bibnamehash}{a426112369cbb409855a632fd2f8f1d4}
-      \strng{authorbibnamehash}{a426112369cbb409855a632fd2f8f1d4}
-      \strng{authornamehash}{a426112369cbb409855a632fd2f8f1d4}
-      \strng{authorfullhash}{a426112369cbb409855a632fd2f8f1d4}
-      \strng{authorfullhashraw}{a426112369cbb409855a632fd2f8f1d4}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Machine Learning with scikit-learn Quick Start Guide: Classification, Regression, and Clustering Techniques in Python}
-      \field{year}{2018}
-    \endentry
     \entry{kirch2008}{incollection}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=20cc1db200372cc43722b25bd0232cfa}{%
@@ -302,6 +409,38 @@
       \field{year}{2008}
       \field{pages}{1090\bibrangedash 1091}
       \range{pages}{2}
+    \endentry
+    \entry{McDonald:2009:RR}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=263ecf409479f8cf29c087d9d6ddab46}{%
+           family={McDonald},
+           familyi={M\bibinitperiod},
+           given={Gary\bibnamedelima C.},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{fullhash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{fullhashraw}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{bibnamehash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{authorbibnamehash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{authornamehash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{authorfullhash}{263ecf409479f8cf29c087d9d6ddab46}
+      \strng{authorfullhashraw}{263ecf409479f8cf29c087d9d6ddab46}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1939-0068}
+      \field{journaltitle}{WIREs Computational Statistics}
+      \field{number}{1}
+      \field{title}{Ridge regression}
+      \field{volume}{1}
+      \field{year}{2009}
+      \field{pages}{93\bibrangedash 100}
+      \range{pages}{8}
     \endentry
     \entry{montgomery2012}{book}{}{}
       \name{author}{3}{}{%
@@ -461,6 +600,38 @@
       \verb http://www.icmc.usp.br
       \endverb
     \endentry
+    \entry{ScikitLearnRidge2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2ad72e574157d613a63fe8732cf468a8}{%
+           family={{scikit-learn developers}},
+           familyi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{fullhash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{fullhashraw}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{bibnamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorbibnamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authornamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorfullhash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorfullhashraw}{2ad72e574157d613a63fe8732cf468a8}
+      \field{extraname}{2}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Acesso em: 05/04/2025}
+      \field{title}{Linear Models: Ridge Regression}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression
+      \endverb
+    \endentry
     \entry{aws2024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4d7e5f784bb5801c23c91ba37ed2649d}{%
@@ -486,7 +657,7 @@
       \field{labeltitlesource}{title}
       \field{title}{O que é regressão linear?}
       \field{urlday}{15}
-      \field{urlmonth}{10}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -495,42 +666,6 @@
       \endverb
       \verb{url}
       \verb https://aws.amazon.com/pt/what-is/linear-regression/
-      \endverb
-    \endentry
-    \entry{soczi2024}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4c6aeb8e89130e21dc498b4388137bb8}{%
-           family={Soczi},
-           familyi={S\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{4c6aeb8e89130e21dc498b4388137bb8}
-      \strng{fullhash}{4c6aeb8e89130e21dc498b4388137bb8}
-      \strng{fullhashraw}{4c6aeb8e89130e21dc498b4388137bb8}
-      \strng{bibnamehash}{4c6aeb8e89130e21dc498b4388137bb8}
-      \strng{authorbibnamehash}{4c6aeb8e89130e21dc498b4388137bb8}
-      \strng{authornamehash}{4c6aeb8e89130e21dc498b4388137bb8}
-      \strng{authorfullhash}{4c6aeb8e89130e21dc498b4388137bb8}
-      \strng{authorfullhashraw}{4c6aeb8e89130e21dc498b4388137bb8}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Ridge Regression Step-by-Step: Introduction with Example}
-      \field{urlday}{18}
-      \field{urlmonth}{5}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://medium.com/@msoczi/ridge-regression-step-by-step-introduction-with-example-0d22dddb7d54
-      \endverb
-      \verb{url}
-      \verb https://medium.com/@msoczi/ridge-regression-step-by-step-introduction-with-example-0d22dddb7d54
       \endverb
     \endentry
     \entry{soto2013}{incollection}{}{}
@@ -578,6 +713,55 @@
       \field{year}{2013}
       \field{pages}{2538\bibrangedash 2538}
       \range{pages}{1}
+    \endentry
+    \entry{supri2023asian}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9071b1e9961e3b2ee9977e982ac6cea6}{%
+           family={Supri},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71eacd57d8771ce212e28c0992eb4216}{%
+           family={Rudianto},
+           familyi={R\bibinitperiod},
+           given={Abdurohim},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d493e65e6be93fc5b8ff486f75dfce40}{%
+           family={Mawadah},
+           familyi={M\bibinitperiod},
+           given={Badriatul},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e6f08c9a05edc8a2c1ffe6561f8fec2}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={Helmi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{da83c85ec2f6db4adf631b442cafc10b}
+      \strng{fullhash}{d38d40a1d270d0350f9f513bac0945f8}
+      \strng{fullhashraw}{d38d40a1d270d0350f9f513bac0945f8}
+      \strng{bibnamehash}{d38d40a1d270d0350f9f513bac0945f8}
+      \strng{authorbibnamehash}{d38d40a1d270d0350f9f513bac0945f8}
+      \strng{authornamehash}{da83c85ec2f6db4adf631b442cafc10b}
+      \strng{authorfullhash}{d38d40a1d270d0350f9f513bac0945f8}
+      \strng{authorfullhashraw}{d38d40a1d270d0350f9f513bac0945f8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JEMSI (Jurnal Ekonomi, Manajemen, Dan Akuntansi)}
+      \field{number}{4}
+      \field{title}{Asian Stock Index Price Prediction Analysis Using Comparison of Split Data Training and Data Testing}
+      \field{volume}{9}
+      \field{year}{2023}
+      \field{pages}{1403\bibrangedash 1408}
+      \range{pages}{6}
     \endentry
     \entry{veja2024}{online}{}{}
       \name{author}{1}{}{%
