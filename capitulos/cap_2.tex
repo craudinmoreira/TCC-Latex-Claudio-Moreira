@@ -57,6 +57,7 @@ Os quatro principais tipos de \gls{ML} são: supervisionado, não supervisionado
 \end{itemize}
 
 \section{Regressão}
+\label{sec:regressao}
 
 A partir da necessidade de realizar previsões, visando compreender e estimar a dinâmica dos fenômenos estudados, a regressão se apresenta como uma ferramenta que busca modelar relações entre variáveis dependentes e independentes através de métodos estatísticos \cite{soto2013}.
 
@@ -72,7 +73,7 @@ A Figura \ref{fig:regressao_exemplo} ilustra um exemplo de regressão, mostrando
 	\fonte{\cite{helliwell2020}}
 \end{figure}
 
-Embora uma inferência inicial permita constatar uma correlação entre as váriavéis da equação, a criação de um modelo de previsão necessita de métodos que comprovem a correlação pressuposta. Para determinar as relações entre as variáveis dependentes e independentes de um sistema, coeficientes de correlação são calculados, gerando valores que medem e comprovam estatisticamente o grau de correspondência dos fatores estudados. Uma das métricas de correlação mais utilizadas é o coeficiente de Pearson, que mede a associação linear entre duas variáveis \cite{kirch2008}. 
+Embora uma inferência inicial permita constatar uma correlação entre as variáveis da equação, a criação de um modelo de previsão necessita de métodos que comprovem a correlação pressuposta. Para determinar as relações entre as variáveis dependentes e independentes de um sistema, coeficientes de correlação são calculados, gerando valores que medem e comprovam estatisticamente o grau de correspondência dos fatores estudados. Uma das métricas de correlação mais utilizadas é o coeficiente de Pearson, que mede a associação linear entre duas variáveis \cite{kirch2008}. 
 
 Esse coeficiente de correlação pode ser definido pela Equação \ref{eq:correlacao_person}, onde $n$ é o total de amostras, $\bar{x}$ e $\bar{y}$ são as médias aritméticas de ambas as variáveis. Os valores do coeficiente de Pearson variam entre -1 e 1, de tal forma que quanto mais próximos desses extremos, melhor correlacionado estão as variáveis.
 
@@ -91,12 +92,12 @@ A Figura \ref{fig:correlacoes} mostra alguns exemplos com gráficos de dispersã
 	\fonte{\cite{helliwell2020}}
 \end{figure}
 
-Sendo assim, com o cálculo do coeficiente indicando uma alta correlação entre os dados estudados, os métodos de regressão utilizam esta premissa entre as variáveis para estimar valores não existentes no conjunto de dados. Contudo, o coeficiente de correlação também pode mostrar variáveis que não interferem na dinâmica uma da outra no conjunto de informações analisadas, tornando necessário o uso de algoritmos robustos, que dispensam esse o fator de correlação para realizar as previsões desejadas. 
+Quando o coeficiente de correlação indica uma alta correlação entre variáveis independentes (por exemplo, dados meteorológicos) e a variável dependente (nível do Rio Guaíba), métodos mais simples de regressão podem ser utilizados para estimar valores não presentes no conjunto de dados, aproveitando a relação estatística identificada. No entanto, em casos onde o coeficiente indica baixa correlação entre as variáveis ou alta multicolinearidade entre as preditoras, métodos como a regressão Ridge se mostram vantajosos, pois incorporam uma penalidade (regularização L2) que reduz o impacto de variáveis menos relevantes ou correlacionadas, permitindo previsões mais robustas sem depender exclusivamente da força da correlação linear.
 
 \section{Regressão Linear}
 \label{sec:regressao-linear}
 
-A técnica de regressão linear é amplamente utilizada nos campos de estudo da engenharia, ciências físicas e químicas, economia, gestão, ciências biológicas e da vida, e ciências sociais. Em casos onde se deseja estabelcer uma relação entre uma variável preditora ou regressora (normalmente representada por $x$) e uma variável resposta (representada por $y$), a descrição dessa relação por meio de uma equação linear configura a implementação da técnica para a modelagem do problema estudado \cite{montgomery2012}.  
+A regressão linear é um tipo específico de regressão que modela a relação entre uma variável independente e uma variável dependente, conforme citado em \ref{sec:regressao}. Amplamente utilizada em áreas como engenharia, ciências físicas, economia e ciências sociais, essa técnica assume que a relação entre as variáveis é linear, permitindo prever valores da variável dependente com base em uma ou mais variáveis independentes \cite{montgomery2012}.
 
 A aplicação da técnica é relevante devido à sua simplicidade e capacidade de fornecer previsões baseadas em uma fórmula matemática interpretável. Além disso, o método é base para implementações de algoritmos na área de ciência de dados como aprendizado de máquina, otimizando o processamento de dados complexos e viabilizando a criação de modelos de previsão \cite{aws2024}.
 
@@ -107,7 +108,7 @@ O método de regressão linear é dividido em dois grupos, sendo eles: \glsxtrfu
 	\label{eq:regressao_linear_simples}
 \end{equation}
 
-Onde $y$ é a variável alvo, $x$ a variável regressora, enquanto $\beta_0$ e $\beta_1$ são coeficientes calculados pela regressão, que representam o intercepto no eixo Y e a inclinação da reta, respectivamente.
+Onde $y$ é a variável dependente, $x$ a variável independente, enquanto $\beta_0$ e $\beta_1$ são coeficientes calculados pela regressão, que representam o valor de $y$ quando $x=0$ e o grau de inclinação da reta, respectivamente.
 
 A RLM, embora seja semelhante à RLS, possui múltiplas variáveis preditoras, sendo definida por:
 
@@ -116,11 +117,11 @@ A RLM, embora seja semelhante à RLS, possui múltiplas variáveis preditoras, s
 	\label{eq:regressao_linear_multipla}
 \end{equation}
 
-Onde $y$ é a variável alvo, $x_{1}$ a $x_{k}$ as variáveis regressoras, e $\beta_0$ permanece sendo o coeficiente de intercepto do eixo Y enquanto $\beta_1$ a $\beta_n$ representam os coeficientes associados à n-ésima variável \cite{sassi2012}.
+Na equação \ref{eq:regressao_linear_multipla}, $y$ é a variável alvo, $x_{1}$ a $x_{k}$ as variáveis regressoras, e $\beta_0$ permanece sendo o coeficiente de intercepto do eixo Y enquanto $\beta_1$ a $\beta_n$ representam os coeficientes associados à n-ésima variável \cite{sassi2012}.
 
 Em \ref{eq:regressao_linear_simples} e \ref{eq:regressao_linear_multipla}, nota-se a presença do erro estatístico representado por $\varepsilon$, que é a diferença entre o valor observado e o valor previsto pela equação de regressão. Esse erro é considerado aleatório e contabiliza a falha do modelo ao tentar se aproximar do comportamento denotado pelos dados amostrados \cite{montgomery2012}.
 
-Partindo para um cenário ideal, a fim de se ter uma melhor compreensão do modelo de regressão linear, assume-se que seja possível fixar o valor da variável regressora $x$ ao observar um valor $y$ correspondente. Partindo dessa premissa, todos os valores do lado direito da equação \ref{eq:regressao_linear_simples} são conhecidos, exceto o erro $\varepsilon$, que passa a determinar as propriedades de $y$. Realizando outra suposição, onde a média e a variância de $\varepsilon$ são iguais a zero e $\sigma^2$, respectivamente \cite{montgomery2012}, a resposta média para qualquer valor da variável regressora é dada por:
+Para compreender o modelo de regressão linear sob suas suposições fundamentais, considera-se que a variável independente $ x $ (por exemplo, precipitação meteorológica) é conhecida e usada para prever a variável dependente $ y $ (como o nível do Rio Guaíba). Sob essas condições, todos os termos do lado direito da equação $ y = \beta_0 + \beta_1 x + \varepsilon $ são conhecidos, exceto o erro $ \varepsilon $, que determina as propriedades estatísticas de $ y $. Assumindo que o erro $ \varepsilon $ tem média zero e variância constante $ \sigma^2 $ \cite{montgomery2012}, a resposta média para qualquer valor de $ x $ é dada por
 
 \begin{equation}
 	E(y \mid x) = \mu_{y \mid x} = E(\beta_0 + \beta_1x + \varepsilon) = \beta_0 + \beta_1x
@@ -134,7 +135,7 @@ e a variância é dada por:
 
 Desse modo, o modelo de regressão verdadeiro $\mu_{y \mid x} = \beta_0 + \beta_1x$ representa uma linha de valores médios, ou seja, a altura da linha de regressão em qualquer valor de x corresponde ao valor esperado de y para aquele x.
 
-Para exemplificar a suposição acima, tem-se um modelo de regressão ilustrado pela Figura \ref{fig:observacoes_regressao_linear}, onde $\mu_{y \mid x} = 3,5 + 2x$, com variância $\sigma^2 = 2$. Nota-se que uma distribuição normal é utilizada para descrever a variação aleatória do erro $\varepsilon$. Estabelecido que $y$ é a soma de uma constante $\beta_0 + \beta_1x$ (a média) e uma variável aleatória normalmente distribuída, é possível inferir que $y$ também segue uma distribuição normal. No mesmo exemplo, se $x = 10$ amostras, $y$ terá distribuição normal com média $\mu_{y \mid x} = 3,5 + 2(10) = 23,5$ e variância $\sigma^2 = 2$. Quanto menor a variância, mais próximos os pontos estarão da linha de regressão, enquanto uma variância maior resultará em pontos mais dispersos em relação à linha de regressão \cite{montgomery2012}.
+Para exemplificar as suposições da regressão linear, considera-se um modelo ilustrado pela Figura 3a, onde a média condicional é $ \mu_{y|x} = 3.5 + 2x $ e a variância do erro é $ \sigma^2 = 2 $. O erro $ \varepsilon $ segue uma distribuição normal, descrevendo a variação aleatória em torno da média. Como $ y $ é a soma de uma componente linear $ \beta_0 + \beta_1 x $ (a média) e o erro $ \varepsilon $, normalmente distribuído, $ y $ também segue uma distribuição normal. Por exemplo, para um valor específico da variável independente $ x = 10 $, $ y $ terá uma distribuição normal com média $ \mu_{y|x} = 3.5 + 2(10) = 23.5 $ e variância $ \sigma^2 = 2 $. Quanto menor a variância, mais próximos os pontos estarão da linha de regressão; uma variância maior resulta em maior dispersão em relação à linha de regressão \cite{montgomery2012}.
 
 A maioria dos fênomenos nos quais se deseja obter a função que descreve o seu comportamento resulta em uma aproximação funcional através das variáveis de interesse. Essas relações funcionais frequentemente baseiam-se em teorias físicas, químicas ou de engenharia e ciências, ou seja, no conhecimento do mecanismo subjacente. Na Figura \ref{fig:regressao_linear_aprox_relacao_complexa}, é mostrada uma relação entre as variáveis $x$ e $y$ relativamente complexa, mas que pode ser aproximada de por uma equação de regressão linear, com um erro relativamente baixo.
 
@@ -182,13 +183,13 @@ Partindo desses conceitos, para implementação de modelos de regressão linear 
 
 O método \glsxtrfull{MQO} atua como uma ferramenta estatística, visando estimar a relação entre uma variável dependente e uma ou mais variáveis independentes \cite{Alkama2020}, permitindo encontrar os coeficientes desejados para o funcionamento do modelo.
 
-Para obter uma regressão que se aproxima da dinâmica analisada, o método visa minimizar a Soma Residual dos Quadrados (RSS), denotado por:
+Para obter uma regressão que se aproxima da dinâmica analisada, o método visa minimizar a \glsxtrfull{RSS}, denotado por:
 
 \begin{equation}
 	RSS = \sum_{i=1}^{n} \left(y_i - \beta_0 - \beta_1x_{i}\right)^2
 \end{equation}
 
-para os casos de RLS, ou seja, quando há apenas uma variável independente. Para o caso de RLM, a equação é dada por:
+para os casos de \gls{RLS}, ou seja, quando há apenas uma variável independente. Para o caso de \gls{RLM}, a equação é dada por:
 
 \begin{equation}
     RSS = \sum_{i=1}^{n} \left(y_i - \beta_0 - \sum_{j=1}^{p}\beta_jx_{ij}\right)^2
@@ -207,7 +208,7 @@ Para minimizar a SSR em um caso de RLS, por exemplo, são calculadas as derivada
 Derivada em relação à $\beta_0$:
 
 \begin{equation}
-	\frac{\partial SSR}{\partial \beta_0} = -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i) = 0
+	\frac{\partial RSS}{\partial \beta_0} = -2 \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i) = 0
 \end{equation}
 
 simplificando:
@@ -424,13 +425,14 @@ Assim, a cada ponto selecionado da amostra, é calculada a derivada parcial da f
 
 A Regressão Ridge é uma técnica de regularização estatística amplamente utilizada em modelos de regressão linear para abordar problemas de sobreajuste (overfitting) e multicolinearidade entre variáveis preditoras \cite{McDonald:2009:RR}. Essa técnica, também conhecida como regularização L2, é particularmente eficaz em cenários onde o número de variáveis preditoras é grande ou quando essas variáveis apresentam alta correlação, o que pode levar a estimativas de coeficientes instáveis e de baixa generalização.
 
-Conforme visto em \ref{sec:regressao-linear}, na regressão linear tradicional, o objetivo é minimizar a soma dos quadrados dos resíduos (Residual Sum of Squares, RSS), que mede a diferença entre os valores observados e os valores previstos pelo modelo. A função de perda é dada por:
+Conforme visto em \ref{sec:regressao-linear}, na regressão linear tradicional, o objetivo é minimizar o valor de \gls{RSS}, que mede a diferença entre os valores observados e os valores previstos pelo modelo. A função de perda é dada por:
 
 \begin{equation}
 	RSS = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
 \end{equation}
+\\
 
-onde $y_i$ são os valores observados, $\hat{y}_i$ são os valores previstos, e $n$ é o número de observações. No entanto, em cenários com multicolinearidade (alta correlação entre variáveis preditoras) ou um grande número de preditores, o modelo pode se ajustar excessivamente aos dados de treinamento, resultando em alta variância e baixa performance em dados não vistos. A Regressão Ridge resolve esse problema ao adicionar um termo de penalidade à função de perda, proporcional à soma dos quadrados dos coeficientes de regressão. 
+\noindent onde $y_i$ são os valores observados, $\hat{y}_i$ são os valores previstos, e $n$ é o número de observações. No entanto, em cenários com multicolinearidade (alta correlação entre variáveis preditoras) ou um grande número de preditores, o modelo pode se ajustar excessivamente aos dados de treinamento, resultando em alta variância e baixa performance em dados não vistos. A Regressão Ridge resolve esse problema ao adicionar um termo de penalidade à função de perda, proporcional à soma dos quadrados dos coeficientes de regressão. 
 
 A função objetivo da Regressão Ridge é:
 
