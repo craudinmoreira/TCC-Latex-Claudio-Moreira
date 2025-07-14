@@ -23,6 +23,7 @@ brazil				% o último idioma é o principal do documento
 
 \usepackage{configs/eca_ufsc_bnu} % personalização da ABNTEX2 
 \usepackage{float}
+\usepackage[dvipsnames]{xcolor}
 \addbibresource{pos_textual/referencias.bib} % Seus arquivos de referências
 
 %---------------------------------------------------------------------------------------------
@@ -131,7 +132,7 @@ Por fim, meu agradecimento a todos os professores que passaram pela minha vida a
 \makeatother
 
 % Cria comando para referenciar Anexo automaticamente \refanexo
-\newcommand{\refanexo}[1]{\hyperref[#1]{Anexo~\ref{#1}}}
+% \newcommand{\refanexo}[1]{\hyperref[#1]{Anexo~\ref{#1}}}
 
 % Define comandos para tabelas que permite ajustar o tamanho da coluna e manter alinhamento C, R ou L
 %\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
@@ -280,16 +281,16 @@ Por fim, meu agradecimento a todos os professores que passaram pela minha vida a
     \makeatother
 	
 	
-	% Apêndices
-    \begin{apendicesenv}
-    	%\partapendices* 
-    	\input{pos_textual/apendice_a}
-    \end{apendicesenv}
+	% % Apêndices
+    % \begin{apendicesenv}
+    % 	%\partapendices* 
+    % 	\input{pos_textual/apendice_a}
+    % \end{apendicesenv}
 
-    % Anexos
-    \begin{anexosenv}
-    	%\partanexos*
-    	\input{pos_textual/anexo_a}
-    \end{anexosenv}
+    % % Anexos
+    % \begin{anexosenv}
+    % 	%\partanexos*
+    % 	\input{pos_textual/anexo_a}
+    % \end{anexosenv}
 
 \end{document}

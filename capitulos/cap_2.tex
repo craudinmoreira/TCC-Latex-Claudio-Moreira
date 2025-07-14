@@ -1,11 +1,11 @@
 % ----------------------------------------------------------
 \chapter{Fundamentação Teórica}\label{cap:fundamentacaoTeorica}
 % ----------------------------------------------------------
-Explicar brevemente o que será tratado como fundamentação teórica para o entendimento do contexto em que o modelo de aprendizagem de máquina será aplicado.
+Esta seção apresenta os conceitos teóricos que sustentam o desenvolvimento do modelo preditivo para o nível do Lago Guaíba, com base em dados meteorológicos e na técnica de Regressão \textit{Ridge}. Inicialmente, aborda-se o impacto das mudanças climáticas e sua relação com eventos extremos, como as enchentes, destacando a relevância do monitoramento de rios em regiões vulneráveis, como o Rio Grande do Sul. Em seguida, são discutidos os princípios de aprendizado de máquina, com ênfase em abordagens supervisionadas, que formam a base para a modelagem proposta. Posteriormente, explora-se a teoria da regressão, incluindo a regressão linear simples e múltipla, e o método dos Mínimos Quadrados Ordinários, que são fundamentais para compreender a Regressão \textit{Ridge}. Por fim, detalha-se a técnica da regressão proposta para implementação, destacando sua capacidade de lidar com multicolinearidade e melhorar a generalização do modelo, essencial para a previsão precisa do nível do rio em cenários de alta variabilidade climática.
 
 \section{As mudanças climáticas e as catástrofes naturais}
 
-As grandes cidades brasileiras enfrentam desafios mais frequentes relacionados às mudanças climáticas, que agravam problemas como enchentes, inundações e deslizamentos. Projeções indicam que, até 2030, a mancha urbana de São Paulo pode aumentar em até 38\%, ampliando o risco para mais de 20\% das áreas de expansão urbana, que se tornarão suscetíveis a acidentes naturais (Nobre et al., 2011). O estudo também destaca que o aumento na frequência de eventos de chuvas intensas pode dobrar o número de dias com precipitação acima de 10 milímetros, agravando a vulnerabilidade da população, especialmente nas áreas periféricas e de menor infraestrutura.
+As grandes cidades brasileiras enfrentam desafios mais frequentes relacionados às mudanças climáticas, que agravam problemas como enchentes, inundações e deslizamentos. Projeções indicam que, até 2030, a mancha urbana de São Paulo pode aumentar em até 38\%, ampliando o risco para mais de 20\% das áreas de expansão urbana, que se tornarão suscetíveis a acidentes naturais \cite{Nobre2011}. O estudo também destaca que o aumento na frequência de eventos de chuvas intensas pode dobrar o número de dias com precipitação acima de 10 milímetros, agravando a vulnerabilidade da população, especialmente nas áreas periféricas e de menor infraestrutura.
 
 \subsection{Cenário de enchentes no sul do Brasil}
 
@@ -92,7 +92,7 @@ A Figura \ref{fig:correlacoes} mostra alguns exemplos com gráficos de dispersã
 	\fonte{\cite{helliwell2020}}
 \end{figure}
 
-Quando o coeficiente de correlação indica uma alta correlação entre variáveis independentes (por exemplo, dados meteorológicos) e a variável dependente (nível do Rio Guaíba), métodos mais simples de regressão podem ser utilizados para estimar valores não presentes no conjunto de dados, aproveitando a relação estatística identificada. No entanto, em casos onde o coeficiente indica baixa correlação entre as variáveis ou alta multicolinearidade entre as preditoras, métodos como a regressão Ridge se mostram vantajosos, pois incorporam uma penalidade (regularização L2) que reduz o impacto de variáveis menos relevantes ou correlacionadas, permitindo previsões mais robustas sem depender exclusivamente da força da correlação linear.
+Quando o coeficiente de correlação indica uma alta correlação entre variáveis independentes (por exemplo, dados meteorológicos) e a variável dependente (nível do Lago Guaíba), métodos mais simples de regressão podem ser utilizados para estimar valores não presentes no conjunto de dados, aproveitando a relação estatística identificada. No entanto, em casos onde o coeficiente indica baixa correlação entre as variáveis ou alta multicolinearidade entre as preditoras, métodos como a regressão Ridge se mostram vantajosos, pois incorporam uma penalidade (regularização L2) que reduz o impacto de variáveis menos relevantes ou correlacionadas, permitindo previsões mais robustas sem depender exclusivamente da força da correlação linear.
 
 \section{Regressão Linear}
 \label{sec:regressao-linear}
@@ -121,7 +121,7 @@ Na equação \ref{eq:regressao_linear_multipla}, $y$ é a variável alvo, $x_{1}
 
 Em \ref{eq:regressao_linear_simples} e \ref{eq:regressao_linear_multipla}, nota-se a presença do erro estatístico representado por $\varepsilon$, que é a diferença entre o valor observado e o valor previsto pela equação de regressão. Esse erro é considerado aleatório e contabiliza a falha do modelo ao tentar se aproximar do comportamento denotado pelos dados amostrados \cite{montgomery2012}.
 
-Para compreender o modelo de regressão linear sob suas suposições fundamentais, considera-se que a variável independente $ x $ (por exemplo, precipitação meteorológica) é conhecida e usada para prever a variável dependente $ y $ (como o nível do Rio Guaíba). Sob essas condições, todos os termos do lado direito da equação $ y = \beta_0 + \beta_1 x + \varepsilon $ são conhecidos, exceto o erro $ \varepsilon $, que determina as propriedades estatísticas de $ y $. Assumindo que o erro $ \varepsilon $ tem média zero e variância constante $ \sigma^2 $ \cite{montgomery2012}, a resposta média para qualquer valor de $ x $ é dada por
+Para compreender o modelo de regressão linear sob suas suposições fundamentais, considera-se que a variável independente $ x $ (por exemplo, precipitação meteorológica) é conhecida e usada para prever a variável dependente $ y $ (como o nível do Lago Guaíba). Sob essas condições, todos os termos do lado direito da equação $ y = \beta_0 + \beta_1 x + \varepsilon $ são conhecidos, exceto o erro $ \varepsilon $, que determina as propriedades estatísticas de $ y $. Assumindo que o erro $ \varepsilon $ tem média zero e variância constante $ \sigma^2 $ \cite{montgomery2012}, a resposta média para qualquer valor de $ x $ é dada por
 
 \begin{equation}
 	E(y \mid x) = \mu_{y \mid x} = E(\beta_0 + \beta_1x + \varepsilon) = \beta_0 + \beta_1x
@@ -422,8 +422,9 @@ Assim, a cada ponto selecionado da amostra, é calculada a derivada parcial da f
 
 
 \section{Modelo Ridge}
+\label{sec:regressao-ridge}
 
-A Regressão Ridge é uma técnica de regularização estatística amplamente utilizada em modelos de regressão linear para abordar problemas de sobreajuste (overfitting) e multicolinearidade entre variáveis preditoras \cite{McDonald:2009:RR}. Essa técnica, também conhecida como regularização L2, é particularmente eficaz em cenários onde o número de variáveis preditoras é grande ou quando essas variáveis apresentam alta correlação, o que pode levar a estimativas de coeficientes instáveis e de baixa generalização.
+A Regressão Ridge é uma técnica de regularização estatística amplamente utilizada em modelos de regressão linear para abordar problemas de sobreajuste (ou \textit{overfitting}, quando o modelo se ajusta demais aos dados de treinamento, perdendo a capacidade de prever dados fora da base passada para o modelo) e multicolinearidade entre variáveis preditoras \cite{McDonald:2009:RR}. Essa técnica, também conhecida como regularização L2, é particularmente eficaz em cenários onde o número de variáveis preditoras é grande ou quando essas variáveis apresentam alta correlação, o que pode levar a estimativas de coeficientes instáveis e de baixa generalização.
 
 Conforme visto em \ref{sec:regressao-linear}, na regressão linear tradicional, o objetivo é minimizar o valor de \gls{RSS}, que mede a diferença entre os valores observados e os valores previstos pelo modelo. A função de perda é dada por:
 
@@ -441,7 +442,28 @@ A função objetivo da Regressão Ridge é:
 \end{equation}
 
 No contexto da biblioteca \textit{Scikit-learn} em Python, a classe Ridge implementa a Regressão Ridge. O parâmetro \textit{alpha} define a força da regularização: valores maiores de $\alpha$ resultam em coeficientes mais próximos de zero, enquanto valores menores permitem que o modelo se aproxime da regressão linear ordinária. A escolha adequada de 
-$\alpha$ é crucial para evitar tanto o overfitting  (quando o modelo se ajusta demais aos dados de treinamento) quanto o underfitting (quando o modelo é muito simples para capturar os padrões dos dados). \cite{ScikitLearnRidge2025}.
+$\alpha$ é crucial para evitar tanto o \textit{overfitting} quanto o \textit{underfitting} (quando o modelo é muito simples para capturar os padrões dos dados). \cite{ScikitLearnRidge2025}.
 
+Além de impactar a função RSS, a Regressão Ridge altera o processo de busca pelos coeficientes $\beta$ que definem a reta (ou hiperplano, no caso de múltiplas variáveis) que melhor representa a regressão.
 
+Na regressão linear tradicional, os coeficientes $\beta$ são encontrados minimizando-se apenas a soma dos quadrados dos resíduos, resultando em uma solução exata obtida pela equação normal:
 
+\begin{equation}
+	\hat{\boldsymbol\beta} = (\mathbf{X}^\top \mathbf{X})^{-1} \mathbf{X}^\top \mathbf{y}
+\end{equation}
+
+\noindent onde $\mathbf{X}$ é a matriz de variáveis independentes e $\mathbf{y}$ é o vetor de variáveis dependentes \cite{montgomery2012}.
+
+Entretanto, quando há multicolinearidade ou grande número de variáveis, a matriz $\mathbf{X}^\top \mathbf{X}$  pode se tornar quase singular, causando coeficientes instáveis e de grande magnitude. A Regressão Ridge resolve isso ao adicionar o termo de penalização $\alpha \sum_{j=1}^{p}\beta_{j}^2$, modificando a equação normal para:
+
+\begin{equation}
+	\hat{\boldsymbol\beta}_{ridge} = (\mathbf{X}^\top \mathbf{X} + \alpha \mathbf{I})^{-1} \mathbf{X}^\top \mathbf{y}
+\end{equation}
+
+\noindent \cite{ScikitLearnRidge2025}.
+
+Geometricamente, a regularização imposta pela Ridge faz com que a busca pela solução deixe de se restringir apenas à reta ou hiperplano definido pelo menor erro de previsão. Em vez disso, a solução passa a ser buscada dentro de uma região esférica ao redor da origem, delimitada pela penalização L2.
+
+Com isso, mesmo que múltiplas combinações de coeficientes possam gerar ajustes semelhantes aos dados (especialmente em casos de multicolinearidade), a regressão \textit{Ridge} prefere aquelas soluções onde os coeficientes são menores, evitando oscilações extremas.
+
+Portanto, o modelo \textit{Ridge} não apenas minimiza o erro de ajuste aos dados da \gls{RSS}, mas também impõe um “encolhimento” dos coeficientes em direção ao zero, resultando em retas ou hiperplanos mais estáveis, com menor variância e melhor capacidade de generalização para dados não vistos ao qual se deseja ser previsto \cite{McDonald:2009:RR}.

@@ -1,8 +1,12 @@
 % ----------------------------------------------------------
-\chapter{Preparação dos dados para o treinamento}
+\chapter{Desenvolvimento}
 % ----------------------------------------------------------
 
-Antes de iniciar o treinamento, exitem alguns procedimentos iniciais que garantem desde a coleta correta das informações necessárias para o modelo, até a limpeza, transformação e redução dos dados. Nesta seção, serão abordadas as etapas necessárias para preparar os dados para o treinamento do modelo, seguindo o fluxo de trabalho descrito na Figura \ref{fig:passos_preparacao}.
+Este capítulo descreve as etapas fundamentais para a preparação dos dados utilizados no treinamento do modelo de previsão do nível do Lago Guaíba, utilizando dados meteorológicos e a técnica de Regressão Ridge. A preparação adequada dos dados é essencial para garantir a qualidade e a confiabilidade das previsões, especialmente em um contexto de alta variabilidade climática. O capítulo está estruturado em quatro seções principais: a Coleta de Dados detalha a obtenção de dados meteorológicos e dos níveis dos rios, estabelecendo a base de informações para o modelo; o Pré-processamento dos Dados aborda a concatenação e formatação dos dados para garantir consistência; a Limpeza dos Dados descreve as técnicas para tratar valores ausentes e \textit{outliers} (valores discrepantes, que destoam do comportamento que se deseja identificar nos dados coletados), assegurando a integridade das informações; e a Redução dos Dados explica a seleção de variáveis relevantes, otimizando a eficiência do modelo. Cada seção contribui para a construção de um conjunto de dados robusto, permitindo que o modelo de Regressão \textit{Ridge} capture padrões sazonais e climáticos com maior precisão, fundamental para a previsão eficaz do nível do rio e a mitigação de impactos de enchentes.
+
+\section{Preparação dos dados para o treinamento}
+
+Antes de iniciar o treinamento, existem alguns procedimentos iniciais que garantem desde a coleta correta das informações necessárias para o modelo, até a limpeza, transformação e redução dos dados. Nesta seção, serão abordadas as etapas necessárias para preparar os dados para o treinamento do modelo, seguindo o fluxo de trabalho descrito na Figura \ref{fig:passos_preparacao}.
 
 \begin{figure}[H]
 	\caption{\label{fig:passos_preparacao}Passos para preparação dos dados.}
@@ -108,7 +112,7 @@ Aplicado o tratamento, a coluna \textit{TEMPERATURA ORVALHO MAX. NA HORA ANT. (A
 
 Em casos onde os dados apresentam \textit{outliers} (dados que se distanciam significativamente do restante da coluna analisada), foi aplicado o método \glsxtrfull{IQR} para identificar e remover esses valores. A partir da diferença entre o terceiro quartil (Q3) e o primeiro quartil (Q1) de um conjunto de dados, multiplicado por um fator de tolerância, o método determina limites superiores e inferiores para o conjunto de dados analisado, removendo ou substituindo os valores que estão fora dessa faixa, para manter a consistência das informações.
 
-Por exemplo, na coluna \textit{UMIDADE REL. MAX. NA HORA ANT. (AUT) (\%)}, as Figuras \ref{fig:dados_outlier_sem_tratamento} e \ref{fig:dados_outlier_com_tratamento} mostram a diferença entre os dados após a aplicação do método \gls{IQR}, com um fator de tolerância de 1.2 entre os interquartis Q1 e Q3.
+Por exemplo, na coluna \textit{UMIDADE REL. MAX. NA HORA ANT. (AUT) (\%)}, as Figuras \ref{fig:dados_outlier_sem_tratamento} e \ref{fig:dados_outlier_com_tratamento} mostram a diferença entre os dados após a aplicação do método \gls{IQR}, com um fator de tolerância de 1.2 entre os interquartis Q1 e Q3. Para esta coluna, o cálculo do IQR resultou em um intervalo de -11,8\% a 35,8\%, limitando os \textit{outliers} superiores vistos no gráfico para o valor máximo calculado. 
 
 \begin{figure}[H]
 	\caption{\label{fig:dados_outlier_sem_tratamento}Gráfico de Umidade Relativa Máxima  na Hora Anterior (\%) sem tratamento.}
@@ -130,6 +134,8 @@ Na base de dados dos níveis dos rios, embora a dinâmica que representa os resp
 
 Para realizar a interpolação, utilizou-se a função \textit{interpolate} com o argumento \textit{method = linear} da biblioteca \textit{Pandas}, que preenche os valores ausentes com base nos dados adjacentes.
 
+Para realizar a interpolação dos valores ausentes na base de dados dos níveis dos rios, utilizou-se a função \textit{interpolate} da biblioteca Pandas com o argumento \textit{method = 'linear'}. Esse método preenche os valores ausentes calculando uma interpolação linear entre os dois dados adjacentes mais próximos, ou seja, o valor ausente é estimado como uma média ponderada dos valores imediatamente anteriores e posteriores no conjunto de dados, considerando a distância temporal entre eles. Especificamente, a interpolação linear utiliza apenas os dois pontos adjacentes (um antes e um depois do valor ausente) para determinar o valor interpolado, assumindo uma variação linear entre esses pontos.
+
 Ainda, observou-se nas bases dos níveis dos rios a ocorrência de valores ausentes no início ou no final do período de amostragem, inviabilizando a interpolação. Para esses casos, o preenchimento foi feito a partir da repetição do primeiro ou do último valor disponível, respectivamente. É importante ressaltar que tal limpeza só pode ser feita se o preenchimento ocorra em um intervalo de tempo curto, visando não afetar a análise feita pelo modelo de previsão.
 
 \section{Redução dos dados}
@@ -147,7 +153,7 @@ Voltando para a Tabela \ref{tab:colunas_dados_meteorologicos}, nota-se a presen�
 	\item 1 coluna refere-se a dados de precipitação.
 \end{itemize}
 
-Desse modo, para o primeiro passo de redução da base, foram mantidas apenas uma coluna de cade tipo de medição meteorológica, filtrando 6 colunas no total, conforme a Tabela \ref{tab:colunas_dados_meteorologicos_reduzidas}. 
+Desse modo, para o primeiro passo de redução da base, foram mantidas apenas uma coluna de cada tipo de medição meteorológica, filtrando 6 colunas no total, conforme a Tabela \ref{tab:colunas_dados_meteorologicos_reduzidas}. 
 
 \begin{table}[H]
 	\centering
@@ -169,7 +175,7 @@ Desse modo, para o primeiro passo de redução da base, foram mantidas apenas um
 
 Para a escolha das colunas a serem mantidas, foram levados em consideração os seguintes critérios:
 \begin{itemize}
-	\item As colunas \textit{Temperatura do Ar - Bulbo seco}, \textit{Pressão Atmosférica ao Nível da Estação} e \textit{Umidade Relativa do Ar} foram escolhidas por serem medidas diretas dos respectivos fenômenos atmosféricos, enquanto as demais colunas referem-se a medidas derivadas ou não diretamente observáveis, que não são tão relevantes para a previsão do nível do rio. Além disso, observou-se que para essas unidades de medida derivadas, o comportamento dos dados eram semalhantes, descartanto a necessidade de manter mais de uma coluna para cada tipo de medição, como mostra a Figura \ref{fig:comparacao_temp} em relação às medidas de temperatura.
+	\item As colunas \textit{Temperatura do Ar - Bulbo seco}, \textit{Pressão Atmosférica ao Nível da Estação} e \textit{Umidade Relativa do Ar} foram escolhidas por serem medidas diretas dos respectivos fenômenos atmosféricos, enquanto as demais colunas referem-se a medidas derivadas ou não diretamente observáveis, que não são tão relevantes para a previsão do nível do rio. Além disso, observou-se que para essas unidades de medida derivadas, o comportamento dos dados eram semelhantes, descartando a necessidade de manter mais de uma coluna para cada tipo de medição, como mostra a Figura \ref{fig:comparacao_temp} em relação às medidas de temperatura.
 	\begin{figure}[H]
 	\caption{\label{fig:comparacao_temp}Comparativo de gráficos de temperatura em diferentes tipos de medição}
 	\begin{center}
@@ -250,7 +256,7 @@ Após essa redução inicial, os gráficos e seus dados de cada coluna foram ana
 	\fonte{Autor.}
 \end{figure}
 
-As Figuras \ref{fig:temperatura_do_ar_bulbo_seco}, \ref{fig:pressao_atmosferica_ao_nivel_da_estacao} e \ref{fig:radiacao_global} ilustram um padrão sazonal nos dados, com aumentos e diminuições periódicas dos valores ao longo do ano, indicando uma correlação entre as variáveis meteorológicas e as estações do ano. Desse modo, torna-se justificável a manutenção dessas colunas, uma vez que o modelo de previsão pode se beneficiar dessa sazonalidade para melhorar a acurácia das previsões, considerando que o nível do rio também apresenta a mesma dinâmica, ilustrado nas Figura \ref{fig:comparacao_temp_nivel_rio}, \ref{fig:comparacao_pressao_nivel_rio} e \ref{fig:comparacao_radiacao_nivel_rio}.
+As Figuras \ref{fig:temperatura_do_ar_bulbo_seco}, \ref{fig:pressao_atmosferica_ao_nivel_da_estacao} e \ref{fig:radiacao_global} ilustram um padrão sazonal nos dados, com aumentos e diminuições periódicas dos valores ao longo do ano, indicando uma correlação entre as variáveis meteorológicas e as estações do ano. Desse modo, torna-se justificável a manutenção dessas colunas, uma vez que o modelo de previsão pode se beneficiar dessa sazonalidade para melhorar a acurácia das previsões, considerando que o nível do rio também apresenta a mesma dinâmica, ilustrado nas Figuras \ref{fig:comparacao_temp_nivel_rio}, \ref{fig:comparacao_pressao_nivel_rio} e \ref{fig:comparacao_radiacao_nivel_rio}.
 
 \begin{figure}[H]
 	\caption{\label{fig:comparacao_temp_nivel_rio}Gráfico comparativo de temperatura e nível quanto a sazonalidade}
@@ -278,9 +284,18 @@ As Figuras \ref{fig:temperatura_do_ar_bulbo_seco}, \ref{fig:pressao_atmosferica_
 
 Em relação às colunas \textit{Vento - Velocidade Horária}, \textit{Umidade Relativa do Ar} e \textit{Precipitação Total}, embora estas não apresentem um padrão sazonal tão evidente quanto as plotadas acima, estas medidas estão diretamente ligadas aos fenômenos de previsão do tempo, noticiadas em jornais e revistas, e portanto, possuem influência direta no nível dos rios ondes estes dados são monitorados. Sendo assim, as colunas também foram consideradas para o treinamento do modelo.
 
-Definidas as colunas a serem mantidas, o próximo passo consistiu em alinhar os dados meteorológicos com os dados de monitoramento dos rios, garantindo que as informações estivessem na mesma frequência de amostragem. Para isso, foram utilizados os dados de monitoramento do nível do Lago Guaíba, que possuem a maior frequência de amostragem entre os rios analisados, com intervalo de 15 minutos, enquanto os dados meteorológicos possuem frequência de 1 hora (60 minutos). Assim, a frequência de amostragem das informações do nível dos rios foi reduzida para 1 hora, aplicando um filtro simples que mantém apnas as linhas cujo \textit{timestamp} tem minuto igual a 0.
+Definidas as colunas a serem mantidas, o próximo passo consistiu em alinhar os dados meteorológicos com os dados de monitoramento dos rios, garantindo que as informações estivessem na mesma frequência de amostragem. Para isso, foram utilizados os dados de monitoramento do nível do Lago Guaíba, que possuem a maior frequência de amostragem entre os rios analisados, com intervalo de 15 minutos, enquanto os dados meteorológicos possuem frequência de 1 hora (60 minutos). Assim, a frequência de amostragem das informações do nível dos rios foi reduzida para 1 hora, aplicando um filtro simples que mantém apenas as linhas cujo \textit{timestamp} tem minuto igual a 0.
 
-Por fim, alinhados os dados meteorológicos com os dados de monitoramento dos rios, o \textit{dataframe} resultante passou um nivelamento superior e inferior quanto a data inicial e final, de modo que o período de amostragem de todas as informações fosse o mesmo, garantindo que todas as colunas tivessem o mesmo número de linhas preenchidas. Embora na etapa de limpeza dos dados tenha sido aplicado o preenchimento de valores ausentes, verificou-se que as estações de monitoramento dos rios não possuem medições que se iniciam ou finalizam na mesma data. Dessa forma, a fim de analisar qual o período de início de fim das informações obtidas, a tabela \ref{tab:periodo_amostragem} apresenta o período de amostragem de cada uma das fontes de dados.
+Por fim, alinhados os dados meteorológicos com os dados de monitoramento dos rios, o \textit{dataframe} resultante passou por um nivelamento superior e inferior quanto a data inicial e final, visando manter um período de amostragem em que todas as colunas possuíssem informações de seus respectivos níveis, garantindo a mesma quantidade de linhas preenchidas, como mostra a Figura \ref{fig:nivelamento_superior_inferior_nivel_rios}. Embora na etapa de limpeza dos dados tenha sido aplicado o preenchimento de valores ausentes, verificou-se que as estações de monitoramento dos rios não possuem medições que se iniciam ou finalizam na mesma data.
+\begin{figure}[H]
+	\caption{\label{fig:nivelamento_superior_inferior_nivel_rios}Nivelamento superior e inferior dos dados dos rios.}
+	\begin{center}
+		\includegraphics[scale=0.55]{figuras/nivelamento_superior_inferior_dados_rios.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+Extraindo os dados mostrados na Figura \ref{fig:nivelamento_superior_inferior_nivel_rios}, a Tabela \ref{tab:periodo_amostragem} apresenta o período de amostragem de cada uma das fontes de dados dos rios.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|l|c|c|c|c|}
@@ -314,11 +329,9 @@ A partir dessa premissa, a normalização dos dados foi feita utilizando o méto
 z = \frac{x - \mu}{\sigma}
 \end{equation}
 
-onde \( \mu \) é a média da amostra e \( \sigma \) é o desvio padrão. Muitos elementos usados em funções objetivas de um algoritmo de aprendizagem (como o kernel RBF do Support Vector e as máquinas ou os regularizadores L1 e L2 dos modelos lineares) assumem que todos os recursos estão centrados em torno uma média igual a zero e variação de mesma ordem \cite{scikit_learn_standardscaler}. Desse modo, caso uma amostra apresente uma variância de magnitude maior do que outros, ele pode dominar a função objetivo e fazer o estimador incapaz de aprender com outros recursos corretamente como esperado.
+\noindent onde \( \mu \) é a média da amostra e \( \sigma \) é o desvio padrão. Muitos elementos usados em funções objetivas de \gls{ML} assumem os dados passados para o modelo estão normalizados. No caso do Modelo Ridge, que utiliza um regularizador L2 em sua função objetivo, esse requisito também é necessário, logo, a normalização pelo método \textit{StandardScaler} garante que os recursos estão centrados em torno uma média igual a zero e variação de mesma ordem \cite{scikit_learn_standardscaler}. Caso uma amostra apresente uma variância de magnitude maior do que outros, ele pode dominar a função objetivo e fazer o estimador incapaz de aprender com outros recursos corretamente como esperado.
 
-Além disso, o método aplicado também é sensível a outliers, que afetam a média e o desvio padrão calculados para a definição dos valores normalizados. Por esse motivo, na seção \ref{sec:limpeza_dos_dados}, a aplicação do método IQR para remoção dos \textit{outliers}, além de limpar os dados durante aquela etapa de preparação, garantiu que os dados estivessem mais homogêneos e não fossem distorcidos por valores extremos na normalização desta etapa.
-
-Para exemplificar a normalização dos dados, 
+O método \textit{StandardScaler} também é sensível a \textit{outliers}, que afetam a média e o desvio padrão calculados para a definição dos valores normalizados. Por esse motivo, a aplicação do método \gls{IQR} para remoção dos \textit{outliers}, descrito na seção \ref{sec:limpeza_dos_dados}, além de limpar os dados durante aquela etapa de preparação, garantiu que os dados estivessem mais homogêneos e não fossem distorcidos por valores extremos na normalização desta etapa.
 
 Com os dados normalizados, o \textit{dataframe} está pronto para ser dividido em conjuntos de treinamento e teste, chegando ao estágio final de preparação, e seguindo para o treinamento do modelo de previsão. 
 
@@ -326,27 +339,31 @@ Com os dados normalizados, o \textit{dataframe} está pronto para ser dividido e
 
 No processo de implementação de um modelo de previsão, a divisão da base de dados em conjuntos de treino e teste constitui a última etapa antes da aplicação do algoritmo, com o objetivo de avaliar a capacidade de generalização do modelo. De maneira geral, a base de dados é dividida em duas partes: uma maior, utilizada para o treinamento do modelo, e uma menor, destinada a testar seu desempenho em dados não observados durante o treinamento. Após a etapa de treinamento com o primeiro conjunto, é possível realizar previsões e compará-las com o segundo conjunto, cujos dados são conhecidos apenas pelo pesquisador. Essa comparação permite a avaliação da performance do modelo por meio do levantamento de métricas de desempenho.
 
-Existem diferentes abordagens para dividir os dados em conjuntos de treinamento e teste, a fim de assegurar um bom desempenho do modelo de previsão. Por exemplo, em um estudo direcionado para a previsão do preço de ações, três proporções de divisão entre dados de treinamento e dados de teste foram aplicados, sendo estes:
+Na divisão dos dados em conjuntos de treinamento e teste, diferentes proporções podem ser utilizadas, dependendo das características do conjunto de dados e do modelo de aprendizado de máquina. Exemplos comuns incluem 80\% dos dados para treinamento e 20\% para teste (80-20), 70\% para treinamento e 30\% para teste (70-30), e 60\% para treinamento e 40\% para teste (60-40) \cite{supri2023asian}.
 
-\begin{itemize}
-	\item 80\% dos dados para treinamento e 20\% para teste;
-	\item 70\% dos dados para treinamento e 30\% para teste;
-	\item 60\% dos dados para treinamento e 40\% para teste.
-\end{itemize}
-
-Através das métricas de desempenho \glsxtrfull{RMSE}, \glsxtrfull{MSE}, \glsxtrfull{R2} e \glsxtrfull{MAE}, os resultados das três proporções foram comparadas, de modo que a diferença percentual média entre o preço de validação e o preço previsto para o próximo dia útil foi menor para a proporção 80:20, com uma diferença média de 1,3\% entre o preço original e o preço previsto, enquanto a proporção 70:30 apresentou uma diferença média de 1,9\% e a proporção 60:40, 1,8\% \cite{supri2023asian}.
-
-Embora a proporção 80:20 tenha apresentado o melhor desempenho neste estudo, não há uma regra geral que defina a melhor divisão entre os conjuntos de treinamento e teste, pois essa escolha pode variar de acordo com o tipo de dado, o modelo utilizado e outros fatores específicos de cada conjunto de informações. No presente trabalho, foi inicialmente adotada a proporção 80:20, com 80\% dos dados para treinamento e 20\% para teste, seguindo a abordagem utilizada no estudo mencionado, que obteve os melhores resultados. Para comparar o desempenho do modelo com outras proporções, também foram testadas as divisões 70:30 e 60:40, a fim de verificar se as métricas de desempenho apresentavam o mesmo comportamento observado no estudo de previsão de preços de ações.
+Não há uma regra geral que defina a melhor divisão entre os conjuntos de treinamento e teste, pois essa escolha pode variar de acordo com o tipo de dado, o modelo utilizado e outros fatores específicos de cada conjunto de informações. No presente trabalho, foi inicialmente adotada a proporção 80:20, com 80\% dos dados para treinamento e 20\% para teste, que produziu bons resultados em trabalhos relacionados \cite{supri2023asian}. Para comparar o desempenho do modelo com outras proporções, também foram testadas as divisões 70:30 e 60:40, a fim de verificar se as métricas de desempenho apresentavam o mesmo comportamento observado no estudo de previsão de preços de ações.
 
 \section{Aplicação do modelo de previsão}
 
-Realizada toda a preparação dos dados, com a divisão em conjuntos de treino e teste e e a padronização das variáveis independentes para garantir que todas tenham a mesma escala, o modelo Ridge é instanciado no script em Python, com a possibilidade de ajuste de alguns parâmetros para fazer o treinamento e as previsões.
+Realizada toda a preparação dos dados, com a divisão em conjuntos de treino e teste e a padronização das variáveis independentes para garantir que todas tenham a mesma escala, o modelo \textit{Ridge} é instanciado no script em Python, com a possibilidade de ajuste de alguns parâmetros para fazer o treinamento e as previsões.
 
-O principal parâmetro ajustável é o \texttt{alpha}, que controla a intensidade da penalização: valores maiores de \texttt{alpha} aumentam a regularização, reduzindo a magnitude dos coeficientes, podendo levar a underfitting; valores menores aproximam o modelo da regressão linear padrão, com risco de overfitting. Outros parâmetros incluem \texttt{fit\_intercept}, que determina se o modelo deve incluir um intercepto, e \texttt{solver}, que define o método de otimização (como \texttt{auto}, \texttt{svd} ou \texttt{cholesky}), influenciando a eficiência computacional. Além disso, o parâmetro \texttt{random\_state} pode ser configurado para garantir reprodutibilidade em solvers que utilizam aleatoriedade.
+A Regressão \textit{Ridge}, implementada na biblioteca \textit{Scikit-learn} em Python, possui parâmetros ajustáveis que influenciam o desempenho e a robustez do modelo. O principal parâmetro é o alpha, que controla a intensidade da penalização L2, descrita em \ref{sec:regressao-ridge}.
 
-A implementação prática envolve importar a classe Ridge, configurar os hiperparâmetros, treinar o modelo com o método \texttt{fit} e realizar previsões com o método \texttt{predict}. Para avaliar o desempenho do modelo, esta etapa é feita com métricas como o erro quadrático médio (MSE), raíz do erro quadrático médio (RMSE), erro absoluto médio (MAE) e/ou o coeficiente de determinação (R²).
+Valores maiores de alpha aumentam a regularização, reduzindo a magnitude dos coeficientes $\hat{\beta}_i$, o que pode levar a \textit{underfitting} ao simplificar excessivamente o modelo. Por outro lado, valores menores aproximam o modelo da regressão linear padrão, com maior risco de \textit{overfitting}. 
 
-Em \cite{Hastie01102020}, o autor aborda sobre o termo de regularização L2 que penaliza os coeficientes do modelo, explorando o impacto do parâmetro \texttt{alpha} em vários contextos. Em sua tese, é destacado que valores de \texttt{alpha} são geralmente selecionados por validação cruzada, com intervalos típicos variando de 0.01 a 1000, dependendo da escala dos dados e do grau de multicolinearidade. O artigo também menciona que, em aplicações práticas, valores como 0.1, 1 e 10 são frequentemente testados como pontos de partida.
+O parâmetro \texttt{fit\_intercept} determina se o modelo inclui um termo de intercepto $\beta_0$ na equação de regressão, permitindo que a reta ou hiperplano ajustado não passe necessariamente pela origem (0,0), ou seja, que $y = x$ quando $x = 0$. Quando \texttt{fit\_intercept=True}, o modelo calcula o intercepto para melhor ajustar os dados. 
+
+O parâmetro \texttt{solver} define o método de otimização (como auto, svd, ou cholesky), impactando a eficiência computacional, enquanto \texttt{random\_state} garante reprodutibilidade em solvers que utilizam aleatoriedade. A Figura \ref{fig:exemplo_codigo_ridge} apresenta um trecho de código Python que ilustra a configuração desses parâmetros na implementação da Regressão \textit{Ridge}.
+
+\begin{figure}[H]
+	\caption{\label{fig:exemplo_codigo_ridge} Exemplo de código Python para configuração da Regressão Ridge}
+	\begin{center}
+		\includegraphics[scale=0.3]{figuras/carbon.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+A implementação prática envolve importar a classe \textit{Ridge}, configurar os hiperparâmetros, treinar o modelo com o método \texttt{fit} e realizar previsões com o método \texttt{predict}. Em \cite{Hastie01102020}, o autor aborda sobre o termo de regularização L2 que penaliza os coeficientes do modelo, explorando o impacto do parâmetro \texttt{alpha} em vários contextos. Em sua tese, é destacado que valores de \texttt{alpha} são geralmente selecionados por validação cruzada, com intervalos típicos variando de 0.01 a 1000, dependendo da escala dos dados e do grau de multicolinearidade. O artigo também menciona que, em aplicações práticas, valores como 0.1, 1 e 10 são frequentemente testados como pontos de partida.
 
 Partindo desse pressuposto, foram testados valores de \texttt{alpha} de 0.001, 0.01, 0.1, 1, 10 e 100, com o objetivo de avaliar o desempenho do modelo em diferentes níveis de regularização. A seguir, são apresentadas as tabelas com os resultados obtidos para cada valor de \texttt{alpha}, considerando as três proporções de divisão dos dados em conjuntos de treinamento e teste: 80:20, 70:30 e 60:40, junto às Figuras X, Y e Z, que ilustram o desempenho do modelo para cada split de treinamento e previsão.
 
@@ -455,7 +472,7 @@ Partindo desse pressuposto, foram testados valores de \texttt{alpha} de 0.001, 0
 \end{table}
 
 
-\section{Análise dos resultados}
+\chapter{Análise dos resultados}
 
 Uma das formas de avaliar o desempenho de um modelo de aprendizado de máquina é através da análise das métricas de desempenho, que indicam a capacidade do modelo de generalizar e prever corretamente os dados. As métricas de avaliação utilizadas neste trabalho incluem o erro quadrático médio (MSE), a raiz do erro quadrático médio (RMSE), o erro absoluto médio (MAE) e o coeficiente de determinação (R²), onde cada uma delas possui uma interpretação específica:
 
@@ -468,10 +485,80 @@ Uma das formas de avaliar o desempenho de um modelo de aprendizado de máquina �
 
 Com isso, as tabelas apresentadas mostram que o MSE e o RMSE diminuem conforme o \textit{split} de treinamento diminui e o \textit{split} de teste aumenta. Tal comportamento indica que, à medida que mais dados são utilizados para treinamento, o modelo passa a ter um sobreajuste (\textit{overfitting}), perdendo a capacidade de generalizar e, em vez disso, se adequando estritamente ao conjunto de dados de treinamento.
 
-Quanto ao R², o valor obtido possui uma baixa variação entre os ensaios com diferentes valores de \texttt{alpha} e \textit{split}, ficando entre 0.87 e 0.89. Isso indica que 87\% a 89\% da variância dos dados da variável dependente é explicada pelo modelo. Em outras palavras, o modelo captura a maior parte dos padrões nos dados, deixando apenas 13\% a 11\% da variância como não explicada (devido a ruído, variáveis omitidas ou outros fatores).
+Quanto ao R², o valor obtido possui uma baixa variação entre os ensaios com diferentes valores de \texttt{alpha} e \textit{split}, ficando entre 0.87 e 0.89. Isso indica que 87\% a 89\% da variância dos dados da variável dependente é explicada pelo modelo. Em outras palavras, o modelo captura a maior parte dos padrões nos dados, deixando apenas 11\% a 13\% da variância como não explicada (devido a ruído, variáveis omitidas ou outros fatores). Um coeficiente de determinação próximo a 1 sugere que o modelo é robusto e confiável para o conjunto de dados analisado. Boa parte dessa robustez se dá pelo tratamento e limpeza dos dados, somada à a correlação entre as variáveis preditoras e a variável dependente.
 
-Um coeficiente de determinação próximo a 1 sugere que o modelo é robusto e confiável para o conjunto de dados analisado. Boa parte dessa robustez se dá pelo tratamento e limpeza dos dados, somada à a correlação entre as variáveis preditoras e a variável dependente.
+Em relação ao parâmetro \texttt{alpha}, os resultados mostram que o modelo apresenta um desempenho semelhante para os valores de 0.001, 0.01, 0.1 e 1, com pequenas variações nas métricas de desempenho. Existem alguns fatores que levam a esse comportamento, como a baixa sensibilidade à regularização nos dados, intervalo de \texttt{alpha} insuficiente para notar diferenças significativas ou baixa multicolinearidade entre as variáveis preditoras. Alguns outros fatores como escala dos dados ou tamanho e qualidade do conjunto foram descartados, uma vez que ao longo do trabalho, evidenciam-se os procedimentos realizados para evitar este tipo de falha no modelo.
 
-Em relação ao parâmetro \texttt{alpha}, os resultados mostram que o modelo apresenta um desempenho semelhante para os valores de 0.001, 0.01, 0.1 e 1, com pequenas variações nas métricas de desempenho. Existem alguns fatores que levam a esse comportamento, como a baixa sensibilidade à regularização nos dados, intervalo de \texttt{alpha} insuficiente para notar diferenças significativas ou baixa multicolinearidade entre as variáveis preditoras. Alguns outros fatores como escala dos dados ou tamanho e qualidade do conjunto foi descartado, uma vez que ao longo do trabalho, evidenciam-se os procedimentos realizados para evitar este tipo de falha no modelo.
+Uma forma de testar se o modelo possui uma sensibilidade maior à regularização seria aumentar o intervalo de valores de \texttt{alpha} e/ou expor o modelo a mais dados de teste. Tomando um valor muito maior de \texttt{alpha} em relação ao intervalo utilizado anteriormente, foram obtidos os seguintes resultados:
 
-Sendo assim, uma forma de testar se o modelo possui uma sensibilidade maior à regularização seria aumentar o intervalo de valores de \texttt{alpha} e/ou expor o modelo a mais dados de teste. Caso a variação de \texttt{alpha} permaneça com resultados semelhantes, isto pode indicar que o modelo já atingiu seu ponto de saturação, atingindo um desempenho ótimo para baixos termos de regularização.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Alpha} & \multicolumn{4}{|c|}{\textbf{1000000}} \\
+\hline
+\textbf{Split} & \textbf{MSE} & \textbf{RMSE} & \textbf{MAE} & \textbf{R2} \\
+\hline
+\textbf{80:20} & 469.82 & 21.68 & 16.93 & 0.88 \\
+\textbf{70:30} & 379.54 & 19.48 & 15.00 & 0.88 \\
+\textbf{60:40} & 391.98 & 19.80 & 15.31 & 0.87 \\
+\hline
+\end{tabular}
+\caption{Tabela de avaliação de desempenho do modelo com alpha 1000000.}
+\end{table}
+
+A partir das métricas de avaliação apresentadas, nota-se novamente que o aumento do valor de \texttt{alpha} resultou em um desempenho similar ao observado anteriormente, com erros um pouco maiores, e coeficientes de determinação próximos. Assim, em casos onde uma grande variação de \texttt{alpha} permanece com resultados semelhantes, tal comportamento indica que o modelo já atingiu seu ponto de saturação, obtendo um desempenho ótimo para baixos termos de regularização.
+
+Considerando que a base de dados utilizada possui uma frequência temporal em horas, o modelo realiza uma previsão do nível do Lago Guaíba para o próximo período de uma hora, com base nos dados meteorológicos e do monitoramento dos rios daquela amostra temporal. Pensando em uma previsão com frequência diária, o modelo foi ajustado para ter um intervalo de previsão de 24 horas. Assim, ao prever o nível do lago na hora "00:00", a próxima previsão desconsidera as os registros das 23 horas seguintes, realizando uma nova previsão no dia seguinte, com dados meteorológicos e dos demais rios também somente do outro dia. Na Tabela \ref{tab:monthly_summary}, é mostrado um resumo mensal das previsões do modelo, agregandos as previsões diárias de cada mês como uma média e comparando os valores reais e previstos do nível do lago, além da diferença absoluta e percentual entre eles.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	\textbf{Mês/Ano} &  \textbf{Atual(cm)} &  \textbf{Previsto(cm)} &  \textbf{Diferença(cm)} &  \textbf{Diferença(\%)} \\
+	\hline
+	05/2022 & 126.62 & 125.83 & \textcolor{BrickRed}{-0.79} & \textcolor{BrickRed}{-0.62} \\
+06/2022 & 157.60 & 150.06 & \textcolor{BrickRed}{-7.54} & \textcolor{BrickRed}{-4.78} \\
+07/2022 & 139.67 & 140.09 & \textcolor{ForestGreen}{+0.42} & \textcolor{ForestGreen}{+0.30} \\
+08/2022 & 137.95 & 139.59 & \textcolor{ForestGreen}{+1.64} & \textcolor{ForestGreen}{+1.19} \\
+09/2022 & 102.62 & 99.25 & \textcolor{BrickRed}{-3.37} & \textcolor{BrickRed}{-3.28} \\
+10/2022 & 85.76 & 81.89 & \textcolor{BrickRed}{-3.87} & \textcolor{BrickRed}{-4.51} \\
+11/2022 & 64.00 & 79.35 & \textcolor{ForestGreen}{+15.35} & \textcolor{ForestGreen}{+23.98} \\
+12/2022 & 53.69 & 51.27 & \textcolor{BrickRed}{-2.42} & \textcolor{BrickRed}{-4.51} \\
+01/2023 & 51.08 & 36.35 & \textcolor{BrickRed}{-14.73} & \textcolor{BrickRed}{-28.84} \\
+02/2023 & 62.91 & 55.49 & \textcolor{BrickRed}{-7.42} & \textcolor{BrickRed}{-11.79} \\
+03/2023 & 58.01 & 67.77 & \textcolor{ForestGreen}{+9.76} & \textcolor{ForestGreen}{+16.82} \\
+04/2023 & 78.50 & 56.32 & \textcolor{BrickRed}{-22.18} & \textcolor{BrickRed}{-28.25} \\
+05/2023 & 94.21 & 93.28 & \textcolor{BrickRed}{-0.93} & \textcolor{BrickRed}{-0.99} \\
+06/2023 & 113.47 & 124.27 & \textcolor{ForestGreen}{+10.80} & \textcolor{ForestGreen}{+9.52} \\
+07/2023 & 138.53 & 162.85 & \textcolor{ForestGreen}{+24.32} & \textcolor{ForestGreen}{+17.56} \\
+08/2023 & 115.04 & 111.91 & \textcolor{BrickRed}{-3.13} & \textcolor{BrickRed}{-2.72} \\
+09/2023 & 229.53 & 218.44 & \textcolor{BrickRed}{-11.09} & \textcolor{BrickRed}{-4.83} \\
+10/2023 & 220.16 & 200.87 & \textcolor{BrickRed}{-19.29} & \textcolor{BrickRed}{-8.76} \\
+11/2023 & 201.79 & 202.08 & \textcolor{ForestGreen}{+0.29} & \textcolor{ForestGreen}{+0.14} \\
+12/2023 & 149.75 & 134.52 & \textcolor{BrickRed}{-15.23} & \textcolor{BrickRed}{-10.17} \\
+01/2024 & 95.98 & 110.42 & \textcolor{ForestGreen}{+14.44} & \textcolor{ForestGreen}{+15.04} \\
+02/2024 & 67.41 & 91.07 & \textcolor{ForestGreen}{+23.66} & \textcolor{ForestGreen}{+35.10} \\
+03/2024 & 76.78 & 90.61 & \textcolor{ForestGreen}{+13.83} & \textcolor{ForestGreen}{+18.01} \\
+04/2024 & 86.68 & 98.16 & \textcolor{ForestGreen}{+11.48} & \textcolor{ForestGreen}{+13.24} \\
+\hline
+\end{tabular}
+\caption{Diferença entre os valores reais e previstos do nível do Lago Guaíba}
+\label{tab:monthly_summary}
+\end{table}
+
+\begin{figure}[H]
+	\caption{\label{fig:diferencas_previsao_lago_guaiba}Diferenças entre os valores reais e previstos do nível do Lago Guaíba}
+	\begin{center}
+		\includegraphics[scale=0.45]{figuras/diferencas_previsao_lago_guaiba.png}
+	\end{center}
+	\fonte{Autor.}
+\end{figure}
+
+Com base na Tabela \ref{tab:monthly_summary} e na Figura \ref{fig:diferencas_previsao_lago_guaiba}, é possível observar que, embora os erros não se acumulem a cada mês, eles se tornam maiores de forma geral, conforme a previsão se afasta do início do teste. A o maior erro ocorreu em julho de 2024, com uma diferença de 24.32 cm em relação ao valor real do nível do lago, o que representa uma diferença percentual de 17.56\%. Por outro lado, o menor erro ocorreu em julho de 2022, com uma diferença de apenas 0.42 cm, ou 0.30\% em relação ao valor real.
+
+Outro ponto a ser destacado é que, 14 dos 24 meses analisados, o modelo apresentou uma previsão com erro negativo, ou seja, o valor previsto foi menor que o valor real do nível do lago. Isso pode indicar que o modelo tende a subestimar os níveis do lago, sendo um fator de risco no alerta para enchentes e inundações, uma vez que a previsão de níveis mais baixos pode levar a uma resposta inadequada em situações de emergência. Por outro lado, mesmo com a subestimação, 8 dos 14 meses com erro negativo apresentaram uma diferença percentual inferior a 5\%, o que pode ser considerado aceitável em termos de previsão. 
+
+Utilizando outras pesquisas de previsão do nível de rios para fins comparativos, um estudo que implementou um modelo de Rede Neural do tipo Long Short-Term Memory (LSTM), para a previsão do rio Tisza, na Hungria. De forma geral, o modelo obteve um erro absoluto médio que variou de 4,2 cm no 1º dia de previsão, até 34,7 cm no 7º dia. Outra análise feita no estudo mostrou que entre 68,5\% e 76,1\% das previsões ficaram dentro dos intervalos de precisão exigidos para os diferentes dias da previsão de 7 dias à frente. Estes intervalos eram progressivos, sendo o primeiro dia com tolerância de 5cm, a partir do 3º dia com tolerância de 15cm, no 5º dia com tolerância de 25cm e por fim no 7º dia com tolerância de 35cm \cite{Vizi2023}.
+
+Comparando com este Artigo, o modelo \textit{Ridge}, embora tenha oscilado nas previsões, gerando um grau de incerteza no desempenho,apresentou resultados gerais melhores em termos de erro absoluto médio, especialmente nos dias mais distantes de previsão.

@@ -577,6 +577,70 @@
       \field{pages}{672}
       \range{pages}{1}
     \endentry
+    \entry{Nobre2011}{report}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=49c20098e4a2bef4e2c5470f95eb4bd1}{%
+           family={Nobre},
+           familyi={N\bibinitperiod},
+           given={Carlos\bibnamedelima Afonso},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95af55f6093f1b00744cd4a8b8b7de8f}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Andrea\bibnamedelima Ferraz},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1885b390305877db3c97180cb790146c}{%
+           family={Orsini},
+           familyi={O\bibinitperiod},
+           given={José\bibnamedelimb Antônio\bibnamedelima Marengo},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77f602b974bbd997ec97a36824d95e76}{%
+           family={Saldiva},
+           familyi={S\bibinitperiod},
+           given={Paulo\bibnamedelimb Hilário\bibnamedelima Nascimento},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{institution}{1}{%
+        {Instituto Nacional de Pesquisas Espaciais (INPE), Universidade de São Paulo (USP), Ministério da Ciência e Tecnologia (MCT)}%
+      }
+      \list{location}{1}{%
+        {São Paulo, Brasil}%
+      }
+      \strng{namehash}{a816d4a6aa64ca078489ebfd70b9eec2}
+      \strng{fullhash}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \strng{fullhashraw}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \strng{bibnamehash}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \strng{authorbibnamehash}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \strng{authornamehash}{a816d4a6aa64ca078489ebfd70b9eec2}
+      \strng{authorfullhash}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \strng{authorfullhashraw}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Acesso em: julho de 2025}
+      \field{title}{Vulnerabilidades das megacidades brasileiras às mudanças climáticas: Região Metropolitana de São Paulo - Relatório Final}
+      \field{type}{techreport}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://www.nepo.unicamp.br/publicacoes/relatorio-final/megacidades_RMSP.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.nepo.unicamp.br/publicacoes/relatorio-final/megacidades_RMSP.pdf
+      \endverb
+    \endentry
     \entry{portoimagem_2009}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=fb93942226dfb6aeca4cd6efb6d890e2}{%
@@ -916,6 +980,71 @@
       \verb{url}
       \verb https://veja.abril.com.br/ciencia/de-1941-a-2024-porque-as-enchentes-sao-desafio-constante-no-rs
       \endverb
+    \endentry
+    \entry{Vizi2023}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=7a5132624102c8d200dcb893357f8159}{%
+           family={Vizi},
+           familyi={V\bibinitperiod},
+           given={Zsolt},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5078eec01db96e7eec73291cb5026718}{%
+           family={Batki},
+           familyi={B\bibinitperiod},
+           given={Bálint},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43543a443f1ddb98e18a67f3619bbf58}{%
+           family={Rátki},
+           familyi={R\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=622877fefd97b44c76399f018f77bb0d}{%
+           family={Szalánczi},
+           familyi={S\bibinitperiod},
+           given={Szabolcs},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4ac2765662d8ba3272700be8471f1c4}{%
+           family={Fehérváry},
+           familyi={F\bibinitperiod},
+           given={István},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b00cbf90025fa28b4a88a3f2d167142}{%
+           family={Kozák},
+           familyi={K\bibinitperiod},
+           given={Péter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eeb544d68c96753d105db7d4164c80b1}{%
+           family={Kiss},
+           familyi={K\bibinitperiod},
+           given={Tímea},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a1c191748bd165de7864b8c35579c5fc}
+      \strng{fullhash}{711f46790e8dad10da3b901cd3441abd}
+      \strng{fullhashraw}{711f46790e8dad10da3b901cd3441abd}
+      \strng{bibnamehash}{711f46790e8dad10da3b901cd3441abd}
+      \strng{authorbibnamehash}{711f46790e8dad10da3b901cd3441abd}
+      \strng{authornamehash}{a1c191748bd165de7864b8c35579c5fc}
+      \strng{authorfullhash}{711f46790e8dad10da3b901cd3441abd}
+      \strng{authorfullhashraw}{711f46790e8dad10da3b901cd3441abd}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Sciences Europe}
+      \field{number}{92}
+      \field{title}{Water level prediction using long short-term memory neural network model for a lowland river: a case study on the Tisza River, Central Europe}
+      \field{volume}{35}
+      \field{year}{2023}
     \endentry
   \enddatalist
 \endrefsection
