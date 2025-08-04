@@ -512,7 +512,6 @@ INPUT .\capitulos\cap_1.tex
 INPUT .\capitulos\cap_1.tex
 INPUT capitulos\cap_1.tex
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
-INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmb10.tfm
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT .\capitulos\cap_2.tex
 INPUT .\capitulos\cap_2.tex
@@ -520,6 +519,7 @@ OUTPUT capitulos\cap_2.aux
 INPUT .\capitulos\cap_2.tex
 INPUT .\capitulos\cap_2.tex
 INPUT capitulos\cap_2.tex
+INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmb10.tfm
 INPUT .\figuras\lago_guaiba.jpg
 INPUT .\figuras\lago_guaiba.jpg
 INPUT .\figuras\lago_guaiba.jpg
@@ -681,13 +681,6 @@ OUTPUT capitulos\cap_3.aux
 INPUT .\capitulos\cap_3.tex
 INPUT .\capitulos\cap_3.tex
 INPUT capitulos\cap_3.tex
-INPUT .\figuras\steps_data_preparing.png
-INPUT .\figuras\steps_data_preparing.png
-INPUT .\figuras\steps_data_preparing.png
-INPUT .\figuras\steps_data_preparing.png
-INPUT .\figuras\steps_data_preparing.png
-INPUT .\figuras\steps_data_preparing.png
-INPUT .\figuras\steps_data_preparing.png
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi5.tfm
 INPUT C:\Users\claud\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy5.tfm

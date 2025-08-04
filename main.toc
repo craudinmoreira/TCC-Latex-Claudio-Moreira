@@ -9,8 +9,6 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{15}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Objetivos}{16}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Objetivo Geral}{16}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Objetivos Específicos}{16}{subsection.1.1.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{17}{chapter.2}%
 \contentsline {section}{\numberline {2.1}As mudanças climáticas e as catástrofes naturais}{17}{section.2.1}%
@@ -24,18 +22,17 @@
 \contentsline {section}{\numberline {2.6}Modelo Ridge}{32}{section.2.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Desenvolvimento}}{35}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Preparação dos dados para o treinamento}{35}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Coleta de dados}{36}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Pré processamento dos dados}{36}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Limpeza dos dados}{39}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Redução dos dados}{43}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Transformação dos dados}{51}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Divisão dos dados em conjuntos de treinamento e teste}{52}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Aplicação do modelo de previsão}{53}{section.3.8}%
+\contentsline {section}{\numberline {3.1}Coleta de dados}{35}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Pré processamento dos dados}{36}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Limpeza dos dados}{37}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Redução dos dados}{41}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Transformação dos dados}{48}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Divisão dos dados em conjuntos de treinamento e teste}{49}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Aplicação do modelo de previsão}{50}{section.3.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Análise dos resultados}}{58}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Análise dos resultados}}{52}{chapter.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusão}}{62}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusão}}{59}{chapter.5}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFERÊNCIAS}{64}{section*.62}%
+\contentsline {chapter}{REFERÊNCIAS}{61}{section*.61}%

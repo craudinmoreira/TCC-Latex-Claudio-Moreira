@@ -417,6 +417,119 @@
       \verb https://g1.globo.com/sc/santa-catarina/noticia/2024/05/19/sc-enchente-quedas-barreira-dia-mais-chuvoso.ghtml
       \endverb
     \endentry
+    \entry{Guo2021}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=676ae7f9c4250e2c1e5c9c7f606df322}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Wen-Dar},
+           giveni={W\bibinithyphendelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47555e9b7e828f797edbf1bb120aee0c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei-Bo},
+           giveni={W\bibinithyphendelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a97748b7df13699c66d00b826a57d636}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Shen-Hai},
+           giveni={S\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b804ff7fa3d45bc40811873042c4ea5e}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Chih-Hsin},
+           giveni={C\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c31fc062f76e26bb950e1f6b9cfc33f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Hongey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{675c4d5fec4d0ecddb36d4c78c1ec744}
+      \strng{fullhash}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \strng{fullhashraw}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \strng{bibnamehash}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \strng{authorbibnamehash}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \strng{authornamehash}{675c4d5fec4d0ecddb36d4c78c1ec744}
+      \strng{authorfullhash}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \strng{authorfullhashraw}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Water}
+      \field{number}{7}
+      \field{title}{Prediction of River Stage Using Multistep-Ahead Machine Learning Techniques for a Tidal River of Taiwan}
+      \field{volume}{13}
+      \field{year}{2021}
+      \field{pages}{920}
+      \range{pages}{1}
+    \endentry
+    \entry{hasan2023state}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=11d71264fbc75203a601e58402b428f7}{%
+           family={Hasan},
+           familyi={H\bibinitperiod},
+           given={Md\bibnamedelima Nazmul},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=999e12c41013e46ec8eb20b3edbbea87}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Musheer},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d717f3d7e08e5adaff49eb987e98bc96}{%
+           family={Afzal},
+           familyi={A\bibinitperiod},
+           given={Haider},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0935fcd44edf3369fa1ccd15081c0e23}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Aisha},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de981e4af23d2fc6d8f8ca93f7480c32}{%
+           family={Eusufzai},
+           familyi={E\bibinitperiod},
+           given={A.\bibnamedelimi R.\bibnamedelimi Khan},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{5584e1fcb866c11102d8e5e528304649}
+      \strng{fullhash}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \strng{fullhashraw}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \strng{bibnamehash}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \strng{authorbibnamehash}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \strng{authornamehash}{5584e1fcb866c11102d8e5e528304649}
+      \strng{authorfullhash}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \strng{authorfullhashraw}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{12}
+      \field{journaltitle}{Sustainability}
+      \field{title}{The State of the Art in Deep Learning Applications, Challenges, and Future Prospects: A Comprehensive Review of Flood Forecasting and Management}
+      \field{volume}{15}
+      \field{year}{2023}
+      \field{pages}{9513}
+      \range{pages}{1}
+    \endentry
     \entry{helliwell2020}{inproceedings}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=95655cfb39fd5b56fb4054732b661f08}{%

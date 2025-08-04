@@ -11,27 +11,26 @@
 \contentsline {figure}{\numberline {9}{\ignorespaces Passo 3 da regressão linear pelo método MQO.}}{30}{figure.caption.23}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Iterações da aplicação do método MQO}}{31}{figure.caption.24}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Passo 10 da regressão linear pelo método MQO.}}{32}{figure.caption.25}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Passos para preparação dos dados.}}{35}{figure.caption.26}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Dados meteorológicos.}}{37}{figure.caption.27}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Dados do nível do rio.}}{39}{figure.caption.29}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Limpeza dos dados coletados.}}{40}{figure.caption.30}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Gráfico de Temperatura do orvalho Máx. na Hora Anterior (°C) não tratado.}}{40}{figure.caption.31}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Gráfico de Temperatura do orvalho Máx. na Hora Anterior (°C) tratado.}}{41}{figure.caption.32}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Gráfico de Umidade Relativa Máxima na Hora Anterior (\%) sem tratamento.}}{42}{figure.caption.33}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Gráfico de Umidade Relativa Máxima na Hora Anterior (\%) com tratamento.}}{42}{figure.caption.34}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Comparativo de gráficos de temperatura em diferentes tipos de medição}}{45}{figure.caption.36}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Gráfico de Temperatura do Ar - Bulbo Seco}}{46}{figure.caption.37}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Gráfico de Pressão Atmosférica ao Nível da Estação.}}{46}{figure.caption.38}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Gráfico de Vento - Velocidade Horária.}}{47}{figure.caption.39}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Gráfico de Umidade Relativa do Ar}}{47}{figure.caption.40}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Gráfico de Radiação Global}}{48}{figure.caption.41}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Gráfico de Precipitação Total}}{48}{figure.caption.42}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Gráfico comparativo de temperatura e nível quanto a sazonalidade}}{49}{figure.caption.43}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Gráfico comparativo de pressão atmosférica e nível quanto a sazonalidade}}{49}{figure.caption.44}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Gráfico comparativo de radiação global e nível quanto a sazonalidade}}{50}{figure.caption.45}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Nivelamento superior e inferior dos dados dos rios.}}{51}{figure.caption.46}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Exemplo de código Python para configuração da Regressão Ridge}}{54}{figure.caption.48}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Gráfico modelo de previsão de nível do Lago Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 60:40}}{55}{figure.caption.49}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Gráfico modelo de previsão de nível do Lago Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 70:30}}{55}{figure.caption.50}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Gráfico modelo de previsão de nível do Lago Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 80:20}}{56}{figure.caption.51}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Diferenças entre os valores reais e previstos do nível do Lago Guaíba}}{60}{figure.caption.59}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Dados meteorológicos.}}{36}{figure.caption.26}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Dados do nível do rio.}}{37}{figure.caption.28}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Limpeza dos dados coletados.}}{38}{figure.caption.29}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Gráfico de Temperatura do orvalho Máx. na Hora Anterior (°C) não tratado.}}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Gráfico de Temperatura do orvalho Máx. na Hora Anterior (°C) tratado.}}{39}{figure.caption.31}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Gráfico de Umidade Relativa Máxima na Hora Anterior (\%) sem tratamento.}}{40}{figure.caption.32}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Gráfico de Umidade Relativa Máxima na Hora Anterior (\%) com tratamento.}}{40}{figure.caption.33}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Comparativo de gráficos de temperatura em diferentes tipos de medição}}{42}{figure.caption.35}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Gráfico de Temperatura do Ar - Bulbo Seco}}{43}{figure.caption.36}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Gráfico de Pressão Atmosférica ao Nível da Estação.}}{43}{figure.caption.37}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Gráfico de Vento - Velocidade Horária.}}{44}{figure.caption.38}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Gráfico de Umidade Relativa do Ar}}{44}{figure.caption.39}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Gráfico de Radiação Global}}{45}{figure.caption.40}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Gráfico de Precipitação Total}}{45}{figure.caption.41}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Gráfico comparativo de temperatura e nível quanto a sazonalidade}}{46}{figure.caption.42}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Gráfico comparativo de pressão atmosférica e nível quanto a sazonalidade}}{46}{figure.caption.43}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Gráfico comparativo de radiação global e nível quanto a sazonalidade}}{47}{figure.caption.44}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Nivelamento superior e inferior dos dados dos rios.}}{48}{figure.caption.45}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Exemplo de código Python para configuração da Regressão Ridge}}{51}{figure.caption.47}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Gráfico modelo de previsão de nível do Lago Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 60:40}}{52}{figure.caption.48}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Gráfico modelo de previsão de nível do Lago Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 70:30}}{52}{figure.caption.49}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Gráfico modelo de previsão de nível do Lago Guaíba com \texttt {alpha} = 1 e split de treinamento e teste 80:20}}{53}{figure.caption.50}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Diferenças entre os valores reais e previstos do nível do Lago Guaíba}}{56}{figure.caption.58}%
