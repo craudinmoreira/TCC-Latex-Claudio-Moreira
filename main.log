@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.31)  12 AUG 2025 02:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.31)  12 AUG 2025 02:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1163,7 +1163,33 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box69
 \@float@everytoks=\toks53
 \@floatcapt=\box70
-) (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+ (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks54
+\SOUL@lasttoken=\toks55
+\SOUL@syllable=\toks56
+\SOUL@cmds=\toks57
+\SOUL@buffer=\toks58
+\SOUL@token=\toks59
+\SOUL@syllgoal=\dimen287
+\SOUL@syllwidth=\dimen288
+\SOUL@charkern=\dimen289
+\SOUL@hyphkern=\dimen290
+\SOUL@dimen=\dimen291
+\SOUL@dimeni=\dimen292
+\SOUL@minus=\count530
+\SOUL@comma=\count531
+\SOUL@apo=\count532
+\SOUL@grave=\count533
+\SOUL@spaceskip=\skip298
+\SOUL@ttwidth=\dimen293
+\SOUL@uldp=\dimen294
+\SOUL@ulht=\dimen295
+) (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
  (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -1183,7 +1209,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ) (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 208.
+Package hyperref Info: Option `colorlinks' set `true' on input line 209.
  (pre_textual/siglas_simbolos.tex)
 \main@idxfile=\write5
 \openout5 = `main.idx'.
@@ -1194,7 +1220,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'brazil'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 224.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 225.
 (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (main.aux (capitulos/cap_1.aux) (capitulos/cap_2.aux
@@ -1241,40 +1267,40 @@ LaTeX Warning: Label `fig:comparacao_radiacao_nivel_rio' multiply defined.
 ) (capitulos/cap_4.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 224.
-LaTeX Font Info:    ... okay on input line 224.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 224.
-LaTeX Font Info:    ... okay on input line 224.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 224.
-LaTeX Font Info:    ... okay on input line 224.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 224.
-LaTeX Font Info:    ... okay on input line 224.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 224.
-LaTeX Font Info:    ... okay on input line 224.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 224.
-LaTeX Font Info:    ... okay on input line 224.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 224.
-LaTeX Font Info:    ... okay on input line 224.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 224.
-LaTeX Font Info:    ... okay on input line 224.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 224.
-LaTeX Font Info:    ... okay on input line 224.
-Package hyperref Info: Link coloring ON on input line 224.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 225.
+LaTeX Font Info:    ... okay on input line 225.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 225.
+LaTeX Font Info:    ... okay on input line 225.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 225.
+LaTeX Font Info:    ... okay on input line 225.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 225.
+LaTeX Font Info:    ... okay on input line 225.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 225.
+LaTeX Font Info:    ... okay on input line 225.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 225.
+LaTeX Font Info:    ... okay on input line 225.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 225.
+LaTeX Font Info:    ... okay on input line 225.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 225.
+LaTeX Font Info:    ... okay on input line 225.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 225.
+LaTeX Font Info:    ... okay on input line 225.
+Package hyperref Info: Link coloring ON on input line 225.
 \myptabbox=\box71
-\myptabboxwidth=\skip298
+\myptabboxwidth=\skip299
  (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count530
-\scratchdimen=\dimen287
+\scratchcounter=\count534
+\scratchdimen=\dimen296
 \scratchbox=\box72
-\nofMPsegments=\count531
-\nofMParguments=\count532
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count533
-\MPscratchDim=\dimen288
-\MPnumerator=\count534
-\makeMPintoPDFobject=\count535
-\everyMPtoPDFconversion=\toks55
+\nofMPsegments=\count535
+\nofMParguments=\count536
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count537
+\MPscratchDim=\dimen297
+\MPnumerator=\count538
+\makeMPintoPDFobject=\count539
+\everyMPtoPDFconversion=\toks61
 ) (C:\Users\claud\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1289,15 +1315,15 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 224.
-Package microtype Info: Applying patch `item' on input line 224.
-Package microtype Info: Applying patch `toc' on input line 224.
+LaTeX Info: Redefining \microtypecontext on input line 225.
+Package microtype Info: Applying patch `item' on input line 225.
+Package microtype Info: Applying patch `toc' on input line 225.
 
 
-Package microtype Warning: Unable to apply patch `eqnum' on input line 224.
+Package microtype Warning: Unable to apply patch `eqnum' on input line 225.
 
-Package microtype Info: Applying patch `footnote' on input line 224.
-Package microtype Info: Applying patch `verbatim' on input line 224.
+Package microtype Info: Applying patch `footnote' on input line 225.
+Package microtype Info: Applying patch `verbatim' on input line 225.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2),
 (microtype)             factor: 1100.
@@ -1305,7 +1331,7 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 10, shrink: 10, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 224.
+LaTeX Info: Redefining \showhyphens on input line 225.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1413,8 +1439,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 224.
-Package biblatex Info: Reference segment=0 on input line 224.
+Package biblatex Info: Reference section=0 on input line 225.
+Package biblatex Info: Reference segment=0 on input line 225.
  (pre_textual/pretextual.tex
 
 pdfTeX warning: pdflatex (file ./configs/vertical_sigla_fundo_claro.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
@@ -1695,170 +1721,170 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: figuras/base_inmet.png Graphic file (type png)
 <use figuras/base_inmet.png>
 Package pdftex.def Info: figuras/base_inmet.png  used on input line 34.
-(pdftex.def)             Requested size: 451.691pt x 408.5545pt.
- [36] [37 <./figuras/base_inmet.png>]
-<figuras/base_sema.png, id=589, 1505.625pt x 494.59781pt>
+(pdftex.def)             Requested size: 436.62007pt x 394.92285pt.
+ [36 <./figuras/base_inmet.png>]
+<figuras/base_sema.png, id=585, 1505.625pt x 494.59781pt>
 File: figuras/base_sema.png Graphic file (type png)
 <use figuras/base_sema.png>
 Package pdftex.def Info: figuras/base_sema.png  used on input line 75.
 (pdftex.def)             Requested size: 451.691pt x 148.38048pt.
- [38 <./figuras/base_sema.png>]
-<figuras/step_data_cleaning.png, id=598, 770.88pt x 311.66437pt>
+ [37 <./figuras/base_sema.png>]
+<figuras/step_data_cleaning.png, id=594, 770.88pt x 311.66437pt>
 File: figuras/step_data_cleaning.png Graphic file (type png)
 <use figuras/step_data_cleaning.png>
 Package pdftex.def Info: figuras/step_data_cleaning.png  used on input line 88.
 (pdftex.def)             Requested size: 269.81204pt x 109.08415pt.
-<figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png, id=604, 1230.84843pt x 527.72156pt>
+<figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png, id=600, 1230.84843pt x 527.72156pt>
 File: figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png Graphic file (type png)
 <use figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png>
 Package pdftex.def Info: figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png  used on input line 100.
 (pdftex.def)             Requested size: 430.8034pt x 184.7053pt.
- [39 <./figuras/step_data_cleaning.png> <./figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png>]
-<figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png, id=615, 1154.1519pt x 506.6127pt>
+ [38 <./figuras/step_data_cleaning.png> <./figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) SEM TRATAMENTO_edit.png>]
+<figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png, id=611, 1154.1519pt x 506.6127pt>
 File: figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png Graphic file (type png)
 <use figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png>
 Package pdftex.def Info: figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png  used on input line 110.
 (pdftex.def)             Requested size: 403.95921pt x 177.3171pt.
-<figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png, id=620, 1160.6562pt x 506.6127pt>
+<figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png, id=616, 1160.6562pt x 506.6127pt>
 File: figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png Graphic file (type png)
 <use figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png>
 Package pdftex.def Info: figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png  used on input line 122.
 (pdftex.def)             Requested size: 348.19955pt x 151.98497pt.
- [40 <./figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png>]
-<figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png, id=627, 1154.1519pt x 506.6127pt>
+ [39 <./figuras/TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C) COM TRATAMENTO.png>]
+<figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png, id=623, 1154.1519pt x 506.6127pt>
 File: figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png Graphic file (type png)
 <use figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png>
 Package pdftex.def Info: figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png  used on input line 130.
 (pdftex.def)             Requested size: 346.24825pt x 151.98497pt.
- [41 <./figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png> <./figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png>]
-<figuras/comparacao_temp_1.png, id=637, 594.0594pt x 506.6127pt>
+ [40 <./figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) SEM TRATAMENTO.png> <./figuras/UMIDADE REL. MAX. NA HORA ANT. (AUT) COM TRATAMENTO.png>]
+<figuras/comparacao_temp_1.png, id=633, 594.0594pt x 506.6127pt>
 File: figuras/comparacao_temp_1.png Graphic file (type png)
 <use figuras/comparacao_temp_1.png>
 Package pdftex.def Info: figuras/comparacao_temp_1.png  used on input line 184.
 (pdftex.def)             Requested size: 159.25278pt x 135.8055pt.
-<figuras/comparacao_temp_2.png, id=638, 594.0594pt x 506.6127pt>
+<figuras/comparacao_temp_2.png, id=634, 594.0594pt x 506.6127pt>
 File: figuras/comparacao_temp_2.png Graphic file (type png)
 <use figuras/comparacao_temp_2.png>
 Package pdftex.def Info: figuras/comparacao_temp_2.png  used on input line 187.
 (pdftex.def)             Requested size: 159.25278pt x 135.8055pt.
-<figuras/comparacao_temp_3.png, id=639, 594.0594pt x 507.3354pt>
+<figuras/comparacao_temp_3.png, id=635, 594.0594pt x 507.3354pt>
 File: figuras/comparacao_temp_3.png Graphic file (type png)
 <use figuras/comparacao_temp_3.png>
 Package pdftex.def Info: figuras/comparacao_temp_3.png  used on input line 191.
 (pdftex.def)             Requested size: 159.25278pt x 135.99924pt.
-<figuras/comparacao_temp_4.png, id=640, 594.0594pt x 507.3354pt>
+<figuras/comparacao_temp_4.png, id=636, 594.0594pt x 507.3354pt>
 File: figuras/comparacao_temp_4.png Graphic file (type png)
 <use figuras/comparacao_temp_4.png>
 Package pdftex.def Info: figuras/comparacao_temp_4.png  used on input line 194.
 (pdftex.def)             Requested size: 159.25278pt x 135.99924pt.
-<figuras/comparacao_temp_5.png, id=641, 594.0594pt x 506.6127pt>
+<figuras/comparacao_temp_5.png, id=637, 594.0594pt x 506.6127pt>
 File: figuras/comparacao_temp_5.png Graphic file (type png)
 <use figuras/comparacao_temp_5.png>
 Package pdftex.def Info: figuras/comparacao_temp_5.png  used on input line 198.
 (pdftex.def)             Requested size: 159.25278pt x 135.8055pt.
-<figuras/comparacao_temp_6.png, id=642, 596.2275pt x 506.6127pt>
+<figuras/comparacao_temp_6.png, id=638, 596.2275pt x 506.6127pt>
 File: figuras/comparacao_temp_6.png Graphic file (type png)
 <use figuras/comparacao_temp_6.png>
 Package pdftex.def Info: figuras/comparacao_temp_6.png  used on input line 201.
 (pdftex.def)             Requested size: 159.25278pt x 135.31076pt.
- [42] [43 <./figuras/comparacao_temp_1.png> <./figuras/comparacao_temp_2.png> <./figuras/comparacao_temp_3.png> <./figuras/comparacao_temp_4.png> <./figuras/comparacao_temp_5.png> <./figuras/comparacao_temp_6.png>]
-<figuras/temperatura_do_ar_bulbo_seco.png, id=664, 1154.1519pt x 506.6127pt>
+ [41] [42 <./figuras/comparacao_temp_1.png> <./figuras/comparacao_temp_2.png> <./figuras/comparacao_temp_3.png> <./figuras/comparacao_temp_4.png> <./figuras/comparacao_temp_5.png> <./figuras/comparacao_temp_6.png>]
+<figuras/temperatura_do_ar_bulbo_seco.png, id=660, 1154.1519pt x 506.6127pt>
 File: figuras/temperatura_do_ar_bulbo_seco.png Graphic file (type png)
 <use figuras/temperatura_do_ar_bulbo_seco.png>
 Package pdftex.def Info: figuras/temperatura_do_ar_bulbo_seco.png  used on input line 215.
 (pdftex.def)             Requested size: 403.95921pt x 177.3171pt.
-<figuras/pressao_atmosferica_ao_nivel_da_estacao.png, id=665, 1166.4378pt x 506.6127pt>
+<figuras/pressao_atmosferica_ao_nivel_da_estacao.png, id=661, 1166.4378pt x 506.6127pt>
 File: figuras/pressao_atmosferica_ao_nivel_da_estacao.png Graphic file (type png)
 <use figuras/pressao_atmosferica_ao_nivel_da_estacao.png>
 Package pdftex.def Info: figuras/pressao_atmosferica_ao_nivel_da_estacao.png  used on input line 223.
 (pdftex.def)             Requested size: 408.25935pt x 177.3171pt.
-<figuras/vento_velocidade_horaria.png, id=666, 1147.6476pt x 506.6127pt>
+<figuras/vento_velocidade_horaria.png, id=662, 1147.6476pt x 506.6127pt>
 File: figuras/vento_velocidade_horaria.png Graphic file (type png)
 <use figuras/vento_velocidade_horaria.png>
 Package pdftex.def Info: figuras/vento_velocidade_horaria.png  used on input line 231.
 (pdftex.def)             Requested size: 401.68268pt x 177.3171pt.
- [44 <./figuras/temperatura_do_ar_bulbo_seco.png> <./figuras/pressao_atmosferica_ao_nivel_da_estacao.png>]
-<figuras/umidade_relativa_do_ar.png, id=673, 1160.6562pt x 506.6127pt>
+ [43 <./figuras/temperatura_do_ar_bulbo_seco.png> <./figuras/pressao_atmosferica_ao_nivel_da_estacao.png>]
+<figuras/umidade_relativa_do_ar.png, id=669, 1160.6562pt x 506.6127pt>
 File: figuras/umidade_relativa_do_ar.png Graphic file (type png)
 <use figuras/umidade_relativa_do_ar.png>
 Package pdftex.def Info: figuras/umidade_relativa_do_ar.png  used on input line 239.
 (pdftex.def)             Requested size: 406.23576pt x 177.3171pt.
-<figuras/radiacao_global.png, id=674, 1166.4378pt x 506.6127pt>
+<figuras/radiacao_global.png, id=670, 1166.4378pt x 506.6127pt>
 File: figuras/radiacao_global.png Graphic file (type png)
 <use figuras/radiacao_global.png>
 Package pdftex.def Info: figuras/radiacao_global.png  used on input line 247.
 (pdftex.def)             Requested size: 408.25935pt x 177.3171pt.
- [45 <./figuras/vento_velocidade_horaria.png> <./figuras/umidade_relativa_do_ar.png>]
-<figuras/precipitacao_total_horario.png, id=681, 1154.1519pt x 508.7808pt>
+ [44 <./figuras/vento_velocidade_horaria.png> <./figuras/umidade_relativa_do_ar.png>]
+<figuras/precipitacao_total_horario.png, id=677, 1154.1519pt x 508.7808pt>
 File: figuras/precipitacao_total_horario.png Graphic file (type png)
 <use figuras/precipitacao_total_horario.png>
 Package pdftex.def Info: figuras/precipitacao_total_horario.png  used on input line 255.
 (pdftex.def)             Requested size: 403.95921pt x 178.07594pt.
-<figuras/comparacao_temp_nivel_rio.png, id=688, 1204.7409pt x 505.1673pt>
+<figuras/comparacao_temp_nivel_rio.png, id=684, 1204.7409pt x 505.1673pt>
 File: figuras/comparacao_temp_nivel_rio.png Graphic file (type png)
 <use figuras/comparacao_temp_nivel_rio.png>
 Package pdftex.def Info: figuras/comparacao_temp_nivel_rio.png  used on input line 265.
 (pdftex.def)             Requested size: 421.66563pt x 176.8112pt.
- [46 <./figuras/radiacao_global.png> <./figuras/precipitacao_total_horario.png>]
-<figuras/comparacao_pressao_nivel_rio.png, id=695, 1215.5814pt x 505.1673pt>
+ [45 <./figuras/radiacao_global.png> <./figuras/precipitacao_total_horario.png>]
+<figuras/comparacao_pressao_nivel_rio.png, id=691, 1215.5814pt x 505.1673pt>
 File: figuras/comparacao_pressao_nivel_rio.png Graphic file (type png)
 <use figuras/comparacao_pressao_nivel_rio.png>
 Package pdftex.def Info: figuras/comparacao_pressao_nivel_rio.png  used on input line 273.
 (pdftex.def)             Requested size: 425.45987pt x 176.8112pt.
-<figuras/comparacao_radiacao_nivel_rio.png, id=696, 1215.5814pt x 491.436pt>
+<figuras/comparacao_radiacao_nivel_rio.png, id=692, 1215.5814pt x 491.436pt>
 File: figuras/comparacao_radiacao_nivel_rio.png Graphic file (type png)
 <use figuras/comparacao_radiacao_nivel_rio.png>
 Package pdftex.def Info: figuras/comparacao_radiacao_nivel_rio.png  used on input line 281.
 (pdftex.def)             Requested size: 425.45987pt x 172.00517pt.
- [47 <./figuras/comparacao_temp_nivel_rio.png> <./figuras/comparacao_pressao_nivel_rio.png>]
-<figuras/nivelamento_superior_inferior_dados_rios.png, id=704, 714.7503pt x 354.123pt>
+ [46 <./figuras/comparacao_temp_nivel_rio.png> <./figuras/comparacao_pressao_nivel_rio.png>]
+<figuras/nivelamento_superior_inferior_dados_rios.png, id=700, 714.7503pt x 354.123pt>
 File: figuras/nivelamento_superior_inferior_dados_rios.png Graphic file (type png)
 <use figuras/nivelamento_superior_inferior_dados_rios.png>
 Package pdftex.def Info: figuras/nivelamento_superior_inferior_dados_rios.png  used on input line 294.
 (pdftex.def)             Requested size: 393.11389pt x 194.76823pt.
- [48 <./figuras/comparacao_radiacao_nivel_rio.png>] [49 <./figuras/nivelamento_superior_inferior_dados_rios.png>] [50]
-<figuras/carbon.png, id=735, 1381.16pt x 556.0775pt>
+ [47 <./figuras/comparacao_radiacao_nivel_rio.png>] [48 <./figuras/nivelamento_superior_inferior_dados_rios.png>] [49]
+<figuras/carbon.png, id=731, 1381.16pt x 556.0775pt>
 File: figuras/carbon.png Graphic file (type png)
 <use figuras/carbon.png>
 Package pdftex.def Info: figuras/carbon.png  used on input line 363.
 (pdftex.def)             Requested size: 414.3512pt x 166.82454pt.
- [51] [52 <./figuras/carbon.png>]
-<figuras/modelo_previsao_60_40.png, id=754, 1174.3875pt x 506.6127pt>
+ [50] [51 <./figuras/carbon.png>]
+<figuras/modelo_previsao_60_40.png, id=750, 1174.3875pt x 506.6127pt>
 File: figuras/modelo_previsao_60_40.png Graphic file (type png)
 <use figuras/modelo_previsao_60_40.png>
 Package pdftex.def Info: figuras/modelo_previsao_60_40.png  used on input line 381.
 (pdftex.def)             Requested size: 411.04178pt x 177.3171pt.
-<figuras/modelo_previsao_70_30.png, id=755, 1174.3875pt x 506.6127pt>
+<figuras/modelo_previsao_70_30.png, id=751, 1174.3875pt x 506.6127pt>
 File: figuras/modelo_previsao_70_30.png Graphic file (type png)
 <use figuras/modelo_previsao_70_30.png>
 Package pdftex.def Info: figuras/modelo_previsao_70_30.png  used on input line 389.
 (pdftex.def)             Requested size: 411.04178pt x 177.3171pt.
-<figuras/modelo_previsao_80_20.png, id=756, 1174.3875pt x 506.6127pt>
+<figuras/modelo_previsao_80_20.png, id=752, 1174.3875pt x 506.6127pt>
 File: figuras/modelo_previsao_80_20.png Graphic file (type png)
 <use figuras/modelo_previsao_80_20.png>
 Package pdftex.def Info: figuras/modelo_previsao_80_20.png  used on input line 397.
 (pdftex.def)             Requested size: 411.04178pt x 177.3171pt.
- [53
+ [52
 
- <./figuras/modelo_previsao_60_40.png> <./figuras/modelo_previsao_70_30.png>] [54 <./figuras/modelo_previsao_80_20.png>] [55] [56]
-<figuras/diferencas_previsao_lago_guaiba.png, id=780, 952.5186pt x 422.0568pt>
+ <./figuras/modelo_previsao_60_40.png> <./figuras/modelo_previsao_70_30.png>] [53 <./figuras/modelo_previsao_80_20.png>] [54] [55]
+<figuras/diferencas_previsao_lago_guaiba.png, id=776, 952.5186pt x 422.0568pt>
 File: figuras/diferencas_previsao_lago_guaiba.png Graphic file (type png)
 <use figuras/diferencas_previsao_lago_guaiba.png>
 Package pdftex.def Info: figuras/diferencas_previsao_lago_guaiba.png  used on input line 565.
-(pdftex.def)             Requested size: 428.62941pt x 189.9238pt.
- [57] [58 <./figuras/diferencas_previsao_lago_guaiba.png>]) [59]
+(pdftex.def)             Requested size: 419.10948pt x 185.70555pt.
+ [56 <./figuras/diferencas_previsao_lago_guaiba.png>] [57]) [58]
 \openout2 = `capitulos/cap_4.aux'.
 
- (capitulos/cap_4.tex) [60
+ (capitulos/cap_4.tex) [59
 
 
 
 
-] [61] [62
+] [60] [61
 
 
 
-] [63] [64]
+] [62] [63]
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -1882,17 +1908,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39395 strings out of 474424
- 724316 string characters out of 5741739
- 1953496 words of memory out of 5000000
- 60778 multiletter control sequences out of 15000+600000
- 636435 words of font info for 174 fonts, out of 8000000 for 9000
+ 39647 strings out of 474424
+ 728550 string characters out of 5741739
+ 2008496 words of memory out of 5000000
+ 61019 multiletter control sequences out of 15000+600000
+ 636748 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,17n,121p,2490b,4454s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/claud/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (65 pages, 5556590 bytes).
+Output written on main.pdf (64 pages, 5583137 bytes).
 PDF statistics:
- 1081 PDF objects out of 1200 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
+ 1077 PDF objects out of 1200 (max. 8388607)
+ 218 named destinations out of 1000 (max. 500000)
  44064 words of extra memory for PDF output out of 51595 (max. 10000000)
 

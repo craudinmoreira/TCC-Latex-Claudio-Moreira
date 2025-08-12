@@ -118,14 +118,63 @@
       \field{pages}{426\bibrangedash 433}
       \range{pages}{8}
     \endentry
+    \entry{andrade2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=1f24139c5afff17d23d9ee97e3214b4e}{%
+           family={Andrade},
+           familyi={A\bibinitperiod},
+           given={Leonardo\bibnamedelimb Capeleto\bibnamedelima de},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=2aaaeee938109c8d801f9bf15ffc88ba}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={Lucía\bibnamedelima Ribeiro},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0cd39737069cfc947c2bfff74514484}{%
+           family={Andreazza},
+           familyi={A\bibinitperiod},
+           given={Robson},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f78b847bf3f6aef72a5db46460a95538}{%
+           family={Camargo},
+           familyi={C\bibinitperiod},
+           given={Flávio\bibnamedelimb Anastácio\bibnamedelimb de\bibnamedelima Oliveira},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{230b4c60545308432d2e53115cb2bbb7}
+      \strng{fullhash}{68e31b37683bfd8746f101f3272ec1ae}
+      \strng{fullhashraw}{68e31b37683bfd8746f101f3272ec1ae}
+      \strng{bibnamehash}{68e31b37683bfd8746f101f3272ec1ae}
+      \strng{authorbibnamehash}{68e31b37683bfd8746f101f3272ec1ae}
+      \strng{authornamehash}{230b4c60545308432d2e53115cb2bbb7}
+      \strng{authorfullhash}{68e31b37683bfd8746f101f3272ec1ae}
+      \strng{authorfullhashraw}{68e31b37683bfd8746f101f3272ec1ae}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Engenharia Sanitária e Ambiental}
+      \field{number}{2}
+      \field{title}{Lago Guaíba: uma análise histórico-cultural da poluição hídrica em Porto Alegre, RS, Brasil}
+      \field{volume}{24}
+      \field{year}{2019}
+      \field{pages}{229\bibrangedash 237}
+      \range{pages}{9}
+    \endentry
     \entry{andrade2017}{inproceedings}{}{}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=517d218d24832f8d3b2af0f9957ef330}{%
+        {{un=1,uniquepart=given,hash=517d218d24832f8d3b2af0f9957ef330}{%
            family={Andrade},
            familyi={A\bibinitperiod},
            given={Mauro\bibnamedelima M.},
            giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=263278f0987e101402c1278896066c18}{%
            family={Scottá},
            familyi={S\bibinitperiod},
@@ -297,6 +346,42 @@
       \verb https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
       \endverb
     \endentry
+    \entry{g1_2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c0497521d35d66866e3af408094864c3}{%
+           family={{G1}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0497521d35d66866e3af408094864c3}
+      \strng{fullhash}{c0497521d35d66866e3af408094864c3}
+      \strng{fullhashraw}{c0497521d35d66866e3af408094864c3}
+      \strng{bibnamehash}{c0497521d35d66866e3af408094864c3}
+      \strng{authorbibnamehash}{c0497521d35d66866e3af408094864c3}
+      \strng{authornamehash}{c0497521d35d66866e3af408094864c3}
+      \strng{authorfullhash}{c0497521d35d66866e3af408094864c3}
+      \strng{authorfullhashraw}{c0497521d35d66866e3af408094864c3}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Acima dos 5 metros, Guaíba volta a avançar sobre ruas no dia mais frio do ano em Porto Alegre}
+      \field{urlday}{7}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/14/acima-dos-5-metros-guaiba-volta-a-avancar-sobre-ruas-no-dia-mais-frio-do-ano-em-porto-alegre.ghtml
+      \endverb
+      \verb{url}
+      \verb https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/14/acima-dos-5-metros-guaiba-volta-a-avancar-sobre-ruas-no-dia-mais-frio-do-ano-em-porto-alegre.ghtml
+      \endverb
+    \endentry
     \entry{g12024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c0497521d35d66866e3af408094864c3}{%
@@ -311,8 +396,10 @@
       \strng{authornamehash}{c0497521d35d66866e3af408094864c3}
       \strng{authorfullhash}{c0497521d35d66866e3af408094864c3}
       \strng{authorfullhashraw}{c0497521d35d66866e3af408094864c3}
+      \field{extraname}{2}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -329,6 +416,119 @@
       \verb{url}
       \verb https://g1.globo.com/sc/santa-catarina/noticia/2024/05/19/sc-enchente-quedas-barreira-dia-mais-chuvoso.ghtml
       \endverb
+    \endentry
+    \entry{Guo2021}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=676ae7f9c4250e2c1e5c9c7f606df322}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Wen-Dar},
+           giveni={W\bibinithyphendelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47555e9b7e828f797edbf1bb120aee0c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei-Bo},
+           giveni={W\bibinithyphendelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a97748b7df13699c66d00b826a57d636}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Shen-Hai},
+           giveni={S\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b804ff7fa3d45bc40811873042c4ea5e}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Chih-Hsin},
+           giveni={C\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c31fc062f76e26bb950e1f6b9cfc33f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Hongey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{675c4d5fec4d0ecddb36d4c78c1ec744}
+      \strng{fullhash}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \strng{fullhashraw}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \strng{bibnamehash}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \strng{authorbibnamehash}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \strng{authornamehash}{675c4d5fec4d0ecddb36d4c78c1ec744}
+      \strng{authorfullhash}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \strng{authorfullhashraw}{f3b94d2c6a92e0e720caf5da8f9bf061}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Water}
+      \field{number}{7}
+      \field{title}{Prediction of River Stage Using Multistep-Ahead Machine Learning Techniques for a Tidal River of Taiwan}
+      \field{volume}{13}
+      \field{year}{2021}
+      \field{pages}{920}
+      \range{pages}{1}
+    \endentry
+    \entry{hasan2023state}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=11d71264fbc75203a601e58402b428f7}{%
+           family={Hasan},
+           familyi={H\bibinitperiod},
+           given={Md\bibnamedelima Nazmul},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=999e12c41013e46ec8eb20b3edbbea87}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Musheer},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d717f3d7e08e5adaff49eb987e98bc96}{%
+           family={Afzal},
+           familyi={A\bibinitperiod},
+           given={Haider},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0935fcd44edf3369fa1ccd15081c0e23}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Aisha},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de981e4af23d2fc6d8f8ca93f7480c32}{%
+           family={Eusufzai},
+           familyi={E\bibinitperiod},
+           given={A.\bibnamedelimi R.\bibnamedelimi Khan},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{5584e1fcb866c11102d8e5e528304649}
+      \strng{fullhash}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \strng{fullhashraw}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \strng{bibnamehash}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \strng{authorbibnamehash}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \strng{authornamehash}{5584e1fcb866c11102d8e5e528304649}
+      \strng{authorfullhash}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \strng{authorfullhashraw}{5d2573c33bcb5bed4b28413ae1d59ee0}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{12}
+      \field{journaltitle}{Sustainability}
+      \field{title}{The State of the Art in Deep Learning Applications, Challenges, and Future Prospects: A Comprehensive Review of Flood Forecasting and Management}
+      \field{volume}{15}
+      \field{year}{2023}
+      \field{pages}{9513}
+      \range{pages}{1}
     \endentry
     \entry{helliwell2020}{inproceedings}{}{}
       \name{author}{4}{}{%
@@ -489,6 +689,104 @@
       \field{year}{2012}
       \field{pages}{672}
       \range{pages}{1}
+    \endentry
+    \entry{Nobre2011}{report}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=49c20098e4a2bef4e2c5470f95eb4bd1}{%
+           family={Nobre},
+           familyi={N\bibinitperiod},
+           given={Carlos\bibnamedelima Afonso},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95af55f6093f1b00744cd4a8b8b7de8f}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Andrea\bibnamedelima Ferraz},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1885b390305877db3c97180cb790146c}{%
+           family={Orsini},
+           familyi={O\bibinitperiod},
+           given={José\bibnamedelimb Antônio\bibnamedelima Marengo},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77f602b974bbd997ec97a36824d95e76}{%
+           family={Saldiva},
+           familyi={S\bibinitperiod},
+           given={Paulo\bibnamedelimb Hilário\bibnamedelima Nascimento},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{institution}{1}{%
+        {Instituto Nacional de Pesquisas Espaciais (INPE), Universidade de São Paulo (USP), Ministério da Ciência e Tecnologia (MCT)}%
+      }
+      \list{location}{1}{%
+        {São Paulo, Brasil}%
+      }
+      \strng{namehash}{a816d4a6aa64ca078489ebfd70b9eec2}
+      \strng{fullhash}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \strng{fullhashraw}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \strng{bibnamehash}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \strng{authorbibnamehash}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \strng{authornamehash}{a816d4a6aa64ca078489ebfd70b9eec2}
+      \strng{authorfullhash}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \strng{authorfullhashraw}{7ca5bc8242e9efd9c7639ab7c9de4d5f}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Acesso em: julho de 2025}
+      \field{title}{Vulnerabilidades das megacidades brasileiras às mudanças climáticas: Região Metropolitana de São Paulo - Relatório Final}
+      \field{type}{techreport}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://www.nepo.unicamp.br/publicacoes/relatorio-final/megacidades_RMSP.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.nepo.unicamp.br/publicacoes/relatorio-final/megacidades_RMSP.pdf
+      \endverb
+    \endentry
+    \entry{portoimagem_2009}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fb93942226dfb6aeca4cd6efb6d890e2}{%
+           family={{Porto Imagem}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{fullhash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{fullhashraw}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{bibnamehash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{authorbibnamehash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{authornamehash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{authorfullhash}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \strng{authorfullhashraw}{fb93942226dfb6aeca4cd6efb6d890e2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{O Guaíba é um lago, sim!}
+      \field{urlday}{7}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://portoimagem.wordpress.com/2009/04/23/o-guaiba-e-um-lago-sim/
+      \endverb
+      \verb{url}
+      \verb https://portoimagem.wordpress.com/2009/04/23/o-guaiba-e-um-lago-sim/
+      \endverb
     \endentry
     \entry{saravanan2018}{inproceedings}{}{}
       \name{author}{2}{}{%
@@ -795,6 +1093,71 @@
       \verb{url}
       \verb https://veja.abril.com.br/ciencia/de-1941-a-2024-porque-as-enchentes-sao-desafio-constante-no-rs
       \endverb
+    \endentry
+    \entry{Vizi2023}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=7a5132624102c8d200dcb893357f8159}{%
+           family={Vizi},
+           familyi={V\bibinitperiod},
+           given={Zsolt},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5078eec01db96e7eec73291cb5026718}{%
+           family={Batki},
+           familyi={B\bibinitperiod},
+           given={Bálint},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43543a443f1ddb98e18a67f3619bbf58}{%
+           family={Rátki},
+           familyi={R\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=622877fefd97b44c76399f018f77bb0d}{%
+           family={Szalánczi},
+           familyi={S\bibinitperiod},
+           given={Szabolcs},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4ac2765662d8ba3272700be8471f1c4}{%
+           family={Fehérváry},
+           familyi={F\bibinitperiod},
+           given={István},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b00cbf90025fa28b4a88a3f2d167142}{%
+           family={Kozák},
+           familyi={K\bibinitperiod},
+           given={Péter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eeb544d68c96753d105db7d4164c80b1}{%
+           family={Kiss},
+           familyi={K\bibinitperiod},
+           given={Tímea},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a1c191748bd165de7864b8c35579c5fc}
+      \strng{fullhash}{711f46790e8dad10da3b901cd3441abd}
+      \strng{fullhashraw}{711f46790e8dad10da3b901cd3441abd}
+      \strng{bibnamehash}{711f46790e8dad10da3b901cd3441abd}
+      \strng{authorbibnamehash}{711f46790e8dad10da3b901cd3441abd}
+      \strng{authornamehash}{a1c191748bd165de7864b8c35579c5fc}
+      \strng{authorfullhash}{711f46790e8dad10da3b901cd3441abd}
+      \strng{authorfullhashraw}{711f46790e8dad10da3b901cd3441abd}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Sciences Europe}
+      \field{number}{92}
+      \field{title}{Water level prediction using long short-term memory neural network model for a lowland river: a case study on the Tisza River, Central Europe}
+      \field{volume}{35}
+      \field{year}{2023}
     \endentry
   \enddatalist
 \endrefsection

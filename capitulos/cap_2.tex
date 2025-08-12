@@ -59,7 +59,7 @@ Os quatro principais tipos de \gls{ML} são: supervisionado, não supervisionado
 \section{Regressão}
 \label{sec:regressao}
 
-Para prever e entender a dinâmica de fenômenos estudados, a regressão, uma técnica de aprendizado supervisionado, modela relações entre variáveis dependentes e independentes por meio de métodos estatísticos \cite{soto2013}.
+\hl{Para prever e entender a dinâmica de fenômenos estudados, a regressão, uma técnica de aprendizado supervisionado, modela relações entre variáveis dependentes e independentes por meio de métodos estatísticos} \cite{soto2013}.
 
 Em uma equação linear, uma variável independente, comumente representada pela letra $x$, caracteriza uma grandeza que está sendo manipulada durante um experimento. Dado esse comportamento, a variável $x$ não sofre influência de outras variáveis. A variável dependente, comumente representada pela letra $y$, caracteriza valores que estão diretamente associados à variável independente. Assim, de forma direta ou indireta, $x$ exerce influência sobre $y$.
 
@@ -183,7 +183,7 @@ Partindo desses conceitos, para implementação de modelos de regressão linear 
 
 O método \glsxtrfull{MQO} atua como uma ferramenta estatística, visando estimar a relação entre uma variável dependente e uma ou mais variáveis independentes \cite{Alkama2020}, permitindo encontrar os coeficientes desejados para o funcionamento do modelo.
 
-Para obter uma regressão que se aproxima da dinâmica analisada, o método visa minimizar a \glsxtrfull{RSS}, denotado pela equação \ref{eq:rss_rls} para os casos de RLS (isto é, quando há apenas uma variável independente).
+\hl{Para obter uma regressão que se aproxima da dinâmica analisada, o método visa minimizar a} \glsxtrfull{RSS}\hl{, denotado pela equação} \ref{eq:rss_rls} \hl{para os casos de RLS (isto é, quando há apenas uma variável independente)}.
 
 \begin{equation}
 	RSS = \sum_{i=1}^{n} \left(y_i - \beta_0 - \beta_1x_{i}\right)^2
@@ -478,4 +478,4 @@ Geometricamente, a regularização imposta pela Ridge faz com que a busca pela s
 
 Com isso, mesmo que múltiplas combinações de coeficientes possam gerar ajustes semelhantes aos dados (especialmente em casos de multicolinearidade), a regressão \textit{Ridge} prefere aquelas soluções onde os coeficientes são menores, evitando oscilações extremas.
 
-Portanto, o modelo \textit{Ridge} não apenas minimiza o erro de ajuste aos dados da \gls{RSS}, mas também impõe um “encolhimento” dos coeficientes em direção ao zero, resultando em retas ou hiperplanos mais estáveis, com menor variância e melhor capacidade de generalização para dados não vistos ao qual se deseja ser previsto \cite{McDonald:2009:RR}. Desse modo, devido a multicolinearidade entre as variáveis independentes, como temperatura, precipitação e níveis dos rios afluentes, a regularização L2 do modelo ajuda a estabilizar os coeficientes, reduzindo o risco de sobreajuste em cenários de alta variabilidade climática.
+Portanto, o modelo \textit{Ridge} não apenas minimiza o erro de ajuste aos dados da \gls{RSS}, mas também impõe um “encolhimento” dos coeficientes em direção ao zero, resultando em retas ou hiperplanos mais estáveis, com menor variância e melhor capacidade de generalização para dados não vistos ao qual se deseja ser previsto \cite{McDonald:2009:RR}. \hl{Desse modo, devido a multicolinearidade entre as variáveis independentes, como temperatura, precipitação e níveis dos rios afluentes, a regularização L2 do modelo ajuda a estabilizar os coeficientes, reduzindo o risco de sobreajuste em cenários de alta variabilidade climática.}
