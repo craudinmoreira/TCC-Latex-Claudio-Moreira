@@ -3,9 +3,7 @@
 \label{cap:desenvolvimento}
 % ----------------------------------------------------------
 
-Este capítulo descreve as etapas fundamentais para a preparação dos dados utilizados no treinamento do modelo de previsão do nível do Lago Guaíba, utilizando dados meteorológicos e a técnica de Regressão Ridge. A preparação adequada dos dados é essencial para garantir a qualidade e a confiabilidade das previsões, especialmente em um contexto de alta variabilidade climática. O capítulo está estruturado em quatro seções principais: a Seção \ref{sec:coleta_dados} detalha a obtenção de dados meteorológicos e dos níveis dos rios, estabelecendo a base de informações para o modelo; a Seção \ref{sec:pre_processamento_dos_dados} aborda a concatenação e formatação dos dados para garantir consistência; a Seção \ref{sec:limpeza_dos_dados} descreve as técnicas para tratar valores ausentes e \textit{outliers} (valores discrepantes, que destoam do comportamento típico que se deseja considerar nos dados coletados), assegurando a integridade das informações; e a Seção \ref{sec:reducao_dados} explica a seleção de variáveis relevantes, otimizando a eficiência do modelo. 
-
-Na sequência, a Seção \ref{sec:transformacao_dos_dados} apresenta os métodos de transformação e normalização dos dados, a fim de adequar as diferentes escalas das variáveis e garantir que o modelo de aprendizado de máquina opere de forma eficiente. A Seção \ref{sec:divisao_dados_treino_teste} discute a divisão do conjunto de dados em subconjuntos de treinamento e teste, garantindo a capacidade de generalização do modelo. Por fim, a Seção \ref{sec:aplicacao_modelo_previsao} detalha a aplicação prática do modelo de Regressão Ridge, incluindo a configuração dos hiperparâmetros, o processo de treinamento e a avaliação dos resultados obtidos por meio do script desenvolvido na linguagem de programação \textit{Python}. Cada seção contribui para a construção de um conjunto de dados robusto, permitindo que o modelo de Regressão \textit{Ridge} capture padrões sazonais e climáticos com maior precisão, fundamental para a previsão eficaz do nível do rio e a mitigação de impactos de enchentes.
+Este capítulo descreve as etapas fundamentais para a preparação dos dados utilizados no treinamento do modelo de previsão do nível do Lago Guaíba, utilizando dados meteorológicos e a técnica de Regressão Ridge, cuja parametrização do algoritmo de regressão e sua aplicação aos dados tratados é implementado por meio de um script na linguagem de programação Python. A preparação adequada dos dados é essencial para garantir a qualidade e a confiabilidade das previsões, especialmente em um contexto de alta variabilidade climática. O capítulo está estruturado em sete seções: a Seção \ref{sec:coleta_dados} detalha a obtenção de dados meteorológicos e dos níveis dos rios, estabelecendo a base de informações para o modelo; a Seção \ref{sec:pre_processamento_dos_dados} aborda a concatenação e formatação dos dados para garantir consistência; a Seção \ref{sec:limpeza_dos_dados} descreve as técnicas para tratar valores ausentes e \textit{outliers} (valores discrepantes, que destoam do comportamento típico que se deseja considerar nos dados coletados), assegurando a integridade das informações; e a Seção \ref{sec:reducao_dados} explica a seleção de variáveis relevantes, otimizando a eficiência do modelo. Na sequência, a Seção \ref{sec:transformacao_dos_dados} apresenta os métodos de transformação e normalização dos dados, a fim de adequar as diferentes escalas das variáveis e garantir que o modelo de aprendizado de máquina opere de forma eficiente. A Seção \ref{sec:divisao_dados_treino_teste} discute a divisão do conjunto de dados em subconjuntos de treinamento e teste, garantindo a capacidade de generalização do modelo. Por fim, a Seção \ref{sec:aplicacao_modelo_previsao} detalha a aplicação prática do modelo de Regressão Ridge, incluindo a configuração dos hiperparâmetros, o processo de treinamento e a avaliação dos resultados obtidos por meio do script desenvolvido na linguagem de programação \textit{Python}. Cada seção contribui para a construção de um conjunto de dados robusto, permitindo que o modelo de Regressão \textit{Ridge} capture padrões sazonais e climáticos com maior precisão, fundamental para a previsão eficaz do nível do rio e a mitigação de impactos de enchentes.
 
 % \section{Preparação dos dados para o treinamento}
 % \label{sec:preparacao_dos_dados}
@@ -23,23 +21,23 @@ Na sequência, a Seção \ref{sec:transformacao_dos_dados} apresenta os métodos
 \section{Coleta de dados}
 \label{sec:coleta_dados}
 
-Considerando a premissa do trabalho, em que a previsão do nível do rio será dada a partir de dados meteorológicos da cidade de Porto Alegre, junto aos dados de monitoramento do nível dos rios que constituem a bacia do Guaíba, duas fontes de dados foram utilizadas. Para os dados meteorológicos, o portal do \glsxtrfull{INMET}\footnote{\url{https://portal.inmet.gov.br/}} foi utilizado, onde foram coletadas as informações de temperatura, umidade relativa do ar, precipitação e velocidade do vento. Já os dados de monitoramento dos rios foram coletados na página do \glsxtrfull{SEMA-RS}\footnote{\url{https://www.saladesituacao.rs.gov.br/dados}} da internet (Sala de situação), onde foram coletados os dados de nível do Lago Guaíba,Caí, Jacuí, Sinos e Gravataí. Os dados meteorológicos foram coletados em formato \glsxtrfull{CSV}, com arquivos separados por ano de monitoramento, com frequência horária. Os dados dos níveis dos rios foram coletados na forma de uma planilha eletrônica em formato \textit{.xlsx}, com histórico completo de amostragem das informações em frequência de 15 minutos.
+Considerando a premissa de que a previsão do nível do rio será dada a partir de dados\footnote{\url{https://portal.inmet.gov.br/}} meteorológicos da cidade de Porto Alegre e de dados\footnote{\url{https://www.saladesituacao.rs.gov.br/dados}} de monitoramento do nível dos rios que constituem a bacia do Guaíba, o portal do \glsxtrfull{INMET} foi utilizado, onde foram coletadas as informações de temperatura, umidade relativa do ar, precipitação e velocidade do vento. Já os dados de monitoramento dos rios foram coletados na página do \glsxtrfull{SEMA-RS} da internet (Sala de situação), onde foram coletados os dados de nível do Lago Guaíba, Caí, Jacuí, Sinos e Gravataí. Os dados meteorológicos foram coletados em formato \glsxtrfull{CSV}, com arquivos separados por ano de monitoramento, com frequência horária. Os dados dos níveis dos rios foram coletados na forma de uma planilha eletrônica em formato \textit{.xlsx}, com histórico completo de amostragem das informações em frequência de 15 minutos.
 
 \section{Pré processamento dos dados}
 \label{sec:pre_processamento_dos_dados}
 
-Antes de seguir para a etapa de limpeza dos dados mostrado na Figura \ref{fig:passos_preparacao}, os dados coletados necessitam de um pré-processamento específico para cada uma das fontes utilizadas. Para os dados meteorológicos, devido às informações estarem separadas por ano de monitoramento, foi necessário concatenar os arquivos de cada ano em um único arquivo. Isso foi feito utilizando a função \textit{concat} da biblioteca \textit{Pandas}, removendo o cabeçalho de informações geográficas da estação, ilustrado nas linhas 1 a 8 da Figura \ref{fig:base_inmet}. Além disso, foi necessário combinar as duas primeiras colunas e converter o formato de data e hora para o padrão \textit{datetime}, utilizando a função \textit{to\_datetime} da mesma biblioteca. 
+Antes de seguir para a etapa de limpeza dos dados, os dados coletados necessitam de um pré-processamento específico para cada uma das fontes utilizadas. Para os dados meteorológicos, devido às informações estarem separadas por ano de monitoramento, foi necessário concatenar os arquivos de cada ano em um único arquivo. Isso foi feito utilizando a função \textit{concat} da biblioteca \textit{Pandas}, removendo o cabeçalho de informações geográficas da estação, ilustrado nas linhas 1 a 8 da Figura \ref{fig:base_inmet}. Além disso, foi necessário combinar as duas primeiras colunas e converter o formato de data e hora para o padrão \textit{datetime}, utilizando a função \textit{to\_datetime} da mesma biblioteca. 
 
 \begin{figure}[H]
 	\caption{\label{fig:base_inmet}Dados meteorológicos.}
 	\begin{center}
-		\includegraphics[scale=0.25]{figuras/base_inmet.png}
+		\includegraphics[scale=0.3]{figuras/base_inmet.png}
 	\end{center}
 	\fonte{Autor.}
 \end{figure}
 \pagebreak
-Analisando as colunas e os seus respectivos tipos de dados, tem-se a seguinte tabela:
 
+As colunas resultantes, bem como seus respectivos tipos de dados, são listadas na Tabela \ref{tab:colunas_dados_meteorologicos}.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|p{10cm}|c|}
@@ -65,7 +63,7 @@ Analisando as colunas e os seus respectivos tipos de dados, tem-se a seguinte ta
 	Vento - Velocidade Horária (m/s) & float64 \\
 	\hline
 	\end{tabular}
-	\caption{Tabela de tipos de dados da base de informações meteorológicas.}
+	\caption{Tipos de dados da base de informações meteorológicas.}
 	\label{tab:colunas_dados_meteorologicos}
 \end{table}
 
@@ -82,7 +80,7 @@ Para os dados dos níveis dos rios, também foi necessário remover o cabeçalho
 \section{Limpeza dos dados}
 \label{sec:limpeza_dos_dados}
 
-Após a coleta dos dados, o próximo passo é a limpeza dessas informações, que consiste em remover dados duplicados, corrigir erros de formatação e lidar com valores ausentes. Existem diferentes abordagens para tratar valores inconsistentes no dados coletados. Uma abordagem comum, principalmente em casos onde não há uma linearidade ou tendência clara, é o preenchimento com zero \cite{cousineau2010outliers}, como mostra a Figura \ref{fig:passo_dados_limpeza}, ou com a média dos dados na coluna a ser limpa.
+Após o pré-processamento dos dados, o próximo passo é a limpeza dessas informações, que consiste em remover dados duplicados, corrigir erros de formatação e lidar com valores ausentes. Existem diferentes abordagens para tratar valores inconsistentes no dados coletados. Uma abordagem comum, principalmente em casos onde não há uma linearidade ou tendência clara, é o preenchimento com zero \cite{cousineau2010outliers}, como mostra a Figura \ref{fig:passo_dados_limpeza}, ou com a média dos dados na coluna a ser limpa.
 
 \begin{figure}[H]
 	\caption{\label{fig:passo_dados_limpeza}Limpeza dos dados coletados.}
@@ -94,7 +92,7 @@ Após a coleta dos dados, o próximo passo é a limpeza dessas informações, qu
 
 Nessa etapa, na base de dados meteorológicos, optou-se por preencher os dados ausentes, representados por ''-'', e os dados com valor igual a ''-9999'' por zero, já que dados meteorológicos tendem a ser mais voláteis e não apresentam uma tendência clara. Desse modo, a abordagem de aproximação linear é descartada, a fim de não comprometer a análise do modelo de previsão.  
 
-Tomando como exemplo a coluna \textit{TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C)}, na Figura \ref{fig:dados_clima_poa_nao_tratados}, observa-se os valores ausentes representados por ''-'' e ''-9999'', evidenciados na Figura pelos pontos distantes do restante dos dados.
+Tomando como exemplo a coluna \textit{TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C)}, na Figura \ref{fig:dados_clima_poa_nao_tratados}, observa-se os valores ausentes representados por ''-'' e ''-9999'', evidenciados na figura pelos pontos distantes do restante dos dados.
 
 \begin{figure}[H]
 	\caption{\label{fig:dados_clima_poa_nao_tratados}Gráfico de Temperatura do orvalho Máx. na Hora Anterior (°C) não tratado.}
@@ -134,11 +132,11 @@ Por exemplo, na coluna \textit{UMIDADE REL. MAX. NA HORA ANT. (AUT) (\%)}, as Fi
 	\fonte{Autor.}
 \end{figure}
 
-Na base de dados dos níveis dos rios, embora a dinâmica que representa os respectivos comportamentos não seja linear, o uso do conceito de aproximação linear permite preencher os dados ausentes por meio da interpolação entre os valores que cercam as células sem informação em determinado período. Essa abordagem é válida, uma vez que a variação do nível do rio entre dois pontos de amostragem próximos tende a ser linear, já que o nível do rio não apresenta oscilações bruscas em curtos períodos de tempo.
+Na base de dados dos níveis dos rios, embora a dinâmica que representa os respectivos comportamentos não seja linear, o uso do conceito de aproximação linear permite preencher os dados ausentes por meio da interpolação entre os valores que cercam as células sem informação em determinado período. Essa abordagem é válida porque a variação do nível do rio entre dois pontos de amostragem próximos tende a ser linear, já que o nível do rio não apresenta oscilações bruscas em curtos períodos de tempo.
 
-Para realizar a interpolação dos valores ausentes na base de dados dos níveis dos rios, utilizou-se a função \textit{interpolate} da biblioteca Pandas com o argumento \textit{method = 'linear'}. Esse método preenche os valores ausentes calculando uma interpolação linear entre os dois dados adjacentes mais próximos, ou seja, o valor ausente é estimado como uma média ponderada dos valores imediatamente anteriores e posteriores no conjunto de dados, considerando a distância temporal entre eles. Especificamente, a interpolação linear utiliza apenas os dois pontos adjacentes (um antes e um depois do valor ausente) para determinar o valor interpolado, assumindo uma variação linear entre esses pontos.
+Para realizar a interpolação dos valores ausentes na base de dados dos níveis dos rios, utilizou-se a função \textit{interpolate} da biblioteca Pandas com o argumento \textit{method = 'linear'}. Esse método preenche os valores ausentes calculando uma interpolação linear entre os dois dados adjacentes mais próximos. Ou seja, o valor ausente é estimado como uma média ponderada dos valores imediatamente anteriores e posteriores no conjunto de dados, considerando a distância temporal entre eles. Especificamente, a interpolação linear utiliza apenas os dois pontos adjacentes (um antes e um depois do valor ausente) para determinar o valor interpolado, assumindo uma variação linear entre esses pontos.
 
-Ainda, observou-se nas bases dos níveis dos rios a ocorrência de valores ausentes no início ou no final do período de amostragem, inviabilizando a interpolação. Para esses casos, o preenchimento foi feito a partir da repetição do primeiro ou do último valor disponível, respectivamente. É importante ressaltar que tal limpeza só pode ser feita se o preenchimento ocorra em um intervalo de tempo curto, visando não afetar a análise feita pelo modelo de previsão.
+Além disso, as bases de dados dos níveis dos rios apresentou valores ausentes no início ou no final do período de amostragem, inviabilizando a interpolação. Para esses casos, o preenchimento foi feito a partir da repetição do primeiro ou do último valor disponível, respectivamente. É importante ressaltar que tal limpeza só pode ser feita se o preenchimento ocorra em um intervalo de tempo curto, visando não afetar a análise feita pelo modelo de previsão.
 
 \section{Redução dos dados}
 \label{sec:reducao_dados}
@@ -285,7 +283,7 @@ As Figuras \ref{fig:temperatura_do_ar_bulbo_seco}, \ref{fig:pressao_atmosferica_
 	\fonte{Autor.}
 \end{figure}
 
-Em relação às colunas \textit{Vento - Velocidade Horária}, \textit{Umidade Relativa do Ar} e \textit{Precipitação Total}, embora estas não apresentem um padrão sazonal tão evidente quanto as plotadas acima, estas medidas estão diretamente ligadas aos fenômenos de previsão do tempo, noticiadas em jornais e revistas, e portanto, possuem influência direta no nível dos rios ondes estes dados são monitorados. Sendo assim, as colunas também foram consideradas para o treinamento do modelo.
+Em relação às colunas \textit{Vento - Velocidade Horária}, \textit{Umidade Relativa do Ar} e \textit{Precipitação Total}, embora estas não apresentem um padrão sazonal tão evidente quanto as exibidas acima, estas medidas estão diretamente ligadas aos fenômenos de previsão do tempo, noticiadas em jornais e revistas, e portanto, possuem influência direta no nível dos rios ondes estes dados são monitorados. Sendo assim, as colunas também foram consideradas para o treinamento do modelo.
 
 Definidas as colunas a serem mantidas, o próximo passo consistiu em alinhar os dados meteorológicos com os dados de monitoramento dos rios, garantindo que as informações estivessem na mesma frequência de amostragem. Os dados de monitoramento do nível do Lago Guaíba possuem maior frequência de amostragem entre os rios analisados, com intervalo de 15 minutos, enquanto os dados meteorológicos possuem frequência de 1 hora (60 minutos). Assim, a frequência de amostragem das informações do nível dos rios foi reduzida para 1 hora, aplicando um filtro simples que mantém apenas as linhas cujo \textit{timestamp} tem minuto igual a 0.
 
@@ -323,9 +321,9 @@ Quanto à base de dados meteorológicos, o site do INMET disponibiliza dados des
 
 A transformação dos dados é uma etapa fundamental para garantir que as informações estejam no formato correto para o treinamento do modelo de previsão. Nesta fase, os dados são convertidos em um formato numérico, adequado para algoritmos de aprendizado de máquina, e normalizados para assegurar que todas as variáveis tenham a mesma escala.
 
-Com os dados meteorológicos e de monitoramento dos rios alinhados, a normalização dos dados é aplicada visando principalmente equilibrar os dados dos níveis dos rios com os dados meteorológicos, tendo em vista que as escalas entre essas informações apresentam uma discrepância maior, pela diferença de unidade de medida entre elas.
+Os dados meteorológicos e de níveis de rios utilizam unidades de medida diferentes e, consequentemente, valores discrepantes. Esta discrepância precisa ser eliminada para que o treinamento ocorra de forma apropriada. Essa eliminação é feita através do processo de normalização dos dados.
 
-Ademais, outro fator que deve ser considerado é se as colunas do \textit{dataframe} são compostas de dados categóricos (geralmente representados através de textos) ou numéricos. Por se tratar de medições aferidas por sensores meteorológicos e/ou geográficos, todas as colunas da base de dados estudada são numéricas.
+Ademais, deve-se considerar se as colunas do \textit{dataframe} são compostas de dados categóricos (geralmente representados através de textos) ou numéricos. Por se tratar de medições aferidas por sensores meteorológicos e/ou geográficos, todas as colunas da base de dados estudada são numéricas.
 
 A partir dessa premissa, a normalização dos dados foi feita utilizando o método \textit{StandardScaler} da biblioteca \textit{Scikit-learn}, que transforma os dados de uma coluna para que a média de seus valores seja zero e o desvio padrão seja igual a um. A pontuação padrão de uma amostra x é dada por:
 
@@ -333,7 +331,7 @@ A partir dessa premissa, a normalização dos dados foi feita utilizando o méto
 z = \frac{x - \mu}{\sigma}
 \end{equation}
 
-\noindent onde \( \mu \) é a média da amostra e \( \sigma \) é o desvio padrão. Muitos elementos usados em funções objetivas de \gls{ML} assumem que os dados passados para o modelo estão normalizados. No caso do Modelo Ridge, que utiliza um regularizador L2 em sua função objetivo, esse requisito também é necessário, logo, a normalização pelo método \textit{StandardScaler} garante que os recursos estão centrados em torno uma média igual a zero e variação de mesma ordem \cite{scikit_learn_standardscaler}. Caso uma amostra apresente uma variância de magnitude maior do que outros, ele pode dominar a função objetivo e fazer o estimador incapaz de aprender com outros recursos corretamente como esperado.
+\noindent onde \( \mu \) é a média da amostra e \( \sigma \) é o desvio padrão. Muitos elementos usados em funções objetivas de \gls{ML} assumem que os dados passados para o modelo estão normalizados. No caso do Modelo Ridge, que utiliza um regularizador L2 em sua função objetivo, esse requisito também é necessário. Logo, a normalização pelo método \textit{StandardScaler} garante que os valores estão centrados em torno uma média igual a zero e variação de mesma ordem \cite{scikit_learn_standardscaler}. Caso uma amostra apresente uma variância de magnitude maior do que outros, ele pode dominar a função objetivo e fazer o estimador incapaz de aprender com outros recursos corretamente como esperado.
 
 O método \textit{StandardScaler} também é sensível a \textit{outliers}, que afetam a média e o desvio padrão calculados para a definição dos valores normalizados. Por esse motivo, a aplicação do método \gls{IQR} para remoção dos \textit{outliers}, descrito na seção \ref{sec:limpeza_dos_dados}, além de limpar os dados durante aquela etapa de preparação, garante que os dados estivessem mais homogêneos e não fossem distorcidos por valores extremos na normalização desta etapa.
 
@@ -342,7 +340,7 @@ Com os dados normalizados, o \textit{dataframe} está pronto para ser dividido e
 \section{Divisão dos dados em conjuntos de treinamento e teste}
 \label{sec:divisao_dados_treino_teste}
 
-No processo de implementação de um modelo de previsão, a divisão da base de dados em conjuntos de treino e teste constitui a última etapa antes da aplicação do algoritmo, com o objetivo de avaliar a capacidade de generalização do modelo. De maneira geral, a base de dados é dividida em duas partes: uma maior, utilizada para o treinamento do modelo, e uma menor, destinada a testar seu desempenho em dados não observados durante o treinamento. Após a etapa de treinamento com o primeiro conjunto, é possível realizar previsões e compará-las com o segundo conjunto, cujos dados são conhecidos apenas pelo pesquisador. Essa comparação permite a avaliação da performance do modelo por meio do levantamento de métricas de desempenho.
+No processo de implementação de um modelo de previsão, a divisão da base de dados em conjuntos de treinamento e teste constitui a última etapa antes da aplicação do algoritmo, com o objetivo de avaliar a capacidade de generalização do modelo. De maneira geral, a base de dados é dividida em duas partes: uma maior, utilizada para o treinamento do modelo, e uma menor, destinada a testar seu desempenho em dados não observados durante o treinamento. Após a etapa de treinamento com o primeiro conjunto, é possível realizar previsões e compará-las com o segundo conjunto, cujos dados são conhecidos apenas pelo pesquisador. Essa comparação permite a avaliação da performance do modelo por meio do levantamento de métricas de desempenho.
 
 Na divisão dos dados em conjuntos de treinamento e teste, diferentes proporções podem ser utilizadas, dependendo das características do conjunto de dados e do modelo de aprendizado de máquina. Exemplos comuns incluem 80\% dos dados para treinamento e 20\% para teste (80-20), 70\% para treinamento e 30\% para teste (70-30), e 60\% para treinamento e 40\% para teste (60-40) \cite{supri2023asian}.
 
@@ -375,7 +373,7 @@ Partindo desse pressuposto, foram testados valores de \texttt{alpha} de 0.001, 0
 \label{cap:analise_dos_resultados}
 
 
-A seguir, são apresentados os resultados obtidos através do desenvolvimento descrito no Capítulo \ref{cap:desenvolvimento}. Para cada valor de \texttt{alpha}, são exibidas as tabelas de desempenho, considerando as três proporções de divisão dos dados em conjuntos de treinamento e teste: 80:20, 70:30 e 60:40, junto às Figuras X, Y e Z, que ilustram o desempenho do modelo para cada split de treinamento e previsão.
+A seguir, são apresentados os resultados obtidos através do desenvolvimento descrito no Capítulo \ref{cap:desenvolvimento}. Para cada valor de \texttt{alpha}, são exibidas as tabelas de desempenho, considerando as três proporções de divisão dos dados em conjuntos de treinamento e teste: 80:20, 70:30 e 60:40, junto às Figuras \ref{fig:comparacao_radiacao_nivel_rio}, \ref{fig:comparacao_radiacao_nivel_rio_2} e \ref{fig:comparacao_radiacao_nivel_rio_3}, que ilustram o desempenho do modelo para cada split de treinamento e teste.
 
 \begin{figure}[H]
 	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do Lago Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 60:40}
@@ -386,7 +384,7 @@ A seguir, são apresentados os resultados obtidos através do desenvolvimento de
 \end{figure}
 
 \begin{figure}[H]
-	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do Lago Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 70:30}
+	\caption{\label{fig:comparacao_radiacao_nivel_rio_2}Gráfico modelo de previsão de nível do Lago Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 70:30}
 	\begin{center}
 		\includegraphics[scale=0.35]{figuras/modelo_previsao_70_30.png}
 	\end{center}
@@ -394,14 +392,14 @@ A seguir, são apresentados os resultados obtidos através do desenvolvimento de
 \end{figure}
 
 \begin{figure}[H]
-	\caption{\label{fig:comparacao_radiacao_nivel_rio}Gráfico modelo de previsão de nível do Lago Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 80:20}
+	\caption{\label{fig:comparacao_radiacao_nivel_rio_3}Gráfico modelo de previsão de nível do Lago Guaíba com \texttt{alpha} = 1 e split de treinamento e teste 80:20}
 	\begin{center}
 		\includegraphics[scale=0.35]{figuras/modelo_previsao_80_20.png}
 	\end{center}
 	\fonte{Autor.}
 \end{figure}
 
-Nos valores de \texttt{alpha} testados, vale ressaltar que o modelo apresentou desempenho semelhante, com pequenas variações nas métricas de avaliação.
+Nos valores de \texttt{alpha} testados, o modelo apresentou desempenho semelhante, com pequenas variações nas métricas de avaliação. Os resultados para os diferentes valores de alpha são exibidos nas tabelas \ref{tab:avaliacao_alpha_0_01} a \ref{tab:avaliacao_alpha_100}.
 
 \begin{table}[H]
 \centering
@@ -417,6 +415,7 @@ Nos valores de \texttt{alpha} testados, vale ressaltar que o modelo apresentou d
 \hline
 \end{tabular}
 \caption{Tabela de avaliação de desempenho do modelo com alpha 0.01}
+\label{tab:avaliacao_alpha_0_01}
 \end{table}
 
 \begin{table}[H]
@@ -433,6 +432,7 @@ Nos valores de \texttt{alpha} testados, vale ressaltar que o modelo apresentou d
 \hline
 \end{tabular}
 \caption{Tabela de avaliação de desempenho do modelo com alpha 0.1}
+\label{tab:avaliacao_alpha_0_1}
 \end{table}
 
 \begin{table}[H]
@@ -449,6 +449,7 @@ Nos valores de \texttt{alpha} testados, vale ressaltar que o modelo apresentou d
 \hline
 \end{tabular}
 \caption{Tabela de avaliação de desempenho do modelo com alpha 1}
+\label{tab:avaliacao_alpha_1}
 \end{table}
 
 \begin{table}[H]
@@ -465,6 +466,7 @@ Nos valores de \texttt{alpha} testados, vale ressaltar que o modelo apresentou d
 \hline
 \end{tabular}
 \caption{Tabela de avaliação de desempenho do modelo com alpha 10}
+\label{tab:avaliacao_alpha_10}
 \end{table}
 
 \begin{table}[H]
@@ -481,6 +483,7 @@ Nos valores de \texttt{alpha} testados, vale ressaltar que o modelo apresentou d
 \hline
 \end{tabular}
 \caption{Tabela de avaliação de desempenho do modelo com alpha 100}
+\label{tab:avaliacao_alpha_100}
 \end{table}
 
 Uma das formas de avaliar o desempenho de um modelo de aprendizado de máquina é através da análise das métricas de desempenho, que indicam a capacidade do modelo de generalizar e prever corretamente os dados. As métricas de avaliação utilizadas neste trabalho incluem o erro quadrático médio (MSE), a raiz do erro quadrático médio (RMSE), o erro absoluto médio (MAE) e o coeficiente de determinação (R²), onde o "erro" considerado nessas métricas refere-se à diferença entre os valores previstos pelo modelo e os valores reais observados nos dados. Cada métrica possui uma interpretação específica, sendo elas:
@@ -492,7 +495,7 @@ Uma das formas de avaliar o desempenho de um modelo de aprendizado de máquina �
 	\item R² (Coeficiente de Determinação): Indica a proporção da variância dos dados explicada pelo modelo. Varia de 0 a 1, onde 1 significa ajuste perfeito.
 \end{itemize}
 
-Com isso, as tabelas apresentadas mostram que o MSE e o RMSE diminuem conforme o \textit{split} de treinamento diminui e o \textit{split} de teste aumenta. Tal comportamento indica que, à medida que mais dados são utilizados para treinamento, o modelo passa a ter um sobreajuste (\textit{overfitting}), perdendo a capacidade de generalizar e, em vez disso, se adequando estritamente ao conjunto de dados de treinamento.
+Com isso, as tabelas apresentadas mostram que o MSE e o RMSE são menores no \textit{split} de treinamento e de teste 70:30. Tal comportamento indica que, à medida que mais dados são utilizados para treinamento, o modelo passa a ter um sobreajuste (\textit{overfitting}), perdendo a capacidade de generalizar e, em vez disso, se adequando estritamente ao conjunto de dados de treinamento. Por outro lado, a diminuição da proporção de dados de treinamento para 60:40 resulta em um sutil aumento das métricas de erro, indicando uma maior dificuldade do modelo em generalizar para novos dados.
 
 Quanto ao R², o valor obtido possui uma baixa variação entre os ensaios com diferentes valores de \texttt{alpha} e \textit{split}, ficando entre 0.87 e 0.89. Isso indica que 87\% a 89\% da variância dos dados da variável dependente é explicada pelo modelo. Em outras palavras, o modelo captura a maior parte dos padrões nos dados, deixando apenas 11\% a 13\% da variância como não explicada (devido a ruído, variáveis omitidas ou outros fatores). Um coeficiente de determinação próximo a 1 sugere que o modelo é robusto e confiável para o conjunto de dados analisado. Boa parte dessa robustez se dá pelo tratamento e limpeza dos dados, somada à a correlação entre as variáveis preditoras e a variável dependente.
 
@@ -570,7 +573,7 @@ Outro ponto a ser destacado é que, 14 dos 24 meses analisados, o modelo apresen
 
 Utilizando outras pesquisas de previsão do nível de rios para fins comparativos, um estudo que implementou um modelo de Rede Neural do tipo Long Short-Term Memory (LSTM), para a previsão do rio Tisza, na Hungria. De forma geral, o modelo obteve um erro absoluto médio que variou de 4,2 cm no 1º dia de previsão, até 34,7 cm no 7º dia. Outra análise feita no estudo mostrou que entre 68,5\% e 76,1\% das previsões ficaram dentro dos intervalos de precisão exigidos para os diferentes dias da previsão de 7 dias à frente. Estes intervalos eram progressivos, sendo o primeiro dia com tolerância de 5cm, a partir do 3º dia com tolerância de 15cm, no 5º dia com tolerância de 25cm e por fim no 7º dia com tolerância de 35cm \cite{Vizi2023}.
 
-Comparando com este Artigo, o modelo \textit{Ridge}, embora tenha oscilado nas previsões, gerando um grau de incerteza no desempenho, apresentou resultados gerais melhores em termos de erro absoluto médio, especialmente nos dias mais distantes de previsão.
+Comparando com este artigo, o modelo \textit{Ridge}, embora tenha oscilado nas previsões, gerando um grau de incerteza no desempenho, apresentou resultados gerais melhores em termos de erro absoluto médio, especialmente nos dias mais distantes de previsão.
 
 Ainda, em \cite{Guo2021}, os autores apresentam a aplicação de quatro modelos de aprendizado de máquina (\glsxtrfull{SVR}, \glsxtrfull{RFR}, \glsxtrfull{MLPR} e \glsxtrfull{LGBMR}) para prever o nível do rio Lan-Yang, em Taiwan, com horizontes de 1 a 6 horas. Os resultados indicam que o modelo LGBMR obteve o melhor desempenho, com erro médio absoluto de pico de nível de água de 0,22 metros e erro de tempo até o pico de 0,12 horas, especialmente na estação Kavalan, influenciada pela maré do rio estudado. As métricas de avaliação, incluindo R², MAE, RMSE e \glsxtrfull{NSE}, mostraram valores de NSE acima de 0,72 para previsões de 1 hora, com redução de precisão em horizontes mais longos. O modelo LGBMR também apresentou eficiência computacional, com tempos de treinamento de 156 segundos e validação de 0,03 segundos, destacando-se como uma ferramenta viável para previsões em tempo real.
 
