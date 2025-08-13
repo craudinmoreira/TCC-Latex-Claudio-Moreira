@@ -41,7 +41,7 @@ Na Figura \ref{fig:bacia_guaiba}, é mostrado alguns rios que fazem parte da bac
 
 Desde que os computadores foram inventados, criou-se o questionamento da possibilidade de fazê-los "pensar" de modo semelhante ao ser humano. Por meio desse avanço, diversas áreas sofreriam grandes transformações, uma vez que a capacidade da máquina aprender e aprimorar o seu conhecimento sobre determinado assunto traria melhorias e uma maior performance na atividade desejada \cite{carbonell1983}.
 
-Embora os computadores ainda não alcancem o mesmo nível de aprendizado geral do ser humano, nos últimos anos, o \glsxtrfull{ML} se tornou realidade, com aplicações em diversos setores, agregando valor e conhecimento por meio de dados e informações antes tratados apenas por profissionais da área.
+Embora os computadores ainda não alcancem o mesmo nível de aprendizado geral do ser humano, nos últimos anos, o Aprendizado de Máquina (ou \gls{ML}, do ingles Machine Learning) se tornou realidade, com aplicações em diversos setores, agregando valor e conhecimento por meio de dados e informações antes tratados apenas por profissionais da área.
 
 Esse conceito envolve a criação de sistemas que são capazes de aprender a partir de dados, identificando padrões e realizando previsões sem a necessidade de programação explícita. O principal objetivo do \gls{ML} é construir algoritmos que permitam que os computadores adquiram conhecimento e melhorem sua performance de forma autônoma, baseando-se em experiências passadas \cite{carbonell1983}.
 
@@ -59,7 +59,7 @@ Os quatro principais tipos de \gls{ML} são: supervisionado, não supervisionado
 \section{Regressão}
 \label{sec:regressao}
 
-\hl{Para prever e entender a dinâmica de fenômenos estudados, a regressão, uma técnica de aprendizado supervisionado, modela relações entre variáveis dependentes e independentes por meio de métodos estatísticos} \cite{soto2013}.
+Para prever e entender a dinâmica de fenômenos estudados, a regressão, uma técnica de aprendizado supervisionado, modela relações entre variáveis dependentes e independentes por meio de métodos estatísticos \cite{soto2013}.
 
 Em uma equação linear, uma variável independente, comumente representada pela letra $x$, caracteriza uma grandeza que está sendo manipulada durante um experimento. Dado esse comportamento, a variável $x$ não sofre influência de outras variáveis. A variável dependente, comumente representada pela letra $y$, caracteriza valores que estão diretamente associados à variável independente. Assim, de forma direta ou indireta, $x$ exerce influência sobre $y$.
 
@@ -101,7 +101,7 @@ A regressão linear é um tipo específico de regressão que modela a relação 
 
 A aplicação da técnica é relevante devido à sua simplicidade e capacidade de fornecer previsões baseadas em uma fórmula matemática interpretável. Além disso, o método é base para implementações de algoritmos na área de ciência de dados, otimizando o processamento de dados complexos e viabilizando a criação de modelos de previsão \cite{aws2024}.
 
-O método de regressão linear é dividido em dois grupos, sendo eles: \glsxtrfull{RLS} e \glsxtrfull{RLM} \cite{montgomery2012}. A RLS tem como objetivo estabelecer uma relação entre duas variáveis através de uma função, cuja definição é dada por:
+O método de regressão linear é dividido em dois grupos, sendo eles: Regressão Linear Simples (ou \gls{RLS}, do inglês Simple Linear Regression) e Regressão Linear Múltipla (ou \gls{RLM}, do inglês Multiple Linear Regression) \cite{montgomery2012}. A RLS tem como objetivo estabelecer uma relação entre duas variáveis através de uma função, cuja definição é dada por:
 
 \begin{equation}
 	y = \beta_0 + \beta_1 x + \varepsilon
@@ -181,9 +181,9 @@ Partindo desses conceitos, para implementação de modelos de regressão linear 
 
 \section{Método dos quadrados ordinários}
 
-O método \glsxtrfull{MQO} atua como uma ferramenta estatística, visando estimar a relação entre uma variável dependente e uma ou mais variáveis independentes \cite{Alkama2020}, permitindo encontrar os coeficientes desejados para o funcionamento do modelo.
+O método Mínimos Quadrados Ordinários (\gls{MQO}) atua como uma ferramenta estatística, visando estimar a relação entre uma variável dependente e uma ou mais variáveis independentes \cite{Alkama2020}, permitindo encontrar os coeficientes desejados para o funcionamento do modelo.
 
-\hl{Para obter uma regressão que se aproxima da dinâmica analisada, o método visa minimizar a} \glsxtrfull{RSS}\hl{, denotado pela equação} \ref{eq:rss_rls} \hl{para os casos de RLS (isto é, quando há apenas uma variável independente)}.
+Para obter uma regressão que se aproxima da dinâmica analisada, o método visa minimizar a Soma dos Quadrados dos Resíduos (ou \gls{RSS}, do inglês Residual Sum of Squares), denotado pela equação \ref{eq:rss_rls} para os casos de RLS (isto é, quando há apenas uma variável independente).
 
 \begin{equation}
 	RSS = \sum_{i=1}^{n} \left(y_i - \beta_0 - \beta_1x_{i}\right)^2
@@ -478,4 +478,4 @@ Geometricamente, a regularização imposta pela Ridge faz com que a busca pela s
 
 Com isso, mesmo que múltiplas combinações de coeficientes possam gerar ajustes semelhantes aos dados (especialmente em casos de multicolinearidade), a regressão \textit{Ridge} prefere aquelas soluções onde os coeficientes são menores, evitando oscilações extremas.
 
-Portanto, o modelo \textit{Ridge} não apenas minimiza o erro de ajuste aos dados da \gls{RSS}, mas também impõe um “encolhimento” dos coeficientes em direção ao zero, resultando em retas ou hiperplanos mais estáveis, com menor variância e melhor capacidade de generalização para dados não vistos ao qual se deseja ser previsto \cite{McDonald:2009:RR}. \hl{Desse modo, devido a multicolinearidade entre as variáveis independentes, como temperatura, precipitação e níveis dos rios afluentes, a regularização L2 do modelo ajuda a estabilizar os coeficientes, reduzindo o risco de sobreajuste em cenários de alta variabilidade climática.}
+Portanto, o modelo \textit{Ridge} não apenas minimiza o erro de ajuste aos dados da \gls{RSS}, mas também impõe um “encolhimento” dos coeficientes em direção ao zero, resultando em retas ou hiperplanos mais estáveis, com menor variância e melhor capacidade de generalização para dados não vistos ao qual se deseja ser previsto \cite{McDonald:2009:RR}. Desse modo, devido a multicolinearidade entre as variáveis independentes, como temperatura, precipitação e níveis dos rios afluentes, a regularização L2 do modelo ajuda a estabilizar os coeficientes, reduzindo o risco de sobreajuste em cenários de alta variabilidade climática.
